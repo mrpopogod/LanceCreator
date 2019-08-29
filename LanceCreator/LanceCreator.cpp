@@ -16,24 +16,21 @@ struct Mech {
 };
 
 struct Lance {
-    Mech light;
-    Mech medium;
-    Mech heavy;
-    Mech assault;
+    Mech first;
+    Mech second;
+    Mech third;
+    Mech fourth;
 
     int bv() {
-        return light.bv + medium.bv + heavy.bv + assault.bv;
+        return first.bv + second.bv + third.bv + fourth.bv;
     }
 };
 
-Mech light[] = {
+Mech mechs[] = {
     { "Commando", 541 },
     { "Spider", 622 },
     { "Jenner", 875 },
-    { "Panther", 769 }
-};
-
-Mech medium[] = {
+    { "Panther", 769 },
     { "Assassin", 749 },
     { "Cicada", 659 },
     { "Clint", 770 },
@@ -43,18 +40,12 @@ Mech medium[] = {
     { "Enforcer", 1032 },
     { "Hunchback", 1041 },
     { "Trebuchet", 1191 },
-    { "Dervish", 1146 }
-};
-
-Mech heavy[] = {
+    { "Dervish", 1146 },
     { "Dragon", 1125 },
     { "Quickdraw", 1192 },
     { "Catapult", 1399 },
     { "Jagermech", 901 },
-    { "Grasshopper", 1427 }
-};
-
-Mech assault[] = {
+    { "Grasshopper", 1427 },
     { "Awesome", 1605 },
     { "Zeus", 1374 },
     { "Cyclops", 1308 },
@@ -68,21 +59,29 @@ bool compare_lance(Lance& lhs, Lance& rhs) {
 
 int main()
 {
+    int max_bv = 5000;
     map<int, list<Lance>> lance_map;
     list<Lance> lance_list;
-    for (int i = 0; i < 4; i++)
+    for (int i = 0; i < 24; i++)
     {
-        for (int j = 0; j < 10; j++)
+        for (int j = i + 1; j < 24; j++)
         {
-            for (int k = 0; k < 5; k++)
+            for (int k = j + 1; k < 24; k++)
             {
-                for (int l = 0; l < 5; l++)
+                for (int l = k + 1; l < 24; l++)
                 {
                     Lance lance;
-                    lance.light = light[i];
-                    lance.medium = medium[j];
-                    lance.heavy = heavy[k];
-                    lance.assault = assault[l];
+                    lance.first = mechs[i];
+                    lance.second = mechs[j];
+                    lance.third = mechs[k];
+                    lance.fourth = mechs[l];
+                    if (lance.bv() < max_bv * 0.9) {
+                        continue;
+                    }
+                    else if (lance.bv() > max_bv) {
+                        continue;
+                    }
+
                     lance_list.push_back(lance);
                     lance_map[lance.bv()].push_back(lance);
                 }
@@ -98,10 +97,10 @@ int main()
     file << "Lances small to big" << endl;
     for (auto iter = lance_list.begin(); iter != lance_list.end(); iter++)
     {
-        file << iter->light.name << ","
-            << iter->medium.name << "," 
-            << iter->heavy.name << "," 
-            << iter->assault.name << "," 
+        file << iter->first.name << ","
+            << iter->second.name << "," 
+            << iter->third.name << "," 
+            << iter->fourth.name << "," 
             << iter->bv() << endl;
     }
     
@@ -119,10 +118,10 @@ int main()
         file << "BV: " << iter->first << endl;
         for (auto liter = lances.begin(); liter != lances.end(); liter++)
         {
-            file << liter->light.name << ","
-                << liter->medium.name << ","
-                << liter->heavy.name << ","
-                << liter->assault.name << endl;
+            file << liter->first.name << ","
+                << liter->second.name << ","
+                << liter->third.name << ","
+                << liter->fourth.name << endl;
         }
 
         file << endl;
