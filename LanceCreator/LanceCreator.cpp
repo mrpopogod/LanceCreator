@@ -7,54 +7,92 @@
 #include <map>
 #include <iostream>
 #include <fstream>
+#include <set>
 
 using namespace std;
 
-struct Mech {
-    string name;
-    int bv;
+struct Model {
+	int count;
+	list<Mech> variants;
 };
 
-struct Lance {
-    Mech first;
-    Mech second;
-    Mech third;
-    Mech fourth;
+struct Mech {
+	string name;
+	int bv;
+};
 
-    int bv() {
-        return first.bv + second.bv + third.bv + fourth.bv;
-    }
+struct Force {
+	list<Mech> mechs;
+
+	int bv() {
+		static int bv = 0;
+		static int size = 0;
+		if (mechs.size() > size) {
+			for (auto iter = mechs.begin(); iter != mechs.end(); iter++) {
+				bv += iter->bv;
+			}
+
+			size = mechs.size();
+		}
+
+		return bv;
+	}
+
+	bool operator==(const Force& rhs)
+	{
+		return (mechs == rhs.mechs);
+	}
+};
+
+list<Model> models = {
+	{ 2, { Mech({"Commando-2D", 541}), Mech({"Commando-5S", 557 }) } },
+	{ 1, { Mech({"Spider-5V", 622}), Mech({"Spider-7M", 621}) } }
 };
 
 Mech mechs[] = {
-    { "Commando", 541 },
-    { "Spider", 622 },
-    { "Jenner", 875 },
-    { "Panther", 769 },
-    { "Assassin", 749 },
-    { "Cicada", 659 },
-    { "Clint", 770 },
-    { "Hermes II", 784 },
-    { "Whitworth", 982 },
-    { "Vindicator", 1024 },
-    { "Enforcer", 1032 },
-    { "Hunchback", 1041 },
-    { "Trebuchet", 1191 },
-    { "Dervish", 1146 },
-    { "Dragon", 1125 },
-    { "Quickdraw", 1192 },
-    { "Catapult", 1399 },
-    { "Jagermech", 901 },
-    { "Grasshopper", 1427 },
-    { "Awesome", 1605 },
-    { "Zeus", 1374 },
-    { "Cyclops", 1308 },
-    { "Banshee", 1422 },
-    { "Atlas", 1897 }
+	{ "Commando", 541 },
+	{ "Spider", 622 },
+	{ "Jenner", 875 },
+	{ "Panther", 769 },
+	{ "Assassin", 749 },
+	{ "Cicada", 659 },
+	{ "Clint", 770 },
+	{ "Hermes II", 784 },
+	{ "Whitworth", 982 },
+	{ "Vindicator", 1024 },
+	{ "Enforcer", 1032 },
+	{ "Hunchback", 1041 },
+	{ "Trebuchet", 1191 },
+	{ "Dervish", 1146 },
+	{ "Dragon", 1125 },
+	{ "Quickdraw", 1192 },
+	{ "Catapult", 1399 },
+	{ "Jagermech", 901 },
+	{ "Grasshopper", 1427 },
+	{ "Awesome", 1605 },
+	{ "Zeus", 1374 },
+	{ "Cyclops", 1308 },
+	{ "Banshee", 1422 },
+	{ "Atlas", 1897 }
 };
 
-bool compare_lance(Lance& lhs, Lance& rhs) {
-    return lhs.bv() < rhs.bv();
+bool compare_force(Force& lhs, Force& rhs) 
+{
+	return lhs.bv() < rhs.bv();
+}
+
+// lowest bv first, then alphabetical
+bool compare_mech(Mech& lhs, Mech& rhs)
+{
+	if (lhs.bv < rhs.bv) {
+		return true;
+	}
+
+	if (rhs.bv > lhs.bv) {
+		return false;
+	}
+
+	return lhs.name < rhs.name;
 }
 
 // Next iteration idea;
@@ -68,11 +106,24 @@ bool compare_lance(Lance& lhs, Lance& rhs) {
 // So you have a function that takes in a Lance structure and the current offset in the mech list, it bails out
 // if the lance is full, then it goes through the current item in the mech list, adds all appropriate combinations
 // to the lance and then recursively calls itself with the next offset and all the lances.
+
 int main()
 {
     int max_bv = 5000;
-    map<int, list<Lance>> lance_map;
-    list<Lance> lance_list;
+	int force_size = 4;
+    map<int, list<Force>> force_map;
+    set<Force> force_set;
+
+	for (int i = 0; i < force_size; i++)
+	{
+		for (int j = 0; j < models.size(); j++)
+		{
+			for (int k = 0; k < models.)
+		}
+	}
+
+
+
     for (int i = 0; i < 24; i++)
     {
         for (int j = i + 1; j < 24; j++)
@@ -81,46 +132,47 @@ int main()
             {
                 for (int l = k + 1; l < 24; l++)
                 {
-                    Lance lance;
-                    lance.first = mechs[i];
-                    lance.second = mechs[j];
-                    lance.third = mechs[k];
-                    lance.fourth = mechs[l];
-                    if (lance.bv() < max_bv * 0.9) {
+                    Force lance;
+					lance.mechs.push_back(mechs[i]);
+					lance.mechs.push_back(mechs[j]);
+					lance.mechs.push_back(mechs[k]);
+					lance.mechs.push_back(mechs[l]);
+                    if (lance.bv() < max_bv - 150) {
                         continue;
                     }
                     else if (lance.bv() > max_bv) {
                         continue;
                     }
 
-                    lance_list.push_back(lance);
-                    lance_map[lance.bv()].push_back(lance);
+                    force_list.push_back(lance);
+                    force_map[lance.bv()].push_back(lance);
                 }
             }
         }
     }
 
-    lance_list.sort(compare_lance);
+    force_list.sort(compare_force);
 
     ofstream file;
     file.open("lances.csv");
 
     file << "Lances small to big" << endl;
-    for (auto iter = lance_list.begin(); iter != lance_list.end(); iter++)
+    for (auto iter = force_list.begin(); iter != force_list.end(); iter++)
     {
-        file << iter->first.name << ","
-            << iter->second.name << "," 
-            << iter->third.name << "," 
-            << iter->fourth.name << "," 
-            << iter->bv() << endl;
+		for (auto mech_iter = iter->mechs.begin(); mech_iter != iter->mechs.end(); mech_iter++)
+		{
+			file << mech_iter->name << ",";
+		}
+
+		file << iter->bv() << endl;
     }
     
     file << endl;
 
     file << "Lances with equal BV" << endl;
-    for (auto iter = lance_map.begin(); iter != lance_map.end(); iter++)
+    for (auto iter = force_map.begin(); iter != force_map.end(); iter++)
     {
-        list<Lance> lances = iter->second;
+        list<Force> lances = iter->second;
         if (lances.size() < 2) 
         {
             continue;
@@ -129,10 +181,12 @@ int main()
         file << "BV: " << iter->first << endl;
         for (auto liter = lances.begin(); liter != lances.end(); liter++)
         {
-            file << liter->first.name << ","
-                << liter->second.name << ","
-                << liter->third.name << ","
-                << liter->fourth.name << endl;
+			for (auto mech_iter = liter->mechs.begin(); mech_iter != liter->mechs.end(); mech_iter++)
+			{
+				file << mech_iter->name << ",";
+			}
+
+			file << liter->bv() << endl;
         }
 
         file << endl;
