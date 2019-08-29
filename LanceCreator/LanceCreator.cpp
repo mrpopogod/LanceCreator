@@ -57,6 +57,17 @@ bool compare_lance(Lance& lhs, Lance& rhs) {
     return lhs.bv() < rhs.bv();
 }
 
+// Next iteration idea;
+// A structure that contains one or more mechs; it defines number of models I have and all the variants
+// Then this loop goes through that structure and populates a series of lances with all combinations 
+// (e.g. if I have two Atlas models and define the D, K, and S, it would create a lance with a D, a lance
+// with a K, a lance with an S, a lance with a D and a K, with a D and an S, and a K and an S).  This 
+// functionality would require building up on each lance as it gets filled out, so probably something recursive.
+// And bail out once the lance gets to size 4.
+//
+// So you have a function that takes in a Lance structure and the current offset in the mech list, it bails out
+// if the lance is full, then it goes through the current item in the mech list, adds all appropriate combinations
+// to the lance and then recursively calls itself with the next offset and all the lances.
 int main()
 {
     int max_bv = 5000;
