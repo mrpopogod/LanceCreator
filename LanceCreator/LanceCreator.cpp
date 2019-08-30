@@ -102,33 +102,21 @@ struct Force {
 };
 
 list<Model> models = {
-	{ 2, "Commando", { Mech({"Commando", "2D", 541}), Mech({"Commando", "5S", 557 }) } },
-	{ 1, "Spider", { Mech({"Spider", "5V", 622}), Mech({"Spider", "7M", 621}) } }
+    { 2, "Commando", { Mech({"Commando", "1B", 616}), Mech({"Commando", "1C", 458}), Mech({"Commando", "1D", 558}), Mech({"Commando", "2D", 541}), Mech({"Commando", "3A", 540}), Mech({"Commando", "5S", 557 }) } },
+    { 2, "Spider", { Mech({"Spider", "5D", 524}), Mech({"Spider", "5K", 503}), Mech({"Spider", "5V", 622}), Mech({"Spider", "7M", 621}) } },
+    { 2, "Jenner", { Mech({"Jenner", "D", 875}), Mech({"Jenner", "F", 1011}), Mech({"Jenner", "K", 889}) } },
+    { 2, "Panther", { Mech({"Panther", "8Z", 741}), Mech({"Panther", "9R", 769}), Mech({"Panther", "10K", 838}) } },
+    { 1, "Assassin", { Mech({"Assassin", "21", 749}), Mech({"Assassin", "23", 740}) } },
+    { 2, "Cicada", { Mech({"Cicada", "2A", 659}), Mech({"Cicada", "2B", 626}), Mech({"Cicada", "3C", 771}), Mech({"Cicada", "3F", 1329}), Mech({"Cicada", "3M", 812}) } },
+    { 2, "Clint", { Mech({"Clint", "2-3T", 770}), Mech({"Clint", "2-3U", 1081}), Mech({"Clint", "2-4T", 619}) } },
+
 };
 
-// Next iteration idea;
-// A structure that contains one or more mechs; it defines number of models I have and all the variants
-// Then this loop goes through that structure and populates a series of lances with all combinations 
-// (e.g. if I have two Atlas models and define the D, K, and S, it would create a lance with a D, a lance
-// with a K, a lance with an S, a lance with a D and a K, with a D and an S, and a K and an S).  This 
-// functionality would require building up on each lance as it gets filled out, so probably something recursive.
-// And bail out once the lance gets to size 4.
-//
-// So you have a function that takes in a Lance structure and the current offset in the mech list, it bails out
-// if the lance is full, then it goes through the current item in the mech list, adds all appropriate combinations
-// to the lance and then recursively calls itself with the next offset and all the lances.
-
-// Here's a new idea of how this algortihm should work.  First we create a set of forces of models.  The list of models 
-// will have duplicate entries for having multiple of a model and we do a dumb creation and let the ordering of mechs
-// in the force be simple alphabetical and the set remove duplicates.
-// Stage two is we go to each model in the force and explode it into multiple forces, one for each variant.
-// Stage three is toss all those forces into a set to dedupe
-// Stage four is we cut down by BV
-// I should just fucking restrict this to lance, then create variants that do star and L2
-
+// Lance version.  At some point create a Star and L2 version (ideally I would do it in a way that lets me set
+// just a number, but as for now it's harder than I'd like to do so.
 int main()
 {
-    int max_bv = 5000;
+    int max_bv = 3000;
     set<Force> force_set;
     list<Model> models_with_duplicates;
     set<ModelForce> model_force_set;
@@ -199,6 +187,7 @@ int main()
                         force.mechs.push_back(*viter3);
                         force.mechs.push_back(*viter4);
                         force.sort();
+                        force.calculate_bv();
                         force_set.insert(force);
                     }
                 }
