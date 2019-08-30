@@ -8,16 +8,33 @@
 #include <iostream>
 #include <fstream>
 #include <set>
+#include <algorithm>
+#include <climits>
 
 using namespace std;
 
 struct Model {
 	int count;
+    string name;
 	list<Mech> variants;
+
+    int lowest_bv() {
+        static int bv = INT_MAX;
+        static int size = 0;
+        if (variants.size() > size) {
+            for (auto iter = variants.begin(); iter != variants.end(); iter++)
+            {
+                bv = min(bv, iter->bv);
+            }
+        }
+
+        return bv;
+    }
 };
 
 struct Mech {
-	string name;
+    string model_name;
+    string va_list;
 	int bv;
 };
 
@@ -28,7 +45,8 @@ struct Force {
 		static int bv = 0;
 		static int size = 0;
 		if (mechs.size() > size) {
-			for (auto iter = mechs.begin(); iter != mechs.end(); iter++) {
+			for (auto iter = mechs.begin(); iter != mechs.end(); iter++) 
+            {
 				bv += iter->bv;
 			}
 
@@ -40,40 +58,14 @@ struct Force {
 
 	bool operator==(const Force& rhs)
 	{
+        mechs.sort(compare_mech);
 		return (mechs == rhs.mechs);
 	}
 };
 
 list<Model> models = {
-	{ 2, { Mech({"Commando-2D", 541}), Mech({"Commando-5S", 557 }) } },
-	{ 1, { Mech({"Spider-5V", 622}), Mech({"Spider-7M", 621}) } }
-};
-
-Mech mechs[] = {
-	{ "Commando", 541 },
-	{ "Spider", 622 },
-	{ "Jenner", 875 },
-	{ "Panther", 769 },
-	{ "Assassin", 749 },
-	{ "Cicada", 659 },
-	{ "Clint", 770 },
-	{ "Hermes II", 784 },
-	{ "Whitworth", 982 },
-	{ "Vindicator", 1024 },
-	{ "Enforcer", 1032 },
-	{ "Hunchback", 1041 },
-	{ "Trebuchet", 1191 },
-	{ "Dervish", 1146 },
-	{ "Dragon", 1125 },
-	{ "Quickdraw", 1192 },
-	{ "Catapult", 1399 },
-	{ "Jagermech", 901 },
-	{ "Grasshopper", 1427 },
-	{ "Awesome", 1605 },
-	{ "Zeus", 1374 },
-	{ "Cyclops", 1308 },
-	{ "Banshee", 1422 },
-	{ "Atlas", 1897 }
+	{ 2, { Mech({"Commando", "2D", 541}), Mech({"Commando", "5S", 557 }) } },
+	{ 1, { Mech({"Spider", "5V", 622}), Mech({"Spider", "7M", 621}) } }
 };
 
 bool compare_force(Force& lhs, Force& rhs) 
@@ -107,20 +99,27 @@ bool compare_mech(Mech& lhs, Mech& rhs)
 // if the lance is full, then it goes through the current item in the mech list, adds all appropriate combinations
 // to the lance and then recursively calls itself with the next offset and all the lances.
 
+// Here's a new idea of how this algortihm should work.  First we create a set of forces of models.  The list of models 
+// will have duplicate entries for having multiple of a model and we do a dumb creation and let the ordering of mechs
+// in the force be simple alphabetical and the set remove duplicates.
+// Stage two is we go to each model in the force and explode it into multiple forces, one for each variant.
+// Stage three is toss all those forces into a set to dedupe
+// Stage four is we cut down by BV
+// I should just fucking restrict this to lance, then create variants that do star and L2
+
 int main()
 {
     int max_bv = 5000;
 	int force_size = 4;
     map<int, list<Force>> force_map;
     set<Force> force_set;
-
-	for (int i = 0; i < force_size; i++)
+    map<Model, int> model_count_map;
+	
+	for (auto model_iter = models.begin(); model_iter != models.end(); model_iter++)
 	{
-		for (int j = 0; j < models.size(); j++)
-		{
-			for (int k = 0; k < models.)
-		}
+        model_count_map[*model_iter] = model_iter->count;
 	}
+
 
 
 
