@@ -13,79 +13,98 @@
 
 using namespace std;
 
+struct Mech {
+    string model_name;
+    string variant_name;
+    int bv;
+
+    bool operator==(const Mech& rhs) const
+    {
+        return model_name == rhs.model_name && variant_name == rhs.variant_name && bv == rhs.bv;
+    }
+};
+
+// name, then variant
+bool compare_mech(Mech& lhs, Mech& rhs)
+{
+    if (lhs.model_name == rhs.model_name)
+    {
+        return lhs.variant_name < rhs.variant_name;
+    }
+    else
+    {
+        return lhs.model_name < rhs.model_name;
+    }
+}
+
 struct Model {
 	int count;
     string name;
 	list<Mech> variants;
 
-    int lowest_bv() {
-        static int bv = INT_MAX;
-        static int size = 0;
-        if (variants.size() > size) {
-            for (auto iter = variants.begin(); iter != variants.end(); iter++)
-            {
-                bv = min(bv, iter->bv);
-            }
-        }
-
-        return bv;
+    bool operator==(const Model& rhs) const
+    {
+        return count == rhs.count && name == rhs.name && variants == rhs.variants;
     }
 };
 
-struct Mech {
-    string model_name;
-    string va_list;
-	int bv;
+bool compare_model(Model& lhs, Model& rhs)
+{
+    return lhs.name < rhs.name;
+}
+
+struct ModelForce {
+    list<Model> models;
+
+    void sort()
+    {
+        models.sort(compare_model);
+    }
+
+    bool operator==(const ModelForce& rhs) const
+    {
+        return (models == rhs.models);
+    }
+
+    bool operator<(const ModelForce& rhs) const
+    {
+        return models.front().name < rhs.models.front().name;
+    }
 };
 
 struct Force {
 	list<Mech> mechs;
+    int bv = 0;
 
-	int bv() {
-		static int bv = 0;
-		static int size = 0;
-		if (mechs.size() > size) {
-			for (auto iter = mechs.begin(); iter != mechs.end(); iter++) 
-            {
-				bv += iter->bv;
-			}
-
-			size = mechs.size();
-		}
-
-		return bv;
-	}
-
-	bool operator==(const Force& rhs)
-	{
+    void sort()
+    {
         mechs.sort(compare_mech);
+    }
+
+    void calculate_bv()
+    {
+        bv = 0;
+        for (auto iter = mechs.begin(); iter != mechs.end(); iter++)
+        {
+            bv += iter->bv;
+        }
+    }
+
+	bool operator==(const Force& rhs) const
+	{
 		return (mechs == rhs.mechs);
 	}
+
+    bool operator<(const Force& rhs) const
+    {
+        return bv < rhs.bv;
+    }
 };
 
 list<Model> models = {
-	{ 2, { Mech({"Commando", "2D", 541}), Mech({"Commando", "5S", 557 }) } },
-	{ 1, { Mech({"Spider", "5V", 622}), Mech({"Spider", "7M", 621}) } }
+	{ 2, "Commando", { Mech({"Commando", "2D", 541}), Mech({"Commando", "5S", 557 }) } },
+	{ 1, "Spider", { Mech({"Spider", "5V", 622}), Mech({"Spider", "7M", 621}) } }
 };
-
-bool compare_force(Force& lhs, Force& rhs) 
-{
-	return lhs.bv() < rhs.bv();
-}
-
-// lowest bv first, then alphabetical
-bool compare_mech(Mech& lhs, Mech& rhs)
-{
-	if (lhs.bv < rhs.bv) {
-		return true;
-	}
-
-	if (rhs.bv > lhs.bv) {
-		return false;
-	}
-
-	return lhs.name < rhs.name;
-}
 
 // Next iteration idea;
 // A structure that contains one or more mechs; it defines number of models I have and all the variants
@@ -110,85 +129,112 @@ bool compare_mech(Mech& lhs, Mech& rhs)
 int main()
 {
     int max_bv = 5000;
-	int force_size = 4;
-    map<int, list<Force>> force_map;
     set<Force> force_set;
-    map<Model, int> model_count_map;
-	
+    list<Model> models_with_duplicates;
+    set<ModelForce> model_force_set;
+
+    // Create the duplicates that we use to force create all the possible basic forces based on models
 	for (auto model_iter = models.begin(); model_iter != models.end(); model_iter++)
 	{
-        model_count_map[*model_iter] = model_iter->count;
+        for (int i = 0; i < model_iter->count; i++)
+        {
+            models_with_duplicates.push_back(*model_iter);
+        }
 	}
 
-
-
-
-    for (int i = 0; i < 24; i++)
+    // Create the model forces; each of these would then be exploded into the actual specific variants
+    for (auto iter1 = models_with_duplicates.begin(); iter1 != models_with_duplicates.end(); iter1++)
     {
-        for (int j = i + 1; j < 24; j++)
+        auto iter2 = iter1;
+        iter2++;
+        for (iter2; iter2 != models_with_duplicates.end(); iter2++)
         {
-            for (int k = j + 1; k < 24; k++)
+            auto iter3 = iter2;
+            iter3++;
+            for (iter3; iter3 != models_with_duplicates.end(); iter3++)
             {
-                for (int l = k + 1; l < 24; l++)
+                auto iter4 = iter3;
+                iter4++;
+                for (iter4; iter4 != models_with_duplicates.end(); iter4++)
                 {
-                    Force lance;
-					lance.mechs.push_back(mechs[i]);
-					lance.mechs.push_back(mechs[j]);
-					lance.mechs.push_back(mechs[k]);
-					lance.mechs.push_back(mechs[l]);
-                    if (lance.bv() < max_bv - 150) {
-                        continue;
-                    }
-                    else if (lance.bv() > max_bv) {
-                        continue;
-                    }
-
-                    force_list.push_back(lance);
-                    force_map[lance.bv()].push_back(lance);
+                    ModelForce model_force;
+                    model_force.models.push_back(*iter1);
+                    model_force.models.push_back(*iter2);
+                    model_force.models.push_back(*iter3);
+                    model_force.models.push_back(*iter4);
+                    model_force.sort();
+                    model_force_set.insert(model_force);
                 }
             }
         }
     }
 
-    force_list.sort(compare_force);
+    // Go through each model force and explode it
+    for (auto force_iter = model_force_set.begin(); force_iter != model_force_set.end(); force_iter++)
+    {
+        auto model_iter = force_iter->models.begin();
+        auto vhead1 = model_iter->variants.begin();
+        auto vend1 = model_iter->variants.end();
+        model_iter++;
+        auto vhead2 = model_iter->variants.begin();
+        auto vend2 = model_iter->variants.end();
+        model_iter++;
+        auto vhead3 = model_iter->variants.begin();
+        auto vend3 = model_iter->variants.end();
+        model_iter++;
+        auto vhead4 = model_iter->variants.begin();
+        auto vend4 = model_iter->variants.end();
+        for (auto viter1 = vhead1; viter1 != vend1; viter1++)
+        {
+            for (auto viter2 = vhead2; viter2 != vend2; viter2++)
+            {
+                for (auto viter3 = vhead3; viter3 != vend3; viter3++)
+                {
+                    for (auto viter4 = vhead4; viter4 != vend4; viter4++)
+                    {
+                        // create specific force
+                        Force force;
+                        force.mechs.push_back(*viter1);
+                        force.mechs.push_back(*viter2);
+                        force.mechs.push_back(*viter3);
+                        force.mechs.push_back(*viter4);
+                        force.sort();
+                        force_set.insert(force);
+                    }
+                }
+            }
+        }
+    }
+
+    // cut down by BV
+    for (auto iter = force_set.begin(); iter != force_set.end(); )
+    {
+        if (iter->bv > max_bv)
+        {
+            iter = force_set.erase(iter);
+        }
+        else if (iter->bv < max_bv * 0.95)
+        {
+            iter = force_set.erase(iter);
+        }
+        else
+        {
+            iter++;
+        }
+    }
 
     ofstream file;
     file.open("lances.csv");
 
     file << "Lances small to big" << endl;
-    for (auto iter = force_list.begin(); iter != force_list.end(); iter++)
+    for (auto iter = force_set.begin(); iter != force_set.end(); iter++)
     {
 		for (auto mech_iter = iter->mechs.begin(); mech_iter != iter->mechs.end(); mech_iter++)
 		{
-			file << mech_iter->name << ",";
+			file << mech_iter->model_name << "-" << mech_iter->variant_name << ",";
 		}
-
-		file << iter->bv() << endl;
-    }
-    
-    file << endl;
-
-    file << "Lances with equal BV" << endl;
-    for (auto iter = force_map.begin(); iter != force_map.end(); iter++)
-    {
-        list<Force> lances = iter->second;
-        if (lances.size() < 2) 
-        {
-            continue;
-        }
-
-        file << "BV: " << iter->first << endl;
-        for (auto liter = lances.begin(); liter != lances.end(); liter++)
-        {
-			for (auto mech_iter = liter->mechs.begin(); mech_iter != liter->mechs.end(); mech_iter++)
-			{
-				file << mech_iter->name << ",";
-			}
-
-			file << liter->bv() << endl;
-        }
-
-        file << endl;
+        
+        file << iter->bv << endl;
     }
 
     file.close();
