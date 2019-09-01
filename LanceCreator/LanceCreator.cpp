@@ -171,7 +171,21 @@ list<Model> models = {
     { 2, "Banshee", { Mech({"Banshee", "3E", 1422}), Mech({"Banshee", "3M", 1595}), Mech({"Banshee", "3Q", 1394}), Mech({"Banshee", "3S", 1751}), Mech({"Banshee", "3MC", 1487}) } },
     { 2, "Atlas", { Mech({"Atlas", "D", 1897}), Mech({"Atlas", "RS", 1849}), Mech({"Atlas", "A", 1787}), Mech({"Atlas", "K", 2175}) } },
     { 1, "BattleMaster", { Mech({"BattleMaster", "1G", 1519}), Mech({"BattleMaster", "1Gb", 1825}), Mech({"BattleMaster", "1D", 1522}), Mech({"BattleMaster", "1S", 1507}), Mech({"BattleMaster", "3M", 1697}), Mech({"BattleMaster", "3S", 1441}) } },
-
+    { 1, "Centurion", { Mech({"Centurion", "A", 945}), Mech({"Centurion", "AH", 945}), Mech({"Centurion", "AL", 1057}), Mech({"Centurion", "D", 1130}) } },
+    { 1, "Wolfhound", { Mech({"Wolfhound", "1", 949}), Mech({"Wolfhound", "1A", 967}), Mech({"Wolfhound", "1B", 967}), Mech({"Wolfhound", "2", 1061}) } },
+    { 1, "Flea", { Mech({"Flea", "4", 432}), Mech({"Flea", "15", 430}), Mech({"Flea", "16", 506}), Mech({"Flea", "17", 510}) } },
+    { 1, "Vulcan", { Mech({"Vulcan", "2T", 642}), Mech({"Vulcan", "5T", 942}), Mech({"Vulcan", "5M", 811}), Mech({"Vulcan", "5S", 883}) } },
+    { 1, "Hatchetman", { Mech({"Hatchetman", "3F", 854}), Mech({"Hatchetman", "5S", 1039}) } },
+    { 1, "Orion", { Mech({"Orion", "K", 1429}), Mech({"Orion", "V", 1298}), Mech({"Orion", "VA", 1329}), Mech({"Orion", "M", 1414}),  Mech({"Orion", "MA", 1501}) } },
+    { 1, "Charger", { Mech({"Charger", "1A1", 981}), Mech({"Charger", "1L", 980}), Mech({"Charger", "1A5", 1468}), Mech({"Charger", "1A9", 1397}), Mech({"Charger", "3K", 1656}) } },
+    { 1, "Firestarter", { Mech({"Firestarter", "A", 773}), Mech({"Firestarter", "K", 773}), Mech({"Firestarter", "H", 773}), Mech({"Firestarter", "M", 798}), Mech({"Firestarter", "S1", 820}) } },
+    { 1, "Blackjack", { Mech({"Blackjack", "1X", 964}), Mech({"Blackjack", "1", 949}), Mech({"Blackjack", "1DB", 1015}), Mech({"Blackjack", "1DC", 917}), Mech({"Blackjack", "3", 1271}), Mech({"Blackjack", "2", 1148}) } },
+    { 1, "Victor", { Mech({"Victor", "9A", 1236}), Mech({"Victor", "9A1", 1306}), Mech({"Victor", "9B", 1378}), Mech({"Victor", "9S", 1360}), Mech({"Victor", "9D", 1717}) } },
+    { 1, "Shogun", { Mech({"Shogun", "2H", 2087}), Mech({"Shogun", "2E", 1823}), Mech({"Shogun", "2F", 1804}) } },
+    { 1, "Stalker", { Mech({"Stalker", "3F", 1559}), Mech({"Stalker", "3H", 1624}), Mech({"Stalker", "3Fb", 2029}), Mech({"Stalker", "4N", 1558}), Mech({"Stalker", "5M", 1655}), Mech({"Stalker", "5S", 1423}) } },
+    { 1, "Cataphract", { Mech({"Cataphract", "1X", 1316}), Mech({"Cataphract", "2X", 1344}), Mech({"Cataphract", "3D", 1325}), Mech({"Cataphract", "3L", 1545}) } },
+    { 1, "Raven", { Mech({"Raven", "2X", 887}), Mech({"Raven", "4X", 820}), Mech({"Raven", "3L", 708}) } },
+    { 1, "Guillotine", { Mech({"Guillotine", "3N", 1418}), Mech({"Guillotine", "4L", 1400}), Mech({"Guillotine", "4P", 1376}), Mech({"Guillotine", "5M", 1472}) } }
 };
 
 // Lance version.  At some point create a Star and L2 version (ideally I would do it in a way that lets me set
