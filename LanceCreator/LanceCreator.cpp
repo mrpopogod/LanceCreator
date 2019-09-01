@@ -4,13 +4,14 @@
 #include "stdafx.h"
 #include <string>
 #include <list>
-#include <map>
 #include <iostream>
 #include <fstream>
 #include <sstream>
 #include <set>
 #include <algorithm>
 #include <climits>
+#include <random>
+#include <chrono>
 
 using namespace std;
 
@@ -82,10 +83,11 @@ struct ModelForce {
         stringstream ss;
         for (auto iter = models.begin(); iter != models.end(); iter++)
         {
-            ss << iter->name;
+            ss << iter->name << ",";
         }
 
         model_string = ss.str();
+        model_string.pop_back();
     }
 
     int min_bv()
@@ -194,6 +196,7 @@ int main()
 {
     int max_bv = 5000;
     float under_percentage = 0.95f;
+    int num_model_forces = 3;
     set<Force> force_set;
     list<Model> models_with_duplicates;
     set<ModelForce> model_force_set;
@@ -207,43 +210,42 @@ int main()
         }
 	}
 
-    // Create the model forces; each of these would then be exploded into the actual specific variants
-    // Also cuts any lances that can't fit within the bounds (max too low or min too high)
-    for (auto iter1 = models_with_duplicates.begin(); iter1 != models_with_duplicates.end(); iter1++)
+    // Randomly make N lances, making sure they COULD fit within our requirements
+    int generated_forces = 0;
+    default_random_engine generator;
+    generator.seed(chrono::system_clock::now().time_since_epoch().count());
+    while (generated_forces < num_model_forces)
     {
-        auto iter2 = iter1;
-        iter2++;
-        for (iter2; iter2 != models_with_duplicates.end(); iter2++)
+        list<Model> working_list = models_with_duplicates;
+        ModelForce model_force;
+        for (int i = 0; i < 4; i++) 
         {
-            auto iter3 = iter2;
-            iter3++;
-            for (iter3; iter3 != models_with_duplicates.end(); iter3++)
+            uniform_int_distribution<int> distribution(0, working_list.size());
+            int pos = distribution(generator);
+            auto iter = working_list.begin();
+            for (int j = 1; j < pos; j++)
             {
-                auto iter4 = iter3;
-                iter4++;
-                for (iter4; iter4 != models_with_duplicates.end(); iter4++)
-                {
-                    ModelForce model_force;
-                    model_force.models.push_back(*iter1);
-                    model_force.models.push_back(*iter2);
-                    model_force.models.push_back(*iter3);
-                    model_force.models.push_back(*iter4);
-                    model_force.sort();
-                    // Could optimize lines, but this is most readable regarding the conditions
-                    if (model_force.min_bv() > max_bv)
-                    {
-                        continue;
-                    }
-                    else if (model_force.max_bv() < max_bv * under_percentage)
-                    {
-                        continue;
-                    }
-                    else
-                    {
-                        model_force_set.insert(model_force);
-                    }
-                }
+                iter++;
             }
+
+            model_force.models.push_back(*iter);
+            working_list.erase(iter);
+        }
+
+        model_force.sort();
+        // Could optimize lines, but this is most readable regarding the conditions
+        if (model_force.min_bv() > max_bv)
+        {
+            continue;
+        }
+        else if (model_force.max_bv() < max_bv * under_percentage)
+        {
+            continue;
+        }
+        else
+        {
+            model_force_set.insert(model_force);
+            generated_forces++;
         }
     }
 
@@ -304,6 +306,11 @@ int main()
 
     ofstream file;
     file.open("lances.csv");
+    file << "Model forces selected:" << endl;
+    for (auto iter = model_force_set.begin(); iter != model_force_set.end(); iter++)
+    {
+        file << iter->model_string << endl;
+    }
 
     for (auto iter = force_set.begin(); iter != force_set.end(); iter++)
     {
