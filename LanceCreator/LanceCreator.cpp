@@ -37,6 +37,34 @@ struct Model {
 	int count;
     string name;
 	list<Mech> variants;
+    int min_bv_val = INT_MAX;
+    int max_bv_val = INT_MIN;
+
+    int min_bv()
+    {
+        if (min_bv_val == INT_MAX)
+        {
+            for (auto iter = variants.begin(); iter != variants.end(); iter++)
+            {
+                min_bv_val = min(min_bv_val, iter->bv);
+            }
+        }
+
+        return min_bv_val;
+    }
+
+    int max_bv()
+    {
+        if (max_bv_val == INT_MIN)
+        {
+            for (auto iter = variants.begin(); iter != variants.end(); iter++)
+            {
+                max_bv_val = max(max_bv_val, iter->bv);
+            }
+        }
+
+        return max_bv_val;
+    }
 };
 
 bool compare_model(Model& lhs, Model& rhs)
@@ -58,6 +86,28 @@ struct ModelForce {
         }
 
         model_string = ss.str();
+    }
+
+    int min_bv()
+    {
+        int bv = 0;
+        for (auto iter = models.begin(); iter != models.end(); iter++)
+        {
+            bv += iter->min_bv();
+        }
+
+        return bv;
+    }
+
+    int max_bv()
+    {
+        int bv = 0;
+        for (auto iter = models.begin(); iter != models.end(); iter++)
+        {
+            bv += iter->max_bv();
+        }
+
+        return bv;
     }
 
     bool operator<(const ModelForce& rhs) const
@@ -124,14 +174,12 @@ list<Model> models = {
 
 };
 
-// TODO: something is going wrong and we aren't getting nearly as many lances as we should be; could be something in the cutdown
-// or just a problem with set duplication detection being wrong
-
 // Lance version.  At some point create a Star and L2 version (ideally I would do it in a way that lets me set
 // just a number, but as for now it's harder than I'd like to do so.
 int main()
 {
     int max_bv = 5000;
+    float under_percentage = 0.95f;
     set<Force> force_set;
     list<Model> models_with_duplicates;
     set<ModelForce> model_force_set;
@@ -145,9 +193,8 @@ int main()
         }
 	}
 
-    // Optimization; calculate min and max BV of each model force and use that to strip out anything grossly
-    // outside the range of what we want; that way we can speed up processing by not exploding so much garbage
     // Create the model forces; each of these would then be exploded into the actual specific variants
+    // Also cuts any lances that can't fit within the bounds (max too low or min too high)
     for (auto iter1 = models_with_duplicates.begin(); iter1 != models_with_duplicates.end(); iter1++)
     {
         auto iter2 = iter1;
@@ -168,7 +215,19 @@ int main()
                     model_force.models.push_back(*iter3);
                     model_force.models.push_back(*iter4);
                     model_force.sort();
-                    model_force_set.insert(model_force);
+                    // Could optimize lines, but this is most readable regarding the conditions
+                    if (model_force.min_bv() > max_bv)
+                    {
+                        continue;
+                    }
+                    else if (model_force.max_bv() < max_bv * under_percentage)
+                    {
+                        continue;
+                    }
+                    else
+                    {
+                        model_force_set.insert(model_force);
+                    }
                 }
             }
         }
@@ -219,7 +278,7 @@ int main()
         {
             iter = force_set.erase(iter);
         }
-        else if (iter->bv < max_bv * 0.95)
+        else if (iter->bv < max_bv * under_percentage)
         {
             iter = force_set.erase(iter);
         }
