@@ -195,6 +195,7 @@ list<Model> models = {
 int main()
 {
     int max_bv = 5000;
+    int force_size = 4;
     float under_percentage = 0.95f;
     int num_model_forces = 3;
     set<Force> force_set;
@@ -218,7 +219,7 @@ int main()
     {
         list<Model> working_list = models_with_duplicates;
         ModelForce model_force;
-        for (int i = 0; i < 4; i++) 
+        for (int i = 0; i < force_size; i++) 
         {
             uniform_int_distribution<int> distribution(0, working_list.size());
             int pos = distribution(generator);
@@ -252,6 +253,7 @@ int main()
     // Go through each model force and explode it
     for (auto force_iter = model_force_set.begin(); force_iter != model_force_set.end(); force_iter++)
     {
+        // TODO: refactor this logic to support alternate force sizes
         auto model_iter = force_iter->models.begin();
         auto vhead1 = model_iter->variants.begin();
         auto vend1 = model_iter->variants.end();
