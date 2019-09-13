@@ -45,9 +45,9 @@ struct Model {
     {
         if (min_bv_val == INT_MAX)
         {
-            for (auto iter = variants.begin(); iter != variants.end(); iter++)
+            for (auto& mech : variants)
             {
-                min_bv_val = min(min_bv_val, iter->bv);
+                min_bv_val = min(min_bv_val, mech.bv);
             }
         }
 
@@ -58,9 +58,9 @@ struct Model {
     {
         if (max_bv_val == INT_MIN)
         {
-            for (auto iter = variants.begin(); iter != variants.end(); iter++)
+            for (auto& mech : variants)
             {
-                max_bv_val = max(max_bv_val, iter->bv);
+                max_bv_val = max(max_bv_val, mech.bv);
             }
         }
 
@@ -81,9 +81,9 @@ struct ModelForce {
     {
         models.sort(compare_model);
         stringstream ss;
-        for (auto iter = models.begin(); iter != models.end(); iter++)
+        for (auto& mech : models)
         {
-            ss << iter->name << ",";
+            ss << mech.name << ",";
         }
 
         model_string = ss.str();
@@ -93,9 +93,9 @@ struct ModelForce {
     int min_bv()
     {
         int bv = 0;
-        for (auto iter = models.begin(); iter != models.end(); iter++)
+        for (auto& mech : models)
         {
-            bv += iter->min_bv();
+            bv += mech.min_bv();
         }
 
         return bv;
@@ -104,9 +104,9 @@ struct ModelForce {
     int max_bv()
     {
         int bv = 0;
-        for (auto iter = models.begin(); iter != models.end(); iter++)
+        for (auto& mech : models)
         {
-            bv += iter->max_bv();
+            bv += mech.max_bv();
         }
 
         return bv;
@@ -132,10 +132,10 @@ struct Force {
     {
         bv = 0;
         stringstream ss;
-        for (auto iter = mechs.begin(); iter != mechs.end(); iter++)
+        for (auto& mech : mechs)
         {
-            bv += iter->bv;
-            ss << iter->model_name << iter->variant_name;
+            bv += mech.bv;
+            ss << mech.model_name << mech.variant_name;
         }
 
         mech_string = ss.str();
@@ -203,11 +203,11 @@ int main()
     set<ModelForce> model_force_set;
 
     // Create the duplicates that we use to force create all the possible basic forces based on models
-	for (auto model_iter = models.begin(); model_iter != models.end(); model_iter++)
+	for (auto& model : models)
 	{
-        for (int i = 0; i < model_iter->count; i++)
+        for (int i = 0; i < model.count; i++)
         {
-            models_with_duplicates.push_back(*model_iter);
+            models_with_duplicates.push_back(model);
         }
 	}
 
@@ -251,10 +251,10 @@ int main()
     }
 
     // Go through each model force and explode it
-    for (auto force_iter = model_force_set.begin(); force_iter != model_force_set.end(); force_iter++)
+    for (auto& model_force : model_force_set)
     {
         // TODO: refactor this logic to support alternate force sizes
-        auto model_iter = force_iter->models.begin();
+        auto model_iter = model_force.models.begin();
         auto vhead1 = model_iter->variants.begin();
         auto vend1 = model_iter->variants.end();
         model_iter++;
@@ -289,7 +289,7 @@ int main()
         }
     }
 
-    // cut down by BV
+    // cut down by BV (so can't use foreach)
     for (auto iter = force_set.begin(); iter != force_set.end(); )
     {
         if (iter->bv > max_bv)
@@ -309,19 +309,19 @@ int main()
     ofstream file;
     file.open("lances.csv");
     file << "Model forces selected:" << endl;
-    for (auto iter = model_force_set.begin(); iter != model_force_set.end(); iter++)
+    for (auto& model_force : model_force_set)
     {
-        file << iter->model_string << endl;
+        file << model_force.model_string << endl;
     }
 
-    for (auto iter = force_set.begin(); iter != force_set.end(); iter++)
+    for (auto& force : force_set)
     {
-		for (auto mech_iter = iter->mechs.begin(); mech_iter != iter->mechs.end(); mech_iter++)
+		for (auto& mech : force.mechs)
 		{
-			file << mech_iter->model_name << "-" << mech_iter->variant_name << ",";
+			file << mech.model_name << "-" << mech.variant_name << ",";
 		}
         
-        file << iter->bv << endl;
+        file << force.bv << endl;
     }
 
     file.close();
