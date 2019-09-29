@@ -12,6 +12,7 @@
 #include <climits>
 #include <random>
 #include <chrono>
+#include <initializer_list>
 
 using namespace std;
 
@@ -190,8 +191,26 @@ list<Model> models = {
     { 1, "Guillotine", { Mech({"Guillotine", "3N", 1418}), Mech({"Guillotine", "4L", 1400}), Mech({"Guillotine", "4P", 1376}), Mech({"Guillotine", "5M", 1472}) } }
 };
 
-// Lance version.  At some point create a Star and L2 version (ideally I would do it in a way that lets me set
-// just a number, but as for now it's harder than I'd like to do so.
+Force build_force(initializer_list<Mech> mechs)
+{
+    Force force;
+    for (auto& mech : mechs)
+    {
+        force.mechs.push_back(mech);
+    }
+
+    force.sort();
+    force.calculate_bv();
+    return force;
+}
+
+// Generate a series of potential forces using the configured set of mech models.
+// Supports up to a force size of 6, so can do lances, stars, and L2s.
+// Starts by generating a number of forces that are buildable with the available models,
+// then creates all the combinations of the canonical variants of those models (e.g. AS7-D vs. AS7-K)
+// By scoping the number of combinations down we avoid an untenable combinatoric explosion.
+// All forces will be within a particular specified BV, never over, and never under the cutoff (so
+// we don't have to hit the exact BV but don't give up too much as well).
 int main()
 {
     int max_bv = 5000;
@@ -253,36 +272,88 @@ int main()
     // Go through each model force and explode it
     for (auto& model_force : model_force_set)
     {
-        // TODO: refactor this logic to support alternate force sizes
-        auto model_iter = model_force.models.begin();
-        auto vhead1 = model_iter->variants.begin();
-        auto vend1 = model_iter->variants.end();
-        model_iter++;
-        auto vhead2 = model_iter->variants.begin();
-        auto vend2 = model_iter->variants.end();
-        model_iter++;
-        auto vhead3 = model_iter->variants.begin();
-        auto vend3 = model_iter->variants.end();
-        model_iter++;
-        auto vhead4 = model_iter->variants.begin();
-        auto vend4 = model_iter->variants.end();
+        auto first_model = model_force.models.begin();
+        auto vhead1 = first_model->variants.begin();
+        auto vend1 = first_model->variants.end();
         for (auto viter1 = vhead1; viter1 != vend1; viter1++)
         {
+            if (force_size == 1)
+            {
+                Force force = build_force({ *viter1 });
+                force_set.insert(force);
+                continue;
+            }
+
+            auto second_model = first_model;
+            second_model++;
+            auto vhead2 = second_model->variants.begin();
+            auto vend2 = second_model->variants.end();
             for (auto viter2 = vhead2; viter2 != vend2; viter2++)
             {
+                if (force_size == 2)
+                {
+                    Force force = build_force({ *viter1, *viter2 });
+                    force_set.insert(force);
+                    continue;
+                }
+
+                auto third_model = second_model;
+                third_model++;
+                auto vhead3 = third_model->variants.begin();
+                auto vend3 = third_model->variants.end();
                 for (auto viter3 = vhead3; viter3 != vend3; viter3++)
                 {
+                    if (force_size == 3)
+                    {
+                        Force force = build_force({ *viter1, *viter2, *viter3 });
+                        force_set.insert(force);
+                        continue;
+                    }
+
+                    auto fourth_model = third_model;
+                    fourth_model++;
+                    auto vhead4 = fourth_model->variants.begin();
+                    auto vend4 = fourth_model->variants.end();
                     for (auto viter4 = vhead4; viter4 != vend4; viter4++)
                     {
-                        // create specific force
-                        Force force;
-                        force.mechs.push_back(*viter1);
-                        force.mechs.push_back(*viter2);
-                        force.mechs.push_back(*viter3);
-                        force.mechs.push_back(*viter4);
-                        force.sort();
-                        force.calculate_bv();
-                        force_set.insert(force);
+                        if (force_size == 4)
+                        {
+                            Force force = build_force({ *viter1, *viter2, *viter3, *viter4 });
+                            force_set.insert(force);
+                            continue;
+                        }
+
+                        auto fifth_model = fourth_model;
+                        fifth_model++;
+                        auto vhead5 = fifth_model->variants.begin();
+                        auto vend5 = fifth_model->variants.end();
+                        for (auto viter5 = vhead5; viter5 != vend5; viter5++)
+                        {
+                            if (force_size == 5)
+                            {
+                                Force force = build_force({ *viter1, *viter2, *viter3, *viter4, *viter5 });
+                                force_set.insert(force);
+                                continue;
+                            }
+
+                            auto sixth_model = fifth_model;
+                            sixth_model++;
+                            auto vhead6 = sixth_model->variants.begin();
+                            auto vend6 = sixth_model->variants.end();
+                            for (auto viter6 = vhead6; viter6 != vend6; viter6++)
+                            {
+                                if (force_size == 6)
+                                {
+                                    Force force = build_force({ *viter1, *viter2, *viter3, *viter4, *viter5, *viter6 });
+                                    force_set.insert(force);
+                                }
+                                else
+                                {
+                                    cout << "Force sizes above 6 are not supported" << endl;
+                                    exit(1);
+                                }
+                            }
+                        }
                     }
                 }
             }
