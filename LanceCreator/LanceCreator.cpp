@@ -148,7 +148,19 @@ struct Force {
     }
 };
 
-list<Model> models = {
+list<Model> is_models = {
+    { 1, "Commando", { Mech({"Commando", "1B", 616}), Mech({"Commando", "1C", 458}), Mech({"Commando", "1D", 558}), Mech({"Commando", "2D", 541}), Mech({"Commando", "3A", 540}), Mech({"Commando", "5S", 557 }) } },
+    { 1, "Catapult", { Mech({"Catapult", "C1", 1399}), Mech({"Catapult", "A1", 1285}), Mech({"Catapult", "C4", 1358}), Mech({"Catapult", "K2", 1319}), Mech({"Catapult", "C1b", 1570}) } },
+    { 1, "BattleMaster", { Mech({"BattleMaster", "1G", 1519}), Mech({"BattleMaster", "1Gb", 1825}), Mech({"BattleMaster", "1D", 1522}), Mech({"BattleMaster", "1S", 1507}), Mech({"BattleMaster", "3M", 1697}), Mech({"BattleMaster", "3S", 1441}) } },
+    { 1, "Awesome", { Mech({"Awesome", "8Q", 1605}), Mech({"Awesome", "8R", 1470}), Mech({"Awesome", "8T", 1593}), Mech({"Awesome", "8V", 1510}), Mech({"Awesome", "9M", 1812}) } },
+    { 1, "Locust", { Mech({"Locust", "1V", 432}), Mech({"Locust", "1E", 553}), Mech({"Locust", "1M", 424}), Mech({"Locust", "1S", 440}), Mech({"Locust", "1V", 642}), Mech({"Locust", "3D", 436}), Mech({"Locust", "3M", 522}), Mech({"Locust", "3S", 483}), Mech({"Locust", "3V", 490}) } },
+    { 1, "Shadow Hawk", { Mech({"Shadow Hawk", "2H", 1064}), Mech({"Shadow Hawk", "2H", 1354}), Mech({"Shadow Hawk", "2K", 1147}), Mech({"Shadow Hawk", "2D", 899}), Mech({"Shadow Hawk", "2D2", 1049}), Mech({"Shadow Hawk", "5M", 1430}) } },
+    { 1, "Griffin", { Mech({"Griffin", "1N", 1272}), Mech({"Griffin", "1DS", 1285}), Mech({"Griffin", "1S", 1253}), Mech({"Griffin", "2N", 1606}), Mech({"Griffin", "3M", 1521}) } },
+    { 2, "Wolverine", { Mech({"Wolverine", "6R", 1101}), Mech({"Wolverine", "6K", 1248}), Mech({"Wolverine", "6M", 1291}), Mech({"Wolverine", "7D", 1314}), Mech({"Wolverine", "7H", 1301}), Mech({"Wolverine", "7K", 1331}), Mech({"Wolverine", "7M", 1673}) } },
+    { 1, "Thunderbolt", { Mech({"Thunderbolt", "5S", 1335}), Mech({"Thunderbolt", "5L", 1546}), Mech({"Thunderbolt", "5LS", 1305}), Mech({"Thunderbolt", "5Sb", 1618}), Mech({"Thunderbolt", "5SE", 1414}), Mech({"Thunderbolt", "5SS", 1337}), Mech({"Thunderbolt", "7M", 1495}), Mech({"Thunderbolt", "9S", 1494}), Mech({"Thunderbolt", "9SE", 1439}) } }
+};
+
+list<Model> old_models = {
     { 1, "Commando", { Mech({"Commando", "1B", 616}), Mech({"Commando", "1C", 458}), Mech({"Commando", "1D", 558}), Mech({"Commando", "2D", 541}), Mech({"Commando", "3A", 540}), Mech({"Commando", "5S", 557 }) } },
     { 2, "Spider", { Mech({"Spider", "5D", 524}), Mech({"Spider", "5K", 503}), Mech({"Spider", "5V", 622}), Mech({"Spider", "7M", 621}) } },
     { 2, "Jenner", { Mech({"Jenner", "D", 875}), Mech({"Jenner", "F", 1011}), Mech({"Jenner", "A", 712}), Mech({"Jenner", "K", 889}) } },
@@ -159,7 +171,7 @@ list<Model> models = {
     { 2, "Hermes II", { Mech({"Heremes II", "2S", 784}), Mech({"Hermes II", "2M", 910}), Mech({"Hermes II", "4K", 976}), Mech({"Hermes II", "5S", 857}) } },
     { 1, "Whitworth", { Mech({"Whitworth", "1", 981}), Mech({"Whitworth", "1S", 917}), Mech({"Whitworth", "2", 932}) } },
     { 2, "Vindicator", { Mech({"Vindicator", "1R", 1024}), Mech({"Vindicator", "1SIC", 1020}), Mech({"Vindicator", "3L", 1105}) } },
-    { 1 , "Enforcer", { Mech({"Enforcer", "4R", 1032}), Mech({"Enforcer", "5D", 1308}) } },
+    { 1, "Enforcer", { Mech({"Enforcer", "4R", 1032}), Mech({"Enforcer", "5D", 1308}) } },
     { 1, "Hunchback", { Mech({"Hunchback", "4G", 1041}), Mech({"Hunchback", "4H", 1062}), Mech({"Hunchback", "4J", 1143}), Mech({"Hunchback", "4N", 1087}), Mech({"Hunchback", "4P", 1138}), Mech({"Hunchback", "4SP", 1043}), Mech({"Hunchback", "5M", 1056}) } },
     { 2, "Trebuchet", { Mech({"Trebuchet", "3C", 1342}), Mech({"Trebuchet", "5N", 1191}), Mech({"Trebuchet", "5J", 1191}), Mech({"Trebuchet", "5S", 984}), Mech({"Trebuchet", "7M", 1398}) } },
     { 2, "Dervish", { Mech({"Dervish", "6M", 1146}), Mech({"Dervish", "7D", 1412}) } },
@@ -206,6 +218,7 @@ Force build_force(initializer_list<Mech> mechs)
 
 // Generate a series of potential forces using the configured set of mech models.
 // Supports up to a force size of 6, so can do lances, stars, and L2s.
+// Set the models list to be one of the pregenerated lists
 // Starts by generating a number of forces that are buildable with the available models,
 // then creates all the combinations of the canonical variants of those models (e.g. AS7-D vs. AS7-K)
 // By scoping the number of combinations down we avoid an untenable combinatoric explosion.
@@ -213,16 +226,18 @@ Force build_force(initializer_list<Mech> mechs)
 // we don't have to hit the exact BV but don't give up too much as well).
 int main()
 {
-    int max_bv = 5000;
-    int force_size = 4;
+    int max_bv = 2400;
+    int force_size = 2;
     float under_percentage = 0.95f;
-    int num_model_forces = 3;
+    int num_model_forces = 5;
+    int max_attempts = 5000;
     set<Force> force_set;
+    auto models = &is_models;
     list<Model> models_with_duplicates;
     set<ModelForce> model_force_set;
 
     // Create the duplicates that we use to force create all the possible basic forces based on models
-	for (auto& model : models)
+	for (auto& model : *models)
 	{
         for (int i = 0; i < model.count; i++)
         {
@@ -231,11 +246,13 @@ int main()
 	}
 
     // Randomly make N lances, making sure they COULD fit within our requirements
+    int attempts = 0;
     int generated_forces = 0;
     default_random_engine generator;
     generator.seed(chrono::system_clock::now().time_since_epoch().count());
     while (generated_forces < num_model_forces)
     {
+        attempts++;
         list<Model> working_list = models_with_duplicates;
         ModelForce model_force;
         for (int i = 0; i < force_size; i++) 
@@ -264,8 +281,16 @@ int main()
         }
         else
         {
-            model_force_set.insert(model_force);
-            generated_forces++;
+            auto inserted = model_force_set.insert(model_force);
+            if (inserted.second)
+            {
+                generated_forces++;
+            }
+            else if (attempts > max_attempts)
+            {
+                cout << "Was only able to construct " << generated_forces << " model forces" << endl;
+                break;
+            }
         }
     }
 
