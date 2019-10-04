@@ -385,13 +385,13 @@ int main(int argc, char** argv)
     set<ModelForce> model_force_set;
 
     // Create the duplicates that we use to force create all the possible basic forces based on models
-	for (auto& model : *models)
-	{
+    for (auto& model : *models)
+    {
         for (int i = 0; i < model.count; i++)
         {
             models_with_duplicates.push_back(model);
         }
-	}
+    }
 
     // Randomly make N lances, making sure they COULD fit within our requirements
     int attempts = 0;
@@ -560,11 +560,11 @@ int main(int argc, char** argv)
 
     for (auto& force : force_set)
     {
-		for (auto& mech : force.mechs)
-		{
-			file << mech.model_name << "-" << mech.variant_name << ",";
-		}
-        
+        for (auto& mech : force.mechs)
+        {
+            file << mech.model_name << "-" << mech.variant_name << ",";
+        }
+
         file << force.bv << endl;
     }
 
