@@ -36,9 +36,9 @@ bool compare_mech(Mech& lhs, Mech& rhs)
 }
 
 struct Model {
-	int count;
+    int count;
     string name;
-	list<Mech> variants;
+    list<Mech> variants;
     int min_bv_val = INT_MAX;
     int max_bv_val = INT_MIN;
 
@@ -120,7 +120,7 @@ struct ModelForce {
 };
 
 struct Force {
-	list<Mech> mechs;
+    list<Mech> mechs;
     string mech_string;
     int bv = 0;
 
@@ -219,11 +219,12 @@ Force build_force(initializer_list<Mech> mechs)
 void print_usage()
 {
     cout << "Usage: " << endl
-        << "LanceCreator [--maxBV bv] [--forceSize size] [--numForces num] [--underPercentage percentage]" << endl << endl
+        << "LanceCreator [--maxBV bv] [--forceSize size] [--numForces num] [--underPercentage percentage] [--modelSet set]" << endl << endl
         << "maxBV - The maximum BV a force can have" << endl
         << "forceSize - The numer of units in a force" << endl
         << "numForces - The number of compositions of units in a force to generate and run through permutations of variants on" << endl
-        << "underPercentage - The lowest percentage of maxBV the force must be (e.g. 0.95 means a force will have 95% of maxBV or more" << endl;
+        << "underPercentage - The lowest percentage of maxBV the force must be (e.g. 0.95 means a force will have 95% of maxBV or more" << endl
+        << "modelSet - The model set to use, valid values are OLD, IS" << endl;
 }
 
 // Generate a series of potential forces using the configured set of mech models.
@@ -240,6 +241,7 @@ int main(int argc, char** argv)
     int force_size = -1;
     int num_model_forces = -1;
     float under_percentage = -1.0;
+    list<Model> *models = nullptr;
     for (int i = 1; i < argc; i++)
     {
         if (strcmp(argv[i], "--help") == 0)
@@ -319,6 +321,31 @@ int main(int argc, char** argv)
                 exit(1);
             }
         }
+        else if (strcmp(argv[i], "--modelSet") == 0)
+        {
+            if (i + 1 < argc)
+            {
+                i++;
+                if (strcmp(argv[i], "OLD") == 0)
+                {
+                    models = &old_models;
+                }
+                else if (strcmp(argv[i], "IS") == 0)
+                {
+                    models = &is_models;
+                }
+                else
+                {
+                    cout << "Model set must be one of OLD, IS" << endl;
+                    exit(1);
+                }
+            }
+            else
+            {
+                print_usage();
+                exit(1);
+            }
+        }
         else
         {
             cout << "Unrecognized option: " << argv[i] << endl << endl;
@@ -346,10 +373,14 @@ int main(int argc, char** argv)
     {
         num_model_forces = 3;
     }
+
+    if (models == nullptr)
+    {
+        models = &is_models;
+    }
     
     int max_attempts = 5000;
     set<Force> force_set;
-    auto models = &is_models;
     list<Model> models_with_duplicates;
     set<ModelForce> model_force_set;
 
