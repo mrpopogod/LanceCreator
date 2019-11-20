@@ -2,6 +2,9 @@
 //
 
 #include "stdafx.h"
+#include <rapidjson/document.h>
+#include <rapidjson/filereadstream.h>
+#include <cstdio>
 #include <string>
 #include <list>
 #include <iostream>
@@ -15,6 +18,7 @@
 #include <initializer_list>
 
 using namespace std;
+using namespace rapidjson;
 
 struct Mech {
     string model_name;
@@ -225,6 +229,47 @@ void print_usage()
         << "numForces - The number of compositions of units in a force to generate and run through permutations of variants on" << endl
         << "underPercentage - The lowest percentage of maxBV the force must be (e.g. 0.95 means a force will have 95% of maxBV or more" << endl
         << "modelSet - The model set to use, valid values are OLD, IS" << endl;
+}
+
+Document load_json_from_file(string& filename) 
+{
+    FILE* fp = fopen(filename.c_str(), "rb");
+    char readBuffer[65536];
+    FileReadStream is(fp, readBuffer, sizeof(readBuffer));
+
+    Document d;
+    d.ParseStream(is);
+    fclose(fp);
+
+    return d;
+}
+
+Model parse_model(Value& value)
+{
+    Model model;
+    model.name = value["name"].GetString();
+    model.count = value["count"].GetInt();
+    for (auto& v : value["variants"].GetArray())
+    {
+        Mech mech;
+        mech.model_name = v["model"].GetString();
+        mech.variant_name = v["variant"].GetString();
+        mech.bv = v["bv"].GetInt();
+        model.variants.push_back(mech);
+    }
+
+    return model;
+}
+
+list<Model> parse_models(Document& document)
+{
+    list<Model> models;
+    for (auto& v : document.GetArray())
+    {
+        models.push_back(parse_model(v));
+    }
+
+    return models;
 }
 
 // Generate a series of potential forces using the configured set of mech models.
