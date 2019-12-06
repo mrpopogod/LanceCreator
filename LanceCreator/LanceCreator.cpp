@@ -158,7 +158,7 @@ list<Model> is_models = {
     { 1, "BattleMaster", { Mech({"BattleMaster", "1G", 1519}), Mech({"BattleMaster", "1Gb", 1825}), Mech({"BattleMaster", "1D", 1522}), Mech({"BattleMaster", "1S", 1507}), Mech({"BattleMaster", "3M", 1697}), Mech({"BattleMaster", "3S", 1441}) } },
     { 1, "Awesome", { Mech({"Awesome", "8Q", 1605}), Mech({"Awesome", "8R", 1470}), Mech({"Awesome", "8T", 1593}), Mech({"Awesome", "8V", 1510}), Mech({"Awesome", "9M", 1812}) } },
     { 1, "Locust", { Mech({"Locust", "1V", 432}), Mech({"Locust", "1E", 553}), Mech({"Locust", "1M", 424}), Mech({"Locust", "1S", 440}), Mech({"Locust", "1V", 642}), Mech({"Locust", "3D", 436}), Mech({"Locust", "3M", 522}), Mech({"Locust", "3S", 483}), Mech({"Locust", "3V", 490}) } },
-    { 1, "Shadow Hawk", { Mech({"Shadow Hawk", "2H", 1064}), Mech({"Shadow Hawk", "2H", 1354}), Mech({"Shadow Hawk", "2K", 1147}), Mech({"Shadow Hawk", "2D", 899}), Mech({"Shadow Hawk", "2D2", 1049}), Mech({"Shadow Hawk", "5M", 1430}) } },
+    { 1, "Shadow Hawk", { Mech({"Shadow Hawk", "2H", 1064}), Mech({"Shadow Hawk", "2Hb", 1354}), Mech({"Shadow Hawk", "2K", 1147}), Mech({"Shadow Hawk", "2D", 899}), Mech({"Shadow Hawk", "2D2", 1049}), Mech({"Shadow Hawk", "5M", 1430}) } },
     { 1, "Griffin", { Mech({"Griffin", "1N", 1272}), Mech({"Griffin", "1DS", 1285}), Mech({"Griffin", "1S", 1253}), Mech({"Griffin", "2N", 1606}), Mech({"Griffin", "3M", 1521}) } },
     { 2, "Wolverine", { Mech({"Wolverine", "6R", 1101}), Mech({"Wolverine", "6K", 1248}), Mech({"Wolverine", "6M", 1291}), Mech({"Wolverine", "7D", 1314}), Mech({"Wolverine", "7H", 1301}), Mech({"Wolverine", "7K", 1331}), Mech({"Wolverine", "7M", 1673}) } },
     { 1, "Thunderbolt", { Mech({"Thunderbolt", "5S", 1335}), Mech({"Thunderbolt", "5L", 1546}), Mech({"Thunderbolt", "5LS", 1305}), Mech({"Thunderbolt", "5Sb", 1618}), Mech({"Thunderbolt", "5SE", 1414}), Mech({"Thunderbolt", "5SS", 1337}), Mech({"Thunderbolt", "7M", 1495}), Mech({"Thunderbolt", "9S", 1494}), Mech({"Thunderbolt", "9SE", 1439}) } }
@@ -223,15 +223,16 @@ Force build_force(initializer_list<Mech> mechs)
 void print_usage()
 {
     cout << "Usage: " << endl
-        << "LanceCreator [--maxBV bv] [--forceSize size] [--numForces num] [--underPercentage percentage] [--modelSet set]" << endl << endl
+        << "LanceCreator [--maxBV bv] [--forceSize size] [--numForces num] [--underPercentage percentage] [--modelSet set [--fileNames name1,name2]]" << endl << endl
         << "maxBV - The maximum BV a force can have" << endl
         << "forceSize - The numer of units in a force" << endl
         << "numForces - The number of compositions of units in a force to generate and run through permutations of variants on" << endl
         << "underPercentage - The lowest percentage of maxBV the force must be (e.g. 0.95 means a force will have 95% of maxBV or more" << endl
-        << "modelSet - The model set to use, valid values are OLD, IS" << endl;
+        << "modelSet - The model set to use, valid values are OLD, IS, FILE" << endl
+        << "fileNames - A comma separated list of json files describing model sets.  Only if modelSet is FILE" << endl;
 }
 
-Document load_json_from_file(string& filename) 
+Document load_json_from_file(const string& filename) 
 {
     FILE* fp = fopen(filename.c_str(), "rb");
     char readBuffer[65536];
@@ -252,7 +253,7 @@ Model parse_model(Value& value)
     for (auto& v : value["variants"].GetArray())
     {
         Mech mech;
-        mech.model_name = v["model"].GetString();
+        mech.model_name = value["name"].GetString();
         mech.variant_name = v["variant"].GetString();
         mech.bv = v["bv"].GetInt();
         model.variants.push_back(mech);
@@ -286,7 +287,10 @@ int main(int argc, char** argv)
     int force_size = -1;
     int num_model_forces = -1;
     float under_percentage = -1.0;
+    list<Model> parsed_models;
     list<Model> *models = nullptr;
+    bool load_from_file = false;
+    string filenames = "";
     for (int i = 1; i < argc; i++)
     {
         if (strcmp(argv[i], "--help") == 0)
@@ -379,11 +383,34 @@ int main(int argc, char** argv)
                 {
                     models = &is_models;
                 }
+                else if (strcmp(argv[i], "FILE") == 0)
+                {
+                    load_from_file = true;
+                }
                 else
                 {
-                    cout << "Model set must be one of OLD, IS" << endl;
+                    cout << "Model set must be one of OLD, IS, FILE" << endl;
                     exit(1);
                 }
+            }
+            else
+            {
+                print_usage();
+                exit(1);
+            }
+        }
+        else if (strcmp(argv[i], "--fileNames") == 0) 
+        {
+            if (!load_from_file)
+            {
+                cout << "Cannot specify filenames if not loading from file" << endl << endl;
+                print_usage();
+                exit(1);
+            }
+            else if (i + 1 < argc)
+            {
+                i++;
+                filenames = argv[i];
             }
             else
             {
@@ -419,9 +446,25 @@ int main(int argc, char** argv)
         num_model_forces = 3;
     }
 
-    if (models == nullptr)
+    if (strcmp(filenames.c_str(), "") == 0)
     {
-        models = &is_models;
+        if (models == nullptr)
+        {
+            models = &is_models;
+        }
+    }
+    else
+    {
+        stringstream ss(filenames);
+        string s;
+        while (getline(ss, s, ',')) 
+        {
+            Document d = load_json_from_file(s);
+            list<Model> file_models = parse_models(d);
+            parsed_models.splice(parsed_models.end(), file_models);
+        }
+
+        models = &parsed_models;
     }
     
     int max_attempts = 5000;

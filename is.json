@@ -1,0 +1,288 @@
+[
+  {
+    "name": "Commando",
+    "count": 1,
+    "variants": [
+      {
+        "variant": "1B",
+        "bv": 616
+      },
+      {
+        "variant": "1C",
+        "bv": 458
+      },
+      {
+        "variant": "1D",
+        "bv": 558
+      },
+      {
+        "variant": "2D",
+        "bv": 541
+      },
+      {
+        "variant": "3A",
+        "bv": 540
+      },
+      {
+        "variant": "5S",
+        "bv": 557
+      }
+    ]
+  },
+  {
+    "name": "Catapult",
+    "count": 1,
+    "variants": [
+      {
+        "variant": "C1",
+        "bv": 1399
+      },
+      {
+        "variant": "A1",
+        "bv": 1285
+      },
+      {
+        "variant": "C4",
+        "bv": 1358
+      },
+      {
+        "variant": "K2",
+        "bv": 1319
+      },
+      {
+        "variant": "C1b",
+        "bv": 1570
+      }
+    ]
+  },
+  {
+    "name": "BattleMaster",
+    "count": 1,
+    "variants": [
+      {
+        "variant": "1G",
+        "bv": 1519
+      },
+      {
+        "variant": "1Gb",
+        "bv": 1825
+      },
+      {
+        "variant": "1D",
+        "bv": 1522
+      },
+      {
+        "variant": "1S",
+        "bv": 1507
+      },
+      {
+        "variant": "3M",
+        "bv": 1697
+      },
+      {
+        "variant": "3S",
+        "bv": 1441
+      }
+    ]
+  },
+  {
+    "name": "Awesome",
+    "count": 1,
+    "variants": [
+      {
+        "variant": "8Q",
+        "bv": 1605
+      },
+      {
+        "variant": "8R",
+        "bv": 1470
+      },
+      {
+        "variant": "8T",
+        "bv": 1593
+      },
+      {
+        "variant": "8V",
+        "bv": 1510
+      },
+      {
+        "variant": "9M",
+        "bv": 1812
+      }
+    ]
+  },
+  {
+    "name": "Locust",
+    "count": 1,
+    "variants": [
+      {
+        "variant": "1V",
+        "bv": 432
+      },
+      {
+        "variant": "1E",
+        "bv": 553
+      },
+      {
+        "variant": "1M",
+        "bv": 424
+      },
+      {
+        "variant": "1S",
+        "bv": 440
+      },
+      {
+        "variant": "1V",
+        "bv": 642
+      },
+      {
+        "variant": "3D",
+        "bv": 436
+      },
+      {
+        "variant": "3M",
+        "bv": 522
+      },
+      {
+        "variant": "3S",
+        "bv": 483
+      },
+      {
+        "variant": "3V",
+        "bv": 490
+      }
+    ]
+  },
+  {
+    "name": "Shadow Hawk",
+    "count": 1,
+    "variants": [
+      {
+        "variant": "2H",
+        "bv": 1064
+      },
+      {
+        "variant": "2Hb",
+        "bv": 1354
+      },
+      {
+        "variant": "2K",
+        "bv": 1147
+      },
+      {
+        "variant": "2D",
+        "bv": 899
+      },
+      {
+        "variant": "2D2",
+        "bv": 1049
+      },
+      {
+        "variant": "5M",
+        "bv": 1430
+      }
+    ]
+  },
+  {
+    "name": "Griffin",
+    "count": 1,
+    "variants": [
+      {
+        "variant": "1N",
+        "bv": 1272
+      },
+      {
+        "variant": "1DS",
+        "bv": 1285
+      },
+      {
+        "variant": "1S",
+        "bv": 1253
+      },
+      {
+        "variant": "2N",
+        "bv": 1606
+      },
+      {
+        "variant": "3M",
+        "bv": 1521
+      }
+    ]
+  },
+  {
+    "name": "Wolverine",
+    "count": 2,
+    "variants": [
+      {
+        "variant": "6R",
+        "bv": 1101
+      },
+      {
+        "variant": "6K",
+        "bv": 1248
+      },
+      {
+        "variant": "6M",
+        "bv": 1291
+      },
+      {
+        "variant": "7D",
+        "bv": 1314
+      },
+      {
+        "variant": "7H",
+        "bv": 1301
+      },
+      {
+        "variant": "7K",
+        "bv": 1331
+      },
+      {
+        "variant": "7M",
+        "bv": 1673
+      }
+    ]
+  },
+  {
+    "name": "Thunderbolt",
+    "count": 1,
+    "variants": [
+      {
+        "variant": "5S",
+        "bv": 1335
+      },
+      {
+        "variant": "5L",
+        "bv": 1546
+      },
+      {
+        "variant": "5LS",
+        "bv": 1305
+      },
+      {
+        "variant": "5Sb",
+        "bv": 1618
+      },
+      {
+        "variant": "5SE",
+        "bv": 1414
+      },
+      {
+        "variant": "5SS",
+        "bv": 1337
+      },
+      {
+        "variant": "7M",
+        "bv": 1495
+      },
+      {
+        "variant": "9S",
+        "bv": 1494
+      },
+      {
+        "variant": "9SE",
+        "bv": 1439
+      }
+    ]
+  }
+]
