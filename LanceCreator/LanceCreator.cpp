@@ -322,9 +322,9 @@ int main(int argc, char** argv)
             {
                 i++;
                 force_size = atoi(argv[i]);
-                if (force_size < 1 || force_size > 6)
+                if (force_size < 1 || force_size > 8)
                 {
-                    cout << "Force Size must be between 1 and 6" << endl;
+                    cout << "Force Size must be between 1 and 8" << endl;
                     exit(1);
                 }
             }
@@ -608,10 +608,36 @@ int main(int argc, char** argv)
                                     Force force = build_force({ *viter1, *viter2, *viter3, *viter4, *viter5, *viter6 });
                                     force_set.insert(force);
                                 }
-                                else
+                                
+                                auto seventh_model = sixth_model;
+                                seventh_model++;
+                                auto vhead7 = seventh_model->variants.begin();
+                                auto vend7 = seventh_model->variants.end();
+                                for (auto viter7 = vhead7; viter7 != vend7; viter7++)
                                 {
-                                    cout << "Force sizes above 6 are not supported" << endl;
-                                    exit(1);
+                                    if (force_size == 7)
+                                    {
+                                        Force force = build_force({ *viter1, *viter2, *viter3, *viter4, *viter5, *viter6, *viter7 });
+                                        force_set.insert(force);
+                                    }
+
+                                    auto eigth_model = seventh_model;
+                                    eigth_model++;
+                                    auto vhead8 = eigth_model->variants.begin();
+                                    auto vend8 = eigth_model->variants.end();
+                                    for (auto viter8 = vhead8; viter8 != vend8; viter8++)
+                                    {
+                                        if (force_size == 8)
+                                        {
+                                            Force force = build_force({ *viter1, *viter2, *viter3, *viter4, *viter5, *viter6, *viter7, *viter8 });
+                                            force_set.insert(force);
+                                        }
+                                        else
+                                        {
+                                            cout << "Only supports forces up to size 8" << endl;
+                                            exit(1);
+                                        }
+                                    }
                                 }
                             }
                         }
