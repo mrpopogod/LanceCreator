@@ -16,209 +16,13 @@
 #include <random>
 #include <chrono>
 #include <initializer_list>
+#include "ModelForce.h"
+#include "Force.h"
+#include "Model.h"
+#include "Mech.h"
 
 using namespace std;
 using namespace rapidjson;
-
-struct Mech {
-    string model_name;
-    string variant_name;
-    int bv;
-};
-
-// name, then variant
-bool compare_mech(Mech& lhs, Mech& rhs)
-{
-    if (lhs.model_name == rhs.model_name)
-    {
-        return lhs.variant_name < rhs.variant_name;
-    }
-    else
-    {
-        return lhs.model_name < rhs.model_name;
-    }
-}
-
-struct Model {
-    int count;
-    string name;
-    list<Mech> variants;
-    int min_bv_val = INT_MAX;
-    int max_bv_val = INT_MIN;
-
-    int min_bv()
-    {
-        if (min_bv_val == INT_MAX)
-        {
-            for (auto& mech : variants)
-            {
-                min_bv_val = min(min_bv_val, mech.bv);
-            }
-        }
-
-        return min_bv_val;
-    }
-
-    int max_bv()
-    {
-        if (max_bv_val == INT_MIN)
-        {
-            for (auto& mech : variants)
-            {
-                max_bv_val = max(max_bv_val, mech.bv);
-            }
-        }
-
-        return max_bv_val;
-    }
-};
-
-bool compare_model(Model& lhs, Model& rhs)
-{
-    return lhs.name < rhs.name;
-}
-
-struct ModelForce {
-    list<Model> models;
-    string model_string;
-
-    void sort()
-    {
-        models.sort(compare_model);
-        stringstream ss;
-        for (auto& mech : models)
-        {
-            ss << mech.name << ",";
-        }
-
-        model_string = ss.str();
-        model_string.pop_back();
-    }
-
-    int min_bv()
-    {
-        int bv = 0;
-        for (auto& mech : models)
-        {
-            bv += mech.min_bv();
-        }
-
-        return bv;
-    }
-
-    int max_bv()
-    {
-        int bv = 0;
-        for (auto& mech : models)
-        {
-            bv += mech.max_bv();
-        }
-
-        return bv;
-    }
-
-    bool operator<(const ModelForce& rhs) const
-    {
-        return model_string < rhs.model_string;
-    }
-};
-
-struct Force {
-    list<Mech> mechs;
-    string mech_string;
-    int bv = 0;
-
-    void sort()
-    {
-        mechs.sort(compare_mech);
-    }
-
-    void calculate_bv()
-    {
-        bv = 0;
-        stringstream ss;
-        for (auto& mech : mechs)
-        {
-            bv += mech.bv;
-            ss << mech.model_name << mech.variant_name;
-        }
-
-        mech_string = ss.str();
-    }
-
-    bool operator<(const Force& rhs) const
-    {
-        return mech_string < rhs.mech_string;
-    }
-};
-
-list<Model> is_models = {
-    { 1, "Commando", { Mech({"Commando", "1B", 616}), Mech({"Commando", "1C", 458}), Mech({"Commando", "1D", 558}), Mech({"Commando", "2D", 541}), Mech({"Commando", "3A", 540}), Mech({"Commando", "5S", 557 }) } },
-    { 1, "Catapult", { Mech({"Catapult", "C1", 1399}), Mech({"Catapult", "A1", 1285}), Mech({"Catapult", "C4", 1358}), Mech({"Catapult", "K2", 1319}), Mech({"Catapult", "C1b", 1570}) } },
-    { 1, "BattleMaster", { Mech({"BattleMaster", "1G", 1519}), Mech({"BattleMaster", "1Gb", 1825}), Mech({"BattleMaster", "1D", 1522}), Mech({"BattleMaster", "1S", 1507}), Mech({"BattleMaster", "3M", 1697}), Mech({"BattleMaster", "3S", 1441}) } },
-    { 1, "Awesome", { Mech({"Awesome", "8Q", 1605}), Mech({"Awesome", "8R", 1470}), Mech({"Awesome", "8T", 1593}), Mech({"Awesome", "8V", 1510}), Mech({"Awesome", "9M", 1812}) } },
-    { 1, "Locust", { Mech({"Locust", "1V", 432}), Mech({"Locust", "1E", 553}), Mech({"Locust", "1M", 424}), Mech({"Locust", "1S", 440}), Mech({"Locust", "1V", 642}), Mech({"Locust", "3D", 436}), Mech({"Locust", "3M", 522}), Mech({"Locust", "3S", 483}), Mech({"Locust", "3V", 490}) } },
-    { 1, "Shadow Hawk", { Mech({"Shadow Hawk", "2H", 1064}), Mech({"Shadow Hawk", "2Hb", 1354}), Mech({"Shadow Hawk", "2K", 1147}), Mech({"Shadow Hawk", "2D", 899}), Mech({"Shadow Hawk", "2D2", 1049}), Mech({"Shadow Hawk", "5M", 1430}) } },
-    { 1, "Griffin", { Mech({"Griffin", "1N", 1272}), Mech({"Griffin", "1DS", 1285}), Mech({"Griffin", "1S", 1253}), Mech({"Griffin", "2N", 1606}), Mech({"Griffin", "3M", 1521}) } },
-    { 2, "Wolverine", { Mech({"Wolverine", "6R", 1101}), Mech({"Wolverine", "6K", 1248}), Mech({"Wolverine", "6M", 1291}), Mech({"Wolverine", "7D", 1314}), Mech({"Wolverine", "7H", 1301}), Mech({"Wolverine", "7K", 1331}), Mech({"Wolverine", "7M", 1673}) } },
-    { 1, "Thunderbolt", { Mech({"Thunderbolt", "5S", 1335}), Mech({"Thunderbolt", "5L", 1546}), Mech({"Thunderbolt", "5LS", 1305}), Mech({"Thunderbolt", "5Sb", 1618}), Mech({"Thunderbolt", "5SE", 1414}), Mech({"Thunderbolt", "5SS", 1337}), Mech({"Thunderbolt", "7M", 1495}), Mech({"Thunderbolt", "9S", 1494}), Mech({"Thunderbolt", "9SE", 1439}) } }
-};
-
-list<Model> old_models = {
-    { 1, "Commando", { Mech({"Commando", "1B", 616}), Mech({"Commando", "1C", 458}), Mech({"Commando", "1D", 558}), Mech({"Commando", "2D", 541}), Mech({"Commando", "3A", 540}), Mech({"Commando", "5S", 557 }) } },
-    { 2, "Spider", { Mech({"Spider", "5D", 524}), Mech({"Spider", "5K", 503}), Mech({"Spider", "5V", 622}), Mech({"Spider", "7M", 621}) } },
-    { 2, "Jenner", { Mech({"Jenner", "D", 875}), Mech({"Jenner", "F", 1011}), Mech({"Jenner", "A", 712}), Mech({"Jenner", "K", 889}) } },
-    { 2, "Panther", { Mech({"Panther", "8Z", 741}), Mech({"Panther", "9R", 769}), Mech({"Panther", "10K", 838}) } },
-    { 1, "Assassin", { Mech({"Assassin", "21", 749}), Mech({"Assassin", "23", 740}) } },
-    { 2, "Cicada", { Mech({"Cicada", "2A", 659}), Mech({"Cicada", "2B", 626}), Mech({"Cicada", "3C", 771}), Mech({"Cicada", "3F", 1329}), Mech({"Cicada", "3M", 812}) } },
-    { 2, "Clint", { Mech({"Clint", "2-3T", 770}), Mech({"Clint", "2-3U", 1081}) } },
-    { 2, "Hermes II", { Mech({"Heremes II", "2S", 784}), Mech({"Hermes II", "2M", 910}), Mech({"Hermes II", "4K", 976}), Mech({"Hermes II", "5S", 857}) } },
-    { 1, "Whitworth", { Mech({"Whitworth", "1", 981}), Mech({"Whitworth", "1S", 917}), Mech({"Whitworth", "2", 932}) } },
-    { 2, "Vindicator", { Mech({"Vindicator", "1R", 1024}), Mech({"Vindicator", "1SIC", 1020}), Mech({"Vindicator", "3L", 1105}) } },
-    { 1, "Enforcer", { Mech({"Enforcer", "4R", 1032}), Mech({"Enforcer", "5D", 1308}) } },
-    { 1, "Hunchback", { Mech({"Hunchback", "4G", 1041}), Mech({"Hunchback", "4H", 1062}), Mech({"Hunchback", "4J", 1143}), Mech({"Hunchback", "4N", 1087}), Mech({"Hunchback", "4P", 1138}), Mech({"Hunchback", "4SP", 1043}), Mech({"Hunchback", "5M", 1056}) } },
-    { 2, "Trebuchet", { Mech({"Trebuchet", "3C", 1342}), Mech({"Trebuchet", "5N", 1191}), Mech({"Trebuchet", "5J", 1191}), Mech({"Trebuchet", "5S", 984}), Mech({"Trebuchet", "7M", 1398}) } },
-    { 2, "Dervish", { Mech({"Dervish", "6M", 1146}), Mech({"Dervish", "7D", 1412}) } },
-    { 2, "Dragon", { Mech({"Dragon", "1N", 1125}), Mech({"Dragon", "1C", 1215}), Mech({"Dragon", "5N", 1223}) } },
-    { 2, "Quickdraw", { Mech({"Quickdraw", "4G", 1192}), Mech({"Quickdraw", "4H", 1242}), Mech({"Quickdraw", "5A", 1196}), Mech({"Quickdraw", "5K", 1265}), Mech({"Quickdraw", "5M", 1237}) } },
-    { 2, "Catapult", { Mech({"Catapult", "C1", 1399}), Mech({"Catapult", "A1", 1285}), Mech({"Catapult", "C4", 1358}), Mech({"Catapult", "K2", 1319}), Mech({"Catapult", "C1b", 1570}) } },
-    { 1, "JagerMech", { Mech({"JagerMech", "S", 901}), Mech({"JagerMech", "A", 1122}), Mech({"JagerMech", "DD", 965}) } },
-    { 2, "Grasshopper", { Mech({"Grasshopper", "5H", 1427}), Mech({"Grasshopper", "5N", 1511}), Mech({"Grasshopper", "5J", 1358}) } },
-    { 2, "Awesome", { Mech({"Awesome", "8Q", 1605}), Mech({"Awesome", "8R", 1470}), Mech({"Awesome", "8T", 1593}), Mech({"Awesome", "8V", 1510}), Mech({"Awesome", "9M", 1812}) } },
-    { 2, "Zeus", { Mech({"Zeus", "6S", 1374}), Mech({"Zeus", "5S", 1499}), Mech({"Zeus", "5T", 1729}), Mech({"Zeus", "6T", 1436}), Mech({"Zeus", "9S", 1639}), Mech({"Zeus", "9SS", 1769}) } },\
-    { 2, "Cyclops", { Mech({"Cyclops", "10-Z", 1317}), Mech({"Cyclops", "10-q", 1584}), Mech({"Cyclops", "11-A", 1547}) } },
-    { 2, "Banshee", { Mech({"Banshee", "3E", 1422}), Mech({"Banshee", "3M", 1595}), Mech({"Banshee", "3Q", 1394}), Mech({"Banshee", "3S", 1751}), Mech({"Banshee", "3MC", 1487}) } },
-    { 2, "Atlas", { Mech({"Atlas", "D", 1897}), Mech({"Atlas", "RS", 1849}), Mech({"Atlas", "A", 1787}), Mech({"Atlas", "K", 2175}) } },
-    { 1, "BattleMaster", { Mech({"BattleMaster", "1G", 1519}), Mech({"BattleMaster", "1Gb", 1825}), Mech({"BattleMaster", "1D", 1522}), Mech({"BattleMaster", "1S", 1507}), Mech({"BattleMaster", "3M", 1697}), Mech({"BattleMaster", "3S", 1441}) } },
-    { 1, "Centurion", { Mech({"Centurion", "A", 945}), Mech({"Centurion", "AH", 945}), Mech({"Centurion", "AL", 1057}), Mech({"Centurion", "D", 1130}) } },
-    { 1, "Wolfhound", { Mech({"Wolfhound", "1", 949}), Mech({"Wolfhound", "1A", 967}), Mech({"Wolfhound", "1B", 967}), Mech({"Wolfhound", "2", 1061}) } },
-    { 1, "Flea", { Mech({"Flea", "4", 432}), Mech({"Flea", "15", 430}), Mech({"Flea", "16", 506}), Mech({"Flea", "17", 510}) } },
-    { 1, "Vulcan", { Mech({"Vulcan", "2T", 642}), Mech({"Vulcan", "5T", 942}), Mech({"Vulcan", "5M", 811}), Mech({"Vulcan", "5S", 883}) } },
-    { 1, "Hatchetman", { Mech({"Hatchetman", "3F", 854}), Mech({"Hatchetman", "5S", 1039}) } },
-    { 1, "Orion", { Mech({"Orion", "K", 1429}), Mech({"Orion", "V", 1298}), Mech({"Orion", "VA", 1329}), Mech({"Orion", "M", 1414}),  Mech({"Orion", "MA", 1501}) } },
-    { 1, "Charger", { Mech({"Charger", "1A1", 981}), Mech({"Charger", "1L", 980}), Mech({"Charger", "1A5", 1468}), Mech({"Charger", "1A9", 1397}), Mech({"Charger", "3K", 1656}) } },
-    { 1, "Firestarter", { Mech({"Firestarter", "A", 773}), Mech({"Firestarter", "K", 773}), Mech({"Firestarter", "H", 773}), Mech({"Firestarter", "M", 798}), Mech({"Firestarter", "S1", 820}) } },
-    { 1, "Blackjack", { Mech({"Blackjack", "1X", 964}), Mech({"Blackjack", "1", 949}), Mech({"Blackjack", "1DB", 1015}), Mech({"Blackjack", "1DC", 917}), Mech({"Blackjack", "3", 1271}), Mech({"Blackjack", "2", 1148}) } },
-    { 1, "Victor", { Mech({"Victor", "9A", 1236}), Mech({"Victor", "9A1", 1306}), Mech({"Victor", "9B", 1378}), Mech({"Victor", "9S", 1360}), Mech({"Victor", "9D", 1717}) } },
-    { 1, "Shogun", { Mech({"Shogun", "2H", 2087}), Mech({"Shogun", "2E", 1823}), Mech({"Shogun", "2F", 1804}) } },
-    { 1, "Stalker", { Mech({"Stalker", "3F", 1559}), Mech({"Stalker", "3H", 1624}), Mech({"Stalker", "3Fb", 2029}), Mech({"Stalker", "4N", 1558}), Mech({"Stalker", "5M", 1655}), Mech({"Stalker", "5S", 1423}) } },
-    { 1, "Cataphract", { Mech({"Cataphract", "1X", 1316}), Mech({"Cataphract", "2X", 1344}), Mech({"Cataphract", "3D", 1325}), Mech({"Cataphract", "3L", 1545}) } },
-    { 1, "Raven", { Mech({"Raven", "2X", 887}), Mech({"Raven", "4X", 820}), Mech({"Raven", "3L", 708}) } },
-    { 1, "Guillotine", { Mech({"Guillotine", "3N", 1418}), Mech({"Guillotine", "4L", 1400}), Mech({"Guillotine", "4P", 1376}), Mech({"Guillotine", "5M", 1472}) } }
-};
-
-Force build_force(initializer_list<Mech> mechs)
-{
-    Force force;
-    for (auto& mech : mechs)
-    {
-        force.mechs.push_back(mech);
-    }
-
-    force.sort();
-    force.calculate_bv();
-    return force;
-}
 
 void print_usage()
 {
@@ -247,17 +51,18 @@ Document load_json_from_file(const string& filename)
 
 Model parse_model(Value& value)
 {
-    Model model;
-    model.name = value["name"].GetString();
-    model.count = value["count"].GetInt();
+    string name = value["name"].GetString();
+    list<Mech> mechs;
     for (auto& v : value["variants"].GetArray())
     {
-        Mech mech;
-        mech.model_name = value["name"].GetString();
-        mech.variant_name = v["variant"].GetString();
-        mech.bv = v["bv"].GetInt();
-        model.variants.push_back(mech);
+        string model_name = value["name"].GetString();
+        string variant_name = v["variant"].GetString();
+        int bv = v["bv"].GetInt();
+        Mech mech(model_name, variant_name, bv);
+        mechs.push_back(mech);
     }
+
+    Model model(name, mechs);
 
     return model;
 }
