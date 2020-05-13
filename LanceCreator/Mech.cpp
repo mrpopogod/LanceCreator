@@ -13,12 +13,12 @@ bool Mech::compare_mech(Mech & lhs, Mech & rhs)
     }
 }
 
-string Mech::get_name()
+string Mech::name() const
 {
     return model_name + " " + variant_name;
 }
 
-int Mech::get_bv()
+int Mech::bv() const
 {
-    return bv;
+    return bv_val;
 }

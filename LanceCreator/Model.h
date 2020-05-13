@@ -14,13 +14,18 @@ public:
         variants(variants),
         min_bv_val(INT_MAX),
         max_bv_val(INT_MIN)
-    {}
+    {
+        init();
+    }
 
     ~Model() {}
 
-    string name();
-    int min_bv();
-    int max_bv();
+    string name() const;
+    int count() const;
+    int min_bv() const;
+    int max_bv() const;
+    list<Mech>::const_iterator first_variant() const;
+    list<Mech>::const_iterator end_variant() const;
     static bool compare_model(Model& lhs, Model& rhs);
 
 private:
@@ -28,5 +33,7 @@ private:
     list<Mech> variants;
     int min_bv_val;
     int max_bv_val;
+
+    void init();
 };
 

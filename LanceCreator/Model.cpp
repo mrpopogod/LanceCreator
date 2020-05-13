@@ -1,35 +1,46 @@
 #include "Model.h"
 #include <algorithm>
 
-int Model::min_bv()
+string Model::name() const
 {
-    if (min_bv_val == INT_MAX)
-    {
-        for (auto& mech : variants)
-        {
-            min_bv_val = min(min_bv_val, mech.get_bv());
-            max_bv_val = max(max_bv_val, mech.get_bv());
-        }
-    }
+    return name_val;
+}
 
+int Model::count() const
+{
+    return variants.size();
+}
+
+int Model::min_bv() const
+{
     return min_bv_val;
 }
 
-int Model::max_bv()
+int Model::max_bv() const
 {
-    if (max_bv_val == INT_MIN)
-    {
-        for (auto& mech : variants)
-        {
-            min_bv_val = min(min_bv_val, mech.get_bv());
-            max_bv_val = max(max_bv_val, mech.get_bv());
-        }
-    }
-
     return max_bv_val;
+}
+
+list<Mech>::const_iterator Model::first_variant() const
+{
+    return variants.begin();
+}
+
+list<Mech>::const_iterator Model::end_variant() const
+{
+    return variants.end();
 }
 
 bool Model::compare_model(Model & lhs, Model & rhs)
 {
-    return lhs.name < rhs.name;
+    return lhs.name_val < rhs.name_val;
+}
+
+void Model::init()
+{
+    for (auto& mech : variants)
+    {
+        min_bv_val = min(min_bv_val, mech.bv());
+        max_bv_val = max(max_bv_val, mech.bv());
+    }
 }

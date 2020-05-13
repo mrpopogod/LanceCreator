@@ -143,6 +143,7 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="FileParser.h" />
     <ClInclude Include="Force.h" />
     <ClInclude Include="LanceCreator.h" />
     <ClInclude Include="Mech.h" />
@@ -152,6 +153,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="FileParser.cpp" />
     <ClCompile Include="Force.cpp" />
     <ClCompile Include="LanceCreator.cpp" />
     <ClCompile Include="Mech.cpp" />

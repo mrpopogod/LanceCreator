@@ -7,16 +7,27 @@ void Force::init()
     stringstream ss;
     for (auto& mech : mechs)
     {
-        bv += mech.get_bv();
-        ss << mech.get_name();
+        bv_val += mech.bv();
+        ss << mech.name() << ",";
     }
 
-    mech_string = ss.str();
+    mech_string_val = ss.str();
+    mech_string_val.pop_back();
+}
+
+int Force::bv() const
+{
+    return bv_val;
+}
+
+string Force::mech_string() const
+{
+    return mech_string_val;
 }
 
 bool Force::operator<(const Force& rhs) const
 {
-    return mech_string < rhs.mech_string;
+    return mech_string_val < rhs.mech_string_val;
 }
 
 Force Force::build_force(initializer_list<Mech> mechs)
@@ -28,7 +39,6 @@ Force Force::build_force(initializer_list<Mech> mechs)
     }
 
     Force force(mech_list);
-    force.init();
 
     return force;
 }

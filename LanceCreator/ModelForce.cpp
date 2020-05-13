@@ -10,8 +10,13 @@ void ModelForce::init()
         ss << mech.name() << ",";
     }
 
-    model_string = ss.str();
-    model_string.pop_back();
+    model_string_val = ss.str();
+    model_string_val.pop_back();
+}
+
+string ModelForce::model_string() const
+{
+    return model_string_val;
 }
 
 bool ModelForce::can_fit_in_bv(int low_bv, int high_bv)
@@ -30,7 +35,12 @@ bool ModelForce::can_fit_in_bv(int low_bv, int high_bv)
     return (max_bv_val >= low_bv) && (min_bv_val <= high_bv);
 }
 
+list<Model>::const_iterator ModelForce::first_model() const
+{
+    return models.begin();
+}
+
 bool ModelForce::operator<(const ModelForce & rhs) const
 {
-    return model_string < rhs.model_string;
+    return model_string_val < rhs.model_string_val;
 }

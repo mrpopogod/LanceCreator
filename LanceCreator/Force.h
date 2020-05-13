@@ -12,19 +12,24 @@ class Force
 public:
     Force(list<Mech> mechs)
         : mechs(mechs),
-        bv(0),
-        mech_string("UNSET")
-    {}
+        bv_val(0),
+        mech_string_val("UNSET")
+    {
+        init();
+    }
 
     ~Force() {}
-
-    void init();
+    
+    int bv() const;
+    string mech_string() const;
     bool operator<(const Force& rhs) const;
     static Force build_force(initializer_list<Mech> mechs);
 
 private:
     list<Mech> mechs;
-    int bv;
-    string mech_string;
+    int bv_val;
+    string mech_string_val;
+
+    void init();
 };
 

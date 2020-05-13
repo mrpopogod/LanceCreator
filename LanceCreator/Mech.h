@@ -10,19 +10,19 @@ public:
     Mech(string model_name, string variant_name, int bv)
         : model_name(model_name),
         variant_name(variant_name),
-        bv(bv)
+        bv_val(bv)
     {}
 
     ~Mech() {}
 
-    string get_name();
-    int get_bv();
+    string name() const;
+    int bv() const;
 
     static bool compare_mech(Mech& lhs, Mech& rhs);
 
 private:
     string model_name;
     string variant_name;
-    int bv;
+    int bv_val;
 };
 
