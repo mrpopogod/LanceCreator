@@ -43,17 +43,22 @@ int main(int argc, char** argv)
     set<ModelForce> model_force_set;
 
     // Create the duplicates that we use to force create all the possible basic forces based on models
+    cout << "Setting up mech list" << endl;
     add_duplicates(models, models_with_duplicates);
 
     // Randomly make N lances, making sure they COULD fit within our requirements
+    cout << "Creating lance candidates" << endl;
     create_model_forces(models_with_duplicates, num_model_forces, force_size, max_bv, under_percentage, max_attempts, model_force_set);
 
     // Go through each model force and explode it
+    cout << "Creating all variants" << endl;
     generate_variant_combinations(model_force_set, force_size, force_set);
 
     // Cut anything that doesn't fit within our BV range
+    cout << "Trimming to target BV" << endl;
     trim_to_bv(force_set, max_bv, under_percentage);
 
+    cout << "Outputting forces" << endl;
     print_forces(model_force_set, force_set);
 
     system("pause");
@@ -199,9 +204,15 @@ void create_model_forces(std::list<Model>& models_with_duplicates, int num_model
     generator.seed(chrono::system_clock::now().time_since_epoch().count());
     while (generated_forces < num_model_forces)
     {
+        if (attempts > max_attempts)
+        {
+            cout << "Was only able to construct " << generated_forces << " model forces" << endl;
+            break;
+        }
+
         attempts++;
         list<Model> working_list = models_with_duplicates;
-        for (int i = 0; i < force_size; i++)
+        while (working_list.size() > force_size)
         {
             uniform_int_distribution<int> distribution(0, working_list.size());
             int pos = distribution(generator);
@@ -225,11 +236,6 @@ void create_model_forces(std::list<Model>& models_with_duplicates, int num_model
             if (inserted.second)
             {
                 generated_forces++;
-            }
-            else if (attempts > max_attempts)
-            {
-                cout << "Was only able to construct " << generated_forces << " model forces" << endl;
-                break;
             }
         }
     }

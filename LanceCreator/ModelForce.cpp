@@ -12,6 +12,14 @@ void ModelForce::init()
 
     model_string_val = ss.str();
     model_string_val.pop_back();
+
+    min_bv_val = 0;
+    max_bv_val = 0;
+    for (auto& model : models)
+    {
+        min_bv_val += model.min_bv();
+        max_bv_val += model.max_bv();
+    }
 }
 
 string ModelForce::model_string() const
@@ -21,17 +29,6 @@ string ModelForce::model_string() const
 
 bool ModelForce::can_fit_in_bv(int low_bv, int high_bv)
 {
-    if (min_bv_val == INT_MAX || max_bv_val == INT_MIN)
-    {
-        min_bv_val = 0;
-        max_bv_val = 0;
-        for (auto& model : models)
-        {
-            min_bv_val += model.min_bv();
-            max_bv_val += model.max_bv();
-        }
-    }
-
     return (max_bv_val >= low_bv) && (min_bv_val <= high_bv);
 }
 

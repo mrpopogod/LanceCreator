@@ -9,8 +9,9 @@ using namespace std;
 class Model
 {
 public:
-    Model(string name, list<Mech> variants)
+    Model(string name, int count, list<Mech> variants)
         : name_val(name),
+        count_val(count),
         variants(variants),
         min_bv_val(INT_MAX),
         max_bv_val(INT_MIN)
@@ -30,6 +31,7 @@ public:
 
 private:
     string name_val;
+    int count_val;
     list<Mech> variants;
     int min_bv_val;
     int max_bv_val;

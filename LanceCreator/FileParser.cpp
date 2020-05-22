@@ -22,6 +22,7 @@ void FileParser::parse_model_list(list<Model>& model_list)
 Model FileParser::parse_model(Value& value)
 {
     string name = value["name"].GetString();
+    int count = value["count"].GetInt();
     list<Mech> mechs;
     for (auto& v : value["variants"].GetArray())
     {
@@ -32,7 +33,7 @@ Model FileParser::parse_model(Value& value)
         mechs.push_back(mech);
     }
 
-    Model model(name, mechs);
+    Model model(name, count, mechs);
 
     return model;
 }

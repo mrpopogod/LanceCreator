@@ -8,7 +8,7 @@ string Model::name() const
 
 int Model::count() const
 {
-    return variants.size();
+    return count_val;
 }
 
 int Model::min_bv() const
