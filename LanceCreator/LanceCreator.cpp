@@ -190,10 +190,10 @@ void print_usage()
     cout << "Usage: " << endl
         << "LanceCreator --fileNames name1,name2 [--maxBV bv] [--forceSize size] [--numForces num] [--underPercentage percentage]" << endl << endl
         << "fileNames - A comma separated list of json files describing model sets." << endl
-        << "maxBV - The maximum BV a force can have" << endl
-        << "forceSize - The numer of units in a force" << endl
-        << "numForces - The number of compositions of units in a force to generate and run through permutations of variants on" << endl
-        << "underPercentage - The lowest percentage of maxBV the force must be (e.g. 0.95 means a force will have 95% of maxBV or more" << endl;
+        << "maxBV - The maximum BV a force can have (default 5000)" << endl
+        << "forceSize - The numer of units in a force (default 4)" << endl
+        << "numForces - The number of compositions of units in a force to generate and run through permutations of variants on (default 3)" << endl
+        << "underPercentage - The lowest percentage of maxBV the force must be (e.g. 0.95 means a force will have 95% of maxBV or more (default 0.95)" << endl;
 }
 
 void create_model_forces(std::list<Model>& models_with_duplicates, int num_model_forces, int force_size, int max_bv, float under_percentage, int max_attempts, std::set<ModelForce>& model_force_set)
