@@ -145,36 +145,10 @@ void generate_variant_combinations(std::set<ModelForce>& model_force_set, int fo
                                     Force force = Force::build_force({ *viter1, *viter2, *viter3, *viter4, *viter5, *viter6 });
                                     force_set.insert(force);
                                 }
-
-                                auto seventh_model = sixth_model;
-                                seventh_model++;
-                                auto vhead7 = seventh_model->first_variant();
-                                auto vend7 = seventh_model->end_variant();
-                                for (auto viter7 = vhead7; viter7 != vend7; viter7++)
+                                else 
                                 {
-                                    if (force_size == 7)
-                                    {
-                                        Force force = Force::build_force({ *viter1, *viter2, *viter3, *viter4, *viter5, *viter6, *viter7 });
-                                        force_set.insert(force);
-                                    }
-
-                                    auto eigth_model = seventh_model;
-                                    eigth_model++;
-                                    auto vhead8 = eigth_model->first_variant();
-                                    auto vend8 = eigth_model->end_variant();
-                                    for (auto viter8 = vhead8; viter8 != vend8; viter8++)
-                                    {
-                                        if (force_size == 8)
-                                        {
-                                            Force force = Force::build_force({ *viter1, *viter2, *viter3, *viter4, *viter5, *viter6, *viter7, *viter8 });
-                                            force_set.insert(force);
-                                        }
-                                        else
-                                        {
-                                            cout << "Only supports forces up to size 8" << endl;
-                                            exit(1);
-                                        }
-                                    }
+                                    cout << "Only supports forces up to size 6" << endl;
+                                    exit(1);
                                 }
                             }
                         }
