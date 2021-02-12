@@ -29,13 +29,34 @@ using namespace std;
 // we don't have to hit the exact BV but don't give up too much as well).
 int main(int argc, char** argv)
 {
+    cxxopts::Options options("Lace Creator", "Utility to randomly roll Battletech forces that fit within a BV");
+    options.add_options()
+        ("f,fileNames", "JSON Files containing mech descriptions", cxxopts::value<vector<string>>())
+        ("b,maxBV", "Max BV for generated forces", cxxopts::value<int>()->default_value("5000"))
+        ("s,forceSize", "Number of units in a force, no larger than 6", cxxopts::value<int>()->default_value("4"))
+        ("n,numForces", "Number of unique collections of models for building forces", cxxopts::value<int>()->default_value("3"))
+        ("u,underPercentage", "What percentage under Max BV is acceptable", cxxopts::value<double>()->default_value("0.95"))
+        ("h,help", "Print usage")
+        ;
+
+    auto result = options.parse(argc, argv);
+
+    if (result.count("help"))
+    {
+        print_usage(options);
+        exit(0);
+    }
+
     int max_bv = -1;
     int force_size = -1;
     int num_model_forces = -1;
     double under_percentage = -1.0;
     list<Model> models;
-    string filenames = "";
-    parse_args(argc, argv, max_bv, force_size, num_model_forces, under_percentage, filenames, models);
+    if (!validate_args(result, max_bv, force_size, num_model_forces, under_percentage, models))
+    {
+        print_usage(options);
+        exit(1);
+    }
     
     int max_attempts = 5000;
     set<Force> force_set;
@@ -66,7 +87,7 @@ int main(int argc, char** argv)
     return 0;
 }
 
-void generate_variant_combinations(std::set<ModelForce>& model_force_set, int force_size, std::set<Force>& force_set)
+void generate_variant_combinations(set<ModelForce>& model_force_set, int force_size, set<Force>& force_set)
 {
     for (auto& model_force : model_force_set)
     {
@@ -159,18 +180,7 @@ void generate_variant_combinations(std::set<ModelForce>& model_force_set, int fo
     }
 }
 
-void print_usage()
-{
-    cout << "Usage: " << endl
-        << "LanceCreator --fileNames name1,name2 [--maxBV bv] [--forceSize size] [--numForces num] [--underPercentage percentage]" << endl << endl
-        << "fileNames - A comma separated list of json files describing model sets." << endl
-        << "maxBV - The maximum BV a force can have (default 5000)" << endl
-        << "forceSize - The numer of units in a force (default 4)" << endl
-        << "numForces - The number of compositions of units in a force to generate and run through permutations of variants on (default 3)" << endl
-        << "underPercentage - The lowest percentage of maxBV the force must be (e.g. 0.95 means a force will have 95% of maxBV or more (default 0.95)" << endl;
-}
-
-void create_model_forces(std::list<Model>& models_with_duplicates, int num_model_forces, int force_size, int max_bv, float under_percentage, int max_attempts, std::set<ModelForce>& model_force_set)
+void create_model_forces(list<Model>& models_with_duplicates, int num_model_forces, int force_size, int max_bv, float under_percentage, int max_attempts, set<ModelForce>& model_force_set)
 {
     int attempts = 0;
     int generated_forces = 0;
@@ -215,7 +225,7 @@ void create_model_forces(std::list<Model>& models_with_duplicates, int num_model
     }
 }
 
-void add_duplicates(std::list<Model>& models, std::list<Model>& models_with_duplicates)
+void add_duplicates(list<Model>& models, list<Model>& models_with_duplicates)
 {
     for (auto& model : models)
     {
@@ -226,146 +236,58 @@ void add_duplicates(std::list<Model>& models, std::list<Model>& models_with_dupl
     }
 }
 
-void parse_args(int argc, char** argv, int& max_bv, int& force_size, int& num_model_forces, double& under_percentage, std::string& filenames, std::list<Model>& models)
+void print_usage(cxxopts::Options options)
 {
-    for (int i = 1; i < argc; i++)
-    {
-        if (strcmp(argv[i], "--help") == 0)
-        {
-            print_usage();
-            exit(0);
-        }
-        else if (strcmp(argv[i], "--maxBV") == 0)
-        {
-            if (i + 1 < argc)
-            {
-                i++;
-                max_bv = atoi(argv[i]);
-                if (max_bv < 1)
-                {
-                    cout << "Max BV must be a positive number" << endl;
-                    exit(1);
-                }
-            }
-            else
-            {
-                print_usage();
-                exit(1);
-            }
-        }
-        else if (strcmp(argv[i], "--forceSize") == 0)
-        {
-            if (i + 1 < argc)
-            {
-                i++;
-                force_size = atoi(argv[i]);
-                if (force_size < 1 || force_size > 8)
-                {
-                    cout << "Force Size must be between 1 and 8" << endl;
-                    exit(1);
-                }
-            }
-            else
-            {
-                print_usage();
-                exit(1);
-            }
-        }
-        else if (strcmp(argv[i], "--numForces") == 0)
-        {
-            if (i + 1 < argc)
-            {
-                i++;
-                num_model_forces = atoi(argv[i]);
-                if (num_model_forces < 1 || num_model_forces > 5)
-                {
-                    cout << "Num Forces must be between 1 and 5" << endl;
-                    exit(1);
-                }
-            }
-            else
-            {
-                print_usage();
-                exit(1);
-            }
-        }
-        else if (strcmp(argv[i], "--underPercentage") == 0)
-        {
-            if (i + 1 < argc)
-            {
-                i++;
-                under_percentage = atof(argv[i]);
-                if (under_percentage < 0.0f || under_percentage > 1.0f)
-                {
-                    cout << "Under percentage must be between 0.0 and 1.0" << endl;
-                    exit(1);
-                }
-            }
-            else
-            {
-                print_usage();
-                exit(1);
-            }
-        }
-        else if (strcmp(argv[i], "--fileNames") == 0)
-        {
-            if (i + 1 < argc)
-            {
-                i++;
-                filenames = argv[i];
-            }
-            else
-            {
-                print_usage();
-                exit(1);
-            }
-        }
-        else
-        {
-            cout << "Unrecognized option: " << argv[i] << endl << endl;
-            print_usage();
-            exit(1);
-        }
-    }
-
-    if (max_bv < 0)
-    {
-        max_bv = 5000;
-    }
-
-    if (force_size < 0)
-    {
-        force_size = 4;
-    }
-
-    if (under_percentage < 0.0)
-    {
-        under_percentage = 0.95f;
-    }
-
-    if (num_model_forces < 0)
-    {
-        num_model_forces = 3;
-    }
-
-    if (strcmp(filenames.c_str(), "") == 0)
-    {
-        print_usage();
-        exit(1);
-    }
-    else
-    {
-        stringstream ss(filenames);
-        string s;
-        while (getline(ss, s, ','))
-        {
-            FileParser p(s);
-            p.parse_model_list(models);
-        }
-    }
+    cout << options.help() << endl;
 }
 
-void print_forces(std::set<ModelForce>& model_force_set, std::set<Force>& force_set)
+bool validate_args(cxxopts::ParseResult result, int& max_bv, int& force_size, int& num_model_forces, double& under_percentage, list<Model>& models)
+{
+    max_bv = result["maxBV"].as<int>();
+    if (max_bv < 1)
+    {
+        cout << "Max BV must be a positive number" << endl;
+        return false;
+    }
+
+    force_size = result["forceSize"].as<int>();
+    if (force_size < 1 || force_size > 6)
+    {
+        cout << "Force Size must be between 1 and 6" << endl;
+        return false;
+    }
+
+    num_model_forces = result["numForces"].as<int>();
+    if (num_model_forces < 1 || num_model_forces > 5)
+    {
+        cout << "Num Forces must be between 1 and 5" << endl;
+        return false;
+    }
+
+    under_percentage = result["underPercentage"].as<double>();
+    if (under_percentage < 0.0f || under_percentage > 1.0f)
+    {
+        cout << "Under percentage must be between 0.0 and 1.0" << endl;
+        return false;
+    }
+
+    if (!result.count("fileNames"))
+    {
+        cout << "At least one file must be specified" << endl;
+        return false;    
+    }
+
+    vector<string> file_names_vector = result["fileNames"].as<vector<string>>();
+    for (auto& file_name : file_names_vector)
+    {
+        FileParser p(file_name);
+        p.parse_model_list(models);
+    }
+
+    return true;
+}
+
+void print_forces(set<ModelForce>& model_force_set, set<Force>& force_set)
 {
     ofstream file;
     file.open("lances.csv");
@@ -383,7 +305,7 @@ void print_forces(std::set<ModelForce>& model_force_set, std::set<Force>& force_
     file.close();
 }
 
-void trim_to_bv(std::set<Force>& force_set, int max_bv, float under_percentage)
+void trim_to_bv(set<Force>& force_set, int max_bv, float under_percentage)
 {
     // can't use foreach because we're modifying the set
     for (auto iter = force_set.begin(); iter != force_set.end(); )
