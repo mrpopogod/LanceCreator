@@ -29,7 +29,7 @@ using namespace std;
 // we don't have to hit the exact BV but don't give up too much as well).
 int main(int argc, char** argv)
 {
-    cxxopts::Options options("Lace Creator", "Utility to randomly roll Battletech forces that fit within a BV");
+    cxxopts::Options options("Lance Creator", "Utility to randomly roll Battletech forces that fit within a BV");
     options.add_options()
         ("f,fileNames", "JSON Files containing mech descriptions", cxxopts::value<vector<string>>())
         ("b,maxBV", "Max BV for generated forces", cxxopts::value<int>()->default_value("5000"))
