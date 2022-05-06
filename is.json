@@ -582,5 +582,1257 @@
         "bv": 540
       }
     ]
+  },
+  {
+    "name": "Thug",
+    "count": 3,
+    "variants": [
+      {
+        "variant": "11E",
+        "bv": 1640
+      },
+      {
+        "variant": "10E",
+        "bv": 1501
+      },
+      {
+        "variant": "11Eb",
+        "bv": 1759
+      }
+    ]
+  },
+  {
+    "name": "Cyclops",
+    "count": 3,
+    "variants": [
+      {
+        "variant": "10-Z",
+        "bv": 1308
+      },
+      {
+        "variant": "10-Q",
+        "bv": 1584
+      },
+      {
+        "variant": "11-A",
+        "bv": 1547
+      },
+	  {
+        "variant": "11-B",
+        "bv": 2145
+      },
+	  {
+        "variant": "11-G",
+        "bv": 1984
+      },
+	  {
+        "variant": "12-K",
+        "bv": 1699
+      }
+    ]
+  },
+  {
+    "name": "Dragon",
+    "count": 3,
+    "variants": [
+      {
+        "variant": "1N",
+        "bv": 1125
+      },
+      {
+        "variant": "1C",
+        "bv": 1215
+      },
+      {
+        "variant": "5N",
+        "bv": 1223
+      },
+	  {
+        "variant": "7N",
+        "bv": 1322
+      }
+    ]
+  },
+  {
+    "name": "Spider",
+    "count": 3,
+    "variants": [
+      {
+        "variant": "5V",
+        "bv": 622
+      },
+      {
+        "variant": "5D",
+        "bv": 524
+      },
+      {
+        "variant": "5K",
+        "bv": 503
+      },
+	  {
+        "variant": "7K",
+        "bv": 688
+      },
+	  {
+        "variant": "7K2",
+        "bv": 884
+      },
+	  {
+        "variant": "7M",
+        "bv": 621
+      },
+	  {
+        "variant": "8M",
+        "bv": 688
+      }
+    ]
+  },
+  {
+    "name": "Victor",
+    "count": 3,
+    "variants": [
+      {
+        "variant": "9B",
+        "bv": 1370
+      },
+      {
+        "variant": "9A",
+        "bv": 1236
+      },
+      {
+        "variant": "9A1",
+        "bv": 1302
+      },
+	  {
+        "variant": "9D",
+        "bv": 1717
+      },
+	  {
+        "variant": "9Ka",
+        "bv": 1594
+      },
+	  {
+        "variant": "9S",
+        "bv": 1360
+      },
+	  {
+        "variant": "10D",
+        "bv": 1894
+      }
+    ]
+  },
+  {
+    "name": "Enforcer",
+    "count": 3,
+    "variants": [
+      {
+        "variant": "4R",
+        "bv": 1032
+      },
+      {
+        "variant": "5D",
+        "bv": 1308
+      }
+    ]
+  },
+  {
+    "name": "Hunchback",
+    "count": 3,
+    "variants": [
+      {
+        "variant": "4G",
+        "bv": 1041
+      },
+      {
+        "variant": "4H",
+        "bv": 1067
+      },
+      {
+        "variant": "4J",
+        "bv": 1133
+      },
+	  {
+        "variant": "4N",
+        "bv": 1087
+      },
+	  {
+        "variant": "4P",
+        "bv": 1138
+      },
+	  {
+        "variant": "5M",
+        "bv": 1054
+      },
+	  {
+        "variant": "5N",
+        "bv": 1041
+      },
+	  {
+        "variant": "5S",
+        "bv": 1350
+      },
+	  {
+        "variant": "6N",
+        "bv": 1130
+      },
+	  {
+        "variant": "6S",
+        "bv": 1380
+      }
+    ]
+  },
+  {
+    "name": "Raven",
+    "count": 3,
+    "variants": [
+      {
+        "variant": "2X",
+        "bv": 887
+      },
+      {
+        "variant": "3M",
+        "bv": 659
+      },
+      {
+        "variant": "4X",
+        "bv": 820
+      }
+    ]
+  },
+  {
+    "name": "Axman",
+    "count": 3,
+    "variants": [
+      {
+        "variant": "1n",
+        "bv": 1369
+      },
+      {
+        "variant": "2N",
+        "bv": 1458
+      },
+	  {
+        "variant": "4D",
+        "bv": 1222
+      }
+    ]
+  },
+  {
+    "name": "Bushwacker",
+    "count": 3,
+    "variants": [
+      {
+        "variant": "X1",
+        "bv": 1223
+      },
+      {
+        "variant": "X2",
+        "bv": 1191
+      },
+      {
+        "variant": "X4",
+        "bv": 1751
+      },
+	  {
+        "variant": "L1",
+        "bv": 1513
+      },
+	  {
+        "variant": "S2",
+        "bv": 1293
+      },
+	  {
+        "variant": "S2r",
+        "bv": 1339
+      }
+    ]
+  },
+  {
+    "name": "Cataphract",
+    "count": 3,
+    "variants": [
+      {
+        "variant": "3D",
+        "bv": 1325
+      },
+      {
+        "variant": "1X",
+        "bv": 1316
+      },
+      {
+        "variant": "2X",
+        "bv": 1344
+      },
+	  {
+        "variant": "3L",
+        "bv": 1545
+      },
+	  {
+        "variant": "3LL",
+        "bv": 1664
+      },
+	  {
+        "variant": "4X",
+        "bv": 1216
+      }
+    ]
+  },
+  {
+    "name": "Nightstar",
+    "count": 3,
+    "variants": [
+      {
+        "variant": "9J",
+        "bv": 2399
+      },
+      {
+        "variant": "9FC",
+        "bv": 1929
+      },
+      {
+        "variant": "9SS",
+        "bv": 2149
+      }
+    ]
+  },
+  {
+    "name": "Longbow",
+    "count": 4,
+    "variants": [
+      {
+        "variant": "7Q",
+        "bv": 1618
+      },
+      {
+        "variant": "7V",
+        "bv": 1816
+      },
+      {
+        "variant": "12C",
+        "bv": 1686
+      },
+	  {
+        "variant": "12R",
+        "bv": 1979
+      },
+	  {
+        "variant": "13C",
+        "bv": 1397
+      },
+	  {
+        "variant": "14C",
+        "bv": 1421
+      }
+    ]
+  },
+  {
+    "name": "Stalker",
+    "count": 3,
+    "variants": [
+      {
+        "variant": "3F",
+        "bv": 1559
+      },
+      {
+        "variant": "3H",
+        "bv": 1624
+      },
+      {
+        "variant": "4N",
+        "bv": 1558
+      },
+	  {
+        "variant": "5S",
+        "bv": 1423
+      },
+	  {
+        "variant": "6M",
+        "bv": 2029
+      },
+	  {
+        "variant": "7D",
+        "bv": 1901
+      },
+	  {
+        "variant": "8S",
+        "bv": 2020
+      }
+    ]
+  },
+  {
+    "name": "Trebuchet",
+    "count": 3,
+    "variants": [
+      {
+        "variant": "5N",
+        "bv": 1191
+      },
+      {
+        "variant": "3C",
+        "bv": 1342
+      },
+      {
+        "variant": "5J",
+        "bv": 1191
+      },
+	  {
+        "variant": "5S",
+        "bv": 948
+      },
+	  {
+        "variant": "7K",
+        "bv": 996
+      },
+	  {
+        "variant": "8B",
+        "bv": 1314
+      }
+    ]
+  },
+  {
+    "name": "Zeus",
+    "count": 3,
+    "variants": [
+      {
+        "variant": "6S",
+        "bv": 1374
+      },
+      {
+        "variant": "5S",
+        "bv": 1499
+      },
+      {
+        "variant": "5T",
+        "bv": 1729
+      },
+	  {
+        "variant": "6A",
+        "bv": 1405
+      },
+	  {
+        "variant": "6T",
+        "bv": 1436
+      },
+	  {
+        "variant": "9S",
+        "bv": 1639
+      },
+	  {
+        "variant": "9S2",
+        "bv": 1769
+      },
+	  {
+        "variant": "9T",
+        "bv": 1835
+      },
+	  {
+        "variant": "10WB",
+        "bv": 2075
+      }
+    ]
+  },
+  {
+    "name": "Blackjack",
+    "count": 5,
+    "variants": [
+      {
+        "variant": "1",
+        "bv": 949
+      },
+      {
+        "variant": "1DB",
+        "bv": 1015
+      },
+      {
+        "variant": "1DC",
+        "bv": 917
+      },
+	  {
+        "variant": "2",
+        "bv": 1148
+      },
+	  {
+        "variant": "3",
+        "bv": 1271
+      },
+	  {
+        "variant": "4",
+        "bv": 1063
+      },
+	  {
+        "variant": "5",
+        "bv": 1165
+      }
+    ]
+  },
+  {
+    "name": "Jenner",
+    "count": 7,
+    "variants": [
+      {
+        "variant": "D",
+        "bv": 875
+      },
+      {
+        "variant": "F",
+        "bv": 1011
+      },
+      {
+        "variant": "K",
+        "bv": 889
+      }
+    ]
+  },
+  {
+    "name": "Panther",
+    "count": 3,
+    "variants": [
+      {
+        "variant": "9R",
+        "bv": 769
+      },
+      {
+        "variant": "8Z",
+        "bv": 741
+      },
+      {
+        "variant": "9ALAG",
+        "bv": 804
+      },
+	  {
+        "variant": "10K",
+        "bv": 838
+      },
+	  {
+        "variant": "10K2",
+        "bv": 913
+      },
+	  {
+        "variant": "10KA",
+        "bv": 797
+      },
+	  {
+        "variant": "12A",
+        "bv": 982
+      },
+	  {
+        "variant": "12K2",
+        "bv": 930
+      },
+	  {
+        "variant": "13K",
+        "bv": 996
+      },
+	  {
+        "variant": "16K",
+        "bv": 988
+      }
+    ]
+  },
+  {
+    "name": "Wolfhound",
+    "count": 3,
+    "variants": [
+      {
+        "variant": "2",
+        "bv": 1061
+      },
+      {
+        "variant": "1",
+        "bv": 949
+      },
+      {
+        "variant": "1A",
+        "bv": 967
+      },
+	  {
+        "variant": "1B",
+        "bv": 967
+      },
+	  {
+        "variant": "2H",
+        "bv": 1511
+      },
+	  {
+        "variant": "3M",
+        "bv": 786
+      },
+	  {
+        "variant": "3S",
+        "bv": 1191
+      },
+	  {
+        "variant": "4W",
+        "bv": 1090
+      },
+	  {
+        "variant": "5",
+        "bv": 1290
+      }
+    ]
+  },
+  {
+    "name": "Banshee",
+    "count": 3,
+    "variants": [
+      {
+        "variant": "3E",
+        "bv": 1422
+      },
+      {
+        "variant": "3M",
+        "bv": 1595
+      },
+      {
+        "variant": "3MC",
+        "bv": 1487
+      },
+	  {
+        "variant": "3Mr",
+        "bv": 1801
+      },
+	  {
+        "variant": "3Q",
+        "bv": 1394
+      },
+	  {
+        "variant": "3S",
+        "bv": 1751
+      },
+	  {
+        "variant": "5S",
+        "bv": 2061
+      },
+	  {
+        "variant": "6S",
+        "bv": 1899
+      },
+	  {
+        "variant": "7S",
+        "bv": 2126
+      },
+	  {
+        "variant": "9S",
+        "bv": 2487
+      }
+    ]
+  },
+  {
+    "name": "Centurion",
+    "count": 3,
+    "variants": [
+      {
+        "variant": "A",
+        "bv": 945
+      },
+      {
+        "variant": "Ar",
+        "bv": 1226
+      },
+      {
+        "variant": "AH",
+        "bv": 945
+      },
+	  {
+        "variant": "AL",
+        "bv": 1057
+      },
+	  {
+        "variant": "D",
+        "bv": 1130
+      },
+	  {
+        "variant": "D3",
+        "bv": 1264
+      },
+	  {
+        "variant": "D3D",
+        "bv": 1266
+      },
+	  {
+        "variant": "D4D",
+        "bv": 1306
+      },
+	  {
+        "variant": "D9",
+        "bv": 1638
+      },
+	  {
+        "variant": "4",
+        "bv": 1063
+      }
+    ]
+  },
+  {
+    "name": "Grasshopper",
+    "count": 3,
+    "variants": [
+      {
+        "variant": "5H",
+        "bv": 1427
+      },
+      {
+        "variant": "5J",
+        "bv": 1354
+      },
+      {
+        "variant": "5N",
+        "bv": 1511
+      },
+	  {
+        "variant": "8K",
+        "bv": 1754
+      }
+    ]
+  },
+  {
+    "name": "Hatchetman",
+    "count": 3,
+    "variants": [
+      {
+        "variant": "3F",
+        "bv": 854
+      },
+      {
+        "variant": "5D",
+        "bv": 1012
+      },
+      {
+        "variant": "5S",
+        "bv": 1039
+      },
+	  {
+        "variant": "5DD",
+        "bv": 1112
+      },
+	  {
+        "variant": "6S",
+        "bv": 1174
+      }
+    ]
+  },
+  {
+    "name": "Atlas",
+    "count": 4,
+    "variants": [
+      {
+        "variant": "D",
+        "bv": 1897
+      },
+      {
+        "variant": "K",
+        "bv": 2175
+      },
+      {
+        "variant": "RS",
+        "bv": 1849
+      },
+	  {
+        "variant": "S",
+        "bv": 1929
+      },
+	  {
+        "variant": "8-D",
+        "bv": 2059
+      }
+    ]
+  },
+  {
+    "name": "Maurader II",
+    "count": 4,
+    "variants": [
+      {
+        "variant": "5A",
+        "bv": 2058
+      },
+      {
+        "variant": "4A",
+        "bv": 2073
+      },
+      {
+        "variant": "4K",
+        "bv": 2626
+      },
+	  {
+        "variant": "4S",
+        "bv": 2623
+      },
+	  {
+        "variant": "5B",
+        "bv": 2589
+      },
+	  {
+        "variant": "5C",
+        "bv": 2024
+      },
+	  {
+        "variant": "6A",
+        "bv": 2367
+      },
+	  {
+        "variant": "6C",
+        "bv": 2346
+      },
+	  {
+        "variant": "6D",
+        "bv": 2378
+      },
+	  {
+        "variant": "6S",
+        "bv": 2546
+      }
+    ]
+  },
+  {
+    "name": "Orion",
+    "count": 4,
+    "variants": [
+      {
+        "variant": "K",
+        "bv": 1429
+      },
+      {
+        "variant": "M",
+        "bv": 1414
+      },
+      {
+        "variant": "MA",
+        "bv": 1501
+      },
+	  {
+        "variant": "MB",
+        "bv": 1472
+      },
+	  {
+        "variant": "MC",
+        "bv": 1501
+      },
+	  {
+        "variant": "MD",
+        "bv": 1595
+      },
+	  {
+        "variant": "V",
+        "bv": 1298
+      },
+	  {
+        "variant": "VA",
+        "bv": 1328
+      },
+	  {
+        "variant": "2-M",
+        "bv": 1828
+      }
+    ]
+  },
+  {
+    "name": "Crusader",
+    "count": 4,
+    "variants": [
+      {
+        "variant": "3R",
+        "bv": 1317
+      },
+      {
+        "variant": "2R",
+        "bv": 1533
+      },
+      {
+        "variant": "3D",
+        "bv": 1338
+      },
+	  {
+        "variant": "3K",
+        "bv": 1290
+      },
+	  {
+        "variant": "3L",
+        "bv": 1297
+      },
+	  {
+        "variant": "4BR",
+        "bv": 1407
+      },
+	  {
+        "variant": "4D",
+        "bv": 1309
+      },
+	  {
+        "variant": "4K",
+        "bv": 1268
+      },
+	  {
+        "variant": "5M",
+        "bv": 1408
+      },
+	  {
+        "variant": "5S",
+        "bv": 1446
+      },
+	  {
+        "variant": "6D",
+        "bv": 1498
+      },
+	  {
+        "variant": "6M",
+        "bv": 1373
+      },
+	  {
+        "variant": "7M",
+        "bv": 1502
+      },
+	  {
+        "variant": "7M2",
+        "bv": 1434
+      },
+	  {
+        "variant": "7W",
+        "bv": 1221
+      },
+	  {
+        "variant": "8L",
+        "bv": 1701
+      },
+	  {
+        "variant": "8S",
+        "bv": 1698
+      },
+	  {
+        "variant": "8R",
+        "bv": 1600
+      },
+	  {
+        "variant": "9BR",
+        "bv": 1615
+      },
+	  {
+        "variant": "9R",
+        "bv": 1612
+      }
+    ]
+  },
+  {
+    "name": "Black Knight",
+    "count": 3,
+    "variants": [
+      {
+        "variant": "6",
+        "bv": 1550
+      },
+      {
+        "variant": "6b",
+        "bv": 1627
+      },
+      {
+        "variant": "7",
+        "bv": 1443
+      },
+	  {
+        "variant": "7-L",
+        "bv": 1409
+      },
+	  {
+        "variant": "9",
+        "bv": 1678
+      },
+	  {
+        "variant": "12",
+        "bv": 1840
+      }
+    ]
+  },
+  {
+    "name": "Exterminator",
+    "count": 3,
+    "variants": [
+      {
+        "variant": "4D",
+        "bv": 1384
+      },
+      {
+        "variant": "4A",
+        "bv": 1345
+      },
+      {
+        "variant": "4C",
+        "bv": 1602
+      }.
+	  {
+        "variant": "4Db",
+        "bv": 1694
+      }
+    ]
+  },
+  {
+    "name": "Highlander",
+    "count": 3,
+    "variants": [
+      {
+        "variant": "732",
+        "bv": 2227
+      },
+      {
+        "variant": "694",
+        "bv": 2358
+      },
+      {
+        "variant": "732b",
+        "bv": 2335
+      },
+	  {
+        "variant": "733",
+        "bv": 1801
+      },
+	  {
+        "variant": "733C",
+        "bv": 1867
+      },
+	  {
+        "variant": "733P",
+        "bv": 1856
+      },
+	  {
+        "variant": "734",
+        "bv": 2214
+      },
+	  {
+        "variant": "738",
+        "bv": 2413
+      }
+    ]
+  },
+  {
+    "name": "King Crab",
+    "count": 3,
+    "variants": [
+      {
+        "variant": "000",
+        "bv": 1906
+      },
+      {
+        "variant": "000b",
+        "bv": 2039
+      },
+      {
+        "variant": "0000",
+        "bv": 1810
+      },
+	  {
+        "variant": "001",
+        "bv": 2221
+      },
+	  {
+        "variant": "007",
+        "bv": 2523
+      },
+	  {
+        "variant": "010",
+        "bv": 2181
+      }
+    ]
+  },
+  {
+    "name": "Mercury",
+    "count": 3,
+    "variants": [
+      {
+        "variant": "99",
+        "bv": 586
+      },
+      {
+        "variant": "98",
+        "bv": 553
+      }
+    ]
+  },
+  {
+    "name": "Sentinel",
+    "count": 3,
+    "variants": [
+      {
+        "variant": "3L",
+        "bv": 717
+      },
+      {
+        "variant": "1S",
+        "bv": 632
+      },
+      {
+        "variant": "3K",
+        "bv": 652
+      },
+	  {
+        "variant": "3KA",
+        "bv": 847
+      },
+	  {
+        "variant": "3KB",
+        "bv": 823
+      },
+	  {
+        "variant": "3Lb",
+        "bv": 1260
+      },
+	  {
+        "variant": "3M",
+        "bv": 758
+      },
+	  {
+        "variant": "4D",
+        "bv": 1179
+      },
+	  {
+        "variant": "5WB",
+        "bv": 999
+      }
+    ]
+  },
+  {
+    "name": "Crab",
+    "count": 3,
+    "variants": [
+      {
+        "variant": "27",
+        "bv": 1198
+      },
+      {
+        "variant": "20",
+        "bv": 1143
+      },
+      {
+        "variant": "27b",
+        "bv": 1308
+      }
+    ]
+  },
+  {
+    "name": "Crockett",
+    "count": 3,
+    "variants": [
+      {
+        "variant": "3-1",
+        "bv": 1923
+      },
+      {
+        "variant": "3-0",
+        "bv": 1704
+      },
+      {
+        "variant": "3-1b",
+        "bv": 2307
+      },
+	  {
+        "variant": "3-3",
+        "bv": 1989
+      }
+    ]
+  },
+  {
+    "name": "Flashman",
+    "count": 3,
+    "variants": [
+      {
+        "variant": "8K",
+        "bv": 1779
+      },
+      {
+        "variant": "7K",
+        "bv": 1480
+      },
+      {
+        "variant": "9M",
+        "bv": 1895
+      }
+    ]
+  },
+  {
+    "name": "Guillotine",
+    "count": 3,
+    "variants": [
+      {
+        "variant": "3N",
+        "bv": 1418
+      },
+      {
+        "variant": "4L",
+        "bv": 1400
+      },
+      {
+        "variant": "4P",
+        "bv": 1376
+      },
+	  {
+        "variant": "5M",
+        "bv": 1472
+      },
+	  {
+        "variant": "8D",
+        "bv": 1891
+      }
+    ]
+  },
+  {
+    "name": "Lancelot",
+    "count": 3,
+    "variants": [
+      {
+        "variant": "01",
+        "bv": 1422
+      },
+      {
+        "variant": "01X",
+        "bv": 1659
+      },
+      {
+        "variant": "02",
+        "bv": 1236
+      },
+	  {
+        "variant": "03",
+        "bv": 1360
+      },
+	  {
+        "variant": "05",
+        "bv": 1380
+      }
+    ]
+  },
+  {
+    "name": "Mongoose",
+    "count": 3,
+    "variants": [
+      {
+        "variant": "66",
+        "bv": 758
+      },
+      {
+        "variant": "66b",
+        "bv": 934
+      },
+      {
+        "variant": "67",
+        "bv": 741
+      },
+	  {
+        "variant": "68",
+        "bv": 676
+      },
+	  {
+        "variant": "69",
+        "bv": 737
+      },
+	  {
+        "variant": "70",
+        "bv": 750
+      },
+	  {
+        "variant": "76",
+        "bv": 894
+      },
+	  {
+        "variant": "86",
+        "bv": 887
+      }
+    ]
   }
 ]
