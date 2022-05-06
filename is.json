@@ -617,15 +617,15 @@
         "variant": "11-A",
         "bv": 1547
       },
-	  {
+      {
         "variant": "11-B",
         "bv": 2145
       },
-	  {
+      {
         "variant": "11-G",
         "bv": 1984
       },
-	  {
+      {
         "variant": "12-K",
         "bv": 1699
       }
@@ -647,7 +647,7 @@
         "variant": "5N",
         "bv": 1223
       },
-	  {
+      {
         "variant": "7N",
         "bv": 1322
       }
@@ -669,19 +669,19 @@
         "variant": "5K",
         "bv": 503
       },
-	  {
+      {
         "variant": "7K",
         "bv": 688
       },
-	  {
+      {
         "variant": "7K2",
         "bv": 884
       },
-	  {
+      {
         "variant": "7M",
         "bv": 621
       },
-	  {
+      {
         "variant": "8M",
         "bv": 688
       }
@@ -703,19 +703,19 @@
         "variant": "9A1",
         "bv": 1302
       },
-	  {
+      {
         "variant": "9D",
         "bv": 1717
       },
-	  {
+      {
         "variant": "9Ka",
         "bv": 1594
       },
-	  {
+      {
         "variant": "9S",
         "bv": 1360
       },
-	  {
+      {
         "variant": "10D",
         "bv": 1894
       }
@@ -751,31 +751,31 @@
         "variant": "4J",
         "bv": 1133
       },
-	  {
+      {
         "variant": "4N",
         "bv": 1087
       },
-	  {
+      {
         "variant": "4P",
         "bv": 1138
       },
-	  {
+      {
         "variant": "5M",
         "bv": 1054
       },
-	  {
+      {
         "variant": "5N",
         "bv": 1041
       },
-	  {
+      {
         "variant": "5S",
         "bv": 1350
       },
-	  {
+      {
         "variant": "6N",
         "bv": 1130
       },
-	  {
+      {
         "variant": "6S",
         "bv": 1380
       }
@@ -811,7 +811,7 @@
         "variant": "2N",
         "bv": 1458
       },
-	  {
+      {
         "variant": "4D",
         "bv": 1222
       }
@@ -833,15 +833,15 @@
         "variant": "X4",
         "bv": 1751
       },
-	  {
+      {
         "variant": "L1",
         "bv": 1513
       },
-	  {
+      {
         "variant": "S2",
         "bv": 1293
       },
-	  {
+      {
         "variant": "S2r",
         "bv": 1339
       }
@@ -863,15 +863,15 @@
         "variant": "2X",
         "bv": 1344
       },
-	  {
+      {
         "variant": "3L",
         "bv": 1545
       },
-	  {
+      {
         "variant": "3LL",
         "bv": 1664
       },
-	  {
+      {
         "variant": "4X",
         "bv": 1216
       }
@@ -911,15 +911,15 @@
         "variant": "12C",
         "bv": 1686
       },
-	  {
+      {
         "variant": "12R",
         "bv": 1979
       },
-	  {
+      {
         "variant": "13C",
         "bv": 1397
       },
-	  {
+      {
         "variant": "14C",
         "bv": 1421
       }
@@ -941,19 +941,19 @@
         "variant": "4N",
         "bv": 1558
       },
-	  {
+      {
         "variant": "5S",
         "bv": 1423
       },
-	  {
+      {
         "variant": "6M",
         "bv": 2029
       },
-	  {
+      {
         "variant": "7D",
         "bv": 1901
       },
-	  {
+      {
         "variant": "8S",
         "bv": 2020
       }
@@ -975,15 +975,15 @@
         "variant": "5J",
         "bv": 1191
       },
-	  {
+      {
         "variant": "5S",
         "bv": 948
       },
-	  {
+      {
         "variant": "7K",
         "bv": 996
       },
-	  {
+      {
         "variant": "8B",
         "bv": 1314
       }
@@ -1005,27 +1005,27 @@
         "variant": "5T",
         "bv": 1729
       },
-	  {
+      {
         "variant": "6A",
         "bv": 1405
       },
-	  {
+      {
         "variant": "6T",
         "bv": 1436
       },
-	  {
+      {
         "variant": "9S",
         "bv": 1639
       },
-	  {
+      {
         "variant": "9S2",
         "bv": 1769
       },
-	  {
+      {
         "variant": "9T",
         "bv": 1835
       },
-	  {
+      {
         "variant": "10WB",
         "bv": 2075
       }
@@ -1047,19 +1047,19 @@
         "variant": "1DC",
         "bv": 917
       },
-	  {
+      {
         "variant": "2",
         "bv": 1148
       },
-	  {
+      {
         "variant": "3",
         "bv": 1271
       },
-	  {
+      {
         "variant": "4",
         "bv": 1063
       },
-	  {
+      {
         "variant": "5",
         "bv": 1165
       }
@@ -1099,31 +1099,31 @@
         "variant": "9ALAG",
         "bv": 804
       },
-	  {
+      {
         "variant": "10K",
         "bv": 838
       },
-	  {
+      {
         "variant": "10K2",
         "bv": 913
       },
-	  {
+      {
         "variant": "10KA",
         "bv": 797
       },
-	  {
+      {
         "variant": "12A",
         "bv": 982
       },
-	  {
+      {
         "variant": "12K2",
         "bv": 930
       },
-	  {
+      {
         "variant": "13K",
         "bv": 996
       },
-	  {
+      {
         "variant": "16K",
         "bv": 988
       }
@@ -1145,27 +1145,27 @@
         "variant": "1A",
         "bv": 967
       },
-	  {
+      {
         "variant": "1B",
         "bv": 967
       },
-	  {
+      {
         "variant": "2H",
         "bv": 1511
       },
-	  {
+      {
         "variant": "3M",
         "bv": 786
       },
-	  {
+      {
         "variant": "3S",
         "bv": 1191
       },
-	  {
+      {
         "variant": "4W",
         "bv": 1090
       },
-	  {
+      {
         "variant": "5",
         "bv": 1290
       }
@@ -1187,31 +1187,31 @@
         "variant": "3MC",
         "bv": 1487
       },
-	  {
+      {
         "variant": "3Mr",
         "bv": 1801
       },
-	  {
+      {
         "variant": "3Q",
         "bv": 1394
       },
-	  {
+      {
         "variant": "3S",
         "bv": 1751
       },
-	  {
+      {
         "variant": "5S",
         "bv": 2061
       },
-	  {
+      {
         "variant": "6S",
         "bv": 1899
       },
-	  {
+      {
         "variant": "7S",
         "bv": 2126
       },
-	  {
+      {
         "variant": "9S",
         "bv": 2487
       }
@@ -1233,31 +1233,31 @@
         "variant": "AH",
         "bv": 945
       },
-	  {
+      {
         "variant": "AL",
         "bv": 1057
       },
-	  {
+      {
         "variant": "D",
         "bv": 1130
       },
-	  {
+      {
         "variant": "D3",
         "bv": 1264
       },
-	  {
+      {
         "variant": "D3D",
         "bv": 1266
       },
-	  {
+      {
         "variant": "D4D",
         "bv": 1306
       },
-	  {
+      {
         "variant": "D9",
         "bv": 1638
       },
-	  {
+      {
         "variant": "4",
         "bv": 1063
       }
@@ -1279,7 +1279,7 @@
         "variant": "5N",
         "bv": 1511
       },
-	  {
+      {
         "variant": "8K",
         "bv": 1754
       }
@@ -1301,11 +1301,11 @@
         "variant": "5S",
         "bv": 1039
       },
-	  {
+      {
         "variant": "5DD",
         "bv": 1112
       },
-	  {
+      {
         "variant": "6S",
         "bv": 1174
       }
@@ -1327,11 +1327,11 @@
         "variant": "RS",
         "bv": 1849
       },
-	  {
+      {
         "variant": "S",
         "bv": 1929
       },
-	  {
+      {
         "variant": "8-D",
         "bv": 2059
       }
@@ -1353,31 +1353,31 @@
         "variant": "4K",
         "bv": 2626
       },
-	  {
+      {
         "variant": "4S",
         "bv": 2623
       },
-	  {
+      {
         "variant": "5B",
         "bv": 2589
       },
-	  {
+      {
         "variant": "5C",
         "bv": 2024
       },
-	  {
+      {
         "variant": "6A",
         "bv": 2367
       },
-	  {
+      {
         "variant": "6C",
         "bv": 2346
       },
-	  {
+      {
         "variant": "6D",
         "bv": 2378
       },
-	  {
+      {
         "variant": "6S",
         "bv": 2546
       }
@@ -1399,27 +1399,27 @@
         "variant": "MA",
         "bv": 1501
       },
-	  {
+      {
         "variant": "MB",
         "bv": 1472
       },
-	  {
+      {
         "variant": "MC",
         "bv": 1501
       },
-	  {
+      {
         "variant": "MD",
         "bv": 1595
       },
-	  {
+      {
         "variant": "V",
         "bv": 1298
       },
-	  {
+      {
         "variant": "VA",
         "bv": 1328
       },
-	  {
+      {
         "variant": "2-M",
         "bv": 1828
       }
@@ -1441,71 +1441,71 @@
         "variant": "3D",
         "bv": 1338
       },
-	  {
+      {
         "variant": "3K",
         "bv": 1290
       },
-	  {
+      {
         "variant": "3L",
         "bv": 1297
       },
-	  {
+      {
         "variant": "4BR",
         "bv": 1407
       },
-	  {
+      {
         "variant": "4D",
         "bv": 1309
       },
-	  {
+      {
         "variant": "4K",
         "bv": 1268
       },
-	  {
+      {
         "variant": "5M",
         "bv": 1408
       },
-	  {
+      {
         "variant": "5S",
         "bv": 1446
       },
-	  {
+      {
         "variant": "6D",
         "bv": 1498
       },
-	  {
+      {
         "variant": "6M",
         "bv": 1373
       },
-	  {
+      {
         "variant": "7M",
         "bv": 1502
       },
-	  {
+      {
         "variant": "7M2",
         "bv": 1434
       },
-	  {
+      {
         "variant": "7W",
         "bv": 1221
       },
-	  {
+      {
         "variant": "8L",
         "bv": 1701
       },
-	  {
+      {
         "variant": "8S",
         "bv": 1698
       },
-	  {
+      {
         "variant": "8R",
         "bv": 1600
       },
-	  {
+      {
         "variant": "9BR",
         "bv": 1615
       },
-	  {
+      {
         "variant": "9R",
         "bv": 1612
       }
@@ -1527,15 +1527,15 @@
         "variant": "7",
         "bv": 1443
       },
-	  {
+      {
         "variant": "7-L",
         "bv": 1409
       },
-	  {
+      {
         "variant": "9",
         "bv": 1678
       },
-	  {
+      {
         "variant": "12",
         "bv": 1840
       }
@@ -1556,8 +1556,8 @@
       {
         "variant": "4C",
         "bv": 1602
-      }.
-	  {
+      },
+      {
         "variant": "4Db",
         "bv": 1694
       }
@@ -1579,23 +1579,23 @@
         "variant": "732b",
         "bv": 2335
       },
-	  {
+      {
         "variant": "733",
         "bv": 1801
       },
-	  {
+      {
         "variant": "733C",
         "bv": 1867
       },
-	  {
+      {
         "variant": "733P",
         "bv": 1856
       },
-	  {
+      {
         "variant": "734",
         "bv": 2214
       },
-	  {
+      {
         "variant": "738",
         "bv": 2413
       }
@@ -1617,15 +1617,15 @@
         "variant": "0000",
         "bv": 1810
       },
-	  {
+      {
         "variant": "001",
         "bv": 2221
       },
-	  {
+      {
         "variant": "007",
         "bv": 2523
       },
-	  {
+      {
         "variant": "010",
         "bv": 2181
       }
@@ -1661,27 +1661,27 @@
         "variant": "3K",
         "bv": 652
       },
-	  {
+      {
         "variant": "3KA",
         "bv": 847
       },
-	  {
+      {
         "variant": "3KB",
         "bv": 823
       },
-	  {
+      {
         "variant": "3Lb",
         "bv": 1260
       },
-	  {
+      {
         "variant": "3M",
         "bv": 758
       },
-	  {
+      {
         "variant": "4D",
         "bv": 1179
       },
-	  {
+      {
         "variant": "5WB",
         "bv": 999
       }
@@ -1721,7 +1721,7 @@
         "variant": "3-1b",
         "bv": 2307
       },
-	  {
+      {
         "variant": "3-3",
         "bv": 1989
       }
@@ -1761,11 +1761,11 @@
         "variant": "4P",
         "bv": 1376
       },
-	  {
+      {
         "variant": "5M",
         "bv": 1472
       },
-	  {
+      {
         "variant": "8D",
         "bv": 1891
       }
@@ -1787,11 +1787,11 @@
         "variant": "02",
         "bv": 1236
       },
-	  {
+      {
         "variant": "03",
         "bv": 1360
       },
-	  {
+      {
         "variant": "05",
         "bv": 1380
       }
@@ -1813,23 +1813,23 @@
         "variant": "67",
         "bv": 741
       },
-	  {
+      {
         "variant": "68",
         "bv": 676
       },
-	  {
+      {
         "variant": "69",
         "bv": 737
       },
-	  {
+      {
         "variant": "70",
         "bv": 750
       },
-	  {
+      {
         "variant": "76",
         "bv": 894
       },
-	  {
+      {
         "variant": "86",
         "bv": 887
       }
