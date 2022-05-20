@@ -1834,5 +1834,43 @@
         "bv": 887
       }
     ]
+  },
+  {
+    "name": "Annihilator",
+    "count": 2,
+    "variants": [
+      {
+        "variant": "2A",
+        "bv": 1595
+      },
+      {
+        "variant": "1A",
+        "bv": 1434
+      },
+      {
+        "variant": "1E",
+        "bv": 1625
+      },
+      {
+        "variant": "1G",
+        "bv": 2274
+      },
+      {
+        "variant": "1X",
+        "bv": 1926
+      },
+      {
+        "variant": "3A",
+        "bv": 1712
+      },
+      {
+        "variant": "4A",
+        "bv": 1726
+      },
+      {
+        "variant": "5W",
+        "bv": 2595
+      }
+    ]
   }
 ]
