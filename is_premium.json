@@ -1,0 +1,240 @@
+[
+   {
+    "name": "BattleMaster",
+    "count": 1,
+    "variants": [
+      {
+        "variant": "1G",
+        "bv": 1519
+      },
+      {
+        "variant": "3M",
+        "bv": 1697
+      }
+    ]
+  },
+  {
+    "name": "Catapult",
+    "count": 1,
+    "variants": [
+      {
+        "variant": "C1",
+        "bv": 1399
+      },
+      {
+        "variant": "K2K",
+        "bv": 1716
+      }
+    ]
+  },
+  {
+    "name": "Awesome",
+    "count": 1,
+    "variants": [
+      {
+        "variant": "8Q",
+        "bv": 1605
+      },
+      {
+        "variant": "9M",
+        "bv": 1812
+      }
+    ]
+  },
+  {
+    "name": "Locust",
+    "count": 1,
+    "variants": [
+      {
+        "variant": "1S",
+        "bv": 440
+      },
+      {
+        "variant": "3D",
+        "bv": 436
+      }
+    ]
+  },
+  {
+    "name": "Shadow Hawk",
+    "count": 1,
+    "variants": [
+      {
+        "variant": "2H",
+        "bv": 1064
+      },
+      {
+        "variant": "5M",
+        "bv": 1430
+      }
+    ]
+  },
+  {
+    "name": "Griffin",
+    "count": 1,
+    "variants": [
+      {
+        "variant": "2N",
+        "bv": 1606
+      },
+      {
+        "variant": "3M",
+        "bv": 1521
+      }
+    ]
+  },
+  {
+    "name": "Wolverine",
+    "count": 1,
+    "variants": [
+      {
+        "variant": "6K",
+        "bv": 1248
+      },
+      {
+        "variant": "7D",
+        "bv": 1314
+      }
+    ]
+  },
+  {
+    "name": "Thunderbolt",
+    "count": 1,
+    "variants": [
+      {
+        "variant": "5D",
+        "bv": 1231
+      },
+      {
+        "variant": "7M",
+        "bv": 1495
+      }
+    ]
+  },
+  {
+    "name": "Wasp",
+    "count": 1,
+    "variants": [
+      {
+        "variant": "1A",
+        "bv": 384
+      },
+      {
+        "variant": "1S",
+        "bv": 423
+      }
+    ]
+  },
+  {
+    "name": "Warhammer",
+    "count": 1,
+    "variants": [
+      {
+        "variant": "6R",
+        "bv": 1299
+      },
+      {
+        "variant": "7M",
+        "bv": 1487
+      }
+    ]
+  },
+  {
+    "name": "Rifleman",
+    "count": 1,
+    "variants": [
+      {
+        "variant": "3N",
+        "bv": 1039
+      },
+      {
+        "variant": "5D",
+        "bv": 1395
+      }
+    ]
+  },
+  {
+    "name": "Phoenix Hawk",
+    "count": 1,
+    "variants": [
+      {
+        "variant": "1",
+        "bv": 1041
+      },
+      {
+        "variant": "3K",
+        "bv": 1359
+      }
+    ]
+  },
+  {
+    "name": "Stinger",
+    "count": 1,
+    "variants": [
+      {
+        "variant": "3R",
+        "bv": 359
+      },
+      {
+        "variant": "5M",
+        "bv": 432
+      }
+    ]
+  },
+  {
+    "name": "Marauder",
+    "count": 1,
+    "variants": [
+      {
+        "variant": "3R",
+        "bv": 1363
+      }, 
+      {
+        "variant": "5S",
+        "bv": 1779
+      }
+    ]
+  },
+  {
+    "name": "Archer",
+    "count": 1,
+    "variants": [
+      {
+        "variant": "2R",
+        "bv": 1477
+      },
+      {
+        "variant": "5S",
+        "bv": 1353
+      }
+    ]
+  },
+  {
+    "name": "Atlas",
+    "count": 1,
+    "variants": [
+      {
+        "variant": "D",
+        "bv": 1897
+      },
+      {
+        "variant": "K",
+        "bv": 2175
+      }
+    ]
+  },
+  {
+    "name": "Crusader",
+    "count": 1,
+    "variants": [
+      {
+        "variant": "3R",
+        "bv": 1317
+      },
+      {
+        "variant": "4D",
+        "bv": 1309
+      }
+    ]
+  }
+]

@@ -1,0 +1,212 @@
+[
+  {
+    "name": "Viper",
+    "count": 1,
+    "variants": [
+      {
+        "variant": "Prime",
+        "bv": 1450
+      },
+      {
+        "variant": "A",
+        "bv": 1989
+      }
+    ]
+  },
+  {
+    "name": "Mad Dog",
+    "count": 1,
+    "variants": [
+      {
+        "variant": "Prime",
+        "bv": 2351
+      },
+      {
+        "variant": "A",
+        "bv": 1923
+      }
+    ]
+  },
+  {
+    "name": "Ice Ferret",
+    "count": 1,
+    "variants": [
+      {
+        "variant": "Prime",
+        "bv": 1678
+      },
+      {
+        "variant": "A",
+        "bv": 1323
+      }
+    ]
+  },
+  {
+    "name": "Hellbringer",
+    "count": 1,
+    "variants": [
+      {
+        "variant": "Prime",
+        "bv": 2654
+      },
+      {
+        "variant": "A",
+        "bv": 1948
+      }
+    ]
+  },
+  {
+    "name": "Gargoyle",
+    "count": 1,
+    "variants": [
+      {
+        "variant": "Prime",
+        "bv": 1537
+      },
+      {
+        "variant": "A",
+        "bv": 2689
+      }
+    ]
+  },
+  {
+    "name": "Summoner",
+    "count": 1,
+    "variants": [
+      {
+        "variant": "Prime",
+        "bv": 1064
+      },
+      {
+        "variant": "A",
+        "bv": 2145
+      }
+    ]
+  },
+  {
+    "name": "Mist Lynx",
+    "count": 1,
+    "variants": [
+      {
+        "variant": "Prime",
+        "bv": 871
+      },
+      {
+        "variant": "A",
+        "bv": 608
+      }
+    ]
+  },
+  {
+    "name": "Dire Wolf",
+    "count": 1,
+    "variants": [
+      {
+        "variant": "Prime",
+        "bv": 2712
+      },
+      {
+        "variant": "A",
+        "bv": 2855
+      }
+    ]
+  },
+  {
+    "name": "Adder",
+    "count": 1,
+    "variants": [
+      {
+        "variant": "Prime",
+        "bv": 2083
+      },
+      {
+        "variant": "A",
+        "bv": 1437
+      }
+    ]
+  },
+  {
+    "name": "Mongrel",
+    "count": 1,
+    "variants": [
+      {
+        "variant": "Prime",
+        "bv": 2290
+      },
+      {
+        "variant": "A",
+        "bv": 2031
+      }
+    ]
+  },
+  {
+    "name": "Nova",
+    "count": 1,
+    "variants": [
+      {
+        "variant": "Prime",
+        "bv": 2663
+      },
+      {
+        "variant": "A",
+        "bv": 2422
+      }
+    ]
+  },
+  {
+    "name": "Timber Wolf",
+    "count": 1,
+    "variants": [
+      {
+        "variant": "Prime",
+        "bv": 2737
+      },
+      {
+        "variant": "A",
+        "bv": 2854
+      }
+    ]
+  },
+  {
+    "name": "Executioner",
+    "count": 1,
+    "variants": [
+      {
+        "variant": "Prime",
+        "bv": 2749
+      },
+      {
+        "variant": "A",
+        "bv": 3112
+      }
+    ]
+  },
+  {
+    "name": "Stormcrow",
+    "count": 1,
+    "variants": [
+      {
+        "variant": "Prime",
+        "bv": 2073
+      },
+      {
+        "variant": "A",
+        "bv": 2319
+      }
+    ]
+  },
+  {
+    "name": "Fire Moth",
+    "count": 1,
+    "variants": [
+      {
+        "variant": "Prime",
+        "bv": 1251
+      },
+      {
+        "variant": "A",
+        "bv": 639
+      }
+    ]
+  }
+]
