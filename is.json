@@ -1872,5 +1872,19 @@
         "bv": 2595
       }
     ]
+  },
+  {
+    "name": "Wraith",
+    "count": 1,
+    "variants": [
+      {
+        "variant": "TR1",
+        "bv": 1287
+      },
+      {
+        "variant": "TR2",
+        "bv": 1485
+      }
+    ]
   }
 ]
