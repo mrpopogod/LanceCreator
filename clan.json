@@ -1046,5 +1046,31 @@
         "bv": 2998
       }
     ]
+  },
+  {
+    "name": "Pouncer",
+    "count": 1,
+    "variants": [
+      {
+        "variant": "Prime",
+        "bv": 2557
+      },
+      {
+        "variant": "A",
+        "bv": 2081
+      },
+      {
+        "variant": "B",
+        "bv": 1836
+      },
+      {
+        "variant": "C",
+        "bv": 1653
+      },
+      {
+        "variant": "D",
+        "bv": 2246
+      }
+    ]
   }
 ]
