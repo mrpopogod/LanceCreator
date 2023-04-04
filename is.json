@@ -3146,5 +3146,83 @@
         "bv": 1794
       }
     ]
+  },
+  {
+    "name": "Penetrator",
+    "count": 1,
+    "variants": [
+      {
+        "variant": "4D",
+        "bv": 1687
+      },
+      {
+        "variant": "4F",
+        "bv": 1564
+      },
+      {
+        "variant": "6M",
+        "bv": 1639
+      },
+      {
+        "variant": "6S",
+        "bv": 1689
+      },
+      {
+        "variant": "6T",
+        "bv": 1994
+      },
+      {
+        "variant": "8D",
+        "bv": 2130
+      }
+    ]
+  },
+  {
+    "name": "Gunslinger",
+    "count": 1,
+    "variants": [
+      {
+        "variant": "1ERD",
+        "bv": 2286
+      },
+      {
+        "variant": "3ERD"
+        "bv": 2844
+      }
+    ]
+  },
+  {
+    "name": "Nightsky",
+    "count": 1,
+    "variants": [
+      {
+        "variant": "4S",
+        "bv": 1159
+      },
+      {
+        "variant": "4T",
+        "bv": 1287
+      },
+      {
+        "variant": "5S",
+        "bv": 1045
+      },
+      {
+        "variant": "5T",
+        "bv": 1356
+      },
+      {
+        "variant": "6S",
+        "bv": 1474
+      },
+      {
+        "variant": "6T",
+        "bv": 1430
+      },
+      {
+        "variant": "7S",
+        "bv": 1591
+      }
+    ]
   }
 ]
