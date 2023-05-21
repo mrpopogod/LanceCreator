@@ -1,17 +1,19 @@
+use serde::Deserialize;
 use sorted_vec::SortedVec;
 
-#[derive(PartialEq, PartialOrd, Eq, Ord)]
+#[derive(Deserialize, PartialEq, PartialOrd, Eq, Ord)]
 pub struct Mech {
+    #[serde(skip)]
     pub name: String,
     pub variant: String,
     pub bv: u32,
 }
 
-#[derive(PartialEq, PartialOrd)]
+#[derive(Deserialize, PartialEq, PartialOrd)]
 pub struct Model {
     pub name: String,
     pub count: u8,
-    pub variants: SortedVec<Mech>,
+    pub variants: Vec<Mech>,
 }
 
 impl Model {
