@@ -3,12 +3,22 @@ use std::fmt::{Formatter, Display};
 use serde::Deserialize;
 use sorted_vec::SortedVec;
 
-#[derive(Clone, Deserialize, PartialEq, PartialOrd, Eq, Ord)]
+#[derive(Clone, Deserialize, PartialEq, PartialOrd, Eq, Hash)]
 pub struct Mech {
     #[serde(skip)]
     pub name: String,
     pub variant: String,
     pub bv: u32,
+}
+
+impl Ord for Mech {
+    fn cmp(&self, other: &Self) -> std::cmp::Ordering {
+        let name_cmp = self.name.cmp(&other.name);
+        match name_cmp {
+            std::cmp::Ordering::Equal => self.variant.cmp(&other.variant),
+            _ => name_cmp,
+        }
+    }
 }
 
 #[derive(Deserialize)]
@@ -26,12 +36,18 @@ impl Display for ModelValidationError {
     }
 }
 
-#[derive(Deserialize, PartialEq, PartialOrd)]
+#[derive(Clone, Deserialize, PartialEq, PartialOrd, Eq, Hash)]
 #[serde(try_from = "ModelShadow")]
 pub struct Model {
     pub name: String,
     pub count: u8,
     pub variants: Vec<Mech>,
+}
+
+impl Ord for Model {
+    fn cmp(&self, other: &Self) -> std::cmp::Ordering {
+        self.name.cmp(&other.name)
+    }
 }
 
 impl TryFrom<ModelShadow> for Model {
@@ -76,12 +92,46 @@ impl Model {
     }
 }
 
+#[derive(PartialEq, PartialOrd, Eq, Hash)]
+pub struct ModelForce {
+    pub models: SortedVec<Model>
+}
+
+impl ModelForce {
+    pub fn min_bv(&self) -> u32 {
+        let mut min = 0;
+        for model in self.models.iter() {
+            min += model.min_bv();
+        }
+
+        min
+    }
+
+    pub fn max_bv(&self) -> u32 {
+        let mut max = 0;
+        for model in self.models.iter() {
+            max += model.max_bv();
+        }
+
+        max
+    }
+}
+
 #[derive(PartialEq, PartialOrd)]
 pub struct Force {
     pub mechs: SortedVec<Mech>
 }
 
 impl Force {
+    pub fn bv(&self) -> u32 {
+        let mut bv = 0;
+        for mech in self.mechs.iter() {
+            bv += mech.bv;
+        }
+
+        bv
+    }
+
     pub fn to_csv(&self) -> String {
         let mut retval = String::new();
         let mut bv = 0;
@@ -94,6 +144,7 @@ impl Force {
         }
 
         retval += &bv.to_string();
+        retval += "\n";
         retval
     }
 }
