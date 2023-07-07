@@ -18,9 +18,9 @@ fn main() {
 
     // TODO: comand line params instead of fixed
     // TODO: hard limit of 6 because the time gets to be ages
-    let force_size = 6;
-    let min_bv = 5900;
-    let max_bv = 6000;
+    let force_size = 4;
+    let min_bv = 4900;
+    let max_bv = 5000;
 
     let mut model_forces: HashSet<ModelForce> = HashSet::new();
     let mut attempts = 0;
@@ -73,7 +73,7 @@ fn main() {
                 mechs: SortedVec::new(),
             };
             for mech in mech_vec {
-                force.mechs.push(mech.clone().clone());
+                force.mechs.push((*mech).clone());
             }
 
             let bv = force.bv();
