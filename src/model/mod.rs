@@ -1,7 +1,9 @@
+use std::fmt::{Formatter, Display};
+
 use serde::Deserialize;
 use sorted_vec::SortedVec;
 
-#[derive(Deserialize, PartialEq, PartialOrd, Eq, Ord)]
+#[derive(Clone, Deserialize, PartialEq, PartialOrd, Eq, Ord)]
 pub struct Mech {
     #[serde(skip)]
     pub name: String,
@@ -9,11 +11,45 @@ pub struct Mech {
     pub bv: u32,
 }
 
+#[derive(Deserialize)]
+struct ModelShadow {
+    name: String,
+    count: u8,
+    variants: Vec<Mech>
+}
+
+pub struct ModelValidationError;
+
+impl Display for ModelValidationError {
+    fn fmt(&self, f: &mut Formatter<'_>) -> std::fmt::Result {
+        write!(f, "somehow got error when shadow should have just populated")
+    }
+}
+
 #[derive(Deserialize, PartialEq, PartialOrd)]
+#[serde(try_from = "ModelShadow")]
 pub struct Model {
     pub name: String,
     pub count: u8,
     pub variants: Vec<Mech>,
+}
+
+impl TryFrom<ModelShadow> for Model {
+    type Error = ModelValidationError;
+
+    fn try_from(value: ModelShadow) -> Result<Self, Self::Error> {
+        let mut model = Model {
+            name: value.name,
+            count: value.count,
+            variants: value.variants
+        };
+
+        for mech in model.variants.iter_mut() {
+            mech.name = model.name.clone();
+        }
+
+        Ok(model)
+    }
 }
 
 impl Model {
@@ -42,8 +78,7 @@ impl Model {
 
 #[derive(PartialEq, PartialOrd)]
 pub struct Force {
-    pub mechs: SortedVec<Mech>,
-    pub bv: u32,
+    pub mechs: SortedVec<Mech>
 }
 
 impl Force {
