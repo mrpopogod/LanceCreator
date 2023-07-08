@@ -3,6 +3,7 @@ use std::env::args;
 use std::fs::File;
 use std::io::{LineWriter, Write};
 use std::path::Path;
+use std::process::exit;
 use std::time::Instant;
 
 use getopts::Options;
@@ -38,50 +39,36 @@ fn main() {
 
     let matches = match opts.parse(&args[1..]) {
         Ok(m) => m,
-        Err(_) => {
-            print_usage(&program, opts);
-            return;
-        }
+        Err(_) => return terminate(&program, &opts, 0),
     };
 
     if matches.opt_present("h") {
-        print_usage(&program, opts);
-        return;
+        terminate(&program, &opts, 0);
     }
 
     let file = File::open(matches.opt_str("f").unwrap()).unwrap();
     let loaded_models: Vec<Model> = serde_json::from_reader(file).unwrap();
 
     let force_size = match matches.opt_get_default("s", 4) {
+        Ok(s) if s > 6 => return terminate(&program, &opts, 1),
         Ok(s) => s,
-        Err(_) => {
-            print_usage(&program, opts);
-            return;
-        }
+        Err(_) => return terminate(&program, &opts, 1),
     };
 
     let min_bv = match matches.opt_get_default("m", 4900) {
         Ok(m) => m,
-        Err(_) => {
-            print_usage(&program, opts);
-            return;
-        }
+        Err(_) => return terminate(&program, &opts, 1),
     };
 
     let max_bv = match matches.opt_get_default("b", 5000) {
         Ok(b) => b,
-        Err(_) => {
-            print_usage(&program, opts);
-            return;
-        }
+        Err(_) => return terminate(&program, &opts, 1),
     };
 
     let num_forces = match matches.opt_get_default("n", 3) {
-        Ok(n) => n,
-        Err(_) => {
-            print_usage(&program, opts);
-            return;
-        }
+        Ok(f) if f > 5 => return terminate(&program, &opts, 1),
+        Ok(f) => f,
+        Err(_) => return terminate(&program, &opts, 1),
     };
 
     let mut rng = rand::thread_rng();
@@ -165,7 +152,12 @@ fn main() {
     spinner.stop_with_message(format!("Created forces in {}s", now.elapsed().as_secs()));
 }
 
-fn print_usage(program: &str, opts: Options) {
+fn terminate(program: &str, opts: &Options, code: i32) {
+    print_usage(program, opts);
+    exit(code);
+}
+
+fn print_usage(program: &str, opts: &Options) {
     let brief = format!("Usage: {} FILE [options]", program);
     print!("{}", opts.usage(&brief));
 }
