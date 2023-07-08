@@ -164,3 +164,17 @@ impl Force {
         retval
     }
 }
+
+pub struct Params {
+    pub min_bv: u32,
+    pub max_bv: u32,
+    pub force_size: usize,
+    pub num_forces: usize
+}
+
+impl From<Params> for (u32, u32, usize, usize) {
+    fn from(p: Params) -> (u32, u32, usize, usize) {
+        let Params { min_bv, max_bv, force_size, num_forces } = p;
+        (min_bv, max_bv, force_size, num_forces)
+    }
+}

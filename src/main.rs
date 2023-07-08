@@ -8,7 +8,7 @@ use std::time::Instant;
 
 use getopts::Options;
 use itertools::Itertools;
-use lance_creator::model::{Force, Model, ModelForce};
+use lance_creator::model::{Force, Model, ModelForce, Params};
 use rand::Rng;
 use sorted_vec::SortedVec;
 use spinners::{Spinner, Spinners};
@@ -19,23 +19,7 @@ fn main() {
     let args: Vec<String> = args().collect();
     let program = args[0].clone();
 
-    let mut opts = Options::new();
-    opts.reqopt("f", "file", "Input file of mechs", "FILE");
-    opts.optopt("b", "bv", "Target BV (default: 5000)", "BV");
-    opts.optopt("m", "minBv", "Minimum acceptable BV (default: 4900)", "BV");
-    opts.optopt(
-        "s",
-        "size",
-        "How many units in a force (default: 4, max: 6",
-        "SIZE",
-    );
-    opts.optopt(
-        "n",
-        "numForces",
-        "How many distinct sets of model to create options for (default: 3, max: 5)",
-        "FORCES",
-    );
-    opts.optflag("h", "help", "Print this help menu");
+    let opts = get_opts();
 
     let matches = match opts.parse(&args[1..]) {
         Ok(m) => m,
@@ -43,62 +27,19 @@ fn main() {
     };
 
     if matches.opt_present("h") {
-        terminate(&program, &opts, 0);
+        return terminate(&program, &opts, 0);
     }
+
+    let (min_bv, max_bv, force_size, num_forces) = match validate_opts(&matches) {
+        Ok(value) => value.into(),
+        Err(_) => return terminate(&program, &opts, 1),
+    };
 
     let file = File::open(matches.opt_str("f").unwrap()).unwrap();
     let loaded_models: Vec<Model> = serde_json::from_reader(file).unwrap();
 
-    let force_size = match matches.opt_get_default("s", 4) {
-        Ok(s) if s > 6 => return terminate(&program, &opts, 1),
-        Ok(s) => s,
-        Err(_) => return terminate(&program, &opts, 1),
-    };
-
-    let min_bv = match matches.opt_get_default("m", 4900) {
-        Ok(m) => m,
-        Err(_) => return terminate(&program, &opts, 1),
-    };
-
-    let max_bv = match matches.opt_get_default("b", 5000) {
-        Ok(b) => b,
-        Err(_) => return terminate(&program, &opts, 1),
-    };
-
-    let num_forces = match matches.opt_get_default("n", 3) {
-        Ok(f) if f > 5 => return terminate(&program, &opts, 1),
-        Ok(f) => f,
-        Err(_) => return terminate(&program, &opts, 1),
-    };
-
-    let mut rng = rand::thread_rng();
     let mut model_forces: HashSet<ModelForce> = HashSet::new();
-    let mut attempts = 0;
-    while model_forces.len() < num_forces && attempts < MAX_ATTEMPTS {
-        attempts += 1;
-        let mut force = ModelForce {
-            models: SortedVec::new(),
-        };
-        let mut copied_models = loaded_models.clone();
-        for i in 0..force_size {
-            let n = rng.gen_range(0..copied_models.len());
-            let model = copied_models.get_mut(n).unwrap();
-            if model.count > 1 {
-                force.models.insert(model.clone());
-                model.count -= 1;
-            } else {
-                let model = copied_models.swap_remove(i);
-                force.models.insert(model);
-            }
-        }
-
-        if force.max_bv() < min_bv || force.min_bv() > max_bv {
-            continue;
-        }
-
-        println!("Created valid force");
-        model_forces.insert(force);
-    }
+    generate_model_forces(&mut model_forces, num_forces, loaded_models, force_size, min_bv, max_bv);
 
     if model_forces.len() < num_forces {
         println!(
@@ -108,17 +49,20 @@ fn main() {
     }
 
     let path = Path::new("forces.csv");
-    let output_file = match File::create(path) {
+    let mut output_file = match File::create(path) {
         Ok(file) => file,
         Err(e) => panic!("Couldn't create {}: {}", path.display(), e),
     };
 
-    let mut output_file = LineWriter::new(output_file);
-
-    // TODO: output total time taken
-    // TODO: some sort of "working on it" output so we don't think we're frozen
     let now = Instant::now();
     let mut spinner = Spinner::new(Spinners::Line, "Generating force variants".into());
+    generate_variants_and_write_out(&mut output_file, model_forces, min_bv, max_bv);
+
+    spinner.stop_with_message(format!("Created forces in {}s", now.elapsed().as_secs()));
+}
+
+fn generate_variants_and_write_out<W: Write>(output: &mut W, model_forces: HashSet<ModelForce>, min_bv: u32, max_bv: u32) {
+    let mut output_file = LineWriter::new(output);
     for model_force in model_forces {
         let mut mech_vecs = Vec::new();
         for model in model_force.models.iter() {
@@ -148,8 +92,82 @@ fn main() {
             }
         }
     }
+}
 
-    spinner.stop_with_message(format!("Created forces in {}s", now.elapsed().as_secs()));
+fn generate_model_forces(model_forces: &mut HashSet<ModelForce>, num_forces: usize, loaded_models: Vec<Model>, force_size: usize, min_bv: u32, max_bv: u32) {
+    let mut rng = rand::thread_rng();
+    let mut attempts = 0;
+    while model_forces.len() < num_forces && attempts < MAX_ATTEMPTS {
+        attempts += 1;
+        let mut force = ModelForce {
+            models: SortedVec::new(),
+        };
+        let mut copied_models = loaded_models.clone();
+        for i in 0..force_size {
+            let n = rng.gen_range(0..copied_models.len());
+            let model = copied_models.get_mut(n).unwrap();
+            if model.count > 1 {
+                force.models.insert(model.clone());
+                model.count -= 1;
+            } else {
+                let model = copied_models.swap_remove(i);
+                force.models.insert(model);
+            }
+        }
+
+        if force.max_bv() < min_bv || force.min_bv() > max_bv {
+            continue;
+        }
+
+        println!("Created valid force");
+        model_forces.insert(force);
+    }
+}
+
+fn validate_opts(matches: &getopts::Matches) -> Result<Params, ()> {
+    let min_bv = match matches.opt_get_default("m", 4900) {
+        Ok(m) => m,
+        Err(_) => return Err(()),
+    };
+    let max_bv = match matches.opt_get_default("b", 5000) {
+        Ok(b) => b,
+        Err(_) => return Err(()),
+    };
+    let force_size = match matches.opt_get_default("s", 4) {
+        Ok(s) if s > 6 => return Err(()),
+        Ok(s) => s,
+        Err(_) => return Err(()),
+    };
+    let num_forces = match matches.opt_get_default("n", 3) {
+        Ok(f) if f > 5 => return Err(()),
+        Ok(f) => f,
+        Err(_) => return Err(()),
+    };
+    if min_bv > max_bv {
+        return Err(())
+    }
+    Ok(Params{ min_bv: min_bv, max_bv: max_bv, force_size: force_size, num_forces: num_forces })
+}
+
+fn get_opts() -> Options {
+    let mut opts = Options::new();
+    opts.reqopt("f", "file", "Input file of mechs", "FILE");
+    opts.optopt("b", "bv", "Target BV (default: 5000)", "BV");
+    opts.optopt("m", "minBv", "Minimum acceptable BV (default: 4900)", "BV");
+    opts.optopt(
+        "s",
+        "size",
+        "How many units in a force (default: 4, max: 6",
+        "SIZE",
+    );
+    opts.optopt(
+        "n",
+        "numForces",
+        "How many distinct sets of model to create options for (default: 3, max: 5)",
+        "FORCES",
+    );
+    opts.optflag("h", "help", "Print this help menu");
+    opts
 }
 
 fn terminate(program: &str, opts: &Options, code: i32) {
@@ -160,4 +178,107 @@ fn terminate(program: &str, opts: &Options, code: i32) {
 fn print_usage(program: &str, opts: &Options) {
     let brief = format!("Usage: {} FILE [options]", program);
     print!("{}", opts.usage(&brief));
+}
+
+#[cfg(test)]
+mod tests {
+    use crate::*;
+    use lance_creator::model::Mech;
+    use rstest::{rstest, fixture};
+
+    #[rstest]
+    #[case::no_args(vec![], false, false)]
+    #[case::no_optional_args(vec!["-f", "foo"], true, true)]
+    #[case::only_optional_args(vec!["-b", "5000", "-m" , "3000", "-s", "3", "-n", "5"], false, false)]
+    #[case::valid_optional_args(vec!["-f", "foo", "b", "5000", "-m", "3000", "-s", "3", "-n", "5"], true, true)]
+    #[case::invalid_force_size_args(vec!["-f", "foo", "-s", "7", "-n", "5"], true, false)]
+    #[case::invalid_num_forces_args(vec!["-f", "foo", "-s", "3", "-n", "6"], true, false)]
+    #[case::invalid_min_bv(vec!["-f", "foo", "-m", "6000"], true, false)]
+    #[case::invalid_max_bv(vec!["-f", "foo", "-b", "4000"], true, false)]
+    #[case::invalid_bv(vec!["-f", "foo", "-m", "6000", "-b", "4000"], true, false)]
+    fn test_valid_options(#[case] args: Vec<&str>, #[case] is_parseable: bool, #[case] is_valid: bool) {
+        let opts = get_opts();
+        let matches = match opts.parse(args) {
+            Ok(m) => {
+                assert!(is_parseable);
+                m
+            }
+            Err(_) => {
+                assert!(!is_parseable);
+                return;
+            }
+        };
+
+        if !is_parseable {
+            return
+        }
+
+        match validate_opts(&matches) {
+            Ok(_) => {
+                assert!(is_valid);
+            }
+            Err(_) => {
+                assert!(!is_valid);
+            }
+        }
+    }
+
+    #[fixture]
+    fn model_forces() -> HashSet<ModelForce> {
+        let first_mech_first_variant = Mech{
+            name: String::from("a"),
+            variant: String::from("1"),
+            bv: 100
+        };
+        let first_mech_second_variant = Mech{
+            name: String::from("a"),
+            variant: String::from("2"),
+            bv: 5000
+        };
+        let first_mech: Model = Model {
+            name: String::from("a"),
+            count: 1,
+            variants: vec![first_mech_first_variant, first_mech_second_variant]
+        };
+
+        let second_mech_first_variant = Mech{
+            name: String::from("b"),
+            variant: String::from("1"),
+            bv: 10
+        };
+        let second_mech_second_variant = Mech{
+            name: String::from("b"),
+            variant: String::from("2"),
+            bv: 500
+        };
+        let second_mech: Model = Model {
+            name: String::from("b"),
+            count: 1,
+            variants: vec![second_mech_first_variant, second_mech_second_variant]
+        };
+
+
+        let first_mech = ModelForce{
+            models: SortedVec::from_unsorted(vec![first_mech, second_mech])
+        };
+
+        let mut ret = HashSet::new();
+        ret.insert(first_mech);
+        ret
+    }
+
+    #[rstest]
+    #[case::bv_too_low(0, 10, "")]
+    #[case::a1_and_b1(0, 110, "a 1,b 1,110\n")]
+    #[case::a1_and_b(0, 600, "a 1,b 1,110\na 1,b 2,600\n")]
+    #[case::a2_and_b1(5000, 5100, "a 2,b 1,5010\n")]
+    #[case::a2_and_b(5000, 10000, "a 2,b 1,5010\na 2,b 2,5500\n")]
+    #[case::a_and_b(0, 10000, "a 1,b 1,110\na 1,b 2,600\na 2,b 1,5010\na 2,b 2,5500\n")]
+    #[case::bv_too_high(10000, 50000, "")]
+    fn test_generate_variants(model_forces: HashSet<ModelForce>, #[case] min_bv: u32, #[case] max_bv: u32, #[case] expected: String) {
+        let mut writer: Vec<u8> = Vec::new();
+        generate_variants_and_write_out(&mut writer, model_forces, min_bv, max_bv);
+        let result = String::from_utf8(writer).unwrap();
+        assert_eq!(expected, result);
+    }
 }
