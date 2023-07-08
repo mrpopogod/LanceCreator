@@ -1,30 +1,94 @@
 use std::collections::HashSet;
+use std::env::args;
 use std::fs::File;
-use std::io::{Write, LineWriter};
+use std::io::{LineWriter, Write};
 use std::path::Path;
+use std::time::Instant;
 
+use getopts::Options;
 use itertools::Itertools;
 use lance_creator::model::{Force, Model, ModelForce};
 use rand::Rng;
 use sorted_vec::SortedVec;
+use spinners::{Spinner, Spinners};
 
 const MAX_ATTEMPTS: u16 = 5000;
 
 fn main() {
-    let mut rng = rand::thread_rng();
+    let args: Vec<String> = args().collect();
+    let program = args[0].clone();
 
-    let file = File::open("is.json").unwrap();
+    let mut opts = Options::new();
+    opts.reqopt("f", "file", "Input file of mechs", "FILE");
+    opts.optopt("b", "bv", "Target BV (default: 5000)", "BV");
+    opts.optopt("m", "minBv", "Minimum acceptable BV (default: 4900)", "BV");
+    opts.optopt(
+        "s",
+        "size",
+        "How many units in a force (default: 4, max: 6",
+        "SIZE",
+    );
+    opts.optopt(
+        "n",
+        "numForces",
+        "How many distinct sets of model to create options for (default: 3, max: 5)",
+        "FORCES",
+    );
+    opts.optflag("h", "help", "Print this help menu");
+
+    let matches = match opts.parse(&args[1..]) {
+        Ok(m) => m,
+        Err(_) => {
+            print_usage(&program, opts);
+            return;
+        }
+    };
+
+    if matches.opt_present("h") {
+        print_usage(&program, opts);
+        return;
+    }
+
+    let file = File::open(matches.opt_str("f").unwrap()).unwrap();
     let loaded_models: Vec<Model> = serde_json::from_reader(file).unwrap();
 
-    // TODO: comand line params instead of fixed
-    // TODO: hard limit of 6 because the time gets to be ages
-    let force_size = 4;
-    let min_bv = 4900;
-    let max_bv = 5000;
+    let force_size = match matches.opt_get_default("s", 4) {
+        Ok(s) => s,
+        Err(_) => {
+            print_usage(&program, opts);
+            return;
+        }
+    };
 
+    let min_bv = match matches.opt_get_default("m", 4900) {
+        Ok(m) => m,
+        Err(_) => {
+            print_usage(&program, opts);
+            return;
+        }
+    };
+
+    let max_bv = match matches.opt_get_default("b", 5000) {
+        Ok(b) => b,
+        Err(_) => {
+            print_usage(&program, opts);
+            return;
+        }
+    };
+
+    let num_forces = match matches.opt_get_default("n", 3) {
+        Ok(n) => n,
+        Err(_) => {
+            print_usage(&program, opts);
+            return;
+        }
+    };
+
+    let mut rng = rand::thread_rng();
     let mut model_forces: HashSet<ModelForce> = HashSet::new();
     let mut attempts = 0;
-    while model_forces.len() < 5 && attempts < MAX_ATTEMPTS {
+    while model_forces.len() < num_forces && attempts < MAX_ATTEMPTS {
+        attempts += 1;
         let mut force = ModelForce {
             models: SortedVec::new(),
         };
@@ -41,15 +105,23 @@ fn main() {
             }
         }
 
-        if force.min_bv() < max_bv || force.max_bv() > min_bv {
-            model_forces.insert(force);
+        if force.max_bv() < min_bv || force.min_bv() > max_bv {
+            continue;
         }
 
-        attempts += 1;
+        println!("Created valid force");
+        model_forces.insert(force);
+    }
+
+    if model_forces.len() < num_forces {
+        println!(
+            "Only found {} forces within the BV range",
+            model_forces.len()
+        );
     }
 
     let path = Path::new("forces.csv");
-    let output_file = match File::create(&path) {
+    let output_file = match File::create(path) {
         Ok(file) => file,
         Err(e) => panic!("Couldn't create {}: {}", path.display(), e),
     };
@@ -58,6 +130,8 @@ fn main() {
 
     // TODO: output total time taken
     // TODO: some sort of "working on it" output so we don't think we're frozen
+    let now = Instant::now();
+    let mut spinner = Spinner::new(Spinners::Line, "Generating force variants".into());
     for model_force in model_forces {
         let mut mech_vecs = Vec::new();
         for model in model_force.models.iter() {
@@ -87,4 +161,11 @@ fn main() {
             }
         }
     }
+
+    spinner.stop_with_message(format!("Created forces in {}s", now.elapsed().as_secs()));
+}
+
+fn print_usage(program: &str, opts: Options) {
+    let brief = format!("Usage: {} FILE [options]", program);
+    print!("{}", opts.usage(&brief));
 }

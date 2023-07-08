@@ -1,9 +1,10 @@
-use std::fmt::{Formatter, Display};
+use std::cmp::Ordering;
+use std::fmt::{Display, Formatter};
 
 use serde::Deserialize;
 use sorted_vec::SortedVec;
 
-#[derive(Clone, Deserialize, PartialEq, PartialOrd, Eq, Hash)]
+#[derive(Clone, Deserialize, PartialEq, Eq, Hash)]
 pub struct Mech {
     #[serde(skip)]
     pub name: String,
@@ -11,11 +12,17 @@ pub struct Mech {
     pub bv: u32,
 }
 
+impl PartialOrd for Mech {
+    fn partial_cmp(&self, other: &Mech) -> Option<Ordering> {
+        Some(self.cmp(other))
+    }
+}
+
 impl Ord for Mech {
-    fn cmp(&self, other: &Self) -> std::cmp::Ordering {
+    fn cmp(&self, other: &Self) -> Ordering {
         let name_cmp = self.name.cmp(&other.name);
         match name_cmp {
-            std::cmp::Ordering::Equal => self.variant.cmp(&other.variant),
+            Ordering::Equal => self.variant.cmp(&other.variant),
             _ => name_cmp,
         }
     }
@@ -25,23 +32,32 @@ impl Ord for Mech {
 struct ModelShadow {
     name: String,
     count: u8,
-    variants: Vec<Mech>
+    variants: Vec<Mech>,
 }
 
 pub struct ModelValidationError;
 
 impl Display for ModelValidationError {
     fn fmt(&self, f: &mut Formatter<'_>) -> std::fmt::Result {
-        write!(f, "somehow got error when shadow should have just populated")
+        write!(
+            f,
+            "somehow got error when shadow should have just populated"
+        )
     }
 }
 
-#[derive(Clone, Deserialize, PartialEq, PartialOrd, Eq, Hash)]
+#[derive(Clone, Deserialize, PartialEq, Eq, Hash)]
 #[serde(try_from = "ModelShadow")]
 pub struct Model {
     pub name: String,
     pub count: u8,
     pub variants: Vec<Mech>,
+}
+
+impl PartialOrd for Model {
+    fn partial_cmp(&self, other: &Model) -> Option<Ordering> {
+        Some(self.cmp(other))
+    }
 }
 
 impl Ord for Model {
@@ -57,7 +73,7 @@ impl TryFrom<ModelShadow> for Model {
         let mut model = Model {
             name: value.name,
             count: value.count,
-            variants: value.variants
+            variants: value.variants,
         };
 
         for mech in model.variants.iter_mut() {
@@ -94,7 +110,7 @@ impl Model {
 
 #[derive(PartialEq, PartialOrd, Eq, Hash)]
 pub struct ModelForce {
-    pub models: SortedVec<Model>
+    pub models: SortedVec<Model>,
 }
 
 impl ModelForce {
@@ -119,7 +135,7 @@ impl ModelForce {
 
 #[derive(PartialEq, PartialOrd)]
 pub struct Force {
-    pub mechs: SortedVec<Mech>
+    pub mechs: SortedVec<Mech>,
 }
 
 impl Force {
