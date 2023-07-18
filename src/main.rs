@@ -21,6 +21,7 @@ fn main() {
 
     let opts = get_opts();
 
+    // TODO: interactive mode
     let matches = match opts.parse(&args[1..]) {
         Ok(m) => m,
         Err(_) => return terminate(&program, &opts, 0),
@@ -35,11 +36,15 @@ fn main() {
         Err(_) => return terminate(&program, &opts, 1),
     };
 
+    let required_mech = matches.opt_str("r");
+
+    // TODO: better error return
     let file = File::open(matches.opt_str("f").unwrap()).unwrap();
     let loaded_models: Vec<Model> = serde_json::from_reader(file).unwrap();
 
     let mut model_forces: HashSet<ModelForce> = HashSet::new();
-    generate_model_forces(&mut model_forces, num_forces, loaded_models, force_size, min_bv, max_bv);
+    // TODO: better error return when required mech not found
+    generate_model_forces(&mut model_forces, num_forces, loaded_models, force_size, min_bv, max_bv, required_mech);
 
     if model_forces.len() < num_forces {
         println!(
@@ -94,7 +99,7 @@ fn generate_variants_and_write_out<W: Write>(output: &mut W, model_forces: HashS
     }
 }
 
-fn generate_model_forces(model_forces: &mut HashSet<ModelForce>, num_forces: usize, loaded_models: Vec<Model>, force_size: usize, min_bv: u32, max_bv: u32) {
+fn generate_model_forces(model_forces: &mut HashSet<ModelForce>, num_forces: usize, loaded_models: Vec<Model>, force_size: usize, min_bv: u32, max_bv: u32, required_mech: Option<String>) {
     let mut rng = rand::thread_rng();
     let mut attempts = 0;
     while model_forces.len() < num_forces && attempts < MAX_ATTEMPTS {
@@ -104,6 +109,25 @@ fn generate_model_forces(model_forces: &mut HashSet<ModelForce>, num_forces: usi
         };
         let mut copied_models = loaded_models.clone();
         for i in 0..force_size {
+            if i == 0 && required_mech.is_some() {
+                let required_mech_name = required_mech.as_ref().unwrap();
+                match copied_models.iter().position(|m| m.name == *required_mech_name) {
+                    Some(pos) => {
+                        let model = copied_models.get_mut(pos).unwrap();
+                        if model.count > 1 {
+                            force.models.insert(model.clone());
+                            model.count -= 1;
+                        } else {
+                            let model = copied_models.swap_remove(pos);
+                            force.models.insert(model.clone());
+                        }
+                        
+                        continue;
+                    },
+                    None => panic!("Mech '{}' is not in the input data set", required_mech_name),
+                }
+            }
+
             let n = rng.gen_range(0..copied_models.len());
             let model = copied_models.get_mut(n).unwrap();
             if model.count > 1 {
@@ -167,6 +191,12 @@ fn get_opts() -> Options {
         "FORCES",
     );
     opts.optflag("h", "help", "Print this help menu");
+    opts.optopt(
+        "r",
+        "requiredMech",
+        "Base chassis that needs to be in the results (default: none)",
+        "MECH",
+    );
     opts
 }
 
