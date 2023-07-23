@@ -6,7 +6,7 @@ use std::path::Path;
 use std::process::exit;
 use std::time::Instant;
 
-use getopts::Options;
+use getopts::{Options, Fail};
 use itertools::Itertools;
 use lance_creator::model::{Force, Model, ModelForce, Params};
 use rand::Rng;
@@ -18,13 +18,23 @@ const MAX_ATTEMPTS: u16 = 5000;
 fn main() {
     let args: Vec<String> = args().collect();
     let program = args[0].clone();
+    let program = Path::new(&program);
+    let program = program.file_name().unwrap().to_str().unwrap();
 
     let opts = get_opts();
 
-    // TODO: interactive mode
     let matches = match opts.parse(&args[1..]) {
         Ok(m) => m,
-        Err(_) => return terminate(&program, &opts, 0),
+        Err(e) => {
+            match e {
+                Fail::ArgumentMissing(a) => println!("Argument missing for option: {}", a),
+                Fail::UnrecognizedOption(a) => println!("Unrecognized option: {}", a),
+                Fail::OptionMissing(a) => println!("Option missing: {}", a),
+                Fail::OptionDuplicated(a) => println!("Option specified multiple times: {}", a),
+                Fail::UnexpectedArgument(a) => println!("Unexpected argument for option: {}", a),
+            }
+            return terminate(&program, &opts, 0);
+        },
     };
 
     if matches.opt_present("h") {
@@ -38,13 +48,29 @@ fn main() {
 
     let required_mech = matches.opt_str("r");
 
-    // TODO: better error return
-    let file = File::open(matches.opt_str("f").unwrap()).unwrap();
-    let loaded_models: Vec<Model> = serde_json::from_reader(file).unwrap();
+    let filename = matches.opt_str("f").unwrap(); // required arg; parse would have failed
+    let file = match File::open(&filename) {
+        Ok(f) => f,
+        Err(e) => {
+            println!("Error opening {}: {}", filename, e);
+            return terminate(&program, &opts, 1);
+        },
+    };
+    let loaded_models: Vec<Model> = match serde_json::from_reader(file){
+        Ok(m) => m,
+        Err(e) => {
+            println!("Error reading {}: {}", filename, e);
+            return terminate(&program, &opts, 1);
+        },
+    };
 
-    let mut model_forces: HashSet<ModelForce> = HashSet::new();
-    // TODO: better error return when required mech not found
-    generate_model_forces(&mut model_forces, num_forces, loaded_models, force_size, min_bv, max_bv, required_mech);
+    let model_forces: HashSet<ModelForce> = match generate_model_forces(num_forces, loaded_models, force_size, min_bv, max_bv, required_mech) {
+        Ok(m) => m,
+        Err(e) => {
+            println!("Failed to generate model forces: {}", e);
+            return terminate(&program, &opts, 1);
+        },
+    };
 
     if model_forces.len() < num_forces {
         println!(
@@ -99,9 +125,10 @@ fn generate_variants_and_write_out<W: Write>(output: &mut W, model_forces: HashS
     }
 }
 
-fn generate_model_forces(model_forces: &mut HashSet<ModelForce>, num_forces: usize, loaded_models: Vec<Model>, force_size: usize, min_bv: u32, max_bv: u32, required_mech: Option<String>) {
+fn generate_model_forces(num_forces: usize, loaded_models: Vec<Model>, force_size: usize, min_bv: u32, max_bv: u32, required_mech: Option<String>) -> Result<HashSet<ModelForce>, &'static str> {
     let mut rng = rand::thread_rng();
     let mut attempts = 0;
+    let mut model_forces = HashSet::new();
     while model_forces.len() < num_forces && attempts < MAX_ATTEMPTS {
         attempts += 1;
         let mut force = ModelForce {
@@ -124,7 +151,7 @@ fn generate_model_forces(model_forces: &mut HashSet<ModelForce>, num_forces: usi
                         
                         continue;
                     },
-                    None => panic!("Mech '{}' is not in the input data set", required_mech_name),
+                    None => return Err("Required mech not in input file"),
                 }
             }
 
@@ -146,28 +173,43 @@ fn generate_model_forces(model_forces: &mut HashSet<ModelForce>, num_forces: usi
         println!("Created valid force");
         model_forces.insert(force);
     }
+
+    return Ok(model_forces)
 }
 
 fn validate_opts(matches: &getopts::Matches) -> Result<Params, ()> {
     let min_bv = match matches.opt_get_default("m", 4900) {
         Ok(m) => m,
-        Err(_) => return Err(()),
+        Err(e) => {
+            println!("Invalid min bv: {}", e);
+            return Err(())
+        },
     };
     let max_bv = match matches.opt_get_default("b", 5000) {
         Ok(b) => b,
-        Err(_) => return Err(()),
+        Err(e) => {
+            println!("Invalid max bv: {}", e);
+            return Err(())
+        },
     };
     let force_size = match matches.opt_get_default("s", 4) {
         Ok(s) if s > 6 => return Err(()),
         Ok(s) => s,
-        Err(_) => return Err(()),
+        Err(e) => {
+            println!("Invalid force size: {}", e);
+            return Err(())
+        },
     };
     let num_forces = match matches.opt_get_default("n", 3) {
         Ok(f) if f > 5 => return Err(()),
         Ok(f) => f,
-        Err(_) => return Err(()),
+        Err(e) => {
+            println!("Invalid num forces: {}", e);
+            return Err(())
+        },
     };
     if min_bv > max_bv {
+        println!("Min bv cannot be greater than max bv");
         return Err(())
     }
     Ok(Params{ min_bv: min_bv, max_bv: max_bv, force_size: force_size, num_forces: num_forces })
@@ -175,6 +217,7 @@ fn validate_opts(matches: &getopts::Matches) -> Result<Params, ()> {
 
 fn get_opts() -> Options {
     let mut opts = Options::new();
+    opts.optflag("h", "help", "This help text");
     opts.reqopt("f", "file", "Input file of mechs", "FILE");
     opts.optopt("b", "bv", "Target BV (default: 5000)", "BV");
     opts.optopt("m", "minBv", "Minimum acceptable BV (default: 4900)", "BV");
