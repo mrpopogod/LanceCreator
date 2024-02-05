@@ -2256,6 +2256,22 @@
       {
         "variant": "D9",
         "bv": 1638
+      },
+      {
+        "variant": "CN10-B",
+        "bv": 1243
+      },
+      {
+        "variant": "CN10-D",
+        "bv": 1288
+      },
+      {
+        "variant": "CN10-J",
+        "bv": 1258
+      },
+      {
+        "variant": "CN10-W",
+        "bv": 1112
       }
     ]
   },
