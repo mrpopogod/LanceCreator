@@ -1538,7 +1538,7 @@
         "variant": "SDR-5V"
       },
       {
-        "bv": 688,
+        "bv": 752,
         "variant": "SDR-7K"
       },
       {
@@ -1546,7 +1546,7 @@
         "variant": "SDR-7M"
       },
       {
-        "bv": 688,
+        "bv": 621,
         "variant": "SDR-8M"
       }
     ]
