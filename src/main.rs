@@ -48,21 +48,32 @@ fn main() {
 
     let required_mech = matches.opt_str("r");
 
-    let filename = matches.opt_str("f").unwrap(); // required arg; parse would have failed
-    let file = match File::open(&filename) {
-        Ok(f) => f,
-        Err(e) => {
-            println!("Error opening {}: {}", filename, e);
-            return terminate(&program, &opts, 1);
-        },
-    };
-    let loaded_models: Vec<Model> = match serde_json::from_reader(file){
-        Ok(m) => m,
-        Err(e) => {
-            println!("Error reading {}: {}", filename, e);
-            return terminate(&program, &opts, 1);
-        },
-    };
+    let filenames = matches.opt_strs("f");
+    let mut loaded_models: Vec<Model> = Vec::new();
+    for filename in filenames {
+        let file = match File::open(&filename) {
+            Ok(f) => f,
+            Err(e) => {
+                println!("Error opening {}: {}", filename, e);
+                return terminate(&program, &opts, 1);
+            },
+        };
+
+        let mut file_models: Vec<Model> = match serde_json::from_reader(file) {
+            Ok(m) => m,
+            Err(e) => {
+                println!("Error reading {}: {}", filename, e);
+                return terminate(&program, &opts, 1);
+            },
+        };
+
+        loaded_models.append(&mut file_models);
+    }
+ 
+    if loaded_models.is_empty() {
+        println!("No files provided or files provided were empty");
+        return terminate(&program, &opts, 1);
+    }
 
     let model_forces: HashSet<ModelForce> = match generate_model_forces(num_forces, loaded_models, force_size, min_bv, max_bv, required_mech) {
         Ok(m) => m,
@@ -218,27 +229,27 @@ fn validate_opts(matches: &getopts::Matches) -> Result<Params, ()> {
 fn get_opts() -> Options {
     let mut opts = Options::new();
     opts.optflag("h", "help", "This help text");
-    opts.reqopt("f", "file", "Input file of mechs", "FILE");
-    opts.optopt("b", "bv", "Target BV (default: 5000)", "BV");
-    opts.optopt("m", "minBv", "Minimum acceptable BV (default: 4900)", "BV");
+    opts.optmulti("f", "file", "Input file(s) of mechs", "");
+    opts.optopt("b", "bv", "Target BV (default: 5000)", "");
+    opts.optopt("m", "minBv", "Minimum acceptable BV (default: 4900)", "");
     opts.optopt(
         "s",
         "size",
         "How many units in a force (default: 4, max: 6",
-        "SIZE",
+        "",
     );
     opts.optopt(
         "n",
         "numForces",
         "How many distinct sets of model to create options for (default: 3, max: 5)",
-        "FORCES",
+        "",
     );
     opts.optflag("h", "help", "Print this help menu");
     opts.optopt(
         "r",
         "requiredMech",
         "Base chassis that needs to be in the results (default: none)",
-        "MECH",
+        "",
     );
     opts
 }
@@ -249,7 +260,7 @@ fn terminate(program: &str, opts: &Options, code: i32) {
 }
 
 fn print_usage(program: &str, opts: &Options) {
-    let brief = format!("Usage: {} FILE [options]", program);
+    let brief = format!("Usage: {} -f FILE [options]", program);
     print!("{}", opts.usage(&brief));
 }
 
