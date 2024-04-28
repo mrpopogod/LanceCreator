@@ -106,6 +106,12 @@ impl Model {
 
         max
     }
+
+    pub fn adjust_bv(&mut self, mul: f64) {
+        for mech in self.variants.iter_mut() {
+            mech.bv = (mech.bv as f64 * mul).round() as u32;
+        }
+    }
 }
 
 #[derive(PartialEq, PartialOrd, Eq, Hash)]
@@ -169,12 +175,13 @@ pub struct Params {
     pub min_bv: u32,
     pub max_bv: u32,
     pub force_size: usize,
-    pub num_forces: usize
+    pub num_forces: usize,
+    pub skill: u8
 }
 
-impl From<Params> for (u32, u32, usize, usize) {
-    fn from(p: Params) -> (u32, u32, usize, usize) {
-        let Params { min_bv, max_bv, force_size, num_forces } = p;
-        (min_bv, max_bv, force_size, num_forces)
+impl From<Params> for (u32, u32, usize, usize, u8) {
+    fn from(p: Params) -> (u32, u32, usize, usize, u8) {
+        let Params { min_bv, max_bv, force_size, num_forces , skill} = p;
+        (min_bv, max_bv, force_size, num_forces, skill)
     }
 }

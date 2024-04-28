@@ -1,4 +1,4 @@
-use std::collections::HashSet;
+use std::collections::{HashMap, HashSet};
 use std::env::args;
 use std::fs::File;
 use std::io::{LineWriter, Write};
@@ -41,7 +41,7 @@ fn main() {
         return terminate(&program, &opts, 0);
     }
 
-    let (min_bv, max_bv, force_size, num_forces) = match validate_opts(&matches) {
+    let (min_bv, max_bv, force_size, num_forces, skill) = match validate_opts(&matches) {
         Ok(value) => value.into(),
         Err(_) => return terminate(&program, &opts, 1),
     };
@@ -75,7 +75,7 @@ fn main() {
         return terminate(&program, &opts, 1);
     }
 
-    let model_forces: HashSet<ModelForce> = match generate_model_forces(num_forces, loaded_models, force_size, min_bv, max_bv, required_mech) {
+    let model_forces: HashSet<ModelForce> = match generate_model_forces(num_forces, loaded_models, force_size, min_bv, max_bv, required_mech, skill) {
         Ok(m) => m,
         Err(e) => {
             println!("Failed to generate model forces: {}", e);
@@ -136,10 +136,11 @@ fn generate_variants_and_write_out<W: Write>(output: &mut W, model_forces: HashS
     }
 }
 
-fn generate_model_forces(num_forces: usize, loaded_models: Vec<Model>, force_size: usize, min_bv: u32, max_bv: u32, required_mech: Option<String>) -> Result<HashSet<ModelForce>, &'static str> {
+fn generate_model_forces(num_forces: usize, loaded_models: Vec<Model>, force_size: usize, min_bv: u32, max_bv: u32, required_mech: Option<String>, skill: u8) -> Result<HashSet<ModelForce>, &'static str> {
     let mut rng = rand::thread_rng();
     let mut attempts = 0;
     let mut model_forces = HashSet::new();
+    let skill_mul = *get_skill_map().get(&skill).expect("Skill was already validated");
     while model_forces.len() < num_forces && attempts < MAX_ATTEMPTS {
         attempts += 1;
         let mut force = ModelForce {
@@ -153,10 +154,13 @@ fn generate_model_forces(num_forces: usize, loaded_models: Vec<Model>, force_siz
                     Some(pos) => {
                         let model = copied_models.get_mut(pos).unwrap();
                         if model.count > 1 {
-                            force.models.insert(model.clone());
+                            let mut cloned_model = model.clone();
+                            cloned_model.adjust_bv(skill_mul);
+                            force.models.insert(cloned_model);
                             model.count -= 1;
                         } else {
-                            let model = copied_models.swap_remove(pos);
+                            let mut model = copied_models.swap_remove(pos);
+                            model.adjust_bv(skill_mul);
                             force.models.insert(model.clone());
                         }
                         
@@ -169,10 +173,13 @@ fn generate_model_forces(num_forces: usize, loaded_models: Vec<Model>, force_siz
             let n = rng.gen_range(0..copied_models.len());
             let model = copied_models.get_mut(n).unwrap();
             if model.count > 1 {
-                force.models.insert(model.clone());
+                let mut cloned_model = model.clone();
+                cloned_model.adjust_bv(skill_mul);
+                force.models.insert(cloned_model);
                 model.count -= 1;
             } else {
-                let model = copied_models.swap_remove(i);
+                let mut model = copied_models.swap_remove(i);
+                model.adjust_bv(skill_mul);
                 force.models.insert(model);
             }
         }
@@ -223,7 +230,106 @@ fn validate_opts(matches: &getopts::Matches) -> Result<Params, ()> {
         println!("Min bv cannot be greater than max bv");
         return Err(())
     }
-    Ok(Params{ min_bv: min_bv, max_bv: max_bv, force_size: force_size, num_forces: num_forces })
+    let skill = match matches.opt_get_default("k", 45) {
+        Ok(k) => k,
+        Err(e) => {
+            println!("Invalid skill: {}", e);
+            return Err(())
+        }
+    };
+    if !get_skill_map().contains_key(&skill) {
+        println!("Gunnery and piloting must between 0 and 8");
+        return Err(())
+    }
+    Ok(Params{ min_bv: min_bv, max_bv: max_bv, force_size: force_size, num_forces: num_forces, skill })
+}
+
+fn get_skill_map() -> HashMap<u8, f64> {
+    let skill_map = HashMap::from([
+        (00, 2.42),
+        (01, 2.31),
+        (02, 2.21),
+        (03, 2.10),
+        (04, 1.93),
+        (05, 1.75),
+        (06, 1.68),
+        (07, 1.59),
+        (08, 1.50),
+        (10, 2.21),
+        (11, 2.11),
+        (12, 2.02),
+        (13, 1.92),
+        (14, 1.76),
+        (15, 1.60),
+        (16, 1.54),
+        (17, 1.46),
+        (18, 1.38),
+        (20, 1.93),
+        (21, 1.85),
+        (22, 1.76),
+        (23, 1.68),
+        (24, 1.54),
+        (25, 1.40),
+        (26, 1.35),
+        (27, 1.28),
+        (28, 1.21),
+        (30, 1.66),
+        (31, 1.58),
+        (32, 1.51),
+        (33, 1.44),
+        (34, 1.32),
+        (35, 1.20),
+        (36, 1.16),
+        (37, 1.10),
+        (38, 1.04),
+        (40, 1.38),
+        (41, 1.32),
+        (42, 1.26),
+        (43, 1.20),
+        (44, 1.10),
+        (45, 1.00),
+        (46, 0.95),
+        (47, 0.90),
+        (48, 0.85),
+        (50, 1.31),
+        (51, 1.19),
+        (52, 1.13),
+        (53, 1.08),
+        (54, 0.99),
+        (55, 0.90),
+        (56, 0.86),
+        (57, 0.81),
+        (58, 0.77),
+        (60, 1.24),
+        (61, 1.12),
+        (62, 1.07),
+        (63, 1.02),
+        (64, 0.94),
+        (65, 0.85),
+        (66, 0.81),
+        (67, 0.77),
+        (68, 0.72),
+        (70, 1.17),
+        (71, 1.06),
+        (72, 1.01),
+        (73, 0.96),
+        (74, 0.88),
+        (75, 0.80),
+        (76, 0.76),
+        (77, 0.72),
+        (78, 0.68),
+        (80, 1.10),
+        (81, 0.99),
+        (82, 0.95),
+        (83, 0.90),
+        (84, 0.83),
+        (85, 0.75),
+        (86, 0.71),
+        (87, 0.68),
+        (88, 0.64),
+    ]);
+
+    skill_map
 }
 
 fn get_opts() -> Options {
@@ -250,6 +356,12 @@ fn get_opts() -> Options {
         "requiredMech",
         "Base chassis that needs to be in the results (default: none)",
         "",
+    );
+    opts.optopt(
+        "k",
+        "skill",
+        "Pilot skill to bump all mechs to, in the form of PG (e.g. 4/5 is 45)",
+        ""
     );
     opts
 }
