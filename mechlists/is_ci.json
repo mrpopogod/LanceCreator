@@ -1,6 +1,6 @@
 [
   {
-    "count": 2,
+    "count": 1,
     "name": "Annihilator",
     "variants": [
       {
@@ -34,7 +34,7 @@
     ]
   },
   {
-    "count": 5,
+    "count": 1,
     "name": "Archer",
     "variants": [
       {
@@ -78,38 +78,26 @@
         "variant": "ARC-5W"
       },
       {
-        "bv": 1694,
-        "variant": "ARC-6S"
-      },
-      {
-        "bv": 1405,
-        "variant": "ARC-6W"
-      },
-      {
-        "bv": 1920,
-        "variant": "ARC-7L"
-      },
-      {
-        "bv": 1759,
-        "variant": "ARC-8M"
-      },
-      {
         "bv": 1811,
         "variant": "C"
-      },
-      {
-        "bv": 2167,
-        "variant": "C 2"
       }
     ]
   },
   {
-    "count": 4,
+    "count": 1,
     "name": "Atlas",
     "variants": [
       {
         "bv": 1787,
         "variant": "AS7-A"
+      },
+      {
+        "bv": 2163,
+        "variant": "AS7-C"
+      },
+      {
+        "bv": 2036,
+        "variant": "AS7-CM"
       },
       {
         "bv": 1897,
@@ -132,27 +120,23 @@
         "variant": "AS7-S2"
       },
       {
-        "bv": 2378,
-        "variant": "AS7-S3"
-      },
-      {
         "bv": 2306,
         "variant": "C"
       },
       {
         "bv": 2736,
         "variant": "C 2"
+      },
+      {
+        "bv": 2606,
+        "variant": "C 3"
       }
     ]
   },
   {
-    "count": 2,
+    "count": 1,
     "name": "Awesome",
     "variants": [
-      {
-        "bv": 1961,
-        "variant": "AWS-10KM"
-      },
       {
         "bv": 1605,
         "variant": "AWS-8Q"
@@ -174,13 +158,17 @@
         "variant": "AWS-9M"
       },
       {
+        "bv": 1836,
+        "variant": "AWS-9Ma"
+      },
+      {
         "bv": 1875,
         "variant": "AWS-9Q"
       }
     ]
   },
   {
-    "count": 3,
+    "count": 1,
     "name": "Axman",
     "variants": [
       {
@@ -198,7 +186,7 @@
     ]
   },
   {
-    "count": 3,
+    "count": 1,
     "name": "Banshee",
     "variants": [
       {
@@ -224,19 +212,11 @@
       {
         "bv": 2061,
         "variant": "BNC-5S"
-      },
-      {
-        "bv": 1899,
-        "variant": "BNC-6S"
-      },
-      {
-        "bv": 2126,
-        "variant": "BNC-7S"
       }
     ]
   },
   {
-    "count": 2,
+    "count": 1,
     "name": "BattleMaster",
     "variants": [
       {
@@ -256,30 +236,30 @@
         "variant": "BLR-1S"
       },
       {
+        "bv": 1563,
+        "variant": "BLR-2C"
+      },
+      {
         "bv": 1697,
         "variant": "BLR-3M"
       },
       {
         "bv": 1441,
         "variant": "BLR-3S"
-      },
-      {
-        "bv": 1606,
-        "variant": "BLR-4S"
-      },
-      {
-        "bv": 1766,
-        "variant": "BLR-5M"
       }
     ]
   },
   {
-    "count": 3,
+    "count": 1,
     "name": "Black Knight",
     "variants": [
       {
         "bv": 1550,
         "variant": "BL-6-KNT"
+      },
+      {
+        "bv": 1954,
+        "variant": "BL-6-RR"
       },
       {
         "bv": 1627,
@@ -300,7 +280,7 @@
     ]
   },
   {
-    "count": 5,
+    "count": 1,
     "name": "Blackjack",
     "variants": [
       {
@@ -322,21 +302,13 @@
       {
         "bv": 1271,
         "variant": "BJ-3"
-      },
-      {
-        "bv": 1063,
-        "variant": "BJ-4"
       }
     ]
   },
   {
-    "count": 3,
+    "count": 1,
     "name": "Bushwacker",
     "variants": [
-      {
-        "bv": 1513,
-        "variant": "BSW-L1"
-      },
       {
         "bv": 1293,
         "variant": "BSW-S2"
@@ -352,7 +324,7 @@
     ]
   },
   {
-    "count": 3,
+    "count": 1,
     "name": "Cataphract",
     "variants": [
       {
@@ -372,17 +344,13 @@
         "variant": "CTF-3L"
       },
       {
-        "bv": 2037,
-        "variant": "CTF-4L"
-      },
-      {
         "bv": 1216,
         "variant": "CTF-4X"
       }
     ]
   },
   {
-    "count": 2,
+    "count": 1,
     "name": "Catapult",
     "variants": [
       {
@@ -394,8 +362,12 @@
         "variant": "CPLT-C1"
       },
       {
-        "bv": 1346,
-        "variant": "CPLT-C2"
+        "bv": 1570,
+        "variant": "CPLT-C1b"
+      },
+      {
+        "bv": 1368,
+        "variant": "CPLT-C3"
       },
       {
         "bv": 1358,
@@ -406,8 +378,8 @@
         "variant": "CPLT-C4C"
       },
       {
-        "bv": 1473,
-        "variant": "CPLT-H2"
+        "bv": 1748,
+        "variant": "CPLT-C5"
       },
       {
         "bv": 1319,
@@ -416,11 +388,19 @@
       {
         "bv": 1716,
         "variant": "CPLT-K2K"
+      },
+      {
+        "bv": 1437,
+        "variant": "CPLT-K3"
+      },
+      {
+        "bv": 1457,
+        "variant": "CPLT-K5"
       }
     ]
   },
   {
-    "count": 3,
+    "count": 1,
     "name": "Centurion",
     "variants": [
       {
@@ -458,20 +438,24 @@
       {
         "bv": 1266,
         "variant": "CN9-D3D"
-      },
-      {
-        "bv": 1306,
-        "variant": "CN9-D4D"
       }
     ]
   },
   {
-    "count": 2,
+    "count": 1,
     "name": "Commando",
     "variants": [
       {
         "bv": 616,
         "variant": "COM-1B"
+      },
+      {
+        "bv": 458,
+        "variant": "COM-1C"
+      },
+      {
+        "bv": 558,
+        "variant": "COM-1D"
       },
       {
         "bv": 541,
@@ -482,23 +466,51 @@
         "variant": "COM-3A"
       },
       {
-        "bv": 691,
-        "variant": "COM-4H"
-      },
-      {
         "bv": 557,
         "variant": "COM-5S"
       },
       {
-        "bv": 658,
-        "variant": "COM-7S"
+        "bv": 625,
+        "variant": "COM-7A"
+      },
+      {
+        "bv": 599,
+        "variant": "COM-7J"
+      },
+      {
+        "bv": 608,
+        "variant": "COM-7W"
+      },
+      {
+        "bv": 623,
+        "variant": "COM-7X"
+      },
+      {
+        "bv": 684,
+        "variant": "COM-7Y"
+      },
+      {
+        "bv": 728,
+        "variant": "COM-7Y2"
+      },
+      {
+        "bv": 661,
+        "variant": "COM-7Z"
+      },
+      {
+        "bv": 543,
+        "variant": "COM-7Z2"
       }
     ]
   },
   {
-    "count": 3,
+    "count": 1,
     "name": "Crab",
     "variants": [
+      {
+        "bv": 1143,
+        "variant": "CRB-20"
+      },
       {
         "bv": 1198,
         "variant": "CRB-27"
@@ -506,13 +518,25 @@
       {
         "bv": 1308,
         "variant": "CRB-27b"
+      },
+      {
+        "bv": 1509,
+        "variant": "CRB-30"
+      },
+      {
+        "bv": 1135,
+        "variant": "CRB-C"
       }
     ]
   },
   {
-    "count": 3,
+    "count": 1,
     "name": "Crockett",
     "variants": [
+      {
+        "bv": 1704,
+        "variant": "CRK-5003-0"
+      },
       {
         "bv": 1923,
         "variant": "CRK-5003-1"
@@ -522,17 +546,21 @@
         "variant": "CRK-5003-1b"
       },
       {
-        "bv": 1989,
-        "variant": "CRK-5003-3"
-      },
-      {
         "bv": 1629,
         "variant": "Katana CRK-5003-2"
+      },
+      {
+        "bv": 1618,
+        "variant": "Katana CRK-5003-C"
+      },
+      {
+        "bv": 1554,
+        "variant": "Katana CRK-5003-CM"
       }
     ]
   },
   {
-    "count": 4,
+    "count": 1,
     "name": "Crusader",
     "variants": [
       {
@@ -568,6 +596,10 @@
         "variant": "CRD-4K"
       },
       {
+        "bv": 1309,
+        "variant": "CRD-4L"
+      },
+      {
         "bv": 1408,
         "variant": "CRD-5M"
       },
@@ -580,17 +612,13 @@
         "variant": "CRD-6D"
       },
       {
-        "bv": 1860,
-        "variant": "CRD-7L"
-      },
-      {
-        "bv": 1698,
-        "variant": "CRD-8S"
+        "bv": 1890,
+        "variant": "CRD-6T"
       }
     ]
   },
   {
-    "count": 3,
+    "count": 1,
     "name": "Cyclops",
     "variants": [
       {
@@ -606,12 +634,12 @@
         "variant": "CP-11-A"
       },
       {
-        "bv": 1984,
-        "variant": "CP-11-G"
+        "bv": 1553,
+        "variant": "CP-11-C"
       },
       {
-        "bv": 1521,
-        "variant": "CP-11-H"
+        "bv": 1984,
+        "variant": "CP-11-G"
       },
       {
         "bv": 1699,
@@ -620,7 +648,7 @@
     ]
   },
   {
-    "count": 3,
+    "count": 1,
     "name": "Dragon",
     "variants": [
       {
@@ -636,21 +664,21 @@
         "variant": "DRG-5N"
       },
       {
-        "bv": 1322,
-        "variant": "DRG-7N"
-      },
-      {
         "bv": 1300,
         "variant": "Grand DRG-1G"
       },
       {
         "bv": 1356,
         "variant": "Grand DRG-5K"
+      },
+      {
+        "bv": 1322,
+        "variant": "Grand DRG-C"
       }
     ]
   },
   {
-    "count": 3,
+    "count": 1,
     "name": "Enforcer",
     "variants": [
       {
@@ -664,9 +692,17 @@
     ]
   },
   {
-    "count": 3,
+    "count": 1,
     "name": "Exterminator",
     "variants": [
+      {
+        "bv": 1384,
+        "variant": "EXT-4A"
+      },
+      {
+        "bv": 1384,
+        "variant": "EXT-4C"
+      },
       {
         "bv": 1384,
         "variant": "EXT-4D"
@@ -674,11 +710,15 @@
       {
         "bv": 1694,
         "variant": "EXT-4Db"
+      },
+      {
+        "bv": 1532,
+        "variant": "EXT-5E"
       }
     ]
   },
   {
-    "count": 3,
+    "count": 1,
     "name": "Flashman",
     "variants": [
       {
@@ -688,11 +728,15 @@
       {
         "bv": 1779,
         "variant": "FLS-8K"
+      },
+      {
+        "bv": 1779,
+        "variant": "FLS-9C"
       }
     ]
   },
   {
-    "count": 3,
+    "count": 1,
     "name": "Grasshopper",
     "variants": [
       {
@@ -706,11 +750,15 @@
       {
         "bv": 1511,
         "variant": "GHR-5N"
+      },
+      {
+        "bv": 1366,
+        "variant": "GHR-C"
       }
     ]
   },
   {
-    "count": 2,
+    "count": 1,
     "name": "Griffin",
     "variants": [
       {
@@ -720,6 +768,10 @@
       {
         "bv": 1272,
         "variant": "GRF-1N"
+      },
+      {
+        "bv": 1167,
+        "variant": "GRF-1RG"
       },
       {
         "bv": 1253,
@@ -736,19 +788,11 @@
       {
         "bv": 1213,
         "variant": "GRF-3RG"
-      },
-      {
-        "bv": 1224,
-        "variant": "GRF-5M"
-      },
-      {
-        "bv": 1781,
-        "variant": "GRF-6S"
       }
     ]
   },
   {
-    "count": 3,
+    "count": 1,
     "name": "Guillotine",
     "variants": [
       {
@@ -760,12 +804,12 @@
         "variant": "GLT-4L"
       },
       {
-        "bv": 1472,
-        "variant": "GLT-5M"
+        "bv": 1376,
+        "variant": "GLT-4P"
       },
       {
-        "bv": 1891,
-        "variant": "GLT-8D"
+        "bv": 1472,
+        "variant": "GLT-5M"
       }
     ]
   },
@@ -780,7 +824,7 @@
     ]
   },
   {
-    "count": 3,
+    "count": 1,
     "name": "Hatchetman",
     "variants": [
       {
@@ -788,35 +832,15 @@
         "variant": "HCT-3F"
       },
       {
-        "bv": 1012,
-        "variant": "HCT-5D"
-      },
-      {
-        "bv": 1112,
-        "variant": "HCT-5DD"
-      },
-      {
         "bv": 1039,
         "variant": "HCT-5S"
-      },
-      {
-        "bv": 1611,
-        "variant": "HCT-6D"
-      },
-      {
-        "bv": 1174,
-        "variant": "HCT-6S"
       }
     ]
   },
   {
-    "count": 3,
+    "count": 1,
     "name": "Highlander",
     "variants": [
-      {
-        "bv": 2358,
-        "variant": "HGN-694"
-      },
       {
         "bv": 2227,
         "variant": "HGN-732"
@@ -838,19 +862,15 @@
         "variant": "HGN-733P"
       },
       {
-        "bv": 2214,
-        "variant": "HGN-734"
+        "bv": 2255,
+        "variant": "HGN-736"
       }
     ]
   },
   {
-    "count": 3,
+    "count": 1,
     "name": "Hunchback",
     "variants": [
-      {
-        "bv": 1893,
-        "variant": "C"
-      },
       {
         "bv": 1041,
         "variant": "HBK-4G"
@@ -876,10 +896,6 @@
         "variant": "HBK-4SP"
       },
       {
-        "bv": 1097,
-        "variant": "HBK-5H"
-      },
-      {
         "bv": 1054,
         "variant": "HBK-5M"
       },
@@ -894,17 +910,21 @@
       {
         "bv": 1130,
         "variant": "HBK-6N"
-      },
-      {
-        "bv": 1380,
-        "variant": "HBK-6S"
       }
     ]
   },
   {
-    "count": 7,
+    "count": 1,
     "name": "Jenner",
     "variants": [
+      {
+        "bv": 712,
+        "variant": "JR7-A"
+      },
+      {
+        "bv": 832,
+        "variant": "JR7-C"
+      },
       {
         "bv": 875,
         "variant": "JR7-D"
@@ -920,7 +940,7 @@
     ]
   },
   {
-    "count": 3,
+    "count": 1,
     "name": "King Crab",
     "variants": [
       {
@@ -938,11 +958,15 @@
       {
         "bv": 2221,
         "variant": "KGC-001"
+      },
+      {
+        "bv": 2181,
+        "variant": "KGC-010"
       }
     ]
   },
   {
-    "count": 3,
+    "count": 1,
     "name": "Lancelot",
     "variants": [
       {
@@ -958,6 +982,10 @@
         "variant": "LNC25-01"
       },
       {
+        "bv": 1659,
+        "variant": "LNC25-01X"
+      },
+      {
         "bv": 1236,
         "variant": "LNC25-02"
       },
@@ -966,13 +994,17 @@
         "variant": "LNC25-03"
       },
       {
+        "bv": 1640,
+        "variant": "LNC25-04"
+      },
+      {
         "bv": 1380,
         "variant": "LNC25-05"
       }
     ]
   },
   {
-    "count": 2,
+    "count": 1,
     "name": "Locust",
     "variants": [
       {
@@ -988,6 +1020,10 @@
         "variant": "LCT-1L"
       },
       {
+        "bv": 424,
+        "variant": "LCT-1M"
+      },
+      {
         "bv": 440,
         "variant": "LCT-1S"
       },
@@ -996,8 +1032,8 @@
         "variant": "LCT-1V"
       },
       {
-        "bv": 568,
-        "variant": "LCT-1V2"
+        "bv": 642,
+        "variant": "LCT-1Vb"
       },
       {
         "bv": 436,
@@ -1014,21 +1050,13 @@
       {
         "bv": 490,
         "variant": "LCT-3V"
-      },
-      {
-        "bv": 719,
-        "variant": "LCT-5M"
       }
     ]
   },
   {
-    "count": 4,
+    "count": 1,
     "name": "Longbow",
     "variants": [
-      {
-        "bv": 1839,
-        "variant": "LGB-0H"
-      },
       {
         "bv": 1377,
         "variant": "LGB-0W"
@@ -1060,7 +1088,7 @@
     ]
   },
   {
-    "count": 4,
+    "count": 1,
     "name": "Marauder",
     "variants": [
       {
@@ -1092,16 +1120,16 @@
         "variant": "MAD-3R"
       },
       {
+        "bv": 1453,
+        "variant": "MAD-4X"
+      },
+      {
         "bv": 1648,
         "variant": "MAD-5CS"
       },
       {
         "bv": 1787,
         "variant": "MAD-5D"
-      },
-      {
-        "bv": 2268,
-        "variant": "MAD-5L"
       },
       {
         "bv": 1471,
@@ -1114,24 +1142,12 @@
     ]
   },
   {
-    "count": 4,
+    "count": 1,
     "name": "Maurader II",
     "variants": [
       {
-        "bv": 2916,
-        "variant": "C"
-      },
-      {
         "bv": 2073,
         "variant": "MAD-4A"
-      },
-      {
-        "bv": 2180,
-        "variant": "MAD-4H"
-      },
-      {
-        "bv": 2623,
-        "variant": "MAD-4S"
       },
       {
         "bv": 2058,
@@ -1148,12 +1164,16 @@
     ]
   },
   {
-    "count": 3,
+    "count": 1,
     "name": "Mercury",
     "variants": [
       {
         "bv": 466,
         "variant": "MCY-97"
+      },
+      {
+        "bv": 553,
+        "variant": "MCY-98"
       },
       {
         "bv": 586,
@@ -1162,9 +1182,17 @@
     ]
   },
   {
-    "count": 3,
+    "count": 1,
     "name": "Mongoose",
     "variants": [
+      {
+        "bv": 1386,
+        "variant": "C"
+      },
+      {
+        "bv": 1620,
+        "variant": "C 2"
+      },
       {
         "bv": 758,
         "variant": "MON-66"
@@ -1174,8 +1202,20 @@
         "variant": "MON-66b"
       },
       {
+        "bv": 741,
+        "variant": "MON-67"
+      },
+      {
         "bv": 676,
         "variant": "MON-68"
+      },
+      {
+        "bv": 737,
+        "variant": "MON-69"
+      },
+      {
+        "bv": 750,
+        "variant": "MON-70"
       }
     ]
   },
@@ -1198,33 +1238,25 @@
       {
         "bv": 1356,
         "variant": "NGS-5T"
-      },
-      {
-        "bv": 1474,
-        "variant": "NGS-6S"
-      },
-      {
-        "bv": 1430,
-        "variant": "NGS-6T"
       }
     ]
   },
   {
-    "count": 3,
+    "count": 1,
     "name": "Nightstar",
     "variants": [
       {
-        "bv": 2399,
-        "variant": "NSR-9J"
+        "bv": 1929,
+        "variant": "NSR-9FC"
       },
       {
-        "bv": 2149,
-        "variant": "NSR-9SS"
+        "bv": 2399,
+        "variant": "NSR-9J"
       }
     ]
   },
   {
-    "count": 4,
+    "count": 1,
     "name": "Orion",
     "variants": [
       {
@@ -1248,25 +1280,17 @@
         "variant": "ON1-MC"
       },
       {
-        "bv": 1595,
-        "variant": "ON1-MD"
-      },
-      {
         "bv": 1298,
         "variant": "ON1-V"
       },
       {
         "bv": 1328,
         "variant": "ON1-VA"
-      },
-      {
-        "bv": 1828,
-        "variant": "ON2-M"
       }
     ]
   },
   {
-    "count": 3,
+    "count": 1,
     "name": "Panther",
     "variants": [
       {
@@ -1278,7 +1302,7 @@
         "variant": "PNT-10KA"
       },
       {
-        "bv": 982,
+        "bv": 741,
         "variant": "PNT-12A"
       },
       {
@@ -1288,6 +1312,18 @@
       {
         "bv": 769,
         "variant": "PNT-9R"
+      },
+      {
+        "bv": 833,
+        "variant": "PNT-C"
+      },
+      {
+        "bv": 787,
+        "variant": "PNT-CA"
+      },
+      {
+        "bv": 726,
+        "variant": "PNT-CM"
       }
     ]
   },
@@ -1310,15 +1346,11 @@
       {
         "bv": 1689,
         "variant": "PTR-6S"
-      },
-      {
-        "bv": 1994,
-        "variant": "PTR-6T"
       }
     ]
   },
   {
-    "count": 3,
+    "count": 1,
     "name": "Phoenix Hawk",
     "variants": [
       {
@@ -1330,6 +1362,18 @@
         "variant": "PXH-1"
       },
       {
+        "bv": 1512,
+        "variant": "PXH-1b"
+      },
+      {
+        "bv": 1174,
+        "variant": "PXH-1bC"
+      },
+      {
+        "bv": 1443,
+        "variant": "PXH-1c"
+      },
+      {
         "bv": 1083,
         "variant": "PXH-1D"
       },
@@ -1338,12 +1382,8 @@
         "variant": "PXH-1K"
       },
       {
-        "bv": 1512,
-        "variant": "PXH-1b"
-      },
-      {
-        "bv": 1174,
-        "variant": "PXH-1bC"
+        "bv": 1145,
+        "variant": "PHX-2"
       },
       {
         "bv": 1271,
@@ -1362,31 +1402,19 @@
         "variant": "PXH-3M"
       },
       {
-        "bv": 1244,
-        "variant": "PXH-3PL"
-      },
-      {
         "bv": 1237,
         "variant": "PXH-3S"
-      },
-      {
-        "bv": 1399,
-        "variant": "PXH-4L"
-      },
-      {
-        "bv": 1665,
-        "variant": "PXH-6D"
-      },
-      {
-        "bv": 1496,
-        "variant": "PXH-7S"
       }
     ]
   },
   {
-    "count": 3,
+    "count": 1,
     "name": "Raven",
     "variants": [
+      {
+        "bv": 887,
+        "variant": "RVN-2X"
+      },
       {
         "bv": 710,
         "variant": "RVN-3L"
@@ -1396,17 +1424,13 @@
         "variant": "RVN-3M"
       },
       {
-        "bv": 873,
-        "variant": "RVN-4L"
-      },
-      {
         "bv": 820,
         "variant": "RVN-4X"
       }
     ]
   },
   {
-    "count": 3,
+    "count": 1,
     "name": "Rifleman",
     "variants": [
       {
@@ -1436,35 +1460,29 @@
       {
         "bv": 1337,
         "variant": "RFL-5M"
-      },
-      {
-        "bv": 1464,
-        "variant": "RFL-6X"
-      },
-      {
-        "bv": 1227,
-        "variant": "RFL-7M"
-      },
-      {
-        "bv": 1664,
-        "variant": "RFL-8D"
       }
     ]
   },
   {
     "count": 1,
-    "name": "Sagittaire",
-    "variants": [
-      {
-        "bv": 2088,
-        "variant": "SGT-8R"
-      }
-    ]
-  },
-  {
-    "count": 3,
     "name": "Sentinel",
     "variants": [
+      {
+        "bv": 632,
+        "variant": "STN-1S"
+      },
+      {
+        "bv": 652,
+        "variant": "STN-3K"
+      },
+      {
+        "bv": 847,
+        "variant": "STN-3KA"
+      },
+      {
+        "bv": 823,
+        "variant": "STN-3KB"
+      },
       {
         "bv": 717,
         "variant": "STN-3L"
@@ -1476,15 +1494,11 @@
       {
         "bv": 758,
         "variant": "STN-3M"
-      },
-      {
-        "bv": 1179,
-        "variant": "STN-4D"
       }
     ]
   },
   {
-    "count": 2,
+    "count": 1,
     "name": "Shadow Hawk",
     "variants": [
       {
@@ -1516,8 +1530,12 @@
         "variant": "SHD-2K"
       },
       {
-        "bv": 1684,
-        "variant": "SHD-5D"
+        "bv": 1043,
+        "variant": "SHD-3H"
+      },
+      {
+        "bv": 1112,
+        "variant": "SHD-3H2"
       },
       {
         "bv": 1430,
@@ -1526,15 +1544,11 @@
       {
         "bv": 1590,
         "variant": "SHD-5S"
-      },
-      {
-        "bv": 1447,
-        "variant": "SHD-7M"
       }
     ]
   },
   {
-    "count": 3,
+    "count": 1,
     "name": "Spider",
     "variants": [
       {
@@ -1550,21 +1564,21 @@
         "variant": "SDR-5V"
       },
       {
-        "bv": 752,
-        "variant": "SDR-7K"
-      },
-      {
         "bv": 621,
         "variant": "SDR-7M"
       },
       {
         "bv": 621,
         "variant": "SDR-8M"
+      },
+      {
+        "bv": 616,
+        "variant": "SDR-C"
       }
     ]
   },
   {
-    "count": 3,
+    "count": 1,
     "name": "Stalker",
     "variants": [
       {
@@ -1584,33 +1598,17 @@
         "variant": "STK-4N"
       },
       {
-        "bv": 1461,
-        "variant": "STK-4P"
-      },
-      {
         "bv": 1655,
         "variant": "STK-5M"
       },
       {
         "bv": 1423,
         "variant": "STK-5S"
-      },
-      {
-        "bv": 2029,
-        "variant": "STK-6M"
-      },
-      {
-        "bv": 1901,
-        "variant": "STK-7D"
-      },
-      {
-        "bv": 2020,
-        "variant": "STK-8S"
       }
     ]
   },
   {
-    "count": 3,
+    "count": 1,
     "name": "Stinger",
     "variants": [
       {
@@ -1636,19 +1634,11 @@
       {
         "bv": 432,
         "variant": "STG-5M"
-      },
-      {
-        "bv": 492,
-        "variant": "STG-5R"
-      },
-      {
-        "bv": 680,
-        "variant": "STG-6L"
       }
     ]
   },
   {
-    "count": 3,
+    "count": 1,
     "name": "Thug",
     "variants": [
       {
@@ -1666,7 +1656,7 @@
     ]
   },
   {
-    "count": 2,
+    "count": 1,
     "name": "Thunderbolt",
     "variants": [
       {
@@ -1678,10 +1668,6 @@
         "variant": "C 2"
       },
       {
-        "bv": 2008,
-        "variant": "TDR-10SE"
-      },
-      {
         "bv": 1231,
         "variant": "TDR-5D"
       },
@@ -1690,28 +1676,24 @@
         "variant": "TDR-5S"
       },
       {
-        "bv": 1337,
-        "variant": "TDR-5SS"
-      },
-      {
         "bv": 1618,
         "variant": "TDR-5Sb"
+      },
+      {
+        "bv": 1414,
+        "variant": "TDR-5SE"
+      },
+      {
+        "bv": 1337,
+        "variant": "TDR-5SS"
       },
       {
         "bv": 1495,
         "variant": "TDR-7M"
       },
       {
-        "bv": 1809,
-        "variant": "TDR-7SE"
-      },
-      {
-        "bv": 1648,
-        "variant": "TDR-9M"
-      },
-      {
-        "bv": 1864,
-        "variant": "TDR-9NAIS"
+        "bv": 1644,
+        "variant": "TDR-8M"
       },
       {
         "bv": 1494,
@@ -1728,9 +1710,13 @@
     ]
   },
   {
-    "count": 3,
+    "count": 1,
     "name": "Trebuchet",
     "variants": [
+      {
+        "bv": 1342,
+        "variant": "TBT-3C"
+      },
       {
         "bv": 1191,
         "variant": "TBT-5J"
@@ -1750,11 +1736,15 @@
       {
         "bv": 1348,
         "variant": "TBT-7M"
+      },
+      {
+        "bv": 1329,
+        "variant": "TBT-9K"
       }
     ]
   },
   {
-    "count": 4,
+    "count": 1,
     "name": "UrbanMech",
     "variants": [
       {
@@ -1768,23 +1758,11 @@
       {
         "bv": 540,
         "variant": "UM-R63"
-      },
-      {
-        "bv": 561,
-        "variant": "UM-R68"
-      },
-      {
-        "bv": 589,
-        "variant": "UM-R69"
-      },
-      {
-        "bv": 724,
-        "variant": "UM-R70"
       }
     ]
   },
   {
-    "count": 3,
+    "count": 1,
     "name": "Valkyrie",
     "variants": [
       {
@@ -1796,38 +1774,18 @@
         "variant": "VLK-QD"
       },
       {
-        "bv": 835,
-        "variant": "VLK-QD1"
-      },
-      {
-        "bv": 882,
-        "variant": "VLK-QD3"
-      },
-      {
         "bv": 653,
         "variant": "VLK-QF"
       }
     ]
   },
   {
-    "count": 3,
+    "count": 1,
     "name": "Victor",
     "variants": [
       {
         "bv": 1925,
         "variant": "C"
-      },
-      {
-        "bv": 1894,
-        "variant": "VTR-10D"
-      },
-      {
-        "bv": 2320,
-        "variant": "VTR-10L"
-      },
-      {
-        "bv": 2034,
-        "variant": "VTR-10S"
       },
       {
         "bv": 1236,
@@ -1846,8 +1804,16 @@
         "variant": "VTR-9D"
       },
       {
+        "bv": 1717,
+        "variant": "VTR-9K"
+      },
+      {
         "bv": 1360,
         "variant": "VTR-9S"
+      },
+      {
+        "bv": 1717,
+        "variant": "VTR-C"
       }
     ]
   },
@@ -1864,12 +1830,12 @@
         "variant": "VND-1SIC"
       },
       {
-        "bv": 1105,
-        "variant": "VND-3L"
+        "bv": 1008,
+        "variant": "VND-1X"
       },
       {
-        "bv": 1411,
-        "variant": "VND-4L"
+        "bv": 1105,
+        "variant": "VND-3L"
       },
       {
         "bv": 1484,
@@ -1878,7 +1844,7 @@
     ]
   },
   {
-    "count": 3,
+    "count": 1,
     "name": "Warhammer",
     "variants": [
       {
@@ -1892,10 +1858,6 @@
       {
         "bv": 2772,
         "variant": "C 3"
-      },
-      {
-        "bv": 1820,
-        "variant": "WHM-4L"
       },
       {
         "bv": 1471,
@@ -1918,6 +1880,10 @@
         "variant": "WHM-6Rb"
       },
       {
+        "bv": 1621,
+        "variant": "WHM-6Rk"
+      },
+      {
         "bv": 1751,
         "variant": "WHM-7CS"
       },
@@ -1932,19 +1898,11 @@
       {
         "bv": 1477,
         "variant": "WHM-7S"
-      },
-      {
-        "bv": 2151,
-        "variant": "WHM-9D"
-      },
-      {
-        "bv": 1653,
-        "variant": "WHM-9S"
       }
     ]
   },
   {
-    "count": 3,
+    "count": 1,
     "name": "Wasp",
     "variants": [
       {
@@ -1972,29 +1930,17 @@
         "variant": "WSP-1W"
       },
       {
-        "bv": 610,
-        "variant": "WSP-3L"
-      },
-      {
         "bv": 394,
         "variant": "WSP-3M"
       },
       {
-        "bv": 595,
-        "variant": "WSP-3S"
-      },
-      {
         "bv": 342,
         "variant": "WSP-3W"
-      },
-      {
-        "bv": 551,
-        "variant": "WSP-4W"
       }
     ]
   },
   {
-    "count": 3,
+    "count": 1,
     "name": "Wolfhound",
     "variants": [
       {
@@ -2012,20 +1958,20 @@
       {
         "bv": 1061,
         "variant": "WLF-2"
-      },
-      {
-        "bv": 1191,
-        "variant": "WLF-3S"
       }
     ]
   },
   {
-    "count": 4,
+    "count": 1,
     "name": "Wolverine",
     "variants": [
       {
         "bv": 1115,
         "variant": "WVR-6D"
+      },
+      {
+        "bv": 1248,
+        "variant": "WVR-6K"
       },
       {
         "bv": 1291,
@@ -2046,18 +1992,6 @@
       {
         "bv": 1673,
         "variant": "WVR-7M"
-      },
-      {
-        "bv": 1547,
-        "variant": "WVR-8D"
-      },
-      {
-        "bv": 1576,
-        "variant": "WVR-8K"
-      },
-      {
-        "bv": 1369,
-        "variant": "WVR-9D"
       }
     ]
   },
@@ -2076,9 +2010,17 @@
     ]
   },
   {
-    "count": 3,
+    "count": 1,
     "name": "Zeus",
     "variants": [
+      {
+        "bv": 1474,
+        "variant": "ZEU-5S"
+      },
+      {
+        "bv": 1729,
+        "variant": "ZEU-5T"
+      },
       {
         "bv": 1405,
         "variant": "ZEU-6A"
@@ -2092,16 +2034,16 @@
         "variant": "ZEU-6T"
       },
       {
+        "bv": 1323,
+        "variant": "ZEU-6Y"
+      },
+      {
         "bv": 1639,
         "variant": "ZEU-9S"
       },
       {
         "bv": 1769,
         "variant": "ZEU-9S2"
-      },
-      {
-        "bv": 1835,
-        "variant": "ZEU-9T"
       }
     ]
   }

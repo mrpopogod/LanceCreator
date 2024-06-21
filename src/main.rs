@@ -13,7 +13,7 @@ use rand::Rng;
 use sorted_vec::SortedVec;
 use spinners::{Spinner, Spinners};
 
-const MAX_ATTEMPTS: u16 = 5000;
+const MAX_ATTEMPTS: u16 = 50000;
 
 fn main() {
     let args: Vec<String> = args().collect();
@@ -178,7 +178,7 @@ fn generate_model_forces(num_forces: usize, loaded_models: Vec<Model>, force_siz
                 force.models.insert(cloned_model);
                 model.count -= 1;
             } else {
-                let mut model = copied_models.swap_remove(i);
+                let mut model = copied_models.swap_remove(n);
                 model.adjust_bv(skill_mul);
                 force.models.insert(model);
             }
