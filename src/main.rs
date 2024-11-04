@@ -3,12 +3,10 @@ use std::env::args;
 use std::fs::File;
 use std::io::{LineWriter, Write};
 use std::path::Path;
-use std::process::exit;
 use std::time::Instant;
 
-use getopts::{Options, Fail};
 use itertools::Itertools;
-use lance_creator::model::{Force, Model, ModelForce, Params};
+use lance_creator::model::{Force, Model, ModelForce};
 use rand::Rng;
 use sorted_vec::SortedVec;
 use spinners::{Spinner, Spinners};
@@ -21,34 +19,7 @@ fn main() {
     let program = Path::new(&program);
     let program = program.file_name().unwrap().to_str().unwrap();
 
-    let opts = get_opts();
-
-    let matches = match opts.parse(&args[1..]) {
-        Ok(m) => m,
-        Err(e) => {
-            match e {
-                Fail::ArgumentMissing(a) => println!("Argument missing for option: {}", a),
-                Fail::UnrecognizedOption(a) => println!("Unrecognized option: {}", a),
-                Fail::OptionMissing(a) => println!("Option missing: {}", a),
-                Fail::OptionDuplicated(a) => println!("Option specified multiple times: {}", a),
-                Fail::UnexpectedArgument(a) => println!("Unexpected argument for option: {}", a),
-            }
-            return terminate(&program, &opts, 0);
-        },
-    };
-
-    if matches.opt_present("h") {
-        return terminate(&program, &opts, 0);
-    }
-
-    let (min_bv, max_bv, force_size, num_forces, skill) = match validate_opts(&matches) {
-        Ok(value) => value.into(),
-        Err(_) => return terminate(&program, &opts, 1),
-    };
-
-    let required_mech = matches.opt_str("r");
-
-    let filenames = matches.opt_strs("f");
+    let filenames = vec![String::from("mechs.json")];
     let mut loaded_models: Vec<Model> = Vec::new();
     for filename in filenames {
         let file = match File::open(&filename) {
@@ -330,50 +301,6 @@ fn get_skill_map() -> HashMap<u8, f64> {
     ]);
 
     skill_map
-}
-
-fn get_opts() -> Options {
-    let mut opts = Options::new();
-    opts.optflag("h", "help", "This help text");
-    opts.optmulti("f", "file", "Input file(s) of mechs", "");
-    opts.optopt("b", "bv", "Target BV (default: 5000)", "");
-    opts.optopt("m", "minBv", "Minimum acceptable BV (default: 4900)", "");
-    opts.optopt(
-        "s",
-        "size",
-        "How many units in a force (default: 4, max: 6",
-        "",
-    );
-    opts.optopt(
-        "n",
-        "numForces",
-        "How many distinct sets of model to create options for (default: 3, max: 5)",
-        "",
-    );
-    opts.optflag("h", "help", "Print this help menu");
-    opts.optopt(
-        "r",
-        "requiredMech",
-        "Base chassis that needs to be in the results (default: none)",
-        "",
-    );
-    opts.optopt(
-        "k",
-        "skill",
-        "Pilot skill to bump all mechs to, in the form of PG (e.g. 4/5 is 45)",
-        ""
-    );
-    opts
-}
-
-fn terminate(program: &str, opts: &Options, code: i32) {
-    print_usage(program, opts);
-    exit(code);
-}
-
-fn print_usage(program: &str, opts: &Options) {
-    let brief = format!("Usage: {} -f FILE [options]", program);
-    print!("{}", opts.usage(&brief));
 }
 
 #[cfg(test)]

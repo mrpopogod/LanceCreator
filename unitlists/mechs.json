@@ -1,0 +1,24 @@
+[
+    {
+        "chassis": "Howler",
+        "in_plastic": true,
+        "variants": [
+            {
+                "variant": "1",
+                "bv": 645,
+                "availability": {
+                    "esw": ["Clan Fire Mandrill"],
+                    "lswlt": ["Clan Blood Spirit", "Clan Cloud Cobra", "Clan Fire Mandrill", "Clan Ice Hellion", "Clan Jade Falcon", "Clan Snow Raven"],
+                    "lswr": ["Clan Blood Spirit", "Clan Cloud Cobra", "Clan Fire Mandrill", "Clan Ice Hellion", "Clan Jade Falcon", "Clan Snow Raven"],
+                    "ci": ["Clan Blood Spirit", "Clan Cloud Cobra", "Clan Fire Mandrill", "Clan Ice Hellion", "Clan Jade Falcon", "Clan Snow Raven"],
+                    "fccw": ["Clan Blood Spirit", "Clan Cloud Cobra", "Clan Fire Mandrill", "Clan Ice Hellion", "Clan Jade Falcon", "Clan Snow Raven", "Clan Star Adder", "Clan Steel Viper"],
+                    "jihad": ["Clan Blood Spirit", "Clan Burrock", "Clan Cloud Cobra", "Clan Fire Mandrill", "Clan Ice Hellion", "Clan Jade Falcon", "Clan Snow Raven", "Clan Star Adder", "Clan Steel Viper", "Escorpion Imperio"],
+                    "er": ["Clan Jade Falcon", "Escorpion Imperio", "Raven Alliance"],
+                    "lr": ["Clan Jade Falcon", "Escorpion Imperio", "Raven Alliance"],
+                    "da": ["Clan Jade Falcon", "Raven Alliance"],
+                    "ilclan": ["Alyina Mercantile League", "Clan Jade Falcon", "Mercenary", "Raven Alliance"]
+                }
+            }
+        ]
+    }
+]

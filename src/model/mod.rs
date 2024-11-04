@@ -5,11 +5,34 @@ use serde::Deserialize;
 use sorted_vec::SortedVec;
 
 #[derive(Clone, Deserialize, PartialEq, Eq, Hash)]
+pub struct Availability {
+    #[serde(rename = "esw")]
+    pub early_succession_war: Vec<String>,
+    #[serde(rename = "lswlt")]
+    pub late_succession_war_lostech: Vec<String>,
+    #[serde(rename = "lswr")]
+    pub late_succession_war_renaissance: Vec<String>,
+    #[serde(rename = "ci")]
+    pub clan_invasion: Vec<String>,
+    #[serde(rename = "fccw")]
+    pub civil_war: Vec<String>,
+    pub jihad: Vec<String>,
+    #[serde(rename = "er")]
+    pub early_republic: Vec<String>,
+    #[serde(rename = "lr")]
+    pub late_republic: Vec<String>,
+    #[serde(rename = "da")]
+    pub dark_age: Vec<String>,
+    pub ilclan: Vec<String>
+}
+
+#[derive(Clone, Deserialize, PartialEq, Eq, Hash)]
 pub struct Mech {
     #[serde(skip)]
     pub name: String,
     pub variant: String,
     pub bv: u32,
+    pub availability: Availability
 }
 
 impl PartialOrd for Mech {
@@ -31,7 +54,6 @@ impl Ord for Mech {
 #[derive(Deserialize)]
 struct ModelShadow {
     name: String,
-    count: u8,
     variants: Vec<Mech>,
 }
 
@@ -50,7 +72,6 @@ impl Display for ModelValidationError {
 #[serde(try_from = "ModelShadow")]
 pub struct Model {
     pub name: String,
-    pub count: u8,
     pub variants: Vec<Mech>,
 }
 
@@ -72,7 +93,6 @@ impl TryFrom<ModelShadow> for Model {
     fn try_from(value: ModelShadow) -> Result<Self, Self::Error> {
         let mut model = Model {
             name: value.name,
-            count: value.count,
             variants: value.variants,
         };
 
@@ -168,20 +188,5 @@ impl Force {
         retval += &bv.to_string();
         retval += "\n";
         retval
-    }
-}
-
-pub struct Params {
-    pub min_bv: u32,
-    pub max_bv: u32,
-    pub force_size: usize,
-    pub num_forces: usize,
-    pub skill: u8
-}
-
-impl From<Params> for (u32, u32, usize, usize, u8) {
-    fn from(p: Params) -> (u32, u32, usize, usize, u8) {
-        let Params { min_bv, max_bv, force_size, num_forces , skill} = p;
-        (min_bv, max_bv, force_size, num_forces, skill)
     }
 }
