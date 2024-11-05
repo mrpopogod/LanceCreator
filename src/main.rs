@@ -5,73 +5,214 @@ use std::io::{LineWriter, Write};
 use std::path::Path;
 use std::time::Instant;
 
+use crossterm::event::{self, Event, KeyCode, KeyEventKind};
 use itertools::Itertools;
 use lance_creator::model::{Force, Model, ModelForce};
 use rand::Rng;
+use ratatui::layout::{Alignment, Constraint, Layout, Rect};
+use ratatui::style::Stylize;
+use ratatui::widgets::{Block, Borders, Paragraph};
+use ratatui::{DefaultTerminal, Frame};
 use sorted_vec::SortedVec;
-use spinners::{Spinner, Spinners};
 
 const MAX_ATTEMPTS: u16 = 50000;
 
-fn main() {
-    let args: Vec<String> = args().collect();
-    let program = args[0].clone();
-    let program = Path::new(&program);
-    let program = program.file_name().unwrap().to_str().unwrap();
+struct DrawRects {
+    title_area: Rect,
+    gunnery_area: Rect,
+    piloting_area: Rect,
+    min_bv_area: Rect,
+    max_bv_area: Rect,
+    force_size_area: Rect,
+    unit_type_area: Rect,
+    era_area: Rect,
+    faction_area: Rect,
+    status_area: Rect
+}
 
-    let filenames = vec![String::from("mechs.json")];
-    let mut loaded_models: Vec<Model> = Vec::new();
-    for filename in filenames {
-        let file = match File::open(&filename) {
-            Ok(f) => f,
-            Err(e) => {
-                println!("Error opening {}: {}", filename, e);
-                return terminate(&program, &opts, 1);
-            },
-        };
+fn main() -> std::io::Result<()> {
+    // let args: Vec<String> = args().collect();
+    // let program = args[0].clone();
+    // let program = Path::new(&program);
+    // let program = program.file_name().unwrap().to_str().unwrap();
 
-        let mut file_models: Vec<Model> = match serde_json::from_reader(file) {
-            Ok(m) => m,
-            Err(e) => {
-                println!("Error reading {}: {}", filename, e);
-                return terminate(&program, &opts, 1);
-            },
-        };
+    // let filenames = vec![String::from("mechs.json")];
+    // let mut loaded_models: Vec<Model> = Vec::new();
+    // for filename in filenames {
+    //     let file = match File::open(&filename) {
+    //         Ok(f) => f,
+    //         Err(e) => {
+    //             println!("Error opening {}: {}", filename, e);
+    //             return terminate(&program, &opts, 1);
+    //         },
+    //     };
 
-        loaded_models.append(&mut file_models);
-    }
+    //     let mut file_models: Vec<Model> = match serde_json::from_reader(file) {
+    //         Ok(m) => m,
+    //         Err(e) => {
+    //             println!("Error reading {}: {}", filename, e);
+    //             return terminate(&program, &opts, 1);
+    //         },
+    //     };
+
+    //     loaded_models.append(&mut file_models);
+    // }
  
-    if loaded_models.is_empty() {
-        println!("No files provided or files provided were empty");
-        return terminate(&program, &opts, 1);
+    // if loaded_models.is_empty() {
+    //     println!("No files provided or files provided were empty");
+    //     return terminate(&program, &opts, 1);
+    // }
+
+    // let model_forces: HashSet<ModelForce> = match generate_model_forces(num_forces, loaded_models, force_size, min_bv, max_bv, required_mech, skill) {
+    //     Ok(m) => m,
+    //     Err(e) => {
+    //         println!("Failed to generate model forces: {}", e);
+    //         return terminate(&program, &opts, 1);
+    //     },
+    // };
+
+    // if model_forces.len() < num_forces {
+    //     println!(
+    //         "Only found {} forces within the BV range",
+    //         model_forces.len()
+    //     );
+    // }
+
+    // let path = Path::new("forces.csv");
+    // let mut output_file = match File::create(path) {
+    //     Ok(file) => file,
+    //     Err(e) => panic!("Couldn't create {}: {}", path.display(), e),
+    // };
+
+    // let now = Instant::now();
+    // generate_variants_and_write_out(&mut output_file, model_forces, min_bv, max_bv);
+
+    let terminal = ratatui::init();
+    let result = run(terminal);
+    ratatui::restore();
+    result
+}
+
+fn run(mut terminal: DefaultTerminal) -> std::io::Result<()> {
+    loop {
+        terminal.draw(draw_options)?;
+        // process keystrokes
+        if let Event::Key(key) = event::read()? {
+            // handle the keys
+            if key.kind == KeyEventKind::Press && key.code == KeyCode::Char('q') {
+                break Ok(());
+            }
+        }
     }
+}
 
-    let model_forces: HashSet<ModelForce> = match generate_model_forces(num_forces, loaded_models, force_size, min_bv, max_bv, required_mech, skill) {
-        Ok(m) => m,
-        Err(e) => {
-            println!("Failed to generate model forces: {}", e);
-            return terminate(&program, &opts, 1);
-        },
-    };
+fn draw_options(frame: &mut Frame) {
+    let rects = calculate_layout(frame.area());
 
-    if model_forces.len() < num_forces {
-        println!(
-            "Only found {} forces within the BV range",
-            model_forces.len()
-        );
+    // Title
+    frame.render_widget(
+        Paragraph::new("Lance Creator.  Press q to quit")
+            .alignment(Alignment::Center),
+        rects.title_area,
+    );
+
+    // Gunnery
+    frame.render_widget(
+        Block::new()
+            .title("gunnery")
+            .borders(Borders::ALL), 
+        rects.gunnery_area,
+    );
+
+    // Piloting
+    frame.render_widget(
+        Block::new()
+            .title("piloting")
+            .borders(Borders::ALL), 
+        rects.piloting_area,
+    );
+
+    // Min BV
+    frame.render_widget(
+        Block::new()
+            .title("min BV")
+            .borders(Borders::ALL), 
+        rects.min_bv_area,
+    );
+
+    // Max BV
+    frame.render_widget(
+        Block::new()
+            .title("max BV")
+            .borders(Borders::ALL), 
+        rects.max_bv_area,
+    );
+
+    // Force Size
+    frame.render_widget(
+        Block::new()
+            .title("force size")
+            .borders(Borders::ALL), 
+        rects.force_size_area,
+    );
+
+    // Unit type
+    frame.render_widget(
+        Block::new()
+            .title("unit types")
+            .borders(Borders::ALL), 
+        rects.unit_type_area,
+    );
+
+    // Era
+    frame.render_widget(
+        Block::new()
+            .title("era")
+            .borders(Borders::ALL), 
+        rects.era_area,
+    );
+
+    // Faction
+    frame.render_widget(
+        Block::new()
+            .title("faction")
+            .borders(Borders::ALL), 
+        rects.faction_area,
+    );
+
+    // Status bar
+    frame.render_widget(
+        Paragraph::new("This is where the status would be"),
+        rects.status_area,
+    );
+}
+
+fn calculate_layout(area: Rect) -> DrawRects {
+    let main_layout = Layout::vertical([Constraint::Length(1), Constraint::Min(0), Constraint::Length(1)]);
+    let field_layout = Layout::vertical([Constraint::Max(4), Constraint::Min(0)]);
+    let [title_area, main_area, status_area] = main_layout.areas(area);
+    let main_areas: [Rect; 2] = field_layout.areas(main_area);
+
+    let top_layout = Layout::horizontal([Constraint::Fill(1); 5]);
+    let top_area = main_areas[0];
+    let [gunnery_area, piloting_area, min_bv_area, max_bv_area, force_size_area] = top_layout.areas(top_area);
+
+    let bottom_layout = Layout::horizontal([Constraint::Fill(1); 3]);
+    let bottom_area = main_areas[1];
+    let [unit_type_area, era_area, faction_area] = bottom_layout.areas(bottom_area);
+
+    DrawRects{
+        title_area,
+        gunnery_area,
+        piloting_area,
+        min_bv_area,
+        max_bv_area,
+        force_size_area,
+        unit_type_area,
+        era_area,
+        faction_area,
+        status_area
     }
-
-    let path = Path::new("forces.csv");
-    let mut output_file = match File::create(path) {
-        Ok(file) => file,
-        Err(e) => panic!("Couldn't create {}: {}", path.display(), e),
-    };
-
-    let now = Instant::now();
-    let mut spinner = Spinner::new(Spinners::Line, "Generating force variants".into());
-    generate_variants_and_write_out(&mut output_file, model_forces, min_bv, max_bv);
-
-    spinner.stop_with_message(format!("Created forces in {}s", now.elapsed().as_secs()));
 }
 
 fn generate_variants_and_write_out<W: Write>(output: &mut W, model_forces: HashSet<ModelForce>, min_bv: u32, max_bv: u32) {
@@ -107,7 +248,7 @@ fn generate_variants_and_write_out<W: Write>(output: &mut W, model_forces: HashS
     }
 }
 
-fn generate_model_forces(num_forces: usize, loaded_models: Vec<Model>, force_size: usize, min_bv: u32, max_bv: u32, required_mech: Option<String>, skill: u8) -> Result<HashSet<ModelForce>, &'static str> {
+fn generate_model_forces(num_forces: usize, loaded_models: Vec<Model>, force_size: usize, min_bv: u32, max_bv: u32, skill: u8) -> Result<HashSet<ModelForce>, &'static str> {
     let mut rng = rand::thread_rng();
     let mut attempts = 0;
     let mut model_forces = HashSet::new();
@@ -119,40 +260,10 @@ fn generate_model_forces(num_forces: usize, loaded_models: Vec<Model>, force_siz
         };
         let mut copied_models = loaded_models.clone();
         for i in 0..force_size {
-            if i == 0 && required_mech.is_some() {
-                let required_mech_name = required_mech.as_ref().unwrap();
-                match copied_models.iter().position(|m| m.name == *required_mech_name) {
-                    Some(pos) => {
-                        let model = copied_models.get_mut(pos).unwrap();
-                        if model.count > 1 {
-                            let mut cloned_model = model.clone();
-                            cloned_model.adjust_bv(skill_mul);
-                            force.models.insert(cloned_model);
-                            model.count -= 1;
-                        } else {
-                            let mut model = copied_models.swap_remove(pos);
-                            model.adjust_bv(skill_mul);
-                            force.models.insert(model.clone());
-                        }
-                        
-                        continue;
-                    },
-                    None => return Err("Required mech not in input file"),
-                }
-            }
-
             let n = rng.gen_range(0..copied_models.len());
-            let model = copied_models.get_mut(n).unwrap();
-            if model.count > 1 {
-                let mut cloned_model = model.clone();
-                cloned_model.adjust_bv(skill_mul);
-                force.models.insert(cloned_model);
-                model.count -= 1;
-            } else {
-                let mut model = copied_models.swap_remove(n);
-                model.adjust_bv(skill_mul);
-                force.models.insert(model);
-            }
+            let mut model = copied_models.swap_remove(n);
+            model.adjust_bv(skill_mul);
+            force.models.insert(model);
         }
 
         if force.max_bv() < min_bv || force.min_bv() > max_bv {
@@ -164,55 +275,6 @@ fn generate_model_forces(num_forces: usize, loaded_models: Vec<Model>, force_siz
     }
 
     return Ok(model_forces)
-}
-
-fn validate_opts(matches: &getopts::Matches) -> Result<Params, ()> {
-    let min_bv = match matches.opt_get_default("m", 4900) {
-        Ok(m) => m,
-        Err(e) => {
-            println!("Invalid min bv: {}", e);
-            return Err(())
-        },
-    };
-    let max_bv = match matches.opt_get_default("b", 5000) {
-        Ok(b) => b,
-        Err(e) => {
-            println!("Invalid max bv: {}", e);
-            return Err(())
-        },
-    };
-    let force_size = match matches.opt_get_default("s", 4) {
-        Ok(s) if s > 6 => return Err(()),
-        Ok(s) => s,
-        Err(e) => {
-            println!("Invalid force size: {}", e);
-            return Err(())
-        },
-    };
-    let num_forces = match matches.opt_get_default("n", 3) {
-        Ok(f) if f > 5 => return Err(()),
-        Ok(f) => f,
-        Err(e) => {
-            println!("Invalid num forces: {}", e);
-            return Err(())
-        },
-    };
-    if min_bv > max_bv {
-        println!("Min bv cannot be greater than max bv");
-        return Err(())
-    }
-    let skill = match matches.opt_get_default("k", 45) {
-        Ok(k) => k,
-        Err(e) => {
-            println!("Invalid skill: {}", e);
-            return Err(())
-        }
-    };
-    if !get_skill_map().contains_key(&skill) {
-        println!("Gunnery and piloting must between 0 and 8");
-        return Err(())
-    }
-    Ok(Params{ min_bv: min_bv, max_bv: max_bv, force_size: force_size, num_forces: num_forces, skill })
 }
 
 fn get_skill_map() -> HashMap<u8, f64> {
@@ -309,99 +371,62 @@ mod tests {
     use lance_creator::model::Mech;
     use rstest::{rstest, fixture};
 
-    #[rstest]
-    #[case::no_args(vec![], false, false)]
-    #[case::no_optional_args(vec!["-f", "foo"], true, true)]
-    #[case::only_optional_args(vec!["-b", "5000", "-m" , "3000", "-s", "3", "-n", "5"], false, false)]
-    #[case::valid_optional_args(vec!["-f", "foo", "b", "5000", "-m", "3000", "-s", "3", "-n", "5"], true, true)]
-    #[case::invalid_force_size_args(vec!["-f", "foo", "-s", "7", "-n", "5"], true, false)]
-    #[case::invalid_num_forces_args(vec!["-f", "foo", "-s", "3", "-n", "6"], true, false)]
-    #[case::invalid_min_bv(vec!["-f", "foo", "-m", "6000"], true, false)]
-    #[case::invalid_max_bv(vec!["-f", "foo", "-b", "4000"], true, false)]
-    #[case::invalid_bv(vec!["-f", "foo", "-m", "6000", "-b", "4000"], true, false)]
-    fn test_valid_options(#[case] args: Vec<&str>, #[case] is_parseable: bool, #[case] is_valid: bool) {
-        let opts = get_opts();
-        let matches = match opts.parse(args) {
-            Ok(m) => {
-                assert!(is_parseable);
-                m
-            }
-            Err(_) => {
-                assert!(!is_parseable);
-                return;
-            }
-        };
+    // #[fixture]
+    // fn model_forces() -> HashSet<ModelForce> {
+    //     let first_mech_first_variant = Mech{
+    //         name: String::from("a"),
+    //         variant: String::from("1"),
+    //         bv: 100
+    //     };
+    //     let first_mech_second_variant = Mech{
+    //         name: String::from("a"),
+    //         variant: String::from("2"),
+    //         bv: 5000
+    //     };
+    //     let first_mech: Model = Model {
+    //         name: String::from("a"),
+    //         count: 1,
+    //         variants: vec![first_mech_first_variant, first_mech_second_variant]
+    //     };
 
-        if !is_parseable {
-            return
-        }
-
-        match validate_opts(&matches) {
-            Ok(_) => {
-                assert!(is_valid);
-            }
-            Err(_) => {
-                assert!(!is_valid);
-            }
-        }
-    }
-
-    #[fixture]
-    fn model_forces() -> HashSet<ModelForce> {
-        let first_mech_first_variant = Mech{
-            name: String::from("a"),
-            variant: String::from("1"),
-            bv: 100
-        };
-        let first_mech_second_variant = Mech{
-            name: String::from("a"),
-            variant: String::from("2"),
-            bv: 5000
-        };
-        let first_mech: Model = Model {
-            name: String::from("a"),
-            count: 1,
-            variants: vec![first_mech_first_variant, first_mech_second_variant]
-        };
-
-        let second_mech_first_variant = Mech{
-            name: String::from("b"),
-            variant: String::from("1"),
-            bv: 10
-        };
-        let second_mech_second_variant = Mech{
-            name: String::from("b"),
-            variant: String::from("2"),
-            bv: 500
-        };
-        let second_mech: Model = Model {
-            name: String::from("b"),
-            count: 1,
-            variants: vec![second_mech_first_variant, second_mech_second_variant]
-        };
+    //     let second_mech_first_variant = Mech{
+    //         name: String::from("b"),
+    //         variant: String::from("1"),
+    //         bv: 10
+    //     };
+    //     let second_mech_second_variant = Mech{
+    //         name: String::from("b"),
+    //         variant: String::from("2"),
+    //         bv: 500
+    //     };
+    //     let second_mech: Model = Model {
+    //         name: String::from("b"),
+    //         count: 1,
+    //         variants: vec![second_mech_first_variant, second_mech_second_variant]
+    //     };
 
 
-        let first_mech = ModelForce{
-            models: SortedVec::from_unsorted(vec![first_mech, second_mech])
-        };
+    //     let first_mech = ModelForce{
+    //         models: SortedVec::from_unsorted(vec![first_mech, second_mech])
+    //     };
 
-        let mut ret = HashSet::new();
-        ret.insert(first_mech);
-        ret
-    }
+    //     let mut ret = HashSet::new();
+    //     ret.insert(first_mech);
+    //     ret
+    // }
 
-    #[rstest]
-    #[case::bv_too_low(0, 10, "")]
-    #[case::a1_and_b1(0, 110, "a 1,b 1,110\n")]
-    #[case::a1_and_b(0, 600, "a 1,b 1,110\na 1,b 2,600\n")]
-    #[case::a2_and_b1(5000, 5100, "a 2,b 1,5010\n")]
-    #[case::a2_and_b(5000, 10000, "a 2,b 1,5010\na 2,b 2,5500\n")]
-    #[case::a_and_b(0, 10000, "a 1,b 1,110\na 1,b 2,600\na 2,b 1,5010\na 2,b 2,5500\n")]
-    #[case::bv_too_high(10000, 50000, "")]
-    fn test_generate_variants(model_forces: HashSet<ModelForce>, #[case] min_bv: u32, #[case] max_bv: u32, #[case] expected: String) {
-        let mut writer: Vec<u8> = Vec::new();
-        generate_variants_and_write_out(&mut writer, model_forces, min_bv, max_bv);
-        let result = String::from_utf8(writer).unwrap();
-        assert_eq!(expected, result);
-    }
+    // #[rstest]
+    // #[case::bv_too_low(0, 10, "")]
+    // #[case::a1_and_b1(0, 110, "a 1,b 1,110\n")]
+    // #[case::a1_and_b(0, 600, "a 1,b 1,110\na 1,b 2,600\n")]
+    // #[case::a2_and_b1(5000, 5100, "a 2,b 1,5010\n")]
+    // #[case::a2_and_b(5000, 10000, "a 2,b 1,5010\na 2,b 2,5500\n")]
+    // #[case::a_and_b(0, 10000, "a 1,b 1,110\na 1,b 2,600\na 2,b 1,5010\na 2,b 2,5500\n")]
+    // #[case::bv_too_high(10000, 50000, "")]
+    // fn test_generate_variants(model_forces: HashSet<ModelForce>, #[case] min_bv: u32, #[case] max_bv: u32, #[case] expected: String) {
+    //     let mut writer: Vec<u8> = Vec::new();
+    //     generate_variants_and_write_out(&mut writer, model_forces, min_bv, max_bv);
+    //     let result = String::from_utf8(writer).unwrap();
+    //     assert_eq!(expected, result);
+    // }
 }
