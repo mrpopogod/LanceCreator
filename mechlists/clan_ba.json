@@ -1,0 +1,54 @@
+[
+    {
+        "count": 1,
+        "name": "Elemental",
+        "variants": [
+            {
+                "bv": 447,
+                "variant": "Laser"
+            },
+            {
+                "bv": 577,
+                "variant": "AP Gauss"
+            },
+            {
+                "bv": 426,
+                "variant": "ER Micro Laser"
+            },
+            {
+                "bv": 404,
+                "variant": "Flamer"
+            },
+            {
+                "bv": 415,
+                "variant": "Heavy Machine Gun"
+            },
+            {
+                "bv": 404,
+                "variant": "Machine Gun"
+            },
+            {
+                "bv": 480,
+                "variant": "Micro Pulse Laser"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Elemental III",
+        "variants": [
+            {
+                "bv": 532,
+                "variant": "AP Gauss"
+            },
+            {
+                "bv": 357,
+                "variant": "Flamer"
+            },
+            {
+                "bv": 434,
+                "variant": "Micro Pulse Laser"
+            }
+        ]
+    }
+]

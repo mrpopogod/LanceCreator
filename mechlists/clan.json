@@ -1,1076 +1,1066 @@
 [
-  {
-    "name": "Viper",
-    "count": 2,
-    "variants": [
-      {
-        "variant": "Prime",
-        "bv": 1450
-      },
-      {
-        "variant": "A",
-        "bv": 1989
-      },
-      {
-        "variant": "B",
-        "bv": 1830
-      },
-      {
-        "variant": "C",
-        "bv": 1344
-      },
-      {
-        "variant": "D",
-        "bv": 1779
-      }
-    ]
-  },
-  {
-    "name": "Mad Dog",
-    "count": 2,
-    "variants": [
-      {
-        "variant": "Prime",
-        "bv": 2351
-      },
-      {
-        "variant": "A",
-        "bv": 1923
-      },
-      {
-        "variant": "B",
-        "bv": 2284
-      },
-      {
-        "variant": "C",
-        "bv": 1892
-      },
-      {
-        "variant": "DD",
-        "bv": 1970
-      },
-      {
-        "variant": "S",
-        "bv": 2676
-      }
-    ]
-  },
-  {
-    "name": "Ice Ferret",
-    "count": 3,
-    "variants": [
-      {
-        "variant": "Prime",
-        "bv": 1678
-      },
-      {
-        "variant": "A",
-        "bv": 1323
-      },
-      {
-        "variant": "B",
-        "bv": 1461
-      },
-      {
-        "variant": "C",
-        "bv": 1211
-      },
-      {
-        "variant": "D",
-        "bv": 1653
-      }
-    ]
-  },
-  {
-    "name": "Hellbringer",
-    "count": 2,
-    "variants": [
-      {
-        "variant": "Prime",
-        "bv": 2654
-      },
-      {
-        "variant": "A",
-        "bv": 1948
-      },
-      {
-        "variant": "B",
-        "bv": 1592
-      },
-      {
-        "variant": "M",
-        "bv": 2200
-      }
-    ]
-  },
-  {
-    "name": "Gargoyle",
-    "count": 3,
-    "variants": [
-      {
-        "variant": "Prime",
-        "bv": 1537
-      },
-      {
-        "variant": "A",
-        "bv": 2689
-      },
-      {
-        "variant": "B",
-        "bv": 1843
-      },
-      {
-        "variant": "C",
-        "bv": 2437
-      },
-      {
-        "variant": "D",
-        "bv": 2499
-      }
-    ]
-  },
-  {
-    "name": "Summoner",
-    "count": 3,
-    "variants": [
-      {
-        "variant": "Prime",
-        "bv": 2298
-      },
-      {
-        "variant": "A",
-        "bv": 2145
-      },
-      {
-        "variant": "B",
-        "bv": 2159
-      },
-      {
-        "variant": "C",
-        "bv": 2379
-      },
-      {
-        "variant": "D",
-        "bv": 2643
-      },
-      {
-        "variant": "M",
-        "bv": 2251
-      }
-    ]
-  },
-  {
-    "name": "Shadow Cat",
-    "count": 2,
-    "variants": [
-      {
-        "variant": "Prime",
-        "bv": 2156
-      },
-      {
-        "variant": "A",
-        "bv": 2220
-      },
-      {
-        "variant": "B",
-        "bv": 2420
-      },
-      {
-        "variant": "TC",
-        "bv": 1378
-      }
-    ]
-  },
-  {
-    "name": "Mist Lynx",
-    "count": 2,
-    "variants": [
-      {
-        "variant": "Prime",
-        "bv": 871
-      },
-      {
-        "variant": "A",
-        "bv": 608
-      },
-      {
-        "variant": "B",
-        "bv": 1209
-      },
-      {
-        "variant": "C",
-        "bv": 1320
-      },
-      {
-        "variant": "D",
-        "bv": 842
-      }
-    ]
-  },
-  {
-    "name": "Dire Wolf",
-    "count": 3,
-    "variants": [
-      {
-        "variant": "Prime",
-        "bv": 2712
-      },
-      {
-        "variant": "A",
-        "bv": 2855
-      },
-      {
-        "variant": "B",
-        "bv": 2609
-      },
-      {
-        "variant": "S",
-        "bv": 2985
-      },
-      {
-        "variant": "W",
-        "bv": 2951
-      },
-      {
-        "variant": "Widowmaker",
-        "bv": 3041
-      }
-    ]
-  },
-  {
-    "name": "Elemental",
-    "count": 14,
-    "variants": [
-      {
-        "variant": "Laser",
-        "bv": 447
-      }
-    ]
-  },
-  {
-    "name": "Adder",
-    "count": 3,
-    "variants": [
-      {
-        "variant": "Prime",
-        "bv": 2083
-      },
-      {
-        "variant": "A",
-        "bv": 1437
-      },
-      {
-        "variant": "B",
-        "bv": 1422
-      },
-      {
-        "variant": "C",
-        "bv": 1372
-      },
-      {
-        "variant": "D",
-        "bv": 1255
-      },
-      {
-        "variant": "S",
-        "bv": 1427
-      },
-      {
-        "variant": "TC",
-        "bv": 1247
-      }
-    ]
-  },
-  {
-    "name": "Mongrel",
-    "count": 4,
-    "variants": [
-      {
-        "variant": "Prime",
-        "bv": 2290
-      },
-      {
-        "variant": "A",
-        "bv": 2031
-      },
-      {
-        "variant": "B",
-        "bv": 1903
-      },
-      {
-        "variant": "C",
-        "bv": 1465
-      },
-      {
-        "variant": "D",
-        "bv": 2212
-      }
-    ]
-  },
-  {
-    "name": "Nova",
-    "count": 2,
-    "variants": [
-      {
-        "variant": "Prime",
-        "bv": 2663
-      },
-      {
-        "variant": "A",
-        "bv": 2422
-      },
-      {
-        "variant": "B",
-        "bv": 1543
-      },
-      {
-        "variant": "C",
-        "bv": 1515
-      },
-      {
-        "variant": "D",
-        "bv": 1450
-      },
-      {
-        "variant": "S",
-        "bv": 2056
-      }
-    ]
-  },
-  {
-    "name": "Timber Wolf",
-    "count": 4,
-    "variants": [
-      {
-        "variant": "Prime",
-        "bv": 2737
-      },
-      {
-        "variant": "A",
-        "bv": 2854
-      },
-      {
-        "variant": "B",
-        "bv": 2224
-      },
-      {
-        "variant": "C",
-        "bv": 2500
-      },
-      {
-        "variant": "D",
-        "bv": 2682
-      },
-      {
-        "variant": "N",
-        "bv": 2862
-      },
-      {
-        "variant": "S",
-        "bv": 2462
-      },
-      {
-        "variant": "TC",
-        "bv": 2903
-      },
-      {
-        "variant": "Pryde",
-        "bv": 2900
-      }
-    ]
-  },
-  {
-    "name": "Executioner",
-    "count": 5,
-    "variants": [
-      {
-        "variant": "Prime",
-        "bv": 2749
-      },
-      {
-        "variant": "A",
-        "bv": 3112
-      },
-      {
-        "variant": "B",
-        "bv": 2940
-      },
-      {
-        "variant": "C",
-        "bv": 2740
-      },
-      {
-        "variant": "D",
-        "bv": 2698
-      },
-      {
-        "variant": "TC",
-        "bv": 3363
-      }
-    ]
-  },
-  {
-    "name": "Stormcrow",
-    "count": 3,
-    "variants": [
-      {
-        "variant": "Prime",
-        "bv": 2073
-      },
-      {
-        "variant": "A",
-        "bv": 2319
-      },
-      {
-        "variant": "B",
-        "bv": 2281
-      },
-      {
-        "variant": "C",
-        "bv": 1881
-      },
-      {
-        "variant": "D",
-        "bv": 1863
-      },
-      {
-        "variant": "P",
-        "bv": 2213
-      },
-      {
-        "variant": "TC",
-        "bv": 2373
-      }
-    ]
-  },
-  {
-    "name": "Fire Falcon",
-    "count": 3,
-    "variants": [
-      {
-        "variant": "Prime",
-        "bv": 1451
-      },
-      {
-        "variant": "A",
-        "bv": 822
-      },
-      {
-        "variant": "B",
-        "bv": 1570
-      },
-      {
-        "variant": "D",
-        "bv": 826
-      }
-    ]
-  },
-  {
-    "name": "Hellion",
-    "count": 3,
-    "variants": [
-      {
-        "variant": "Prime",
-        "bv": 1873
-      },
-      {
-        "variant": "A",
-        "bv": 1543
-      }
-    ]
-  },
-  {
-    "name": "Howler",
-    "count": 3,
-    "variants": [
-      {
-        "variant": "1",
-        "bv": 645
-      },
-      {
-        "variant": "3",
-        "bv": 1277
-      },
-      {
-        "variant": "4",
-        "bv": 506
-      },
-      {
-        "variant": "5",
-        "bv": 1363
-      }
-    ]
-  },
-  {
-    "name": "Kodiak",
-    "count": 3,
-    "variants": [
-      {
-        "variant": "1",
-        "bv": 2927
-      },
-      {
-        "variant": "2",
-        "bv": 2856
-      },
-      {
-        "variant": "3",
-        "bv": 2615
-      },
-      {
-        "variant": "4",
-        "bv": 2728
-      },
-      {
-        "variant": "5",
-        "bv": 3067
-      }
-    ]
-  },
-  {
-    "name": "Pack Hunter",
-    "count": 3,
-    "variants": [
-      {
-        "variant": "1",
-        "bv": 1369
-      },
-      {
-        "variant": "2",
-        "bv": 1598
-      },
-      {
-        "variant": "3",
-        "bv": 1747
-      },
-      {
-        "variant": "4",
-        "bv": 1257
-      }
-    ]
-  },
-  {
-    "name": "Conjurer",
-    "count": 2,
-    "variants": [
-      {
-        "variant": "1",
-        "bv": 1813
-      },
-      {
-        "variant": "2",
-        "bv": 2107
-      }
-    ]
-  },
-  {
-    "name": "Horned Owl",
-    "count": 2,
-    "variants": [
-      {
-        "variant": "1",
-        "bv": 1434
-      },
-      {
-        "variant": "2",
-        "bv": 1191
-      },
-      {
-        "variant": "3",
-        "bv": 1545
-      }
-    ]
-  },
-  {
-    "name": "Incubus",
-    "count": 2,
-    "variants": [
-      {
-        "variant": "1",
-        "bv": 1596
-      },
-      {
-        "variant": "2",
-        "bv": 1913
-      },
-      {
-        "variant": "3",
-        "bv": 1324
-      }
-    ]
-  },
-  {
-    "name": "Piranha",
-    "count": 2,
-    "variants": [
-      {
-        "variant": "1",
-        "bv": 998
-      },
-      {
-        "variant": "3",
-        "bv": 1142
-      }
-    ]
-  },
-  {
-    "name": "Vapor Eagle",
-    "count": 2,
-    "variants": [
-      {
-        "variant": "1",
-        "bv": 2368
-      },
-      {
-        "variant": "2",
-        "bv": 1989
-      }
-    ]
-  },
-  {
-    "name": "Stone RHino",
-    "count": 2,
-    "variants": [
-      {
-        "variant": "1",
-        "bv": 3001
-      },
-      {
-        "variant": "4",
-        "bv": 2601
-      },
-      {
-        "variant": "5",
-        "bv": 2115
-      },
-      {
-        "variant": "6",
-        "bv": 2981
-      },
-      {
-        "variant": "7",
-        "bv": 2804
-      }
-    ]
-  },
-  {
-    "name": "Hunchback IIC",
-    "count": 2,
-    "variants": [
-      {
-        "variant": "1",
-        "bv": 1679
-      },
-      {
-        "variant": "5",
-        "bv": 1534
-      }
-    ]
-  },
-  {
-    "name": "Marauder IIC",
-    "count": 2,
-    "variants": [
-      {
-        "variant": "1",
-        "bv": 2680
-      },
-      {
-        "variant": "3",
-        "bv": 2445
-      },
-      {
-        "variant": "4",
-        "bv": 3447
-      },
-      {
-        "variant": "5",
-        "bv": 2386
-      }
-    ]
-  },
-  {
-    "name": "Supernova",
-    "count": 2,
-    "variants": [
-      {
-        "variant": "1",
-        "bv": 2801
-      },
-      {
-        "variant": "2",
-        "bv": 2741
-      },
-      {
-        "variant": "3",
-        "bv": 3448
-      }
-    ]
-  },
-  {
-    "name": "Warhammer IIC",
-    "count": 2,
-    "variants": [
-      {
-        "variant": "1",
-        "bv": 2570
-      },
-      {
-        "variant": "2",
-        "bv": 2482
-      }
-    ]
-  },
-  {
-    "name": "Turkina",
-    "count": 2,
-    "variants": [
-      {
-        "variant": "Prime",
-        "bv": 2944
-      },
-      {
-        "variant": "A",
-        "bv": 2906
-      },
-      {
-        "variant": "B",
-        "bv": 3420
-      }
-    ]
-  },
-  {
-    "name": "Kingfisher",
-    "count": 2,
-    "variants": [
-      {
-        "variant": "Prime",
-        "bv": 2401
-      },
-      {
-        "variant": "A",
-        "bv": 2261
-      },
-      {
-        "variant": "B",
-        "bv": 2472
-      },
-      {
-        "variant": "C",
-        "bv": 2644
-      },
-      {
-        "variant": "D",
-        "bv": 2364
-      }
-    ]
-  },
-  {
-    "name": "Huntsman",
-    "count": 2,
-    "variants": [
-      {
-        "variant": "Prime",
-        "bv": 2104
-      },
-      {
-        "variant": "A",
-        "bv": 2034
-      },
-      {
-        "variant": "B",
-        "bv": 2156
-      },
-      {
-        "variant": "C",
-        "bv": 2199
-      }
-    ]
-  },
-  {
-    "name": "Ebon Jaguar",
-    "count": 2,
-    "variants": [
-      {
-        "variant": "Prime",
-        "bv": 1952
-      },
-      {
-        "variant": "A",
-        "bv": 2429
-      },
-      {
-        "variant": "C",
-        "bv": 1831
-      },
-      {
-        "variant": "D",
-        "bv": 2228
-      }
-    ]
-  },
-  {
-    "name": "Crossbow",
-    "count": 2,
-    "variants": [
-      {
-        "variant": "Prime",
-        "bv": 1829
-      },
-      {
-        "variant": "A",
-        "bv": 1797
-      },
-      {
-        "variant": "B",
-        "bv": 1687
-      }
-    ]
-  },
-  {
-    "name": "Arctic Cheetah",
-    "count": 2,
-    "variants": [
-      {
-        "variant": "Prime",
-        "bv": 1334
-      },
-      {
-        "variant": "A",
-        "bv": 1117
-      },
-      {
-        "variant": "B",
-        "bv": 1076
-      },
-      {
-        "variant": "D",
-        "bv": 1080
-      }
-    ]
-  },
-  {
-    "name": "Battle Cobra",
-    "count": 2,
-    "variants": [
-      {
-        "variant": "Prime",
-        "bv": 1487
-      },
-      {
-        "variant": "A",
-        "bv": 1466
-      },
-      {
-        "variant": "B",
-        "bv": 1892
-      }
-    ]
-  },
-  {
-    "name": "Black Lanner",
-    "count": 2,
-    "variants": [
-      {
-        "variant": "Prime",
-        "bv": 2268
-      },
-      {
-        "variant": "B",
-        "bv": 1961
-      },
-      {
-        "variant": "C",
-        "bv": 2523
-      }
-    ]
-  },
-  {
-    "name": "Linebacker",
-    "count": 2,
-    "variants": [
-      {
-        "variant": "Prime",
-        "bv": 2390
-      },
-      {
-        "variant": "A",
-        "bv": 2264
-      },
-      {
-        "variant": "B",
-        "bv": 2048
-      },
-      {
-        "variant": "C",
-        "bv": 2075
-      },
-      {
-        "variant": "D",
-        "bv": 2039
-      }
-    ]
-  },
-  {
-    "name": "Night Gyr",
-    "count": 2,
-    "variants": [
-      {
-        "variant": "Prime",
-        "bv": 2830
-      },
-      {
-        "variant": "A",
-        "bv": 2680
-      },
-      {
-        "variant": "B",
-        "bv": 2140
-      },
-      {
-        "variant": "C",
-        "bv": 2468
-      },
-      {
-        "variant": "D",
-        "bv": 2889
-      }
-    ]
-  },
-  {
-    "name": "Cougar",
-    "count": 3,
-    "variants": [
-      {
-        "variant": "Prime",
-        "bv": 1485
-      },
-      {
-        "variant": "A",
-        "bv": 1697
-      },
-      {
-        "variant": "B",
-        "bv": 1774
-      },
-      {
-        "variant": "C",
-        "bv": 1785
-      },
-      {
-        "variant": "D",
-        "bv": 1309
-      }
-    ]
-  },
-  {
-    "name": "Fire Moth",
-    "count": 3,
-    "variants": [
-      {
-        "variant": "Prime",
-        "bv": 1251
-      },
-      {
-        "variant": "C",
-        "bv": 741
-      },
-      {
-        "variant": "D",
-        "bv": 2307
-      }
-    ]
-  },
-  {
-    "name": "Kit Fox",
-    "count": 3,
-    "variants": [
-      {
-        "variant": "Prime",
-        "bv": 1085
-      },
-      {
-        "variant": "A",
-        "bv": 1310
-      },
-      {
-        "variant": "B",
-        "bv": 1087
-      },
-      {
-        "variant": "D",
-        "bv": 1142
-      }
-    ]
-  },
-  {
-    "name": "Nova Cat",
-    "count": 3,
-    "variants": [
-      {
-        "variant": "Prime",
-        "bv": 2530
-      },
-      {
-        "variant": "A",
-        "bv": 2629
-      },
-      {
-        "variant": "B",
-        "bv": 2492
-      },
-      {
-        "variant": "C",
-        "bv": 1944
-      }
-    ]
-  },
-  {
-    "name": "Warhawk",
-    "count": 3,
-    "variants": [
-      {
-        "variant": "Prime",
-        "bv": 3194
-      },
-      {
-        "variant": "A",
-        "bv": 2399
-      },
-      {
-        "variant": "B",
-        "bv": 2320
-      },
-      {
-        "variant": "C",
-        "bv": 2998
-      }
-    ]
-  },
-  {
-    "name": "Pouncer",
-    "count": 1,
-    "variants": [
-      {
-        "variant": "Prime",
-        "bv": 2557
-      },
-      {
-        "variant": "A",
-        "bv": 2081
-      },
-      {
-        "variant": "B",
-        "bv": 1836
-      },
-      {
-        "variant": "C",
-        "bv": 1653
-      },
-      {
-        "variant": "D",
-        "bv": 2246
-      }
-    ]
-  }
+    {
+        "count": 1,
+        "name": "Adder",
+        "variants": [
+            {
+                "bv": 2083,
+                "variant": "Prime"
+            },
+            {
+                "bv": 1437,
+                "variant": "A"
+            },
+            {
+                "bv": 1422,
+                "variant": "B"
+            },
+            {
+                "bv": 1372,
+                "variant": "C"
+            },
+            {
+                "bv": 1255,
+                "variant": "D"
+            },
+            {
+                "bv": 1427,
+                "variant": "S"
+            },
+            {
+                "bv": 1247,
+                "variant": "TC"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Arctic Cheetah",
+        "variants": [
+            {
+                "bv": 1334,
+                "variant": "Prime"
+            },
+            {
+                "bv": 1117,
+                "variant": "A"
+            },
+            {
+                "bv": 1076,
+                "variant": "B"
+            },
+            {
+                "bv": 1080,
+                "variant": "D"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Battle Cobra",
+        "variants": [
+            {
+                "bv": 1487,
+                "variant": "Prime"
+            },
+            {
+                "bv": 1466,
+                "variant": "A"
+            },
+            {
+                "bv": 1892,
+                "variant": "B"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Black Lanner",
+        "variants": [
+            {
+                "bv": 2268,
+                "variant": "Prime"
+            },
+            {
+                "bv": 1961,
+                "variant": "B"
+            },
+            {
+                "bv": 2523,
+                "variant": "C"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Conjurer",
+        "variants": [
+            {
+                "bv": 1813,
+                "variant": "1"
+            },
+            {
+                "bv": 2107,
+                "variant": "2"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Cougar",
+        "variants": [
+            {
+                "bv": 1485,
+                "variant": "Prime"
+            },
+            {
+                "bv": 1697,
+                "variant": "A"
+            },
+            {
+                "bv": 1774,
+                "variant": "B"
+            },
+            {
+                "bv": 1785,
+                "variant": "C"
+            },
+            {
+                "bv": 1309,
+                "variant": "D"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Crossbow",
+        "variants": [
+            {
+                "bv": 1829,
+                "variant": "Prime"
+            },
+            {
+                "bv": 1797,
+                "variant": "A"
+            },
+            {
+                "bv": 1687,
+                "variant": "B"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Dire Wolf",
+        "variants": [
+            {
+                "bv": 2712,
+                "variant": "Prime"
+            },
+            {
+                "bv": 2855,
+                "variant": "A"
+            },
+            {
+                "bv": 2609,
+                "variant": "B"
+            },
+            {
+                "bv": 2985,
+                "variant": "S"
+            },
+            {
+                "bv": 2951,
+                "variant": "W"
+            },
+            {
+                "bv": 3041,
+                "variant": "Widowmaker"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Ebon Jaguar",
+        "variants": [
+            {
+                "bv": 1952,
+                "variant": "Prime"
+            },
+            {
+                "bv": 2429,
+                "variant": "A"
+            },
+            {
+                "bv": 1831,
+                "variant": "C"
+            },
+            {
+                "bv": 2228,
+                "variant": "D"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Executioner",
+        "variants": [
+            {
+                "bv": 2749,
+                "variant": "Prime"
+            },
+            {
+                "bv": 3112,
+                "variant": "A"
+            },
+            {
+                "bv": 2940,
+                "variant": "B"
+            },
+            {
+                "bv": 2740,
+                "variant": "C"
+            },
+            {
+                "bv": 2698,
+                "variant": "D"
+            },
+            {
+                "bv": 3363,
+                "variant": "TC"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Fire Falcon",
+        "variants": [
+            {
+                "bv": 1451,
+                "variant": "Prime"
+            },
+            {
+                "bv": 822,
+                "variant": "A"
+            },
+            {
+                "bv": 1570,
+                "variant": "B"
+            },
+            {
+                "bv": 826,
+                "variant": "D"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Fire Moth",
+        "variants": [
+            {
+                "bv": 1251,
+                "variant": "Prime"
+            },
+            {
+                "bv": 741,
+                "variant": "C"
+            },
+            {
+                "bv": 2307,
+                "variant": "D"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Gargoyle",
+        "variants": [
+            {
+                "bv": 1537,
+                "variant": "Prime"
+            },
+            {
+                "bv": 2689,
+                "variant": "A"
+            },
+            {
+                "bv": 1843,
+                "variant": "B"
+            },
+            {
+                "bv": 2437,
+                "variant": "C"
+            },
+            {
+                "bv": 2499,
+                "variant": "D"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Hellbringer",
+        "variants": [
+            {
+                "bv": 2654,
+                "variant": "Prime"
+            },
+            {
+                "bv": 1948,
+                "variant": "A"
+            },
+            {
+                "bv": 1592,
+                "variant": "B"
+            },
+            {
+                "bv": 2200,
+                "variant": "M"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Hellion",
+        "variants": [
+            {
+                "bv": 1873,
+                "variant": "Prime"
+            },
+            {
+                "bv": 1543,
+                "variant": "A"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Horned Owl",
+        "variants": [
+            {
+                "bv": 1434,
+                "variant": "1"
+            },
+            {
+                "bv": 1191,
+                "variant": "2"
+            },
+            {
+                "bv": 1545,
+                "variant": "3"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Howler",
+        "variants": [
+            {
+                "bv": 645,
+                "variant": "1"
+            },
+            {
+                "bv": 1277,
+                "variant": "3"
+            },
+            {
+                "bv": 506,
+                "variant": "4"
+            },
+            {
+                "bv": 1363,
+                "variant": "5"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Hunchback IIC",
+        "variants": [
+            {
+                "bv": 1679,
+                "variant": "1"
+            },
+            {
+                "bv": 1534,
+                "variant": "5"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Huntsman",
+        "variants": [
+            {
+                "bv": 2104,
+                "variant": "Prime"
+            },
+            {
+                "bv": 2034,
+                "variant": "A"
+            },
+            {
+                "bv": 2156,
+                "variant": "B"
+            },
+            {
+                "bv": 2199,
+                "variant": "C"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Ice Ferret",
+        "variants": [
+            {
+                "bv": 1678,
+                "variant": "Prime"
+            },
+            {
+                "bv": 1323,
+                "variant": "A"
+            },
+            {
+                "bv": 1461,
+                "variant": "B"
+            },
+            {
+                "bv": 1211,
+                "variant": "C"
+            },
+            {
+                "bv": 1653,
+                "variant": "D"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Incubus",
+        "variants": [
+            {
+                "bv": 1596,
+                "variant": "1"
+            },
+            {
+                "bv": 1913,
+                "variant": "2"
+            },
+            {
+                "bv": 1324,
+                "variant": "3"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Kingfisher",
+        "variants": [
+            {
+                "bv": 2401,
+                "variant": "Prime"
+            },
+            {
+                "bv": 2261,
+                "variant": "A"
+            },
+            {
+                "bv": 2472,
+                "variant": "B"
+            },
+            {
+                "bv": 2644,
+                "variant": "C"
+            },
+            {
+                "bv": 2364,
+                "variant": "D"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Kit Fox",
+        "variants": [
+            {
+                "bv": 1085,
+                "variant": "Prime"
+            },
+            {
+                "bv": 1310,
+                "variant": "A"
+            },
+            {
+                "bv": 1087,
+                "variant": "B"
+            },
+            {
+                "bv": 1142,
+                "variant": "D"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Kodiak",
+        "variants": [
+            {
+                "bv": 2927,
+                "variant": "1"
+            },
+            {
+                "bv": 2856,
+                "variant": "2"
+            },
+            {
+                "bv": 2615,
+                "variant": "3"
+            },
+            {
+                "bv": 2728,
+                "variant": "4"
+            },
+            {
+                "bv": 3067,
+                "variant": "5"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Linebacker",
+        "variants": [
+            {
+                "bv": 2390,
+                "variant": "Prime"
+            },
+            {
+                "bv": 2264,
+                "variant": "A"
+            },
+            {
+                "bv": 2048,
+                "variant": "B"
+            },
+            {
+                "bv": 2075,
+                "variant": "C"
+            },
+            {
+                "bv": 2039,
+                "variant": "D"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Mad Dog",
+        "variants": [
+            {
+                "bv": 2351,
+                "variant": "Prime"
+            },
+            {
+                "bv": 1923,
+                "variant": "A"
+            },
+            {
+                "bv": 2284,
+                "variant": "B"
+            },
+            {
+                "bv": 1892,
+                "variant": "C"
+            },
+            {
+                "bv": 1970,
+                "variant": "DD"
+            },
+            {
+                "bv": 2676,
+                "variant": "S"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Marauder IIC",
+        "variants": [
+            {
+                "bv": 2680,
+                "variant": "1"
+            },
+            {
+                "bv": 2445,
+                "variant": "3"
+            },
+            {
+                "bv": 3447,
+                "variant": "4"
+            },
+            {
+                "bv": 2386,
+                "variant": "5"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Mist Lynx",
+        "variants": [
+            {
+                "bv": 871,
+                "variant": "Prime"
+            },
+            {
+                "bv": 608,
+                "variant": "A"
+            },
+            {
+                "bv": 1209,
+                "variant": "B"
+            },
+            {
+                "bv": 1320,
+                "variant": "C"
+            },
+            {
+                "bv": 842,
+                "variant": "D"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Mongrel",
+        "variants": [
+            {
+                "bv": 2290,
+                "variant": "Prime"
+            },
+            {
+                "bv": 2031,
+                "variant": "A"
+            },
+            {
+                "bv": 1903,
+                "variant": "B"
+            },
+            {
+                "bv": 1465,
+                "variant": "C"
+            },
+            {
+                "bv": 2212,
+                "variant": "D"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Night Gyr",
+        "variants": [
+            {
+                "bv": 2830,
+                "variant": "Prime"
+            },
+            {
+                "bv": 2680,
+                "variant": "A"
+            },
+            {
+                "bv": 2140,
+                "variant": "B"
+            },
+            {
+                "bv": 2468,
+                "variant": "C"
+            },
+            {
+                "bv": 2889,
+                "variant": "D"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Nova",
+        "variants": [
+            {
+                "bv": 2663,
+                "variant": "Prime"
+            },
+            {
+                "bv": 2422,
+                "variant": "A"
+            },
+            {
+                "bv": 1543,
+                "variant": "B"
+            },
+            {
+                "bv": 1515,
+                "variant": "C"
+            },
+            {
+                "bv": 1450,
+                "variant": "D"
+            },
+            {
+                "bv": 2056,
+                "variant": "S"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Nova Cat",
+        "variants": [
+            {
+                "bv": 2530,
+                "variant": "Prime"
+            },
+            {
+                "bv": 2629,
+                "variant": "A"
+            },
+            {
+                "bv": 2492,
+                "variant": "B"
+            },
+            {
+                "bv": 1944,
+                "variant": "C"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Pack Hunter",
+        "variants": [
+            {
+                "bv": 1369,
+                "variant": "1"
+            },
+            {
+                "bv": 1598,
+                "variant": "2"
+            },
+            {
+                "bv": 1747,
+                "variant": "3"
+            },
+            {
+                "bv": 1257,
+                "variant": "4"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Piranha",
+        "variants": [
+            {
+                "bv": 998,
+                "variant": "1"
+            },
+            {
+                "bv": 1142,
+                "variant": "3"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Pouncer",
+        "variants": [
+            {
+                "bv": 2557,
+                "variant": "Prime"
+            },
+            {
+                "bv": 2081,
+                "variant": "A"
+            },
+            {
+                "bv": 1836,
+                "variant": "B"
+            },
+            {
+                "bv": 1653,
+                "variant": "C"
+            },
+            {
+                "bv": 2246,
+                "variant": "D"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Shadow Cat",
+        "variants": [
+            {
+                "bv": 2156,
+                "variant": "Prime"
+            },
+            {
+                "bv": 2220,
+                "variant": "A"
+            },
+            {
+                "bv": 2420,
+                "variant": "B"
+            },
+            {
+                "bv": 1378,
+                "variant": "TC"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Stone Rhino",
+        "variants": [
+            {
+                "bv": 3001,
+                "variant": "1"
+            },
+            {
+                "bv": 2601,
+                "variant": "4"
+            },
+            {
+                "bv": 2115,
+                "variant": "5"
+            },
+            {
+                "bv": 2981,
+                "variant": "6"
+            },
+            {
+                "bv": 2804,
+                "variant": "7"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Stormcrow",
+        "variants": [
+            {
+                "bv": 2073,
+                "variant": "Prime"
+            },
+            {
+                "bv": 2319,
+                "variant": "A"
+            },
+            {
+                "bv": 2281,
+                "variant": "B"
+            },
+            {
+                "bv": 1881,
+                "variant": "C"
+            },
+            {
+                "bv": 1863,
+                "variant": "D"
+            },
+            {
+                "bv": 2213,
+                "variant": "P"
+            },
+            {
+                "bv": 2373,
+                "variant": "TC"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Summoner",
+        "variants": [
+            {
+                "bv": 2298,
+                "variant": "Prime"
+            },
+            {
+                "bv": 2145,
+                "variant": "A"
+            },
+            {
+                "bv": 2159,
+                "variant": "B"
+            },
+            {
+                "bv": 2379,
+                "variant": "C"
+            },
+            {
+                "bv": 2643,
+                "variant": "D"
+            },
+            {
+                "bv": 2251,
+                "variant": "M"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Supernova",
+        "variants": [
+            {
+                "bv": 2801,
+                "variant": "1"
+            },
+            {
+                "bv": 2741,
+                "variant": "2"
+            },
+            {
+                "bv": 3448,
+                "variant": "3"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Timber Wolf",
+        "variants": [
+            {
+                "bv": 2737,
+                "variant": "Prime"
+            },
+            {
+                "bv": 2854,
+                "variant": "A"
+            },
+            {
+                "bv": 2224,
+                "variant": "B"
+            },
+            {
+                "bv": 2500,
+                "variant": "C"
+            },
+            {
+                "bv": 2682,
+                "variant": "D"
+            },
+            {
+                "bv": 2862,
+                "variant": "N"
+            },
+            {
+                "bv": 2462,
+                "variant": "S"
+            },
+            {
+                "bv": 2903,
+                "variant": "TC"
+            },
+            {
+                "bv": 2900,
+                "variant": "Pryde"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Turkina",
+        "variants": [
+            {
+                "bv": 2944,
+                "variant": "Prime"
+            },
+            {
+                "bv": 2906,
+                "variant": "A"
+            },
+            {
+                "bv": 3420,
+                "variant": "B"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Vapor Eagle",
+        "variants": [
+            {
+                "bv": 2368,
+                "variant": "1"
+            },
+            {
+                "bv": 1989,
+                "variant": "2"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Viper",
+        "variants": [
+            {
+                "bv": 1450,
+                "variant": "Prime"
+            },
+            {
+                "bv": 1989,
+                "variant": "A"
+            },
+            {
+                "bv": 1830,
+                "variant": "B"
+            },
+            {
+                "bv": 1344,
+                "variant": "C"
+            },
+            {
+                "bv": 1779,
+                "variant": "D"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Warhammer IIC",
+        "variants": [
+            {
+                "bv": 2570,
+                "variant": "1"
+            },
+            {
+                "bv": 2482,
+                "variant": "2"
+            }
+        ]
+    },
+    {
+        "count": 3,
+        "name": "Warhawk",
+        "variants": [
+            {
+                "bv": 3194,
+                "variant": "Prime"
+            },
+            {
+                "bv": 2399,
+                "variant": "A"
+            },
+            {
+                "bv": 2320,
+                "variant": "B"
+            },
+            {
+                "bv": 2998,
+                "variant": "C"
+            }
+        ]
+    }
 ]
