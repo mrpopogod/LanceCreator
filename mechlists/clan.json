@@ -427,6 +427,44 @@
     },
     {
         "count": 1,
+        "name": "Hel",
+        "variants": [
+            {
+                "bv": 2189,
+                "variant": "Prime"
+            },
+            {
+                "bv": 2249,
+                "variant": "A"
+            },
+            {
+                "bv": 1798,
+                "variant": "B"
+            },
+            {
+                "bv": 2214,
+                "variant": "C"
+            },
+            {
+                "bv": 2370,
+                "variant": "D"
+            },
+            {
+                "bv": 2443,
+                "variant": "E"
+            },
+            {
+                "bv": 2512,
+                "variant": "F"
+            },
+            {
+                "bv": 2077,
+                "variant": "T"
+            }
+        ]
+    },
+    {
+        "count": 1,
         "name": "Hellbringer",
         "variants": [
             {
