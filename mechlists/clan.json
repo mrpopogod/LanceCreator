@@ -57,6 +57,40 @@
     },
     {
         "count": 1,
+        "name": "Bane",
+        "variants": [
+            {
+                "bv": 1950,
+                "variant": "1"
+            },
+            {
+                "bv": 2502,
+                "variant": "2"
+            },
+            {
+                "bv": 2941,
+                "variant": "3"
+            },
+            {
+                "bv": 2709,
+                "variant": "4"
+            },
+            {
+                "bv": 2554,
+                "variant": "5"
+            },
+            {
+                "bv": 2339,
+                "variant": "6"
+            },
+            {
+                "bv": 3740,
+                "variant": "7"
+            }
+        ]
+    },
+    {
+        "count": 1,
         "name": "Battle Cobra",
         "variants": [
             {
@@ -88,6 +122,40 @@
             {
                 "bv": 2523,
                 "variant": "C"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Black Python",
+        "variants": [
+            {
+                "bv": 2813,
+                "variant": "1"
+            },
+            {
+                "bv": 2520,
+                "variant": "2"
+            },
+            {
+                "bv": 2421,
+                "variant": "3"
+            },
+            {
+                "bv": 2594,
+                "variant": "4"
+            },
+            {
+                "bv": 2925,
+                "variant": "5"
+            },
+            {
+                "bv": 2941,
+                "variant": "White Raven 1"
+            },
+            {
+                "bv": 2703,
+                "variant": "White Raven 2"
             }
         ]
     },
@@ -299,6 +367,66 @@
     },
     {
         "count": 1,
+        "name": "Griffin IIC",
+        "variants": [
+            {
+                "bv": 1608,
+                "variant": "1"
+            },
+            {
+                "bv": 1516,
+                "variant": "2"
+            },
+            {
+                "bv": 1532,
+                "variant": "3"
+            },
+            {
+                "bv": 1475,
+                "variant": "4"
+            },
+            {
+                "bv": 1344,
+                "variant": "5"
+            },
+            {
+                "bv": 1468,
+                "variant": "6"
+            },
+            {
+                "bv": 1952,
+                "variant": "7"
+            },
+            {
+                "bv": 1736,
+                "variant": "8"
+            },
+            {
+                "bv": 1106,
+                "variant": "9"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Grizzly",
+        "variants": [
+            {
+                "bv": 2219,
+                "variant": "1"
+            },
+            {
+                "bv": 2195,
+                "variant": "2"
+            },
+            {
+                "bv": 2331,
+                "variant": "3"
+            }
+        ]
+    },
+    {
+        "count": 1,
         "name": "Hellbringer",
         "variants": [
             {
@@ -330,6 +458,28 @@
             {
                 "bv": 1543,
                 "variant": "A"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Highlander IIC",
+        "variants": [
+            {
+                "bv": 2827,
+                "variant": "1"
+            },
+            {
+                "bv": 2928,
+                "variant": "2"
+            },
+            {
+                "bv": 3001,
+                "variant": "3"
+            },
+            {
+                "bv": 2958,
+                "variant": "4"
             }
         ]
     },
@@ -455,6 +605,32 @@
     },
     {
         "count": 1,
+        "name": "Jenner IIC",
+        "variants": [
+            {
+                "bv": 1047,
+                "variant": "1"
+            },
+            {
+                "bv": 1406,
+                "variant": "2"
+            },
+            {
+                "bv": 788,
+                "variant": "3"
+            },
+            {
+                "bv": 1052,
+                "variant": "4"
+            },
+            {
+                "bv": 1440,
+                "variant": "5"
+            }
+        ]
+    },
+    {
+        "count": 1,
         "name": "Kingfisher",
         "variants": [
             {
@@ -550,6 +726,52 @@
             {
                 "bv": 2039,
                 "variant": "D"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Locust IIC",
+        "variants": [
+            {
+                "bv": 1100,
+                "variant": "1"
+            },
+            {
+                "bv": 937,
+                "variant": "2"
+            },
+            {
+                "bv": 980,
+                "variant": "3"
+            },
+            {
+                "bv": 795,
+                "variant": "4"
+            },
+            {
+                "bv": 878,
+                "variant": "5"
+            },
+            {
+                "bv": 776,
+                "variant": "6"
+            },
+            {
+                "bv": 980,
+                "variant": "7"
+            },
+            {
+                "bv": 1119,
+                "variant": "8"
+            },
+            {
+                "bv": 1133,
+                "variant": "9"
+            },
+            {
+                "bv": 1248,
+                "variant": "10"
             }
         ]
     },
@@ -759,6 +981,52 @@
     },
     {
         "count": 1,
+        "name": "Phoenix Hawk IIC",
+        "variants": [
+            {
+                "bv": 2057,
+                "variant": "1"
+            },
+            {
+                "bv": 2892,
+                "variant": "2"
+            },
+            {
+                "bv": 2448,
+                "variant": "3"
+            },
+            {
+                "bv": 2483,
+                "variant": "4"
+            },
+            {
+                "bv": 2350,
+                "variant": "5"
+            },
+            {
+                "bv": 2490,
+                "variant": "6"
+            },
+            {
+                "bv": 2219,
+                "variant": "7"
+            },
+            {
+                "bv": 2881,
+                "variant": "8"
+            },
+            {
+                "bv": 2469,
+                "variant": "9"
+            },
+            {
+                "bv": 2762,
+                "variant": "10"
+            }
+        ]
+    },
+    {
+        "count": 1,
         "name": "Piranha",
         "variants": [
             {
@@ -799,6 +1067,52 @@
     },
     {
         "count": 1,
+        "name": "Rifleman IIC",
+        "variants": [
+            {
+                "bv": 2307,
+                "variant": "1"
+            },
+            {
+                "bv": 1345,
+                "variant": "2"
+            },
+            {
+                "bv": 1733,
+                "variant": "3"
+            },
+            {
+                "bv": 2140,
+                "variant": "4"
+            },
+            {
+                "bv": 2343,
+                "variant": "5"
+            },
+            {
+                "bv": 2220,
+                "variant": "6"
+            },
+            {
+                "bv": 2205,
+                "variant": "7"
+            },
+            {
+                "bv": 2541,
+                "variant": "8"
+            },
+            {
+                "bv": 2794,
+                "variant": "9"
+            },
+            {
+                "bv": 1587,
+                "variant": "10"
+            }
+        ]
+    },
+    {
+        "count": 1,
         "name": "Shadow Cat",
         "variants": [
             {
@@ -816,6 +1130,56 @@
             {
                 "bv": 1378,
                 "variant": "TC"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Shadow Hawk IIC",
+        "variants": [
+            {
+                "bv": 1732,
+                "variant": "1"
+            },
+            {
+                "bv": 1763,
+                "variant": "2"
+            },
+            {
+                "bv": 1471,
+                "variant": "3"
+            },
+            {
+                "bv": 1698,
+                "variant": "4"
+            },
+            {
+                "bv": 1614,
+                "variant": "5"
+            },
+            {
+                "bv": 1907,
+                "variant": "6"
+            },
+            {
+                "bv": 1999,
+                "variant": "7"
+            },
+            {
+                "bv": 1940,
+                "variant": "8"
+            },
+            {
+                "bv": 1803,
+                "variant": "9"
+            },
+            {
+                "bv": 1760,
+                "variant": "10"
+            },
+            {
+                "bv": 1692,
+                "variant": "11"
             }
         ]
     },
