@@ -1,0 +1,144 @@
+[
+    {
+        "count": 1,
+        "name": "Galleon",
+        "variants": [
+            {
+                "bv": 309,
+                "variant": "GAL-100"
+            },
+            {
+                "bv": 651,
+                "variant": "GAL-102"
+            },
+            {
+                "bv": 872,
+                "variant": "GAL-103"
+            },
+            {
+                "bv": 779,
+                "variant": "GAL-104"
+            },
+            {
+                "bv": 762,
+                "variant": "GAL-106"
+            },
+            {
+                "bv": 601,
+                "variant": "GAL-106M"
+            },
+            {
+                "bv": 345,
+                "variant": "GAL-200"
+            },
+            {
+                "bv": 443,
+                "variant": "GAL-200 (RL)"
+            },
+            {
+                "bv": 455,
+                "variant": "GAL-200R"
+            },
+            {
+                "bv": 504,
+                "variant": "GAL-201"
+            },
+            {
+                "bv": 648,
+                "variant": "GAL-300"
+            },
+            {
+                "bv": 451,
+                "variant": "Maxwell"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Maxim",
+        "variants": [
+            {
+                "bv": 764,
+                "variant": "Base"
+            },
+            {
+                "bv": 763,
+                "variant": "SRM2"
+            },
+            {
+                "bv": 682,
+                "variant": "SRM4"
+            },
+            {
+                "bv": 794,
+                "variant": "3052 Upgrade"
+            },
+            {
+                "bv": 715,
+                "variant": "3052 Anti-Personnel"
+            },
+            {
+                "bv": 869,
+                "variant": "3052 Fire Support"
+            },
+            {
+                "bv": 770,
+                "variant": "Infantry Variant"
+            },
+            {
+                "bv": 851,
+                "variant": "Infantry Command Variant"
+            },
+            {
+                "bv": 794,
+                "variant": "Battle Armor Transport (Factory)"
+            },
+            {
+                "bv": 817,
+                "variant": "Battle Armor Transport (Field Refit)"
+            },
+            {
+                "bv": 817,
+                "variant": "C3 Master"
+            },
+            {
+                "bv": 773,
+                "variant": "C3 Slave"
+            },
+            {
+                "bv": 835,
+                "variant": "Escort"
+            },
+            {
+                "bv": 1147,
+                "variant": "Clan"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "SM Tank Destroyer",
+        "variants": [
+            {
+                "bv": 1585,
+                "variant": "SM1"
+            },
+            {
+                "bv": 1214,
+                "variant": "SM1A"
+            },
+            {
+                "bv": 1512,
+                "variant": "SM1B"
+            },
+            {
+                "bv": 1593,
+                "variant": "SM3"
+            },
+            {
+                "bv": 2147,
+                "variant": "SM5"
+            }
+        ]
+    }
+]

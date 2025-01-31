@@ -1,43 +1,43 @@
 [
     {
-        "count": 2,
+        "count": 1,
         "name": "Annihilator",
         "variants": [
             {
                 "bv": 1434,
-                "variant": "1A"
+                "variant": "ANH-1A"
             },
             {
                 "bv": 1625,
-                "variant": "1E"
+                "variant": "ANH-1E"
             },
             {
                 "bv": 2274,
-                "variant": "1G"
+                "variant": "ANH-1G"
             },
             {
                 "bv": 1926,
-                "variant": "1X"
+                "variant": "ANH-1X"
             },
             {
                 "bv": 1595,
-                "variant": "2A"
+                "variant": "ANH-2A"
             },
             {
                 "bv": 2542,
-                "variant": "2AX"
+                "variant": "ANH-2AX"
             },
             {
                 "bv": 1712,
-                "variant": "3A"
+                "variant": "ANH-3A"
             },
             {
                 "bv": 1726,
-                "variant": "4A"
+                "variant": "ANH-4A"
             },
             {
                 "bv": 2595,
-                "variant": "5W"
+                "variant": "ANH-5W"
             },
             {
                 "bv": 2520,
@@ -50,80 +50,80 @@
         ]
     },
     {
-        "count": 5,
+        "count": 1,
         "name": "Archer",
         "variants": [
             {
                 "bv": 1477,
-                "variant": "2R"
+                "variant": "ARC-2R"
             },
             {
                 "bv": 1356,
-                "variant": "2K"
+                "variant": "ARC-2K"
             },
             {
                 "bv": 1705,
-                "variant": "2Rb"
+                "variant": "ARC-2Rb"
             },
             {
                 "bv": 1393,
-                "variant": "2S"
+                "variant": "ARC-2S"
             },
             {
                 "bv": 1338,
-                "variant": "2W"
+                "variant": "ARC-2W"
             },
             {
                 "bv": 1705,
-                "variant": "4M"
+                "variant": "ARC-4M"
             },
             {
                 "bv": 1742,
-                "variant": "4M2"
+                "variant": "ARC-4M2"
             },
             {
                 "bv": 1609,
-                "variant": "5CS"
+                "variant": "ARC-5CS"
             },
             {
                 "bv": 1672,
-                "variant": "5R"
+                "variant": "ARC-5R"
             },
             {
                 "bv": 1353,
-                "variant": "5S"
+                "variant": "ARC-5S"
             },
             {
                 "bv": 1337,
-                "variant": "5W"
+                "variant": "ARC-5W"
             },
             {
                 "bv": 1694,
-                "variant": "6S"
+                "variant": "ARC-6S"
             },
             {
                 "bv": 1405,
-                "variant": "6W"
+                "variant": "ARC-6W"
             },
             {
                 "bv": 2408,
-                "variant": "7C"
+                "variant": "ARC-7C"
             },
             {
                 "bv": 1920,
-                "variant": "7L"
+                "variant": "ARC-7L"
             },
             {
                 "bv": 1658,
-                "variant": "7S"
+                "variant": "ARC-7S"
             },
             {
                 "bv": 1759,
-                "variant": "8M"
+                "variant": "ARC-8M"
             },
             {
                 "bv": 1811,
-                "variant": "9M"
+                "variant": "ARC-9M"
             },
             {
                 "bv": 1811,
@@ -136,68 +136,102 @@
         ]
     },
     {
-        "count": 4,
+        "count": 1,
+        "name": "Assassin",
+        "variants": [
+            {
+                "bv": 749,
+                "variant": "ASN-21"
+            },
+            {
+                "bv": 749,
+                "variant": "ASN-23"
+            },
+            {
+                "bv": 749,
+                "variant": "ASN-30"
+            },
+            {
+                "bv": 749,
+                "variant": "ASN-99"
+            },
+            {
+                "bv": 749,
+                "variant": "ASN-101"
+            },
+            {
+                "bv": 749,
+                "variant": "ASN-109"
+            }
+        ]
+    },
+    {
+        "count": 1,
         "name": "Atlas",
         "variants": [
             {
-                "bv": 1897,
-                "variant": "D"
+                "bv": 1787,
+                "variant": "AS7-A"
             },
             {
-                "bv": 1787,
-                "variant": "A"
+                "bv": 2163,
+                "variant": "AS7-C"
+            },
+            {
+                "bv": 1897,
+                "variant": "AS7-D"
             },
             {
                 "bv": 2175,
-                "variant": "K"
+                "variant": "AS7-K"
             },
             {
                 "bv": 2160,
-                "variant": "K2"
+                "variant": "AS7-K2"
             },
             {
                 "bv": 2346,
-                "variant": "K3"
+                "variant": "AS7-K3"
             },
             {
                 "bv": 2153,
-                "variant": "K4"
+                "variant": "AS7-K4"
             },
             {
                 "bv": 1849,
-                "variant": "RS"
+                "variant": "AS7-RS"
             },
             {
                 "bv": 1929,
-                "variant": "S"
+                "variant": "AS7-S"
             },
             {
                 "bv": 2389,
-                "variant": "S2"
+                "variant": "AS7-S2"
             },
             {
                 "bv": 2378,
-                "variant": "S3"
+                "variant": "AS7-S3"
             },
             {
                 "bv": 2568,
-                "variant": "S4"
+                "variant": "AS7-S4"
             },
             {
                 "bv": 2059,
-                "variant": "8-D"
+                "variant": "AS8-D"
             },
             {
                 "bv": 2668,
-                "variant": "8-K"
+                "variant": "AS8-K"
             },
             {
                 "bv": 2658,
-                "variant": "8-KE"
+                "variant": "AS8-KE"
             },
             {
                 "bv": 2789,
-                "variant": "8-S"
+                "variant": "AS8-S"
             },
             {
                 "bv": 2306,
@@ -210,48 +244,48 @@
         ]
     },
     {
-        "count": 2,
+        "count": 1,
         "name": "Awesome",
         "variants": [
             {
                 "bv": 1605,
-                "variant": "8Q"
+                "variant": "AWS-8Q"
             },
             {
                 "bv": 1470,
-                "variant": "8R"
+                "variant": "AWS-8R"
             },
             {
                 "bv": 1593,
-                "variant": "8T"
+                "variant": "AWS-8T"
             },
             {
                 "bv": 1510,
-                "variant": "8V"
+                "variant": "AWS-8V"
             },
             {
                 "bv": 1812,
-                "variant": "9M"
+                "variant": "AWS-9M"
             },
             {
                 "bv": 1875,
-                "variant": "9Q"
+                "variant": "AWS-9Q"
             },
             {
                 "bv": 1961,
-                "variant": "10KM"
+                "variant": "AWS-10KM"
             },
             {
                 "bv": 2036,
-                "variant": "11H"
+                "variant": "AWS-11H"
             },
             {
                 "bv": 1801,
-                "variant": "11M"
+                "variant": "AWS-11M"
             },
             {
                 "bv": 1878,
-                "variant": "11R"
+                "variant": "AWS-11R"
             },
             {
                 "bv": 2737,
@@ -260,220 +294,244 @@
         ]
     },
     {
-        "count": 3,
+        "count": 1,
         "name": "Axman",
         "variants": [
             {
                 "bv": 1369,
-                "variant": "1N"
+                "variant": "AXM-1N"
             },
             {
                 "bv": 1458,
-                "variant": "2N"
+                "variant": "AXM-2N"
             },
             {
                 "bv": 1649,
-                "variant": "3S"
+                "variant": "AXM-3S"
             },
             {
                 "bv": 1222,
-                "variant": "4D"
+                "variant": "AXM-4D"
             },
             {
                 "bv": 2575,
-                "variant": "5N"
+                "variant": "AXM-5N"
             }
         ]
     },
     {
-        "count": 3,
+        "count": 1,
         "name": "Banshee",
         "variants": [
             {
                 "bv": 1422,
-                "variant": "3E"
+                "variant": "BNC-3E"
             },
             {
                 "bv": 1595,
-                "variant": "3M"
+                "variant": "BNC-3M"
             },
             {
                 "bv": 1487,
-                "variant": "3MC"
+                "variant": "BNC-3MC"
             },
             {
                 "bv": 1801,
-                "variant": "3Mr"
+                "variant": "BNC-3Mr"
             },
             {
                 "bv": 1394,
-                "variant": "3Q"
+                "variant": "BNC-3Q"
             },
             {
                 "bv": 1751,
-                "variant": "3S"
+                "variant": "BNC-3S"
             },
             {
                 "bv": 2061,
-                "variant": "5S"
+                "variant": "BNC-5S"
             },
             {
                 "bv": 1899,
-                "variant": "6S"
+                "variant": "BNC-6S"
             },
             {
                 "bv": 2126,
-                "variant": "7S"
+                "variant": "BNC-7S"
             },
             {
                 "bv": 2487,
-                "variant": "9S"
+                "variant": "BNC-9S"
             },
             {
                 "bv": 2562,
-                "variant": "12S"
+                "variant": "BNC-12S"
             }
         ]
     },
     {
-        "count": 2,
+        "count": 1,
         "name": "BattleMaster",
         "variants": [
             {
                 "bv": 1519,
-                "variant": "1G"
+                "variant": "BLR-1G"
             },
             {
                 "bv": 1825,
-                "variant": "1Gb"
+                "variant": "BLR-1Gb"
             },
             {
                 "bv": 1522,
-                "variant": "1D"
+                "variant": "BLR-1D"
             },
             {
                 "bv": 1507,
-                "variant": "1S"
+                "variant": "BLR-1S"
             },
             {
                 "bv": 1697,
-                "variant": "3M"
+                "variant": "BLR-3M"
             },
             {
                 "bv": 1441,
-                "variant": "3S"
+                "variant": "BLR-3S"
             },
             {
                 "bv": 1932,
-                "variant": "4L"
+                "variant": "BLR-4L"
             },
             {
                 "bv": 1606,
-                "variant": "4S"
+                "variant": "BLR-4S"
             },
             {
                 "bv": 1766,
-                "variant": "5M"
+                "variant": "BLR-5M"
             },
             {
                 "bv": 1557,
-                "variant": "6C"
+                "variant": "BLR-6C"
             },
             {
                 "bv": 1960,
-                "variant": "6G"
+                "variant": "BLR-6G"
             },
             {
                 "bv": 2181,
-                "variant": "6R"
+                "variant": "BLR-6R"
             },
             {
                 "bv": 2029,
-                "variant": "6X"
+                "variant": "BLR-6X"
             },
             {
                 "bv": 1927,
-                "variant": "10S"
+                "variant": "BLR-10S"
             },
             {
                 "bv": 3025,
                 "variant": "C"
             },
             {
-                "bv": 2579,
-                "variant": "C3"
+                "bv": 2538,
+                "variant": "C 2"
+            },
+            {
+                "bv": 2532,
+                "variant": "C 3"
             }
         ]
     },
     {
-        "count": 3,
+        "count": 1,
         "name": "Black Knight",
         "variants": [
             {
                 "bv": 1550,
-                "variant": "6"
+                "variant": "BL-6-KNT"
             },
             {
                 "bv": 1627,
-                "variant": "6b"
+                "variant": "BL-6b-KNT"
             },
             {
                 "bv": 1443,
-                "variant": "7"
+                "variant": "BL-7-KNT"
             },
             {
                 "bv": 1409,
-                "variant": "7-L"
+                "variant": "BL-7-KNT-L"
             },
             {
                 "bv": 1678,
-                "variant": "9"
+                "variant": "BL-9-KNT"
             },
             {
                 "bv": 1840,
-                "variant": "12"
+                "variant": "BL-12-KNT"
             },
             {
                 "bv": 2585,
-                "variant": "18"
+                "variant": "BL-18-KNT"
+            },
+            {
+                "bv": 1847,
+                "variant": "BLK-NT-2Y"
+            },
+            {
+                "bv": 1707,
+                "variant": "BLK-NT-3A"
+            },
+            {
+                "bv": 1911,
+                "variant": "BLK-NT-3B"
+            },
+            {
+                "bv": 2280,
+                "variant": "BLK-NT-4D"
+            },
+            {
+                "bv": 2423,
+                "variant": "BLK-NT-5H"
             }
         ]
     },
     {
-        "count": 5,
+        "count": 1,
         "name": "Blackjack",
         "variants": [
             {
                 "bv": 949,
-                "variant": "1"
+                "variant": "BJ-1"
             },
             {
                 "bv": 1015,
-                "variant": "1DB"
+                "variant": "BJ-1DB"
             },
             {
                 "bv": 917,
-                "variant": "1DC"
+                "variant": "BJ-1DC"
             },
             {
                 "bv": 1148,
-                "variant": "2"
+                "variant": "BJ-2"
             },
             {
                 "bv": 1076,
-                "variant": "2r"
+                "variant": "BJ-2r"
             },
             {
                 "bv": 1271,
-                "variant": "3"
+                "variant": "BJ-3"
             },
             {
                 "bv": 1063,
-                "variant": "4"
+                "variant": "BJ-4"
             },
             {
                 "bv": 1165,
-                "variant": "5"
+                "variant": "BJ-5"
             },
             {
                 "bv": 1639,
@@ -482,174 +540,218 @@
         ]
     },
     {
-        "count": 3,
+        "count": 1,
+        "name": "BattleAxe",
+        "variants": [
+            {
+                "bv": 1329,
+                "variant": "BKX-7K"
+            },
+            {
+                "bv": 1252,
+                "variant": "BKX-7NC"
+            },
+            {
+                "bv": 1592,
+                "variant": "BKX-8B"
+            }
+        ]
+    },
+    {
+        "count": 1,
         "name": "Bushwacker",
         "variants": [
             {
-                "bv": 1223,
-                "variant": "X1"
-            },
-            {
                 "bv": 1513,
-                "variant": "L1"
+                "variant": "BSW-L1"
             },
             {
                 "bv": 1293,
-                "variant": "S2"
+                "variant": "BSW-S2"
             },
             {
                 "bv": 1339,
-                "variant": "S2r"
+                "variant": "BSW-S2r"
+            },
+            {
+                "bv": 1223,
+                "variant": "BSW-X1"
             },
             {
                 "bv": 1191,
-                "variant": "X2"
+                "variant": "BSW-X2"
             },
             {
                 "bv": 1751,
-                "variant": "X4"
+                "variant": "BSW-X4"
             }
         ]
     },
     {
-        "count": 3,
-        "name": "Cataphract",
+        "count": 1,
+        "name": "Caesar",
         "variants": [
             {
-                "bv": 1325,
-                "variant": "3D"
+                "bv": 1578,
+                "variant": "CES-3R"
             },
             {
+                "bv": 1909,
+                "variant": "CES-3S"
+            },
+            {
+                "bv": 2024,
+                "variant": "CES-4R"
+            },
+            {
+                "bv": 1739,
+                "variant": "CES-4S"
+            },
+            {
+                "bv": 2192,
+                "variant": "CES-5R"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Cataphract",
+        "variants": [    
+            {
                 "bv": 1316,
-                "variant": "1X"
+                "variant": "CTF-1X"
             },
             {
                 "bv": 1344,
-                "variant": "2X"
+                "variant": "CTF-2X"
+            },
+            {
+                "bv": 1325,
+                "variant": "CTF-3D"
             },
             {
                 "bv": 1545,
-                "variant": "3L"
+                "variant": "CTF-3L"
             },
             {
                 "bv": 1664,
-                "variant": "3LL"
+                "variant": "CTF-3LL"
             },
             {
                 "bv": 2037,
-                "variant": "4L"
+                "variant": "CTF-4L"
             },
             {
                 "bv": 1216,
-                "variant": "4X"
+                "variant": "CTF-4X"
             },
             {
                 "bv": 1742,
-                "variant": "5D"
+                "variant": "CTF-5D"
             },
             {
                 "bv": 2090,
-                "variant": "5L"
+                "variant": "CTF-5L"
             },
             {
                 "bv": 2322,
-                "variant": "5LL"
+                "variant": "CTF-5LL"
             }
         ]
     },
     {
-        "count": 2,
+        "count": 1,
         "name": "Catapult",
         "variants": [
             {
+                "bv": 1285,
+                "variant": "CPLT-A1"
+            },
+            {
                 "bv": 1399,
-                "variant": "C1"
+                "variant": "CPLT-C1"
             },
             {
                 "bv": 1570,
-                "variant": "C1b"
-            },
-            {
-                "bv": 1285,
-                "variant": "A1"
+                "variant": "CPLT-C1b"
             },
             {
                 "bv": 1346,
-                "variant": "C2"
+                "variant": "CPLT-C2"
             },
             {
                 "bv": 1358,
-                "variant": "C4"
+                "variant": "CPLT-C4"
             },
             {
                 "bv": 1449,
-                "variant": "C4C"
+                "variant": "CPLT-C4C"
             },
             {
                 "bv": 1772,
-                "variant": "C5A"
+                "variant": "CPLT-C5A"
             },
             {
                 "bv": 1874,
-                "variant": "C6"
+                "variant": "CPLT-C6"
             },
             {
                 "bv": 1473,
-                "variant": "H2"
+                "variant": "CPLT-H2"
             },
             {
                 "bv": 1319,
-                "variant": "K2"
+                "variant": "CPLT-K2"
             },
             {
                 "bv": 1716,
-                "variant": "K2K"
+                "variant": "CPLT-K2K"
             },
             {
                 "bv": 1619,
-                "variant": "K6"
+                "variant": "CPLT-K6"
             }
         ]
     },
     {
-        "count": 3,
+        "count": 1,
         "name": "Centurion",
         "variants": [
             {
                 "bv": 945,
-                "variant": "A"
+                "variant": "CN9-A"
             },
             {
                 "bv": 1226,
-                "variant": "Ar"
+                "variant": "CN9-Ar"
             },
             {
                 "bv": 945,
-                "variant": "AH"
+                "variant": "CN9-AH"
             },
             {
                 "bv": 1057,
-                "variant": "AL"
+                "variant": "CN9-AL"
             },
             {
                 "bv": 1130,
-                "variant": "D"
+                "variant": "CN9-D"
             },
             {
                 "bv": 1264,
-                "variant": "D3"
+                "variant": "CN9-D3"
             },
             {
                 "bv": 1266,
-                "variant": "D3D"
+                "variant": "CN9-D3D"
             },
             {
                 "bv": 1306,
-                "variant": "D4D"
+                "variant": "CN9-D4D"
             },
             {
                 "bv": 1638,
-                "variant": "D9"
+                "variant": "CN9-D9"
             },
             {
                 "bv": 1243,
@@ -670,236 +772,412 @@
         ]
     },
     {
-        "count": 2,
+        "count": 1,
+        "name": "Chameleon",
+        "variants": [
+            {
+                "bv": 1042,
+                "variant": "CLN-7V"
+            },
+            {
+                "bv": 1243,
+                "variant": "CLN-7W"
+            },
+            {
+                "bv": 1527,
+                "variant": "CLN-7Z"
+            },
+            {
+                "bv": 1426,
+                "variant": "CLN-8V"
+            },
+            {
+                "bv": 1276,
+                "variant": "CLN-9V"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Charger",
+        "variants": [
+            {
+                "bv": 981,
+                "variant": "CGR-1A1"
+            },
+            {
+                "bv": 1458,
+                "variant": "CGR-1A5"
+            },
+            {
+                "bv": 1397,
+                "variant": "CGR-1A9"
+            },
+            {
+                "bv": 980,
+                "variant": "CGR-1L"
+            },
+            {
+                "bv": 1109,
+                "variant": "CGR-2A2"
+            },
+            {
+                "bv": 1656,
+                "variant": "CGR-3K"
+            },
+            {
+                "bv": 2092,
+                "variant": "CGR-3Kr"
+            },
+            {
+                "bv": 1592,
+                "variant": "CGR-C"
+            },
+            {
+                "bv": 1781,
+                "variant": "CGR-KMZ"
+            },
+            {
+                "bv": 2105,
+                "variant": "CGR-SA5"
+            },
+            {
+                "bv": 2756,
+                "variant": "C"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Cicada",
+        "variants": [
+            {
+                "bv": 659,
+                "variant": "CDA-2A"
+            },
+            {
+                "bv": 626,
+                "variant": "CDA-2B"
+            },
+            {
+                "bv": 771,
+                "variant": "CDA-3C"
+            },
+            {
+                "bv": 1329,
+                "variant": "CDA-3F"
+            },
+            {
+                "bv": 1270,
+                "variant": "CDA-3G"
+            },
+            {
+                "bv": 812,
+                "variant": "CDA-3M"
+            },
+            {
+                "bv": 1158,
+                "variant": "CDA-3MA"
+            },
+            {
+                "bv": 1502,
+                "variant": "CDA-3P"
+            },
+            {
+                "bv": 1097,
+                "variant": "CDA-4A"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Clint",
+        "variants": [
+            {
+                "bv": 770,
+                "variant": "CLNT-2-3T"
+            },
+            {
+                "bv": 1081,
+                "variant": "CLNT-2-3U"
+            },
+            {
+                "bv": 1245,
+                "variant": "CLNT-2-3UL"
+            },
+            {
+                "bv": 619,
+                "variant": "CLNT-2-4T"
+            },
+            {
+                "bv": 901,
+                "variant": "CLNT-3-3T"
+            },
+            {
+                "bv": 1157,
+                "variant": "CLNT-3-4T"
+            },
+            {
+                "bv": 1275,
+                "variant": "CLNT-5U"
+            },
+            {
+                "bv": 1334,
+                "variant": "CLNT-6U"
+            }
+        ]
+    },
+    {
+        "count": 1,
         "name": "Commando",
         "variants": [
             {
                 "bv": 616,
-                "variant": "1B"
+                "variant": "COM-1B"
             },
             {
                 "bv": 458,
-                "variant": "1C"
+                "variant": "COM-1C"
             },
             {
                 "bv": 558,
-                "variant": "1D"
+                "variant": "COM-1D"
             },
             {
                 "bv": 541,
-                "variant": "2D"
+                "variant": "COM-2D"
             },
             {
                 "bv": 563,
-                "variant": "2Dr"
+                "variant": "COM-2Dr"
             },
             {
                 "bv": 540,
-                "variant": "3A"
+                "variant": "COM-3A"
             },
             {
                 "bv": 691,
-                "variant": "4H"
+                "variant": "COM-4H"
             },
             {
                 "bv": 557,
-                "variant": "5S"
+                "variant": "COM-5S"
             },
             {
                 "bv": 658,
-                "variant": "7S"
+                "variant": "COM-7S"
             },
             {
                 "bv": 602,
-                "variant": "7B"
+                "variant": "COM-7B"
             }
         ]
     },
     {
-        "count": 3,
+        "count": 1,
         "name": "Crab",
         "variants": [
             {
                 "bv": 1198,
-                "variant": "27"
+                "variant": "CRB-27"
             },
             {
                 "bv": 1143,
-                "variant": "20"
+                "variant": "CRB-20"
             },
             {
                 "bv": 1308,
-                "variant": "27b"
+                "variant": "CRB-27b"
             },
             {
                 "bv": 1309,
-                "variant": "27sl"
+                "variant": "CRB-27sl"
             },
             {
                 "bv": 1964,
-                "variant": "54"
+                "variant": "CRB-54"
+            },
+            {
+                "bv": 1135,
+                "variant": "CRB-C"
             }
         ]
     },
     {
-        "count": 3,
+        "count": 1,
         "name": "Crockett",
         "variants": [
             {
+                "bv": 1704,
+                "variant": "CRK-5003-0"
+            },
+            {
                 "bv": 1923,
-                "variant": "3-1"
+                "variant": "CRK-5003-1"
             },
             {
                 "bv": 1629,
-                "variant": "Katana 3-2"
+                "variant": "Katana CRK-5003-2"
             },
             {
-                "bv": 1704,
-                "variant": "3-0"
+                "bv": 1618,
+                "variant": "Katana CRK-5003-C"
+            },
+            {
+                "bv": 1844,
+                "variant": "Katana CRK-5003-CJ"
+            },
+            {
+                "bv": 1554,
+                "variant": "Katana CRK-5003-CM"
             },
             {
                 "bv": 2307,
-                "variant": "3-1b"
+                "variant": "CRK-5003-1b"
             },
             {
                 "bv": 1989,
-                "variant": "3-3"
+                "variant": "CRK-5003-3"
+            },
+            {
+                "bv": 1930,
+                "variant": "CRK-5005-1"
             },
             {
                 "bv": 2363,
-                "variant": "Katana 6-1"
+                "variant": "Katana CRK-5006-1"
             }
         ]
     },
     {
-        "count": 4,
+        "count": 1,
         "name": "Crusader",
         "variants": [
             {
-                "bv": 1317,
-                "variant": "3R"
-            },
-            {
                 "bv": 1533,
-                "variant": "2R"
+                "variant": "CRD-2R"
             },
             {
                 "bv": 1338,
-                "variant": "3D"
+                "variant": "CRD-3D"
             },
             {
                 "bv": 1290,
-                "variant": "3K"
+                "variant": "CRD-3K"
             },
             {
                 "bv": 1297,
-                "variant": "3L"
+                "variant": "CRD-3L"
+            },
+            {
+                "bv": 1317,
+                "variant": "CRD-3R"
             },
             {
                 "bv": 1407,
-                "variant": "4BR"
+                "variant": "CRD-4BR"
             },
             {
                 "bv": 1309,
-                "variant": "4D"
+                "variant": "CRD-4D"
             },
             {
                 "bv": 1268,
-                "variant": "4K"
+                "variant": "CRD-4K"
             },
             {
                 "bv": 1408,
-                "variant": "5M"
+                "variant": "CRD-5M"
             },
             {
                 "bv": 1446,
-                "variant": "5S"
+                "variant": "CRD-5S"
             },
             {
                 "bv": 1498,
-                "variant": "6D"
+                "variant": "CRD-6D"
             },
             {
                 "bv": 1373,
-                "variant": "6M"
+                "variant": "CRD-6M"
             },
             {
                 "bv": 1681,
-                "variant": "7D"
+                "variant": "CRD-7D"
             },
             {
                 "bv": 1860,
-                "variant": "7L"
+                "variant": "CRD-7L"
             },
             {
                 "bv": 1502,
-                "variant": "7M"
+                "variant": "CRD-7M"
             },
             {
                 "bv": 1434,
-                "variant": "7M2"
+                "variant": "CRD-7M2"
             },
             {
                 "bv": 1221,
-                "variant": "7W"
+                "variant": "CRD-7W"
             },
             {
                 "bv": 1701,
-                "variant": "8L"
+                "variant": "CRD-8L"
             },
             {
                 "bv": 1698,
-                "variant": "8S"
+                "variant": "CRD-8S"
             },
             {
                 "bv": 1600,
-                "variant": "8R"
+                "variant": "CRD-8R"
             },
             {
                 "bv": 1615,
-                "variant": "9BR"
+                "variant": "CRD-9BR"
             },
             {
                 "bv": 1612,
-                "variant": "9R"
+                "variant": "CRD-9R"
             },
             {
                 "bv": 2264,
-                "variant": "10S"
+                "variant": "CRD-10S"
             }
         ]
     },
     {
-        "count": 3,
+        "count": 1,
         "name": "Cyclops",
         "variants": [
             {
                 "bv": 1308,
-                "variant": "10-Z"
+                "variant": "CP-10-Z"
             },
             {
                 "bv": 1584,
-                "variant": "10-Q"
+                "variant": "CP-10-Q"
             },
             {
                 "bv": 1547,
-                "variant": "11-A"
+                "variant": "CP-11-A"
             },
             {
                 "bv": 2145,
-                "variant": "11-B"
+                "variant": "CP-11-B"
             },
             {
                 "bv": 1984,
-                "variant": "11-G"
+                "variant": "CP-11-G"
             },
             {
                 "bv": 1521,
-                "variant": "11-H"
+                "variant": "CP-11-H"
             },
             {
                 "bv": 1699,
-                "variant": "12-K"
+                "variant": "CP-12-K"
             },
             {
                 "bv": 2252,
@@ -908,202 +1186,468 @@
         ]
     },
     {
-        "count": 3,
-        "name": "Dragon",
+        "count": 1,
+        "name": "Dervish",
         "variants": [
             {
-                "bv": 1125,
-                "variant": "1N"
+                "bv": 1146,
+                "variant": "DV-6M"
             },
             {
-                "bv": 1215,
-                "variant": "1C"
+                "bv": 1251,
+                "variant": "DV-6Md"
             },
             {
-                "bv": 1300,
-                "variant": "Grand 1G"
+                "bv": 1347,
+                "variant": "DV-6Mr"
             },
             {
-                "bv": 1356,
-                "variant": "Grand 5K"
+                "bv": 1412,
+                "variant": "DV-7D"
             },
             {
-                "bv": 1223,
-                "variant": "5N"
+                "bv": 1765,
+                "variant": "DV-8D"
             },
             {
-                "bv": 1322,
-                "variant": "7N"
+                "bv": 1518,
+                "variant": "DV-9D"
             },
             {
-                "bv": 1603,
-                "variant": "Grand 10K"
-            },
-            {
-                "bv": 2265,
-                "variant": "Grand 12K"
+                "bv": 1919,
+                "variant": "DV-11DK"
             }
         ]
     },
     {
-        "count": 3,
+        "count": 1,
+        "name": "Devastator",
+        "variants": [
+            {
+                "bv": 1858,
+                "variant": "DVS-1D"
+            },
+            {
+                "bv": 2481,
+                "variant": "DVS-2"
+            },
+            {
+                "bv": 2452,
+                "variant": "DVS-3"
+            },
+            {
+                "bv": 2204,
+                "variant": "DVS-10"
+            },
+            {
+                "bv": 3170,
+                "variant": "DVS-11"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Dragon",
+        "variants": [
+            {
+                "bv": 1215,
+                "variant": "DRG-1C"
+            },
+            {
+                "bv": 1300,
+                "variant": "Grand Dragon DRG-1G"
+            },
+            {
+                "bv": 1125,
+                "variant": "DRG-1N"
+            },
+            {
+                "bv": 1356,
+                "variant": "Grand Dragon DRG-5K"
+            },
+            {
+                "bv": 1223,
+                "variant": "DRG-5N"
+            },
+            {
+                "bv": 1322,
+                "variant": "DRG-7N"
+            },
+            {
+                "bv": 1603,
+                "variant": "Grand Dragon DRG-10K"
+            },
+            {
+                "bv": 2265,
+                "variant": "Grand Dragon DRG-12K"
+            }
+        ]
+    },
+    {
+        "count": 1,
         "name": "Enforcer",
         "variants": [
             {
                 "bv": 1032,
-                "variant": "4R"
+                "variant": "ENF-4R"
             },
             {
                 "bv": 1308,
-                "variant": "5D"
+                "variant": "ENF-5D"
             },
             {
                 "bv": 1192,
-                "variant": "5R"
+                "variant": "ENF-5R"
             }
         ]
     },
     {
-        "count": 3,
+        "count": 1,
         "name": "Exterminator",
         "variants": [
             {
-                "bv": 1384,
-                "variant": "4D"
-            },
-            {
                 "bv": 1345,
-                "variant": "4A"
+                "variant": "EXT-4A"
             },
             {
                 "bv": 1602,
-                "variant": "4C"
+                "variant": "EXT-4C"
+            },
+            {
+                "bv": 1384,
+                "variant": "EXT-4D"
             },
             {
                 "bv": 1694,
-                "variant": "4Db"
+                "variant": "EXT-4Db"
             },
             {
                 "bv": 1674,
-                "variant": "7X"
+                "variant": "EXT-7X"
             }
         ]
     },
     {
-        "count": 3,
+        "count": 1,
+        "name": "Firebee",
+        "variants": [
+            {
+                "bv": 808,
+                "variant": "FRB-2E"
+            },
+            {
+                "bv": 1067,
+                "variant": "FRB-3E"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Firestarter",
+        "variants": [
+            {
+                "bv": 773,
+                "variant": "FS9-A"
+            },
+            {
+                "bv": 940,
+                "variant": "FS9-C"
+            },
+            {
+                "bv": 694,
+                "variant": "FS9-H"
+            },
+            {
+                "bv": 763,
+                "variant": "FS9-K"
+            },
+            {
+                "bv": 798,
+                "variant": "FS9-M"
+            },
+            {
+                "bv": 751,
+                "variant": "FS9-M2"
+            },
+            {
+                "bv": 866,
+                "variant": "FS9-M3"
+            },
+            {
+                "bv": 798,
+                "variant": "FS9-M4"
+            },
+            {
+                "bv": 1660,
+                "variant": "Mirage II FS9-N"
+            },
+            {
+                "bv": 775,
+                "variant": "FS9-P"
+            },
+            {
+                "bv": 760,
+                "variant": "FS9-S"
+            },
+            {
+                "bv": 820,
+                "variant": "FS9-S1"
+            },
+            {
+                "bv": 842,
+                "variant": "FS9-S2"
+            },
+            {
+                "bv": 908,
+                "variant": "FS9-S3"
+            }
+        ]
+    },
+    {
+        "count": 1,
         "name": "Flashman",
         "variants": [
             {
                 "bv": 1779,
-                "variant": "8K"
+                "variant": "FLS-8K"
             },
             {
                 "bv": 1480,
-                "variant": "7K"
+                "variant": "FLS-7K"
             },
             {
                 "bv": 1895,
-                "variant": "9M"
+                "variant": "FLS-9M"
             },
             {
                 "bv": 3349,
-                "variant": "10E"
+                "variant": "FLS-10E"
             }
         ]
     },
     {
-        "count": 3,
+        "count": 1,
+        "name": "Flea",
+        "variants": [
+            {
+                "bv": 427,
+                "variant": "FLE-4"
+            },
+            {
+                "bv": 430,
+                "variant": "FLE-15"
+            },
+            {
+                "bv": 506,
+                "variant": "FLE-16"
+            },
+            {
+                "bv": 510,
+                "variant": "FLE-17"
+            },
+            {
+                "bv": 381,
+                "variant": "FLE-19"
+            },
+            {
+                "bv": 791,
+                "variant": "FLE-20"
+            },
+            {
+                "bv": 823,
+                "variant": "FLE-21"
+            },
+            {
+                "bv": 332,
+                "variant": "Fire Ant"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Gladiator",
+        "variants": [
+            {
+                "bv": 1282,
+                "variant": "GLD-3R"
+            },
+            {
+                "bv": 1291,
+                "variant": "GLD-4R"
+            },
+            {
+                "bv": 1425,
+                "variant": "GLD-5R"
+            },
+            {
+                "bv": 1890,
+                "variant": "GLD-7R"
+            },
+            {
+                "bv": 1748,
+                "variant": "GLD-7R/SF"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Goliath",
+        "variants": [
+            {
+                "bv": 1449,
+                "variant": "GOL-1H"
+            },
+            {
+                "bv": 1583,
+                "variant": "GOL-2H"
+            },
+            {
+                "bv": 1826,
+                "variant": "GOL-3L"
+            },
+            {
+                "bv": 1537,
+                "variant": "GOL-3M"
+            },
+            {
+                "bv": 1537,
+                "variant": "GOL-3M2"
+            },
+            {
+                "bv": 1828,
+                "variant": "GOL-3S"
+            },
+            {
+                "bv": 1912,
+                "variant": "GOL-4S"
+            },
+            {
+                "bv": 1975,
+                "variant": "GOL-5D"
+            },
+            {
+                "bv": 2030,
+                "variant": "GOL-5W"
+            },
+            {
+                "bv": 1676,
+                "variant": "GOL-6H"
+            },
+            {
+                "bv": 1742,
+                "variant": "GOL-6M"
+            },
+            {
+                "bv": 1888,
+                "variant": "GOL-7C"
+            },
+            {
+                "bv": 1894,
+                "variant": "GOL-7K"
+            },
+            {
+                "bv": 1888,
+                "variant": "GOL-7R"
+            },
+            {
+                "bv": 2227,
+                "variant": "C"
+            }
+        ]
+    },
+    {
+        "count": 1,
         "name": "Grasshopper",
         "variants": [
             {
                 "bv": 1427,
-                "variant": "5H"
+                "variant": "GHR-5H"
             },
             {
                 "bv": 1354,
-                "variant": "5J"
+                "variant": "GHR-5J"
             },
             {
                 "bv": 1511,
-                "variant": "5N"
+                "variant": "GHR-5N"
             },
             {
                 "bv": 1806,
-                "variant": "7P"
+                "variant": "GHR-7P"
             },
             {
                 "bv": 1754,
-                "variant": "8K"
+                "variant": "GHR-8K"
             }
         ]
     },
     {
-        "count": 2,
+        "count": 1,
         "name": "Griffin",
         "variants": [
             {
-                "bv": 1272,
-                "variant": "1N"
+                "bv": 1285,
+                "variant": "GRF-1DS"
             },
             {
-                "bv": 1285,
-                "variant": "1DS"
+                "bv": 1272,
+                "variant": "GRF-1N"
             },
             {
                 "bv": 1167,
-                "variant": "1RG"
+                "variant": "GRF-1RG"
             },
             {
                 "bv": 1253,
-                "variant": "1S"
+                "variant": "GRF-1S"
             },
             {
                 "bv": 1606,
-                "variant": "2N"
+                "variant": "GRF-2N"
             },
             {
                 "bv": 1521,
-                "variant": "3M"
+                "variant": "GRF-3M"
             },
             {
                 "bv": 1560,
-                "variant": "3N"
+                "variant": "GRF-3N"
             },
             {
                 "bv": 1213,
-                "variant": "3RG"
+                "variant": "GRF-3RG"
             },
             {
                 "bv": 1591,
-                "variant": "4N"
+                "variant": "GRF-4N"
             },
             {
                 "bv": 1412,
-                "variant": "4R"
+                "variant": "GRF-4R"
             },
             {
                 "bv": 1390,
-                "variant": "5K"
+                "variant": "GRF-5K"
             },
             {
                 "bv": 1781,
-                "variant": "5L"
+                "variant": "GRF-5L"
             },
             {
                 "bv": 1224,
-                "variant": "5M"
+                "variant": "GRF-5M"
             },
             {
                 "bv": 1515,
-                "variant": "6R"
+                "variant": "GRF-6R"
             },
             {
                 "bv": 1781,
-                "variant": "6S"
+                "variant": "GRF-6S"
             },
             {
                 "bv": 1870,
-                "variant": "6S2"
+                "variant": "GRF-6S2"
             },
             {
                 "bv": 2131,
@@ -1112,28 +1656,28 @@
         ]
     },
     {
-        "count": 3,
+        "count": 1,
         "name": "Guillotine",
         "variants": [
             {
                 "bv": 1418,
-                "variant": "3N"
+                "variant": "GLT-3N"
             },
             {
                 "bv": 1400,
-                "variant": "4L"
+                "variant": "GLT-4L"
             },
             {
                 "bv": 1376,
-                "variant": "4P"
+                "variant": "GLT-4P"
             },
             {
                 "bv": 1472,
-                "variant": "5M"
+                "variant": "GLT-5M"
             },
             {
                 "bv": 1891,
-                "variant": "8D"
+                "variant": "GLT-8D"
             }
         ]
     },
@@ -1143,267 +1687,575 @@
         "variants": [
             {
                 "bv": 2286,
-                "variant": "1ERD"
+                "variant": "GUN-1ERD"
+            },
+            {
+                "bv": 2423,
+                "variant": "GUN-2ERD"
+            },
+            {
+                "bv": 2371,
+                "variant": "GUN-2ERDr"
             },
             {
                 "bv": 2844,
-                "variant": "3ERD"
+                "variant": "GUN-3ERD"
             }
         ]
     },
     {
-        "count": 3,
+        "count": 1,
+        "name": "Hatamoto-Chi",
+        "variants": [
+            {
+                "bv": 1536,
+                "variant": "HTM-26T"
+            },
+            {
+                "bv": 1607,
+                "variant": "HTM-27T"
+            },
+            {
+                "bv": 1627,
+                "variant": "HTM-27U"
+            },
+            {
+                "bv": 1595,
+                "variant": "HTM-27V"
+            },
+            {
+                "bv": 1725,
+                "variant": "HTM-27V2"
+            },
+            {
+                "bv": 1563,
+                "variant": "HTM-27W"
+            },
+            {
+                "bv": 1699,
+                "variant": "HTM-27W2"
+            },
+            {
+                "bv": 1675,
+                "variant": "HTM-27Y"
+            },
+            {
+                "bv": 2039,
+                "variant": "HTM-28T"
+            },
+            {
+                "bv": 2034,
+                "variant": "HTM-28Tr"
+            },
+            {
+                "bv": 2196,
+                "variant": "HTM-30T"
+            },
+            {
+                "bv": 1627,
+                "variant": "HTM-C"
+            },
+            {
+                "bv": 1573,
+                "variant": "HTM-CM"
+            },
+            {
+                "bv": 2086,
+                "variant": " Hatamoto-SunaHTM-30S"
+            },
+            {
+                "bv": 1899,
+                "variant": "Hatamoto-Godai HTM-30Z"
+            }
+        ]
+    },
+    {
+        "count": 1,
         "name": "Hatchetman",
         "variants": [
             {
                 "bv": 854,
-                "variant": "3F"
+                "variant": "HCT-3F"
             },
             {
                 "bv": 1012,
-                "variant": "5D"
-            },
-            {
-                "bv": 1039,
-                "variant": "5S"
+                "variant": "HCT-5D"
             },
             {
                 "bv": 1112,
-                "variant": "5DD"
+                "variant": "HCT-5DD"
             },
             {
                 "bv": 1509,
-                "variant": "5DT"
+                "variant": "HCT-5DT"
+            },
+            {
+                "bv": 1070,
+                "variant": "HCT-5K"
+            },
+            {
+                "bv": 1039,
+                "variant": "HCT-5S"
             },
             {
                 "bv": 1611,
-                "variant": "6D"
+                "variant": "HCT-6D"
             },
             {
                 "bv": 1174,
-                "variant": "6S"
+                "variant": "HCT-6S"
             },
             {
                 "bv": 1274,
-                "variant": "6M"
+                "variant": "HCT-6M"
             },
             {
                 "bv": 1243,
-                "variant": "7S"
+                "variant": "HCT-7S"
             },
             {
                 "bv": 1521,
-                "variant": "7R"
+                "variant": "HCT-7R"
             },
             {
                 "bv": 1479,
-                "variant": "8S"
+                "variant": "HCT-8S"
             }
         ]
     },
     {
-        "count": 3,
+        "count": 1,
+        "name": "Hermes II",
+        "variants": [
+            {
+                "bv": 910,
+                "variant": "HER-2M"
+            },
+            {
+                "bv": 784,
+                "variant": "HER-2S"
+            },
+            {
+                "bv": 976,
+                "variant": "HER-4K"
+            },
+            {
+                "bv": 1119,
+                "variant": "HER-5C"
+            },
+            {
+                "bv": 886,
+                "variant": "HER-5ME"
+            },
+            {
+                "bv": 857,
+                "variant": "HER-5S"
+            },
+            {
+                "bv": 1242,
+                "variant": "HER-5Sr"
+            },
+            {
+                "bv": 924,
+                "variant": "HER-5SA"
+            },
+            {
+                "bv": 1106,
+                "variant": "HER-6D"
+            },
+            {
+                "bv": 1121,
+                "variant": "HER-7A"
+            },
+            {
+                "bv": 1578,
+                "variant": "HER-7S"
+            }
+        ]
+    },
+    {
+        "count": 1,
         "name": "Highlander",
         "variants": [
             {
-                "bv": 2227,
-                "variant": "732"
+                "bv": 2358,
+                "variant": "HGN-694"
             },
             {
-                "bv": 2358,
-                "variant": "694"
+                "bv": 2227,
+                "variant": "HGN-732"
             },
             {
                 "bv": 2335,
-                "variant": "732b"
+                "variant": "HGN-732b"
             },
             {
                 "bv": 1801,
-                "variant": "733"
+                "variant": "HGN-733"
             },
             {
                 "bv": 1867,
-                "variant": "733C"
+                "variant": "HGN-733C"
             },
             {
                 "bv": 1856,
-                "variant": "733P"
+                "variant": "HGN-733P"
             },
             {
                 "bv": 2214,
-                "variant": "734"
+                "variant": "HGN-734"
             },
             {
                 "bv": 2413,
-                "variant": "738"
+                "variant": "HGN-738"
             },
             {
                 "bv": 2237,
-                "variant": "740"
+                "variant": "HGN-740"
             }
         ]
     },
     {
-        "count": 3,
-        "name": "Hunchback",
+        "count": 1,
+        "name": "Hoplite",
         "variants": [
             {
-                "bv": 1041,
-                "variant": "4G"
+                "bv": 1162,
+                "variant": "HOP-4B"
             },
             {
-                "bv": 1067,
-                "variant": "4H"
+                "bv": 1413,
+                "variant": "HOP-4Bb"
             },
             {
-                "bv": 1133,
-                "variant": "4J"
+                "bv": 986,
+                "variant": "HOP-4C"
             },
             {
-                "bv": 1087,
-                "variant": "4N"
+                "bv": 1366,
+                "variant": "HOP-4Cb"
             },
             {
-                "bv": 1138,
-                "variant": "4P"
+                "bv": 1022,
+                "variant": "HOP-4D"
             },
             {
-                "bv": 1043,
-                "variant": "4SP"
+                "bv": 1946,
+                "variant": "HOP-4X"
             },
             {
-                "bv": 1097,
-                "variant": "5H"
+                "bv": 1520,
+                "variant": "HOP-5C"
             },
             {
-                "bv": 1054,
-                "variant": "5M"
-            },
-            {
-                "bv": 1041,
-                "variant": "5N"
-            },
-            {
-                "bv": 1350,
-                "variant": "5S"
-            },
-            {
-                "bv": 1577,
-                "variant": "5SG"
-            },
-            {
-                "bv": 1342,
-                "variant": "5SS"
-            },
-            {
-                "bv": 1130,
-                "variant": "6N"
-            },
-            {
-                "bv": 1380,
-                "variant": "6S"
-            },
-            {
-                "bv": 1248,
-                "variant": "7R"
-            },
-            {
-                "bv": 1628,
-                "variant": "7S"
-            },
-            {
-                "bv": 1893,
+                "bv": 1736,
                 "variant": "C"
             }
         ]
     },
     {
-        "count": 7,
-        "name": "Jenner",
+        "count": 1,
+        "name": "Hunchback",
         "variants": [
             {
-                "bv": 875,
-                "variant": "D"
+                "bv": 1041,
+                "variant": "HBK-4G"
             },
             {
-                "bv": 1011,
-                "variant": "F"
+                "bv": 1067,
+                "variant": "HBK-4H"
             },
             {
-                "bv": 889,
-                "variant": "K"
+                "bv": 1133,
+                "variant": "HBK-4J"
             },
             {
-                "bv": 1233,
-                "variant": "N"
+                "bv": 1087,
+                "variant": "HBK-4N"
+            },
+            {
+                "bv": 1138,
+                "variant": "HBK-4P"
+            },
+            {
+                "bv": 1043,
+                "variant": "HBK-4SP"
+            },
+            {
+                "bv": 1097,
+                "variant": "HBK-5H"
+            },
+            {
+                "bv": 1054,
+                "variant": "HBK-5M"
+            },
+            {
+                "bv": 1041,
+                "variant": "HBK-5N"
+            },
+            {
+                "bv": 1350,
+                "variant": "HBK-5S"
+            },
+            {
+                "bv": 1577,
+                "variant": "HBK-5SG"
+            },
+            {
+                "bv": 1342,
+                "variant": "HBK-5SS"
+            },
+            {
+                "bv": 1130,
+                "variant": "HBK-6N"
+            },
+            {
+                "bv": 1380,
+                "variant": "HBK-6S"
+            },
+            {
+                "bv": 1248,
+                "variant": "HBK-7R"
+            },
+            {
+                "bv": 1628,
+                "variant": "HBK-7S"
+            },
+            {
+                "bv": 1893,
+                "variant": "HBK-C"
             }
         ]
     },
     {
-        "count": 3,
+        "count": 1,
+        "name": "Icarus II",
+        "variants": [
+            {
+                "bv": 869,
+                "variant": "ICR-1S"
+            },
+            {
+                "bv": 986,
+                "variant": "ICR-2S"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "JagerMech",
+        "variants": [
+            {
+                "bv": 1122,
+                "variant": "JM6-A"
+            },
+            {
+                "bv": 965,
+                "variant": "JM6-DD"
+            },
+            {
+                "bv": 911,
+                "variant": "JM6-DDa"
+            },
+            {
+                "bv": 1625,
+                "variant": "JM6-DG"
+            },
+            {
+                "bv": 1661,
+                "variant": "JM6-DGr"
+            },
+            {
+                "bv": 1348,
+                "variant": "JM6-H"
+            },
+            {
+                "bv": 901,
+                "variant": "JM6-S"
+            },
+            {
+                "bv": 1354,
+                "variant": "JM7-C3BS"
+            },
+            {
+                "bv": 1500,
+                "variant": "JM7-D"
+            },
+            {
+                "bv": 1690,
+                "variant": "JM7-DD"
+            },
+            {
+                "bv": 1774,
+                "variant": "JM7-F"
+            },
+            {
+                "bv": 1278,
+                "variant": "JM7-G"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Javelin",
+        "variants": [
+            {
+                "bv": 653,
+                "variant": "JVN-10A"
+            },
+            {
+                "bv": 835,
+                "variant": "JVN-10F"
+            },
+            {
+                "bv": 594,
+                "variant": "JVN-10N"
+            },
+            {
+                "bv": 590,
+                "variant": "JVN-10P"
+            },
+            {
+                "bv": 1073,
+                "variant": "JVN-11A"
+            },
+            {
+                "bv": 678,
+                "variant": "JVN-11B"
+            },
+            {
+                "bv": 1104,
+                "variant": "JVN-11D"
+            },
+            {
+                "bv": 827,
+                "variant": "JVN-11F"
+            },
+            {
+                "bv": 680,
+                "variant": "JVN-11P"
+            },
+            {
+                "bv": 796,
+                "variant": "JVN-12N"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Jenner",
+        "variants": [
+            {
+                "bv": 712,
+                "variant": "JR7-A"
+            },
+            {
+                "bv": 832,
+                "variant": "JR7-C"
+            },
+            {
+                "bv": 769,
+                "variant": "JR7-C2"
+            },
+            {
+                "bv": 1069,
+                "variant": "JR7-C3"
+            },
+            {
+                "bv": 703,
+                "variant": "JR7-C4"
+            },
+            {
+                "bv": 875,
+                "variant": "JR7-D"
+            },
+            {
+                "bv": 1011,
+                "variant": "JR7-F"
+            },
+            {
+                "bv": 889,
+                "variant": "JR7-K"
+            },
+            {
+                "bv": 1233,
+                "variant": "JR7-N"
+            },
+            {
+                "bv": 1398,
+                "variant": "Rattlesnake JR7-31"
+            },
+            {
+                "bv": 1323,
+                "variant": "Rattlesnake JR7-31P"
+            }
+        ]
+    },
+    {
+        "count": 1,
         "name": "King Crab",
         "variants": [
             {
                 "bv": 1906,
-                "variant": "000"
+                "variant": "KGC-000"
             },
             {
                 "bv": 2039,
-                "variant": "000b"
+                "variant": "KGC-000b"
             },
             {
                 "bv": 1810,
-                "variant": "0000"
+                "variant": "KGC-0000"
             },
             {
                 "bv": 2221,
-                "variant": "001"
+                "variant": "KGC-001"
             },
             {
                 "bv": 2523,
-                "variant": "007"
+                "variant": "KGC-007"
             },
             {
                 "bv": 2260,
-                "variant": "009"
+                "variant": "KGC-009"
             },
             {
                 "bv": 2181,
-                "variant": "010"
+                "variant": "KGC-010"
             },
             {
                 "bv": 2406,
-                "variant": "011"
+                "variant": "KGC-011"
             }
         ]
     },
     {
-        "count": 3,
+        "count": 1,
         "name": "Lancelot",
         "variants": [
             {
                 "bv": 1422,
-                "variant": "01"
+                "variant": "LNC25-01"
             },
             {
                 "bv": 1659,
-                "variant": "01X"
+                "variant": "LNC25-01X"
             },
             {
                 "bv": 1236,
-                "variant": "02"
+                "variant": "LNC25-02"
             },
             {
                 "bv": 1360,
-                "variant": "03"
+                "variant": "LNC25-03"
             },
             {
                 "bv": 1380,
-                "variant": "05"
+                "variant": "LNC25-05"
             },
             {
                 "bv": 2099,
-                "variant": "09"
+                "variant": "LNC25-09"
             },
             {
                 "bv": 1960,
@@ -1416,135 +2268,159 @@
         ]
     },
     {
-        "count": 2,
+        "count": 1,
         "name": "Locust",
         "variants": [
             {
-                "bv": 432,
-                "variant": "1V"
-            },
-            {
                 "bv": 553,
-                "variant": "1E"
+                "variant": "LCT-1E"
             },
             {
                 "bv": 424,
-                "variant": "1M"
+                "variant": "LCT-1M"
             },
             {
                 "bv": 440,
-                "variant": "1S"
+                "variant": "LCT-1S"
+            },
+            {
+                "bv": 432,
+                "variant": "LCT-1V"
             },
             {
                 "bv": 672,
-                "variant": "1V (C)"
+                "variant": "LCT-1V (C)"
             },
             {
                 "bv": 642,
-                "variant": "1Vb"
+                "variant": "LCT-1Vb"
             },
             {
                 "bv": 568,
-                "variant": "1V2"
+                "variant": "LCT-1V2"
             },
             {
                 "bv": 436,
-                "variant": "3D"
+                "variant": "LCT-3D"
             },
             {
                 "bv": 522,
-                "variant": "3M"
+                "variant": "LCT-3M"
             },
             {
                 "bv": 483,
-                "variant": "3S"
+                "variant": "LCT-3S"
             },
             {
                 "bv": 490,
-                "variant": "3V"
+                "variant": "LCT-3V"
             },
             {
                 "bv": 719,
-                "variant": "5M"
+                "variant": "LCT-5M"
             },
             {
                 "bv": 693,
-                "variant": "5M2"
+                "variant": "LCT-5M2"
             },
             {
                 "bv": 929,
-                "variant": "5M3"
+                "variant": "LCT-5M3"
             },
             {
                 "bv": 509,
-                "variant": "5S"
+                "variant": "LCT-5S"
             },
             {
                 "bv": 520,
-                "variant": "5T"
+                "variant": "LCT-5T"
             },
             {
                 "bv": 665,
-                "variant": "5V"
+                "variant": "LCT-5V"
             },
             {
                 "bv": 956,
-                "variant": "6M"
+                "variant": "LCT-6M"
             },
             {
                 "bv": 706,
-                "variant": "7S"
+                "variant": "LCT-7S"
             },
             {
                 "bv": 585,
-                "variant": "7V"
+                "variant": "LCT-7V"
             },
             {
                 "bv": 634,
-                "variant": "7V2"
+                "variant": "LCT-7V2"
             }
         ]
     },
     {
-        "count": 4,
+        "count": 1,
         "name": "Longbow",
         "variants": [
             {
-                "bv": 1618,
-                "variant": "7Q"
-            },
-            {
                 "bv": 1839,
-                "variant": "0H"
+                "variant": "LGB-0H"
             },
             {
                 "bv": 1377,
-                "variant": "0W"
+                "variant": "LGB-0W"
+            },
+            {
+                "bv": 1618,
+                "variant": "LGB-7Q"
             },
             {
                 "bv": 1816,
-                "variant": "7V"
+                "variant": "LGB-7V"
+            },
+            {
+                "bv": 1653,
+                "variant": "LGB-8C"
+            },
+            {
+                "bv": 1898,
+                "variant": "LGB-10C"
+            },
+            {
+                "bv": 1791,
+                "variant": "LGB-10K"
             },
             {
                 "bv": 1686,
-                "variant": "12C"
+                "variant": "LGB-12C"
             },
             {
                 "bv": 1979,
-                "variant": "12R"
+                "variant": "LGB-12R"
             },
             {
                 "bv": 1397,
-                "variant": "13C"
+                "variant": "LGB-13C"
             },
             {
                 "bv": 1421,
-                "variant": "14C"
+                "variant": "LGB-14C"
+            },
+            {
+                "bv": 1291,
+                "variant": "LGB-14C2"
+            },
+            {
+                "bv": 1828,
+                "variant": "LGB-14Q"
+            },
+            {
+                "bv": 1763,
+                "variant": "LGB-14V"
             }
         ]
     },
     {
-        "count": 2,
+        "count": 1,
         "name": "Mackie",
         "variants": [
             {
@@ -1570,166 +2446,166 @@
         ]
     },
     {
-        "count": 4,
+        "count": 1,
         "name": "Marauder",
         "variants": [
             {
-                "bv": 1363,
-                "variant": "3R"
-            },
-            {
                 "bv": 1420,
-                "variant": "1R"
+                "variant": "MAD-1R"
             },
             {
                 "bv": 1630,
-                "variant": "2R"
+                "variant": "MAD-2R"
             },
             {
                 "bv": 1646,
-                "variant": "2T"
+                "variant": "MAD-2T"
             },
             {
                 "bv": 1470,
-                "variant": "3D"
+                "variant": "MAD-3D"
             },
             {
                 "bv": 1369,
-                "variant": "3L"
+                "variant": "MAD-3L"
             },
             {
                 "bv": 1335,
-                "variant": "3M"
+                "variant": "MAD-3M"
+            },
+            {
+                "bv": 1363,
+                "variant": "MAD-3R"
             },
             {
                 "bv": 1616,
-                "variant": "3R (C)"
+                "variant": "MAD-3R (C)"
             },
             {
                 "bv": 1648,
-                "variant": "5CS"
+                "variant": "MAD-5CS"
             },
             {
                 "bv": 1787,
-                "variant": "5D"
+                "variant": "MAD-5D"
             },
             {
                 "bv": 2268,
-                "variant": "5L"
+                "variant": "MAD-5L"
             },
             {
                 "bv": 1471,
-                "variant": "5M"
+                "variant": "MAD-5M"
             },
             {
                 "bv": 1779,
-                "variant": "5S"
+                "variant": "MAD-5S"
             },
             {
                 "bv": 1750,
-                "variant": "5T"
+                "variant": "MAD-5T"
             },
             {
                 "bv": 2322,
-                "variant": "6L"
+                "variant": "MAD-6L"
             },
             {
                 "bv": 1986,
-                "variant": "7D"
+                "variant": "MAD-7D"
             },
             {
                 "bv": 1908,
-                "variant": "7M"
+                "variant": "MAD-7M"
             },
             {
                 "bv": 1832,
-                "variant": "7R"
+                "variant": "MAD-7R"
             },
             {
                 "bv": 1903,
-                "variant": "7S"
+                "variant": "MAD-7S"
             },
             {
                 "bv": 1704,
-                "variant": "9M"
+                "variant": "MAD-9M"
             },
             {
                 "bv": 1875,
-                "variant": "9M2"
+                "variant": "MAD-9M2"
             },
             {
                 "bv": 1786,
-                "variant": "9S"
+                "variant": "MAD-9S"
             },
             {
                 "bv": 2263,
-                "variant": "11D"
+                "variant": "MAD-11D"
             }
         ]
     },
     {
-        "count": 4,
-        "name": "Maurader II",
+        "count": 1,
+        "name": "Marauder II",
         "variants": [
             {
-                "bv": 2058,
-                "variant": "5A"
-            },
-            {
                 "bv": 2073,
-                "variant": "4A"
+                "variant": "MAD-4A"
             },
             {
                 "bv": 2180,
-                "variant": "4H"
+                "variant": "MAD-4H"
             },
             {
                 "bv": 2626,
-                "variant": "4K"
+                "variant": "MAD-4K"
             },
             {
                 "bv": 2839,
-                "variant": "4L"
+                "variant": "MAD-4L"
             },
             {
                 "bv": 2623,
-                "variant": "4S"
+                "variant": "MAD-4S"
+            },
+            {
+                "bv": 2058,
+                "variant": "MAD-5A"
             },
             {
                 "bv": 2589,
-                "variant": "5B"
+                "variant": "MAD-5B"
             },
             {
                 "bv": 2024,
-                "variant": "5C"
+                "variant": "MAD-5C"
             },
             {
                 "bv": 2367,
-                "variant": "6A"
+                "variant": "MAD-6A"
             },
             {
                 "bv": 2346,
-                "variant": "6C"
+                "variant": "MAD-6C"
             },
             {
                 "bv": 2378,
-                "variant": "6D"
+                "variant": "MAD-6D"
             },
             {
                 "bv": 2218,
-                "variant": "6M"
+                "variant": "MAD-6M"
             },
             {
                 "bv": 2546,
-                "variant": "6S"
+                "variant": "MAD-6S"
             },
             {
                 "bv": 2849,
-                "variant": "8K"
+                "variant": "MAD-8K"
             },
             {
                 "bv": 2741,
-                "variant": "10D"
+                "variant": "MAD-10D"
             },
             {
                 "bv": 2916,
@@ -1738,66 +2614,154 @@
         ]
     },
     {
-        "count": 3,
-        "name": "Mercury",
+        "count": 1,
+        "name": "Mauler",
         "variants": [
             {
-                "bv": 586,
-                "variant": "99"
+                "bv": 1678,
+                "variant": "MAL-1K"
             },
             {
-                "bv": 553,
-                "variant": "98"
+                "bv": 1678,
+                "variant": "MAL-1KX"
             },
             {
-                "bv": 683,
-                "variant": "104"
+                "bv": 1286,
+                "variant": "MAL-1X-AFFC"
             },
             {
-                "bv": 683,
-                "variant": "105"
+                "bv": 1460,
+                "variant": "MAL-1R"
+            },
+            {
+                "bv": 1460,
+                "variant": "MAL-1Y"
+            },
+            {
+                "bv": 1745,
+                "variant": "MAL-2D"
+            },
+            {
+                "bv": 1586,
+                "variant": "MAL-2R"
+            },
+            {
+                "bv": 1622,
+                "variant": "MAL-3K"
+            },
+            {
+                "bv": 1877,
+                "variant": "MAL-3R"
+            },
+            {
+                "bv": 2050,
+                "variant": "MAL-4R"
+            },
+            {
+                "bv": 1473,
+                "variant": "MAL-C"
             }
         ]
     },
     {
-        "count": 3,
+        "count": 1,
+        "name": "Mercury",
+        "variants": [
+            {
+                "bv": 466,
+                "variant": "MCY-97"
+            },
+            {
+                "bv": 553,
+                "variant": "MCY-98"
+            },
+            {
+                "bv": 586,
+                "variant": "MCY-99"
+            },
+            {
+                "bv": 683,
+                "variant": "MCY-104"
+            },
+            {
+                "bv": 683,
+                "variant": "MCY-105"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Merlin",
+        "variants": [
+            {
+                "bv": 1217,
+                "variant": "MLN-1A"
+            },
+            {
+                "bv": 1228,
+                "variant": "MLN-1B"
+            },
+            {
+                "bv": 1267,
+                "variant": "MLN-1C"
+            },
+            {
+                "bv": 1370,
+                "variant": "MLN-1D"
+            },
+            {
+                "bv": 1369,
+                "variant": "MLN-1E"
+            },
+            {
+                "bv": 1182,
+                "variant": "MLN-1P"
+            },
+            {
+                "bv": 1870,
+                "variant": "C"
+            }
+        ]
+    },
+    {
+        "count": 1,
         "name": "Mongoose",
         "variants": [
             {
                 "bv": 758,
-                "variant": "66"
+                "variant": "MON-66"
             },
             {
                 "bv": 934,
-                "variant": "66b"
+                "variant": "MON-66b"
             },
             {
                 "bv": 741,
-                "variant": "67"
+                "variant": "MON-67"
             },
             {
                 "bv": 676,
-                "variant": "68"
+                "variant": "MON-68"
             },
             {
                 "bv": 737,
-                "variant": "69"
+                "variant": "MON-69"
             },
             {
                 "bv": 750,
-                "variant": "70"
+                "variant": "MON-70"
             },
             {
                 "bv": 894,
-                "variant": "76"
+                "variant": "MON-76"
             },
             {
                 "bv": 887,
-                "variant": "86"
+                "variant": "MON-86"
             },
             {
                 "bv": 1101,
-                "variant": "96"
+                "variant": "MON-96"
             }
         ]
     },
@@ -1807,157 +2771,323 @@
         "variants": [
             {
                 "bv": 1159,
-                "variant": "4S"
+                "variant": "NGS-4S"
             },
             {
                 "bv": 1287,
-                "variant": "4T"
+                "variant": "NGS-4T"
             },
             {
                 "bv": 1045,
-                "variant": "5S"
+                "variant": "NGS-5S"
             },
             {
                 "bv": 1356,
-                "variant": "5T"
+                "variant": "NGS-5T"
             },
             {
                 "bv": 1474,
-                "variant": "6S"
+                "variant": "NGS-6S"
             },
             {
                 "bv": 1430,
-                "variant": "6T"
+                "variant": "NGS-6T"
             },
             {
                 "bv": 1591,
-                "variant": "7S"
+                "variant": "NGS-7S"
             }
         ]
     },
     {
-        "count": 3,
+        "count": 1,
         "name": "Nightstar",
         "variants": [
             {
-                "bv": 2399,
-                "variant": "9J"
+                "bv": 1929,
+                "variant": "NSR-9FC"
             },
             {
-                "bv": 1929,
-                "variant": "9FC"
+                "bv": 2399,
+                "variant": "NSR-9J"
             },
             {
                 "bv": 2149,
-                "variant": "9SS"
+                "variant": "NSR-9SS"
             },
             {
                 "bv": 2539,
-                "variant": "10D"
+                "variant": "NSR-10D"
             }
         ]
     },
     {
-        "count": 4,
+        "count": 1,
         "name": "Orion",
         "variants": [
             {
-                "bv": 1429,
-                "variant": "K"
+                "bv": 2026,
+                "variant": "ON1-C 2"
             },
             {
-                "bv": 2026,
-                "variant": "C 2"
+                "bv": 1429,
+                "variant": "ON1-K"
             },
             {
                 "bv": 1414,
-                "variant": "M"
+                "variant": "ON1-M"
             },
             {
                 "bv": 1501,
-                "variant": "MA"
+                "variant": "ON1-MA"
             },
             {
                 "bv": 1472,
-                "variant": "MB"
+                "variant": "ON1-MB"
             },
             {
                 "bv": 1501,
-                "variant": "MC"
+                "variant": "ON1-MC"
             },
             {
                 "bv": 1595,
-                "variant": "MD"
+                "variant": "ON1-MD"
             },
             {
                 "bv": 1298,
-                "variant": "V"
+                "variant": "ON1-V"
             },
             {
                 "bv": 1328,
-                "variant": "VA"
+                "variant": "ON1-VA"
             },
             {
                 "bv": 1828,
-                "variant": "2-M"
+                "variant": "ON2-M"
             },
             {
                 "bv": 1826,
-                "variant": "3-M"
+                "variant": "ON3-M"
+            },
+            {
+                "bv": 2343,
+                "variant": "C"
             }
         ]
     },
     {
-        "count": 3,
+        "count": 1,
+        "name": "Ostroc",
+        "variants": [
+            {
+                "bv": 1228,
+                "variant": "OSR-2C"
+            },
+            {
+                "bv": 1478,
+                "variant": "OSR-2Cr"
+            },
+            {
+                "bv": 1396,
+                "variant": "OSR-2D"
+            },
+            {
+                "bv": 1233,
+                "variant": "OSR-2L"
+            },
+            {
+                "bv": 1239,
+                "variant": "OSR-2M"
+            },
+            {
+                "bv": 1288,
+                "variant": "OSR-3C"
+            },
+            {
+                "bv": 1594,
+                "variant": "OSR-3M"
+            },
+            {
+                "bv": 1325,
+                "variant": "OSR-4C"
+            },
+            {
+                "bv": 1490,
+                "variant": "OSR-4K"
+            },
+            {
+                "bv": 1832,
+                "variant": "OSR-4L"
+            },
+            {
+                "bv": 1788,
+                "variant": "OSR-5C"
+            },
+            {
+                "bv": 1655,
+                "variant": "OSR-5W"
+            },
+            {
+                "bv": 2095,
+                "variant": "OSR-6R"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Ostscout",
+        "variants": [
+            {
+                "bv": 596,
+                "variant": "OTT-7J"
+            },
+            {
+                "bv": 610,
+                "variant": "OTT-7Jb"
+            },
+            {
+                "bv": 484,
+                "variant": "OTT-7K"
+            },
+            {
+                "bv": 894,
+                "variant": "OTT-8J"
+            },
+            {
+                "bv": 940,
+                "variant": "OTT-9CS"
+            },
+            {
+                "bv": 868,
+                "variant": "OTT-9S"
+            },
+            {
+                "bv": 862,
+                "variant": "OTT-10CS"
+            },
+            {
+                "bv": 908,
+                "variant": "OTT-11J"
+            },
+            {
+                "bv": 1209,
+                "variant": "OTT-712R"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Ostsol",
+        "variants": [
+            {
+                "bv": 1277,
+                "variant": "OTL-4D"
+            },
+            {
+                "bv": 1264,
+                "variant": "OTL-4F"
+            },
+            {
+                "bv": 1333,
+                "variant": "OTL-5D"
+            },
+            {
+                "bv": 1245,
+                "variant": "OTL-5M"
+            },
+            {
+                "bv": 1880,
+                "variant": "OTL-6D"
+            },
+            {
+                "bv": 1581,
+                "variant": "OTL-7M"
+            },
+            {
+                "bv": 1462,
+                "variant": "OTL-8D"
+            },
+            {
+                "bv": 1552,
+                "variant": "OTL-8E"
+            },
+            {
+                "bv": 1671,
+                "variant": "OTL-8E3"
+            },
+            {
+                "bv": 1698,
+                "variant": "OTL-8F"
+            },
+            {
+                "bv": 1733,
+                "variant": "OTL-8M"
+            },
+            {
+                "bv": 1654,
+                "variant": "OTL-9R"
+            },
+            {
+                "bv": 1871,
+                "variant": "OTL-9M"
+            },
+            {
+                "bv": 2277,
+                "variant": "C"
+            }
+        ]
+    },
+    {
+        "count": 1,
         "name": "Panther",
         "variants": [
             {
-                "bv": 769,
-                "variant": "9R"
-            },
-            {
                 "bv": 741,
-                "variant": "8Z"
+                "variant": "PNT-8Z"
             },
             {
                 "bv": 804,
-                "variant": "9ALAG"
+                "variant": "PNT-9ALAG"
+            },
+            {
+                "bv": 769,
+                "variant": "PNT-9R"
             },
             {
                 "bv": 838,
-                "variant": "10K"
+                "variant": "PNT-10K"
             },
             {
                 "bv": 913,
-                "variant": "10K2"
+                "variant": "PNT-10K2"
             },
             {
                 "bv": 797,
-                "variant": "10KA"
+                "variant": "PNT-10KA"
             },
             {
                 "bv": 982,
-                "variant": "12A"
+                "variant": "PNT-12A"
             },
             {
                 "bv": 930,
-                "variant": "12K2"
+                "variant": "PNT-12K2"
             },
             {
                 "bv": 996,
-                "variant": "13K"
+                "variant": "PNT-13K"
             },
             {
                 "bv": 825,
-                "variant": "14S"
+                "variant": "PNT-14S"
             },
             {
                 "bv": 1291,
-                "variant": "14R"
+                "variant": "PNT-14R"
             },
             {
                 "bv": 988,
-                "variant": "16K"
+                "variant": "PNT-16K"
             }
         ]
     },
@@ -1967,109 +3097,109 @@
         "variants": [
             {
                 "bv": 1687,
-                "variant": "4D"
+                "variant": "PTR-4D"
             },
             {
                 "bv": 1564,
-                "variant": "4F"
+                "variant": "PTR-4F"
             },
             {
                 "bv": 1639,
-                "variant": "6M"
+                "variant": "PTR-6M"
             },
             {
                 "bv": 1689,
-                "variant": "6S"
+                "variant": "PTR-6S"
             },
             {
                 "bv": 1994,
-                "variant": "6T"
+                "variant": "PTR-6T"
             },
             {
                 "bv": 2130,
-                "variant": "8D"
+                "variant": "PTR-8D"
             }
         ]
     },
     {
-        "count": 3,
+        "count": 1,
         "name": "Phoenix Hawk",
         "variants": [
             {
                 "bv": 1041,
-                "variant": "1"
+                "variant": "PXH-1"
             },
             {
                 "bv": 1512,
-                "variant": "1b"
+                "variant": "PXH-1b"
             },
             {
                 "bv": 1174,
-                "variant": "1bC"
+                "variant": "PXH-1bC"
             },
             {
                 "bv": 1083,
-                "variant": "1D"
+                "variant": "PXH-1D"
             },
             {
                 "bv": 1073,
-                "variant": "1K"
+                "variant": "PXH-1K"
             },
             {
                 "bv": 1145,
-                "variant": "2"
+                "variant": "PXH-2"
             },
             {
                 "bv": 1315,
-                "variant": "3D"
+                "variant": "PXH-3D"
             },
             {
                 "bv": 1359,
-                "variant": "3K"
+                "variant": "PXH-3K"
             },
             {
                 "bv": 1307,
-                "variant": "3M"
+                "variant": "PXH-3M"
             },
             {
                 "bv": 1244,
-                "variant": "3PL"
+                "variant": "PXH-3PL"
             },
             {
                 "bv": 1237,
-                "variant": "3S"
+                "variant": "PXH-3S"
             },
             {
                 "bv": 1399,
-                "variant": "4L"
+                "variant": "PXH-4L"
             },
             {
                 "bv": 1327,
-                "variant": "4M"
+                "variant": "PXH-4M"
             },
             {
                 "bv": 1395,
-                "variant": "4W"
+                "variant": "PXH-4W"
             },
             {
                 "bv": 1589,
-                "variant": "5L"
+                "variant": "PXH-5L"
             },
             {
                 "bv": 1665,
-                "variant": "6D"
+                "variant": "PXH-6D"
             },
             {
                 "bv": 1241,
-                "variant": "7K"
+                "variant": "PXH-7K"
             },
             {
                 "bv": 1496,
-                "variant": "7S"
+                "variant": "PXH-7S"
             },
             {
                 "bv": 1244,
-                "variant": "9"
+                "variant": "PXH-9"
             },
             {
                 "bv": 1396,
@@ -2082,110 +3212,194 @@
         ]
     },
     {
-        "count": 3,
-        "name": "Raven",
+        "count": 1,
+        "name": "Pillager",
         "variants": [
             {
-                "bv": 710,
-                "variant": "3L"
+                "bv": 1812,
+                "variant": "PLG-1N"
             },
             {
-                "bv": 887,
-                "variant": "2X"
+                "bv": 2697,
+                "variant": "PLG-3Z"
             },
             {
-                "bv": 659,
-                "variant": "3M"
+                "bv": 2868,
+                "variant": "PLG-4Z"
             },
             {
-                "bv": 873,
-                "variant": "4L"
+                "bv": 2656,
+                "variant": "PLG-5L"
             },
             {
-                "bv": 989,
-                "variant": "4Lr"
+                "bv": 3008,
+                "variant": "PLG-5Z"
             },
             {
-                "bv": 820,
-                "variant": "4X"
-            },
-            {
-                "bv": 904,
-                "variant": "SS"
+                "bv": 2714,
+                "variant": "PLG-6Z"
             }
         ]
     },
     {
-        "count": 3,
+        "count": 1,
+        "name": "Quickdraw",
+        "variants": [
+            {
+                "bv": 1192,
+                "variant": "QKD-4G"
+            },
+            {
+                "bv": 1242,
+                "variant": "QKD-4H"
+            },
+            {
+                "bv": 1196,
+                "variant": "QKD-5A"
+            },
+            {
+                "bv": 1265,
+                "variant": "QKD-5K"
+            },
+            {
+                "bv": 1312,
+                "variant": "QKD-5K2"
+            },
+            {
+                "bv": 1237,
+                "variant": "QKD-5M"
+            },
+            {
+                "bv": 1465,
+                "variant": "QKD-5Mr"
+            },
+            {
+                "bv": 1583,
+                "variant": "QKD-8K"
+            },
+            {
+                "bv": 1598,
+                "variant": "QKD-8P"
+            },
+            {
+                "bv": 1690,
+                "variant": "QKD-9M"
+            },
+            {
+                "bv": 2224,
+                "variant": "QKD-9G"
+            },
+            {
+                "bv": 1225,
+                "variant": "QKD-C"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Raven",
+        "variants": [
+            {
+                "bv": 887,
+                "variant": "RVN-2X"
+            },
+            {
+                "bv": 710,
+                "variant": "RVN-3L"
+            },
+            {
+                "bv": 659,
+                "variant": "RVN-3M"
+            },
+            {
+                "bv": 873,
+                "variant": "RVN-4L"
+            },
+            {
+                "bv": 989,
+                "variant": "RVN-4Lr"
+            },
+            {
+                "bv": 820,
+                "variant": "RVN-4X"
+            },
+            {
+                "bv": 904,
+                "variant": "RVN-SS"
+            }
+        ]
+    },
+    {
+        "count": 1,
         "name": "Rifleman",
         "variants": [
             {
-                "bv": 1039,
-                "variant": "3N"
-            },
-            {
                 "bv": 1093,
-                "variant": "2N"
+                "variant": "RFL-2N"
             },
             {
                 "bv": 1066,
-                "variant": "3C"
+                "variant": "RFL-3C"
             },
             {
                 "bv": 1129,
-                "variant": "3Cr"
+                "variant": "RFL-3Cr"
+            },
+            {
+                "bv": 1039,
+                "variant": "RFL-3N"
             },
             {
                 "bv": 1173,
-                "variant": "4D"
+                "variant": "RFL-4D"
             },
             {
                 "bv": 1303,
-                "variant": "5CS"
+                "variant": "RFL-5CS"
             },
             {
                 "bv": 1395,
-                "variant": "5D"
+                "variant": "RFL-5D"
             },
             {
                 "bv": 1337,
-                "variant": "5M"
+                "variant": "RFL-5M"
             },
             {
                 "bv": 1464,
-                "variant": "6X"
+                "variant": "RFL-6X"
             },
             {
                 "bv": 1302,
-                "variant": "7G"
+                "variant": "RFL-7G"
             },
             {
                 "bv": 1227,
-                "variant": "7M"
+                "variant": "RFL-7M"
             },
             {
                 "bv": 1398,
-                "variant": "7N"
+                "variant": "RFL-7N"
             },
             {
                 "bv": 1452,
-                "variant": "7N2"
+                "variant": "RFL-7N2"
             },
             {
                 "bv": 1645,
-                "variant": "7X"
+                "variant": "RFL-7X"
             },
             {
                 "bv": 1664,
-                "variant": "8D"
+                "variant": "RFL-8D"
             },
             {
                 "bv": 1798,
-                "variant": "8X"
+                "variant": "RFL-8X"
             },
             {
                 "bv": 1546,
-                "variant": "9T"
+                "variant": "RFL-9T"
             },
             {
                 "bv": 1335,
@@ -2207,127 +3421,185 @@
         "variants": [
             {
                 "bv": 2088,
-                "variant": "8R"
+                "variant": "SGT-8R"
+            },
+            {
+                "bv": 2064,
+                "variant": "SGT-9D"
             },
             {
                 "bv": 1794,
-                "variant": "10X"
+                "variant": "SGT-10X"
+            },
+            {
+                "bv": 1875,
+                "variant": "SGT-14D"
+            },
+            {
+                "bv": 2626,
+                "variant": "SGT-14R"
             }
         ]
     },
     {
-        "count": 3,
-        "name": "Sentinel",
+        "count": 1,
+        "name": "Scorpion",
         "variants": [
             {
-                "bv": 717,
-                "variant": "3L"
+                "bv": 1473,
+                "variant": "SCP-1BR"
             },
             {
-                "bv": 632,
-                "variant": "1S"
+                "bv": 1019,
+                "variant": "SCP-1N"
             },
             {
-                "bv": 652,
-                "variant": "3K"
+                "bv": 1098,
+                "variant": "SCP-1O"
             },
             {
-                "bv": 847,
-                "variant": "3KA"
+                "bv": 1185,
+                "variant": "SCP-1TB"
             },
             {
-                "bv": 823,
-                "variant": "3KB"
+                "bv": 1562,
+                "variant": "SCP-2N"
+            },
+            {
+                "bv": 1458,
+                "variant": "SCP-10M"
+            },
+            {
+                "bv": 1259,
+                "variant": "SCP-12C"
             },
             {
                 "bv": 1260,
-                "variant": "3Lb"
+                "variant": "SCP-12K"
             },
             {
-                "bv": 758,
-                "variant": "3M"
+                "bv": 1109,
+                "variant": "SCP-12S"
             },
             {
-                "bv": 1179,
-                "variant": "4D"
-            },
-            {
-                "bv": 999,
-                "variant": "5WB"
-            },
-            {
-                "bv": 1089,
-                "variant": "6S"
+                "bv": 2331,
+                "variant": "C"
             }
         ]
     },
     {
-        "count": 2,
+        "count": 1,
+        "name": "Sentinel",
+        "variants": [
+            {
+                "bv": 632,
+                "variant": "STN-1S"
+            },
+            {
+                "bv": 652,
+                "variant": "STN-3K"
+            },
+            {
+                "bv": 847,
+                "variant": "STN-3KA"
+            },
+            {
+                "bv": 823,
+                "variant": "STN-3KB"
+            },
+            {
+                "bv": 717,
+                "variant": "STN-3L"
+            },
+            {
+                "bv": 1260,
+                "variant": "STN-3Lb"
+            },
+            {
+                "bv": 758,
+                "variant": "STN-3M"
+            },
+            {
+                "bv": 1179,
+                "variant": "STN-4D"
+            },
+            {
+                "bv": 999,
+                "variant": "STN-5WB"
+            },
+            {
+                "bv": 1089,
+                "variant": "STN-6S"
+            }
+        ]
+    },
+    {
+        "count": 1,
         "name": "Shadow Hawk",
         "variants": [
             {
-                "bv": 1064,
-                "variant": "2H"
-            },
-            {
                 "bv": 899,
-                "variant": "2D"
+                "variant": "SHD-2D"
             },
             {
                 "bv": 1049,
-                "variant": "2D2"
+                "variant": "SHD-2D2"
+            },
+            {
+                "bv": 1064,
+                "variant": "SHD-2H"
             },
             {
                 "bv": 1354,
-                "variant": "2Hb"
+                "variant": "SHD-2Hb"
             },
             {
                 "bv": 1453,
-                "variant": "2Ht"
+                "variant": "SHD-2Ht"
             },
             {
                 "bv": 1147,
-                "variant": "2K"
+                "variant": "SHD-2K"
             },
             {
                 "bv": 1569,
-                "variant": "4H"
+                "variant": "SHD-4H"
             },
             {
                 "bv": 1684,
-                "variant": "5D"
+                "variant": "SHD-5D"
             },
             {
                 "bv": 1430,
-                "variant": "5M"
+                "variant": "SHD-5M"
             },
             {
                 "bv": 1296,
-                "variant": "5R"
+                "variant": "SHD-5R"
             },
             {
                 "bv": 1590,
-                "variant": "5S"
+                "variant": "SHD-5S"
             },
             {
                 "bv": 1296,
-                "variant": "6D"
+                "variant": "SHD-6D"
             },
             {
                 "bv": 1394,
-                "variant": "7H"
+                "variant": "SHD-7H"
             },
             {
                 "bv": 1447,
-                "variant": "7M"
+                "variant": "SHD-7M"
             },
             {
                 "bv": 1536,
-                "variant": "8L"
+                "variant": "SHD-8L"
             },
             {
                 "bv": 1574,
-                "variant": "12C"
+                "variant": "SHD-12C"
             },
             {
                 "bv": 1348,
@@ -2336,300 +3608,390 @@
         ]
     },
     {
-        "count": 3,
-        "name": "Spider",
+        "count": 1,
+        "name": "Shogun",
         "variants": [
             {
-                "bv": 622,
-                "variant": "5V"
+                "bv": 1823,
+                "variant": "SHG-2E"
             },
             {
-                "bv": 524,
-                "variant": "5D"
+                "bv": 1804,
+                "variant": "SHG-2F"
             },
             {
-                "bv": 503,
-                "variant": "5K"
+                "bv": 2087,
+                "variant": "SHG-2H"
             },
             {
-                "bv": 688,
-                "variant": "7K"
+                "bv": 1998,
+                "variant": "SHG-3E"
             },
             {
-                "bv": 884,
-                "variant": "7K2"
+                "bv": 3032,
+                "variant": "C"
             },
             {
-                "bv": 621,
-                "variant": "7M"
+                "bv": 2914,
+                "variant": "C 2"
             },
             {
-                "bv": 1007,
-                "variant": "8K"
-            },
-            {
-                "bv": 688,
-                "variant": "8M"
-            },
-            {
-                "bv": 694,
-                "variant": "8R"
-            },
-            {
-                "bv": 765,
-                "variant": "8X"
-            },
-            {
-                "bv": 754,
-                "variant": "8Xr"
-            },
-            {
-                "bv": 687,
-                "variant": "9M"
-            },
-            {
-                "bv": 770,
-                "variant": "10K"
+                "bv": 2935,
+                "variant": "C 3"
             }
         ]
     },
     {
-        "count": 3,
+        "count": 1,
+        "name": "Spector",
+        "variants": [
+            {
+                "bv": 1224,
+                "variant": "SPR-4F"
+            },
+            {
+                "bv": 1183,
+                "variant": "SPR-5F"
+            },
+            {
+                "bv": 1166,
+                "variant": "SPR-5S"
+            },
+            {
+                "bv": 1476,
+                "variant": "SPR-6F"
+            },
+            {
+                "bv": 1522,
+                "variant": "SPR-ST"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Spider",
+        "variants": [
+            {
+                "bv": 524,
+                "variant": "SDR-5D"
+            },
+            {
+                "bv": 503,
+                "variant": "SDR-5K"
+            },
+            {
+                "bv": 622,
+                "variant": "SDR-5V"
+            },
+            {
+                "bv": 688,
+                "variant": "SDR-7K"
+            },
+            {
+                "bv": 884,
+                "variant": "SDR-7K2"
+            },
+            {
+                "bv": 621,
+                "variant": "SDR-7M"
+            },
+            {
+                "bv": 1007,
+                "variant": "SDR-8K"
+            },
+            {
+                "bv": 688,
+                "variant": "SDR-8M"
+            },
+            {
+                "bv": 694,
+                "variant": "SDR-8R"
+            },
+            {
+                "bv": 765,
+                "variant": "SDR-8X"
+            },
+            {
+                "bv": 754,
+                "variant": "SDR-8Xr"
+            },
+            {
+                "bv": 687,
+                "variant": "SDR-9M"
+            },
+            {
+                "bv": 770,
+                "variant": "SDR-10K"
+            }
+        ]
+    },
+    {
+        "count": 1,
         "name": "Stalker",
         "variants": [
             {
                 "bv": 1559,
-                "variant": "3F"
+                "variant": "STK-3F"
             },
             {
                 "bv": 2029,
-                "variant": "3Fb"
+                "variant": "STK-3Fb"
             },
             {
                 "bv": 1624,
-                "variant": "3H"
+                "variant": "STK-3H"
             },
             {
                 "bv": 1558,
-                "variant": "4N"
+                "variant": "STK-4N"
             },
             {
                 "bv": 1655,
-                "variant": "5M"
+                "variant": "STK-5M"
             },
             {
                 "bv": 1423,
-                "variant": "5S"
+                "variant": "STK-5S"
             },
             {
                 "bv": 2029,
-                "variant": "6M"
+                "variant": "STK-6M"
             },
             {
                 "bv": 1901,
-                "variant": "7D"
+                "variant": "STK-7D"
             },
             {
                 "bv": 2020,
-                "variant": "8S"
+                "variant": "STK-8S"
             },
             {
                 "bv": 2469,
-                "variant": "9F"
+                "variant": "STK-9F"
             }
         ]
     },
     {
-        "count": 3,
-        "name": "Stinger",
+        "count": 1,
+        "name": "Starslayer",
         "variants": [
             {
-                "bv": 359,
-                "variant": "3R"
+                "bv": 1365,
+                "variant": "STY-2C"
             },
             {
-                "bv": 497,
-                "variant": "3G"
-            },
-            {
-                "bv": 674,
-                "variant": "3Gb"
-            },
-            {
-                "bv": 489,
-                "variant": "3P"
-            },
-            {
-                "bv": 541,
-                "variant": "4G"
-            },
-            {
-                "bv": 614,
-                "variant": "5G"
-            },
-            {
-                "bv": 432,
-                "variant": "5M"
-            },
-            {
-                "bv": 492,
-                "variant": "5R"
-            },
-            {
-                "bv": 341,
-                "variant": "5T"
-            },
-            {
-                "bv": 503,
-                "variant": "6G"
-            },
-            {
-                "bv": 680,
-                "variant": "6L"
-            },
-            {
-                "bv": 503,
-                "variant": "6M"
-            },
-            {
-                "bv": 454,
-                "variant": "6R"
-            },
-            {
-                "bv": 478,
-                "variant": "6S"
-            },
-            {
-                "bv": 382,
-                "variant": "7S"
-            }
-        ]
-    },
-    {
-        "count": 3,
-        "name": "Thug",
-        "variants": [
-            {
-                "bv": 1640,
-                "variant": "11E"
-            },
-            {
-                "bv": 1501,
-                "variant": "10E"
-            },
-            {
-                "bv": 1759,
-                "variant": "11Eb"
-            },
-            {
-                "bv": 2545,
-                "variant": "13U"
-            }
-        ]
-    },
-    {
-        "count": 2,
-        "name": "Thunderbolt",
-        "variants": [
-            {
-                "bv": 1335,
-                "variant": "5S"
-            },
-            {
-                "bv": 1231,
-                "variant": "5D"
-            },
-            {
-                "bv": 1546,
-                "variant": "5L"
-            },
-            {
-                "bv": 1305,
-                "variant": "5LS"
-            },
-            {
-                "bv": 1618,
-                "variant": "5Sb"
-            },
-            {
-                "bv": 1414,
-                "variant": "5SE"
-            },
-            {
-                "bv": 1337,
-                "variant": "5SS"
+                "bv": 1508,
+                "variant": "STY-3C"
             },
             {
                 "bv": 1593,
-                "variant": "5S (C)"
+                "variant": "STY-3D"
+            },
+            {
+                "bv": 1781,
+                "variant": "STY-3Dr"
+            },
+            {
+                "bv": 2218,
+                "variant": "STY-42C"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Stinger",
+        "variants": [
+            {
+                "bv": 497,
+                "variant": "STG-3G"
+            },
+            {
+                "bv": 674,
+                "variant": "STG-3Gb"
+            },
+            {
+                "bv": 489,
+                "variant": "STG-3P"
+            },
+            {
+                "bv": 359,
+                "variant": "STG-3R"
+            },
+            {
+                "bv": 541,
+                "variant": "STG-4G"
+            },
+            {
+                "bv": 614,
+                "variant": "STG-5G"
+            },
+            {
+                "bv": 432,
+                "variant": "STG-5M"
+            },
+            {
+                "bv": 492,
+                "variant": "STG-5R"
+            },
+            {
+                "bv": 341,
+                "variant": "STG-5T"
+            },
+            {
+                "bv": 503,
+                "variant": "STG-6G"
+            },
+            {
+                "bv": 680,
+                "variant": "STG-6L"
+            },
+            {
+                "bv": 503,
+                "variant": "STG-6M"
+            },
+            {
+                "bv": 454,
+                "variant": "STG-6R"
+            },
+            {
+                "bv": 478,
+                "variant": "STG-6S"
+            },
+            {
+                "bv": 382,
+                "variant": "STG-7S"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Thug",
+        "variants": [
+            {
+                "bv": 1501,
+                "variant": "THG-10E"
+            },
+            {
+                "bv": 1640,
+                "variant": "THG-11E"
+            },
+            {
+                "bv": 1759,
+                "variant": "THG-11Eb"
+            },
+            {
+                "bv": 1824,
+                "variant": "THG-12K"
+            },
+            {
+                "bv": 2545,
+                "variant": "THG-13U"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Thunderbolt",
+        "variants": [
+            {
+                "bv": 1231,
+                "variant": "TDR-5D"
+            },
+            {
+                "bv": 1546,
+                "variant": "TDR-5L"
+            },
+            {
+                "bv": 1305,
+                "variant": "TDR-5LS"
+            },
+            {
+                "bv": 1335,
+                "variant": "TDR-5S"
+            },
+            {
+                "bv": 1618,
+                "variant": "TDR-5Sb"
+            },
+            {
+                "bv": 1414,
+                "variant": "TDR-5SE"
+            },
+            {
+                "bv": 1337,
+                "variant": "TDR-5SS"
+            },
+            {
+                "bv": 1593,
+                "variant": "TDR-5S (C)"
             },
             {
                 "bv": 1495,
-                "variant": "7M"
+                "variant": "TDR-7M"
             },
             {
                 "bv": 1582,
-                "variant": "7S"
+                "variant": "TDR-7S"
             },
             {
                 "bv": 1809,
-                "variant": "7SE"
+                "variant": "TDR-7SE"
             },
             {
                 "bv": 1648,
-                "variant": "9M"
+                "variant": "TDR-9M"
             },
             {
                 "bv": 1864,
-                "variant": "9NAIS"
+                "variant": "TDR-9NAIS"
             },
             {
                 "bv": 1494,
-                "variant": "9S"
+                "variant": "TDR-9S"
             },
             {
                 "bv": 1439,
-                "variant": "9SE"
+                "variant": "TDR-9SE"
             },
             {
                 "bv": 1589,
-                "variant": "9T"
+                "variant": "TDR-9T"
             },
             {
                 "bv": 1985,
-                "variant": "9W"
+                "variant": "TDR-9W"
             },
             {
                 "bv": 1727,
-                "variant": "10M"
+                "variant": "TDR-10M"
             },
             {
                 "bv": 1766,
-                "variant": "10S"
+                "variant": "TDR-10S"
             },
             {
                 "bv": 2008,
-                "variant": "10SE"
+                "variant": "TDR-10SE"
             },
             {
                 "bv": 1570,
-                "variant": "11S"
+                "variant": "TDR-11S"
             },
             {
                 "bv": 1754,
-                "variant": "11SE"
+                "variant": "TDR-11SE"
             },
             {
                 "bv": 1975,
-                "variant": "12R"
+                "variant": "TDR-12R"
             },
             {
                 "bv": 1803,
-                "variant": "17S"
+                "variant": "TDR-17S"
             },
             {
                 "bv": 1975,
-                "variant": "60-RLA"
+                "variant": "TDR-60-RLA"
             },
             {
                 "bv": 1671,
@@ -2642,152 +4004,152 @@
         ]
     },
     {
-        "count": 3,
+        "count": 1,
         "name": "Trebuchet",
         "variants": [
             {
-                "bv": 1191,
-                "variant": "5N"
-            },
-            {
                 "bv": 1342,
-                "variant": "3C"
+                "variant": "TBT-3C"
             },
             {
                 "bv": 1191,
-                "variant": "5J"
+                "variant": "TBT-5J"
+            },
+            {
+                "bv": 1191,
+                "variant": "TBT-5N"
             },
             {
                 "bv": 948,
-                "variant": "5S"
+                "variant": "TBT-5S"
             },
             {
                 "bv": 996,
-                "variant": "7K"
+                "variant": "TBT-7K"
             },
             {
                 "bv": 1348,
-                "variant": "7M"
+                "variant": "TBT-7M"
             },
             {
                 "bv": 1314,
-                "variant": "8B"
+                "variant": "TBT-8B"
             },
             {
                 "bv": 1550,
-                "variant": "9N"
+                "variant": "TBT-9N"
             },
             {
                 "bv": 2165,
-                "variant": "9R"
+                "variant": "TBT-9R"
             }
         ]
     },
     {
-        "count": 4,
+        "count": 1,
         "name": "UrbanMech",
         "variants": [
             {
+                "bv": 610,
+                "variant": "UM-R27"
+            },
+            {
                 "bv": 504,
-                "variant": "R60"
+                "variant": "UM-R60"
             },
             {
                 "bv": 470,
-                "variant": "R60L"
+                "variant": "UM-R60L"
             },
             {
                 "bv": 540,
-                "variant": "R63"
+                "variant": "UM-R63"
             },
             {
                 "bv": 561,
-                "variant": "R68"
+                "variant": "UM-R68"
             },
             {
                 "bv": 589,
-                "variant": "R69"
+                "variant": "UM-R69"
             },
             {
                 "bv": 724,
-                "variant": "R70"
+                "variant": "UM-R70"
             },
             {
                 "bv": 699,
-                "variant": "R80"
+                "variant": "UM-R80"
             },
             {
                 "bv": 894,
-                "variant": "R93"
+                "variant": "UM-R93"
             },
             {
                 "bv": 852,
-                "variant": "R96"
+                "variant": "UM-R96"
             },
             {
                 "bv": 915,
-                "variant": "R100"
-            },
-            {
-                "bv": 610,
-                "variant": "27"
-            }
+                "variant": "UM-R100"
+            } 
         ]
     },
     {
-        "count": 3,
+        "count": 1,
         "name": "Valkyrie",
         "variants": [
             {
                 "bv": 723,
-                "variant": "QA"
+                "variant": "VLK-QA"
             },
             {
                 "bv": 807,
-                "variant": "QD"
+                "variant": "VLK-QD"
             },
             {
                 "bv": 835,
-                "variant": "QD1"
+                "variant": "VLK-QD1"
             },
             {
                 "bv": 638,
-                "variant": "QD2"
+                "variant": "VLK-QD2"
             },
             {
                 "bv": 882,
-                "variant": "QD3"
+                "variant": "VLK-QD3"
             },
             {
                 "bv": 657,
-                "variant": "QD4"
+                "variant": "VLK-QD4"
             },
             {
                 "bv": 690,
-                "variant": "QD5"
+                "variant": "VLK-QD5"
             },
             {
                 "bv": 827,
-                "variant": "QD6"
+                "variant": "VLK-QD6"
             },
             {
                 "bv": 787,
-                "variant": "QD8"
+                "variant": "VLK-QD8"
             },
             {
                 "bv": 834,
-                "variant": "QDD"
+                "variant": "VLK-QDD"
             },
             {
                 "bv": 653,
-                "variant": "QF"
+                "variant": "VLK-QF"
             },
             {
                 "bv": 774,
-                "variant": "QS5"
+                "variant": "VLK-QS5"
             },
             {
                 "bv": 863,
-                "variant": "QT2"
+                "variant": "VLK-QT2"
             },
             {
                 "bv": 936,
@@ -2796,48 +4158,48 @@
         ]
     },
     {
-        "count": 3,
+        "count": 1,
         "name": "Victor",
         "variants": [
             {
-                "bv": 1370,
-                "variant": "9B"
-            },
-            {
                 "bv": 1236,
-                "variant": "9A"
+                "variant": "VTR-9A"
             },
             {
                 "bv": 1302,
-                "variant": "9A1"
+                "variant": "VTR-9A1"
+            },
+            {
+                "bv": 1370,
+                "variant": "VTR-9B"
             },
             {
                 "bv": 1717,
-                "variant": "9D"
+                "variant": "VTR-9D"
             },
             {
                 "bv": 1594,
-                "variant": "9Ka"
+                "variant": "VTR-9Ka"
             },
             {
                 "bv": 1360,
-                "variant": "9S"
+                "variant": "VTR-9S"
             },
             {
                 "bv": 1894,
-                "variant": "10D"
+                "variant": "VTR-10D"
             },
             {
                 "bv": 2320,
-                "variant": "10L"
+                "variant": "VTR-10L"
             },
             {
                 "bv": 2034,
-                "variant": "10S"
+                "variant": "VTR-10S"
             },
             {
                 "bv": 1935,
-                "variant": "12D"
+                "variant": "VTR-12D"
             }
         ]
     },
@@ -2846,134 +4208,172 @@
         "name": "Vindicator",
         "variants": [
             {
-                "bv": 1024,
-                "variant": "1R"
+                "bv": 966,
+                "variant": "VND-1AA"
             },
             {
-                "bv": 966,
-                "variant": "1AA"
+                "bv": 1024,
+                "variant": "VND-1R"
             },
             {
                 "bv": 1020,
-                "variant": "1SIC"
+                "variant": "VND-1SIC"
             },
             {
                 "bv": 1008,
-                "variant": "1X"
+                "variant": "VND-1X"
             },
             {
                 "bv": 1105,
-                "variant": "3L"
+                "variant": "VND-3L"
             },
             {
                 "bv": 1045,
-                "variant": "3Lr"
+                "variant": "VND-3Lr"
             },
             {
                 "bv": 1411,
-                "variant": "4L"
+                "variant": "VND-4L"
             },
             {
                 "bv": 1484,
-                "variant": "5L"
+                "variant": "VND-5L"
             },
             {
                 "bv": 1815,
-                "variant": "6L"
+                "variant": "VND-6L"
             },
             {
                 "bv": 1566,
-                "variant": "7L"
+                "variant": "VND-7L"
             }
         ]
     },
     {
-        "count": 3,
+        "count": 1,
+        "name": "Vulcan",
+        "variants": [
+            {
+                "bv": 642,
+                "variant": "VL-2T"
+            },
+            {
+                "bv": 811,
+                "variant": "VL-5M"
+            },
+            {
+                "bv": 833,
+                "variant": "VL-5S"
+            },
+            {
+                "bv": 1210,
+                "variant": "VL-5Sr"
+            },
+            {
+                "bv": 942,
+                "variant": "VL-5T"
+            },
+            {
+                "bv": 959,
+                "variant": "VL-6C"
+            },
+            {
+                "bv": 959,
+                "variant": "VL-6M"
+            },
+            {
+                "bv": 1499,
+                "variant": "VL-7T"
+            }
+        ]
+    },
+    {
+        "count": 1,
         "name": "Warhammer",
         "variants": [
             {
-                "bv": 1299,
-                "variant": "6R"
-            },
-            {
                 "bv": 1820,
-                "variant": "4L"
+                "variant": "WHM-4L"
             },
             {
                 "bv": 1896,
-                "variant": "5L"
+                "variant": "WHM-5L"
             },
             {
                 "bv": 1471,
-                "variant": "6D"
+                "variant": "WHM-6D"
             },
             {
                 "bv": 1305,
-                "variant": "6K"
+                "variant": "WHM-6K"
             },
             {
                 "bv": 1311,
-                "variant": "6L"
+                "variant": "WHM-6L"
+            },
+            {
+                "bv": 1299,
+                "variant": "WHM-6R"
             },
             {
                 "bv": 1431,
-                "variant": "6Rb"
+                "variant": "WHM-6Rb"
             },
             {
                 "bv": 1621,
-                "variant": "6Rk"
+                "variant": "WHM-6Rk"
             },
             {
                 "bv": 1679,
-                "variant": "7A"
+                "variant": "WHM-7A"
             },
             {
                 "bv": 1751,
-                "variant": "7CS"
+                "variant": "WHM-7CS"
             },
             {
                 "bv": 1651,
-                "variant": "7K"
+                "variant": "WHM-7K"
             },
             {
                 "bv": 1487,
-                "variant": "7M"
+                "variant": "WHM-7M"
             },
             {
                 "bv": 1477,
-                "variant": "7S"
+                "variant": "WHM-7S"
             },
             {
                 "bv": 1631,
-                "variant": "8M"
+                "variant": "WHM-8M"
             },
             {
                 "bv": 1697,
-                "variant": "8R"
+                "variant": "WHM-8R"
             },
             {
                 "bv": 2151,
-                "variant": "9D"
+                "variant": "WHM-9D"
             },
             {
                 "bv": 1744,
-                "variant": "9K"
+                "variant": "WHM-9K"
             },
             {
                 "bv": 1653,
-                "variant": "9S"
+                "variant": "WHM-9S"
             },
             {
                 "bv": 2033,
-                "variant": "10K"
+                "variant": "1WHM-0K"
             },
             {
                 "bv": 1891,
-                "variant": "10T"
+                "variant": "WHM-10T"
             },
             {
                 "bv": 1698,
-                "variant": "11T"
+                "variant": "WHM-11T"
             },
             {
                 "bv": 1728,
@@ -2990,80 +4390,80 @@
         ]
     },
     {
-        "count": 3,
+        "count": 1,
         "name": "Wasp",
         "variants": [
             {
                 "bv": 384,
-                "variant": "1A"
+                "variant": "WSP-1A"
             },
             {
                 "bv": 403,
-                "variant": "1D"
+                "variant": "WSP-1D"
             },
             {
                 "bv": 376,
-                "variant": "1K"
+                "variant": "WSP-1K"
             },
             {
                 "bv": 335,
-                "variant": "1L"
+                "variant": "WSP-1L"
             },
             {
                 "bv": 423,
-                "variant": "1S"
+                "variant": "WSP-1S"
             },
             {
                 "bv": 373,
-                "variant": "1W"
+                "variant": "WSP-1W"
             },
             {
                 "bv": 401,
-                "variant": "3A"
+                "variant": "WSP-3A"
             },
             {
                 "bv": 477,
-                "variant": "3K"
+                "variant": "WSP-3K"
             },
             {
                 "bv": 610,
-                "variant": "3L"
+                "variant": "WSP-3L"
             },
             {
                 "bv": 394,
-                "variant": "3M"
+                "variant": "WSP-3M"
             },
             {
                 "bv": 537,
-                "variant": "3P"
+                "variant": "WSP-3P"
             },
             {
                 "bv": 595,
-                "variant": "3S"
+                "variant": "WSP-3S"
             },
             {
                 "bv": 342,
-                "variant": "3W"
+                "variant": "WSP-3W"
             },
             {
                 "bv": 521,
-                "variant": "3X"
+                "variant": "WSP-3X"
             },
             {
                 "bv": 551,
-                "variant": "4W"
+                "variant": "WSP-4W"
             },
             {
                 "bv": 517,
-                "variant": "5A"
+                "variant": "WSP-5A"
             },
             {
                 "bv": 488,
-                "variant": "7MAF"
+                "variant": "WSP-7MAF"
             },
             {
                 "bv": 439,
-                "variant": "8T"
+                "variant": "WSP-8T"
             },
             {
                 "bv": 755,
@@ -3072,130 +4472,168 @@
         ]
     },
     {
-        "count": 3,
-        "name": "Wolfhound",
+        "count": 1,
+        "name": "Whitworth",
         "variants": [
             {
-                "bv": 1061,
-                "variant": "2"
+                "bv": 982,
+                "variant": "WTH-1"
             },
             {
-                "bv": 949,
-                "variant": "1"
+                "bv": 993,
+                "variant": "WTH-1H"
             },
             {
-                "bv": 967,
-                "variant": "1A"
+                "bv": 917,
+                "variant": "WTH-1S"
             },
             {
-                "bv": 967,
-                "variant": "1B"
+                "bv": 936,
+                "variant": "WTH-2"
             },
             {
-                "bv": 1511,
-                "variant": "2H"
+                "bv": 1055,
+                "variant": "WTH-2A"
             },
             {
-                "bv": 2017,
-                "variant": "2X"
+                "bv": 1148,
+                "variant": "WTH-2H"
             },
             {
-                "bv": 786,
-                "variant": "3M"
+                "bv": 861,
+                "variant": "WTH-3"
             },
             {
-                "bv": 1191,
-                "variant": "3S"
-            },
-            {
-                "bv": 1090,
-                "variant": "4W"
-            },
-            {
-                "bv": 1290,
-                "variant": "5"
-            },
-            {
-                "bv": 1266,
-                "variant": "6S"
+                "bv": 819,
+                "variant": "WTH-K"
             }
         ]
     },
     {
-        "count": 4,
+        "count": 1,
+        "name": "Wolfhound",
+        "variants": [
+            {
+                "bv": 949,
+                "variant": "WLF-1"
+            },
+            {
+                "bv": 967,
+                "variant": "WLF-1A"
+            },
+            {
+                "bv": 967,
+                "variant": "WLF-1B"
+            },
+            {
+                "bv": 1061,
+                "variant": "WLF-2"
+            },
+            {
+                "bv": 1511,
+                "variant": "WLF-2H"
+            },
+            {
+                "bv": 2017,
+                "variant": "WLF-2X"
+            },
+            {
+                "bv": 786,
+                "variant": "WLF-3M"
+            },
+            {
+                "bv": 1191,
+                "variant": "WLF-3S"
+            },
+            {
+                "bv": 1090,
+                "variant": "WLF-4W"
+            },
+            {
+                "bv": 1290,
+                "variant": "WLF-5"
+            },
+            {
+                "bv": 1266,
+                "variant": "WLF-6S"
+            }
+        ]
+    },
+    {
+        "count": 1,
         "name": "Wolverine",
         "variants": [
             {
-                "bv": 1101,
-                "variant": "6R"
-            },
-            {
                 "bv": 1115,
-                "variant": "6D"
+                "variant": "WVR-6D"
             },
             {
                 "bv": 1248,
-                "variant": "6K"
+                "variant": "WVR-6K"
             },
             {
                 "bv": 1291,
-                "variant": "6M"
+                "variant": "WVR-6M"
+            },
+            {
+                "bv": 1101,
+                "variant": "WVR-6R"
             },
             {
                 "bv": 1314,
-                "variant": "7D"
+                "variant": "WVR-7D"
             },
             {
                 "bv": 1301,
-                "variant": "7H"
+                "variant": "WVR-7H"
             },
             {
                 "bv": 1331,
-                "variant": "7K"
+                "variant": "WVR-7K"
             },
             {
                 "bv": 1673,
-                "variant": "7M"
+                "variant": "WVR-7M"
             },
             {
                 "bv": 1752,
-                "variant": "7M2"
+                "variant": "WVR-7M2"
             },
             {
                 "bv": 1547,
-                "variant": "8D"
+                "variant": "WVR-8D"
             },
             {
                 "bv": 1576,
-                "variant": "8K"
+                "variant": "WVR-8K"
             },
             {
                 "bv": 1369,
-                "variant": "9D"
+                "variant": "WVR-9D"
             },
             {
                 "bv": 1617,
-                "variant": "9M"
+                "variant": "WVR-9M"
             },
             {
                 "bv": 1481,
-                "variant": "9R"
+                "variant": "WVR-9R"
             },
             {
                 "bv": 1925,
-                "variant": "10D"
+                "variant": "WVR-10D"
             },
             {
                 "bv": 1791,
-                "variant": "10R"
+                "variant": "WVR-10R"
             },
             {
                 "bv": 1747,
-                "variant": "10V2"
+                "variant": "WVR-10V2"
             },
             {
                 "bv": 1778,
-                "variant": "11M"
+                "variant": "WVR-11M"
             }
         ]
     },
@@ -3218,7 +4656,7 @@
         ]
     },
     {
-        "count": 2,
+        "count": 1,
         "name": "Ymir",
         "variants": [
             {
@@ -3240,52 +4678,52 @@
         ]
     },
     {
-        "count": 3,
+        "count": 1,
         "name": "Zeus",
         "variants": [
             {
-                "bv": 1374,
-                "variant": "6S"
-            },
-            {
                 "bv": 1499,
-                "variant": "5S"
+                "variant": "ZEU-5S"
             },
             {
                 "bv": 1729,
-                "variant": "5T"
+                "variant": "ZEU-5T"
             },
             {
                 "bv": 1405,
-                "variant": "6A"
+                "variant": "ZEU-6A"
+            },
+            {
+                "bv": 1374,
+                "variant": "ZEU-6S"
             },
             {
                 "bv": 1436,
-                "variant": "6T"
+                "variant": "ZEU-6T"
             },
             {
                 "bv": 1323,
-                "variant": "6Y"
+                "variant": "ZEU-6Y"
             },
             {
                 "bv": 1639,
-                "variant": "9S"
+                "variant": "ZEU-9S"
             },
             {
                 "bv": 1769,
-                "variant": "9S2"
+                "variant": "ZEU-9S2"
             },
             {
                 "bv": 1835,
-                "variant": "9T"
+                "variant": "ZEU-9T"
             },
             {
                 "bv": 2075,
-                "variant": "10WB"
+                "variant": "ZEU-10WB"
             },
             {
                 "bv": 2280,
-                "variant": "11S"
+                "variant": "ZEU-11S"
             }
         ]
     }

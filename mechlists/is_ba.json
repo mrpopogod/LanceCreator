@@ -1,0 +1,32 @@
+[
+    {
+        "count": 1,
+        "name": "Inner Sphere Standard",
+        "variants": [
+            {
+                "bv": 209,
+                "variant": "Magnetic"
+            },
+            {
+                "bv": 199,
+                "variant": "Flamer"
+            },
+            {
+                "bv": 231,
+                "variant": "Laser"
+            },
+            {
+                "bv": 255,
+                "variant": "Light Recoilless Rifle"
+            },
+            {
+                "bv": 199,
+                "variant": "Machine Gun"
+            },
+            {
+                "bv": 175,
+                "variant": "SRM"
+            }
+        ]
+    }
+]

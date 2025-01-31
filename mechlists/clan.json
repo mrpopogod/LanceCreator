@@ -161,6 +161,52 @@
     },
     {
         "count": 1,
+        "name": "Blood Asp",
+        "variants": [
+            {
+                "bv": 2654,
+                "variant": "Prime"
+            },
+            {
+                "bv": 3452,
+                "variant": "A"
+            },
+            {
+                "bv": 2885,
+                "variant": "B"
+            },
+            {
+                "bv": 2270,
+                "variant": "C"
+            },
+            {
+                "bv": 2396,
+                "variant": "D"
+            },
+            {
+                "bv": 3179,
+                "variant": "E"
+            },
+            {
+                "bv": 2908,
+                "variant": "F"
+            },
+            {
+                "bv": 3192,
+                "variant": "G"
+            },
+            {
+                "bv": 2252,
+                "variant": "I"
+            },
+            {
+                "bv": 3069,
+                "variant": "T"
+            }
+        ]
+    },
+    {
+        "count": 1,
         "name": "Conjurer",
         "variants": [
             {
@@ -195,6 +241,32 @@
             },
             {
                 "bv": 1309,
+                "variant": "D"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Coyotl",
+        "variants": [
+            {
+                "bv": 1974,
+                "variant": "Prime"
+            },
+            {
+                "bv": 1753,
+                "variant": "A"
+            },
+            {
+                "bv": 1447,
+                "variant": "B"
+            },
+            {
+                "bv": 1851,
+                "variant": "C"
+            },
+            {
+                "bv": 1980,
                 "variant": "D"
             }
         ]
