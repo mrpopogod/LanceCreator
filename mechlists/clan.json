@@ -1177,6 +1177,32 @@
     },
     {
         "count": 1,
+        "name": "Regent",
+        "variants": [
+            {
+                "bv": 2437,
+                "variant": "Prime"
+            },
+            {
+                "bv": 3142,
+                "variant": "A"
+            },
+            {
+                "bv": 2744,
+                "variant": "B"
+            },
+            {
+                "bv": 2561,
+                "variant": "C"
+            },
+            {
+                "bv": 2116,
+                "variant": "D"
+            }
+        ]
+    },
+    {
+        "count": 1,
         "name": "Rifleman IIC",
         "variants": [
             {

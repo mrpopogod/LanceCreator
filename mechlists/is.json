@@ -245,6 +245,24 @@
     },
     {
         "count": 1,
+        "name": "Atlas II",
+        "variants": [
+            {
+                "bv": 2169,
+                "variant": "AS7-D-H"
+            },
+            {
+                "bv": 2340,
+                "variant": "AS7-D-H2"
+            },
+            {
+                "bv": 2599,
+                "variant": "AS7-DK-H"
+            }
+        ]
+    },
+    {
+        "count": 1,
         "name": "Awesome",
         "variants": [
             {
@@ -3643,6 +3661,36 @@
     },
     {
         "count": 1,
+        "name": "Spartan",
+        "variants": [
+            {
+                "bv": 1498,
+                "variants": "SPT-N1"
+            },
+            {
+                "bv": 1605,
+                "variants": "SPT-N2"
+            },
+            {
+                "bv": 1631,
+                "variants": "SPT-N3"
+            },
+            {
+                "bv": 2108,
+                "variants": "SPT-N4"
+            },
+            {
+                "bv": 1605,
+                "variants": "SPT-NF"
+            },
+            {
+                "bv": 2514,
+                "variants": "C"
+            }
+        ]
+    },
+    {
+        "count": 1,
         "name": "Spector",
         "variants": [
             {
@@ -3886,6 +3934,36 @@
             {
                 "bv": 2545,
                 "variant": "THG-13U"
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Thunder Hawk",
+        "variants": [
+            {
+                "bv": 2440,
+                "variant": "TDK-7S"
+            },
+            {
+                "bv": 2577,
+                "variant": "TDK-7X"
+            },
+            {
+                "bv": 2499,
+                "variant": "TDK-7XEM"
+            },
+            {
+                "bv": 24899,
+                "variant": "TDK-7Y"
+            },
+            {
+                "bv": 2419,
+                "variant": "TDK-7Z"
+            },
+            {
+                "bv": 2379,
+                "variant": "TDK-7ZEM"
             }
         ]
     },
