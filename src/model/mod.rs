@@ -1,8 +1,185 @@
 use std::cmp::Ordering;
+use std::collections::BTreeMap;
 use std::fmt::{Display, Formatter};
 
 use serde::Deserialize;
 use sorted_vec::SortedVec;
+
+#[derive(Copy, Clone, Deserialize, PartialEq, Eq, Hash, PartialOrd, Ord)]
+pub enum Era {
+    AgeOfWar,
+    StarLeague,
+    EarlySuccessionWar,
+    LateSuccessionWarLosTech,
+    LateSuccessionWarRenaissance,
+    ClanInvasion,
+    CivilWar,
+    Jihad,
+    EarlyRepublic,
+    LateRepublic,
+    DarkAge,
+    IlClan,
+}
+
+#[derive(Copy, Clone, Deserialize, PartialEq, Eq, Hash, PartialOrd, Ord)]
+pub enum Faction {
+    CapellanConfederation,
+    ComStar,
+    DraconisCombine,
+    FederatedCommonwealth,
+    FederatedSuns,
+    FreeRasalhagueRepublic,
+    FreeWorldsLeague,
+    FreeWorldsLeagueDuchyOfAndurien,
+    FreeWorldsLeaugeDuchyOfTamarindAbbey,
+    FreeWorldsLeageNonAlignedWorlds,
+    FreeWorldsLeagueOrienteProtectorate,
+    FreeWorldsLeagueRegulanFiefs,
+    FreeWorldsLeagueRimCommonality,
+    InnerSphereGeneral,
+    LyranAlliance,
+    LyranCommonwealth,
+    RepublicOfTheSphere,
+    StIvesCompact,
+    TamarPact,
+    TerranHegemony,
+    VesperMarches,
+    WordOfBlake,
+    AlyinaMercantileLeague,
+    ClanDiamondShark,
+    ClanGhostBear,
+    ClanHellsHorses,
+    ClanJadeFalcon,
+    ClanNovaCat,
+    ClanProtectorate,
+    ClanSeaFox,
+    ClanSmokeJaguar,
+    ClanSnowRaven,
+    ClanWolf,
+    ClanWolfInExile,
+    ISClanGeneral,
+    RasalhagueDominion,
+    RavenAlliance,
+    StarLeagueClanJadeFalcon,
+    StarLeagueClanSmokeJaguar,
+    StarLeagueClanWolf,
+    WolfEmpire,
+    ClanBloodSpirit,
+    ClanBurrock,
+    ClanCloudCobra,
+    ClanCoyote,
+    ClanFireMandrill,
+    ClanGoliathScorpion,
+    ClanIceHellion,
+    ClanMongoose,
+    ClanStarAdder,
+    ClanSteelViper,
+    ClanStoneLion,
+    ClanWidowmaker,
+    ClanWolverine,
+    HWClanGeneral,
+    Society,
+    StarLeagueInExile,
+    CalderonProtectorate,
+    CircinusFederation,
+    EscorpionImperio,
+    FiltveltCoalition,
+    FroncReaches,
+    MagistracyOfCanopus,
+    MarianHegemony,
+    OutworldsAlliance,
+    PeripheryGeneral,
+    Pirates,
+    RimWorldsRepublicHomeGuard,
+    RimWorldsRepublicTerranCorps,
+    ScorpionEmpire,
+    TaurianConcordat,
+    KellHounds,
+    Mercenary,
+    WolfsDragoons,
+}
+
+impl Faction {
+    // TODO: this needs to take in era as well, since some Clans swap from HW to IS during CI
+    pub fn get_general(&self) -> Faction {
+        match self {
+            Faction::CapellanConfederation => Faction::InnerSphereGeneral,
+            Faction::ComStar => Faction::InnerSphereGeneral,
+            Faction::DraconisCombine => Faction::InnerSphereGeneral,
+            Faction::FederatedCommonwealth => Faction::InnerSphereGeneral,
+            Faction::FederatedSuns => Faction::InnerSphereGeneral,
+            Faction::FreeRasalhagueRepublic => Faction::InnerSphereGeneral,
+            Faction::FreeWorldsLeague => Faction::InnerSphereGeneral,
+            Faction::FreeWorldsLeagueDuchyOfAndurien => Faction::InnerSphereGeneral,
+            Faction::FreeWorldsLeaugeDuchyOfTamarindAbbey => Faction::InnerSphereGeneral,
+            Faction::FreeWorldsLeageNonAlignedWorlds => Faction::InnerSphereGeneral,
+            Faction::FreeWorldsLeagueOrienteProtectorate => Faction::InnerSphereGeneral,
+            Faction::FreeWorldsLeagueRegulanFiefs => Faction::InnerSphereGeneral,
+            Faction::FreeWorldsLeagueRimCommonality => Faction::InnerSphereGeneral,
+            Faction::InnerSphereGeneral => Faction::InnerSphereGeneral,
+            Faction::LyranAlliance => Faction::InnerSphereGeneral,
+            Faction::LyranCommonwealth => Faction::InnerSphereGeneral,
+            Faction::RepublicOfTheSphere => Faction::InnerSphereGeneral,
+            Faction::StIvesCompact => Faction::InnerSphereGeneral,
+            Faction::TamarPact => Faction::InnerSphereGeneral,
+            Faction::TerranHegemony => Faction::InnerSphereGeneral,
+            Faction::VesperMarches => Faction::InnerSphereGeneral,
+            Faction::WordOfBlake => Faction::InnerSphereGeneral,
+            Faction::AlyinaMercantileLeague => Faction::ISClanGeneral,
+            Faction::ClanDiamondShark => Faction::ISClanGeneral,
+            Faction::ClanGhostBear => Faction::ISClanGeneral,
+            Faction::ClanHellsHorses => Faction::ISClanGeneral,
+            Faction::ClanJadeFalcon => Faction::ISClanGeneral,
+            Faction::ClanNovaCat => Faction::ISClanGeneral,
+            Faction::ClanProtectorate => Faction::ISClanGeneral,
+            Faction::ClanSeaFox => Faction::ISClanGeneral,
+            Faction::ClanSmokeJaguar => Faction::ISClanGeneral,
+            Faction::ClanSnowRaven => Faction::ISClanGeneral,
+            Faction::ClanWolf => Faction::ISClanGeneral,
+            Faction::ClanWolfInExile => Faction::ISClanGeneral,
+            Faction::ISClanGeneral => Faction::ISClanGeneral,
+            Faction::RasalhagueDominion => Faction::ISClanGeneral,
+            Faction::RavenAlliance => Faction::ISClanGeneral,
+            Faction::StarLeagueClanJadeFalcon => Faction::ISClanGeneral,
+            Faction::StarLeagueClanSmokeJaguar => Faction::ISClanGeneral,
+            Faction::StarLeagueClanWolf => Faction::ISClanGeneral,
+            Faction::WolfEmpire => Faction::ISClanGeneral,
+            Faction::ClanBloodSpirit => Faction::HWClanGeneral,
+            Faction::ClanBurrock => Faction::HWClanGeneral,
+            Faction::ClanCloudCobra => Faction::HWClanGeneral,
+            Faction::ClanCoyote => Faction::HWClanGeneral,
+            Faction::ClanFireMandrill => Faction::HWClanGeneral,
+            Faction::ClanGoliathScorpion => Faction::HWClanGeneral,
+            Faction::ClanIceHellion => Faction::HWClanGeneral,
+            Faction::ClanMongoose => Faction::HWClanGeneral,
+            Faction::ClanStarAdder => Faction::HWClanGeneral,
+            Faction::ClanSteelViper => Faction::HWClanGeneral,
+            Faction::ClanStoneLion => Faction::HWClanGeneral,
+            Faction::ClanWidowmaker => Faction::HWClanGeneral,
+            Faction::ClanWolverine => Faction::HWClanGeneral,
+            Faction::HWClanGeneral => Faction::HWClanGeneral,
+            Faction::Society => Faction::HWClanGeneral,
+            Faction::StarLeagueInExile => Faction::HWClanGeneral,
+            Faction::CalderonProtectorate => Faction::PeripheryGeneral,
+            Faction::CircinusFederation => Faction::PeripheryGeneral,
+            Faction::EscorpionImperio => Faction::PeripheryGeneral,
+            Faction::FiltveltCoalition => Faction::PeripheryGeneral,
+            Faction::FroncReaches => Faction::PeripheryGeneral,
+            Faction::MagistracyOfCanopus => Faction::PeripheryGeneral,
+            Faction::MarianHegemony => Faction::PeripheryGeneral,
+            Faction::OutworldsAlliance => Faction::PeripheryGeneral,
+            Faction::PeripheryGeneral => Faction::PeripheryGeneral,
+            Faction::Pirates => Faction::PeripheryGeneral,
+            Faction::RimWorldsRepublicHomeGuard => Faction::PeripheryGeneral,
+            Faction::RimWorldsRepublicTerranCorps => Faction::PeripheryGeneral,
+            Faction::ScorpionEmpire => Faction::PeripheryGeneral,
+            Faction::TaurianConcordat => Faction::PeripheryGeneral,
+            Faction::KellHounds => Faction::Mercenary,
+            Faction::Mercenary => Faction::Mercenary,
+            Faction::WolfsDragoons => Faction::Mercenary,
+        }
+    }
+}
 
 #[derive(Clone, Deserialize, PartialEq, Eq, Hash)]
 pub struct Mech {
@@ -10,6 +187,7 @@ pub struct Mech {
     pub name: String,
     pub variant: String,
     pub bv: u32,
+    pub availability: BTreeMap<Era, Vec<Faction>>,
 }
 
 impl PartialOrd for Mech {
@@ -112,6 +290,19 @@ impl Model {
             mech.bv = (mech.bv as f64 * mul).round() as u32;
         }
     }
+
+    pub fn trim_availability(&mut self, era: Era, faction: Faction) {
+        self.variants.retain(|m| match m.availability.get(&era) {
+            Some(f) => {
+                if f.contains(&faction) {
+                    true
+                } else {
+                    f.contains(&faction.get_general())
+                }
+            }
+            None => false,
+        });
+    }
 }
 
 #[derive(PartialEq, PartialOrd, Eq, Hash)]
@@ -176,12 +367,18 @@ pub struct Params {
     pub max_bv: u32,
     pub force_size: usize,
     pub num_forces: usize,
-    pub skill: u8
+    pub skill: u8,
 }
 
 impl From<Params> for (u32, u32, usize, usize, u8) {
     fn from(p: Params) -> (u32, u32, usize, usize, u8) {
-        let Params { min_bv, max_bv, force_size, num_forces , skill} = p;
+        let Params {
+            min_bv,
+            max_bv,
+            force_size,
+            num_forces,
+            skill,
+        } = p;
         (min_bv, max_bv, force_size, num_forces, skill)
     }
 }
