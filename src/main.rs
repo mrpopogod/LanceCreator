@@ -41,7 +41,7 @@ fn main() {
         return terminate(program, &opts, 0);
     }
 
-    let (min_bv, max_bv, force_size, num_forces, skill) = match validate_opts(&matches) {
+    let (min_bv, max_bv, force_size, num_forces, skill, era, faction) = match validate_opts(&matches) {
         Ok(value) => value.into(),
         Err(_) => return terminate(program, &opts, 1),
     };
@@ -79,8 +79,8 @@ fn main() {
         force_size,
         min_bv,
         max_bv,
-        era: Era::IlClan,
-        faction: Faction::MagistracyOfCanopus,
+        era,
+        faction,
     };
 
     let model_forces: HashSet<ModelForce> = match generate_model_forces(
@@ -227,6 +227,8 @@ fn generate_model_forces(
                     model.adjust_bv(skill_mul);
                     force.models.insert(model);
                 }
+
+                break; // if this model has variants then we grabbed it and don't need to retry
             }
         }
 
@@ -288,12 +290,28 @@ fn validate_opts(matches: &getopts::Matches) -> Result<Params, ()> {
         println!("Gunnery and piloting must between 0 and 8");
         return Err(());
     }
+    let era = match matches.opt_get_default("e", Era::IlClan) {
+        Ok(e) => e,
+        Err(e) => {
+            println!("Invalid era: {}", e);
+            return Err(());
+        }
+    };
+    let faction = match matches.opt_get_default("a", Faction::InnerSphereGeneral) {
+        Ok(a) => a,
+        Err(e) => {
+            println!("Invalid faction: {}", e);
+            return Err(());
+        }
+    };
     Ok(Params {
         min_bv,
         max_bv,
         force_size,
         num_forces,
         skill,
+        era,
+        faction
     })
 }
 
@@ -415,6 +433,8 @@ fn get_opts() -> Options {
         "Pilot skill to bump all mechs to, in the form of PG (e.g. 4/5 is 45)",
         "",
     );
+    opts.optopt("e", "era", "Era to pull from (default: IlClan)", "");
+    opts.optopt("a", "faction", "Faction to restrict to (default: Inner Sphere General", "");
     opts
 }
 
@@ -485,14 +505,14 @@ mod tests {
             bv: 100,
             availability: BTreeMap::new(),
         };
-        // TODO: fill in test availability
+
         let first_mech_second_variant = Mech {
             name: String::from("a"),
             variant: String::from("2"),
             bv: 5000,
             availability: BTreeMap::new(),
         };
-        // TODO: fill in test availability
+
         let first_mech: Model = Model {
             name: String::from("a"),
             count: 1,
@@ -505,26 +525,26 @@ mod tests {
             bv: 10,
             availability: BTreeMap::new(),
         };
-        // TODO: fill in test availability
+
         let second_mech_second_variant = Mech {
             name: String::from("b"),
             variant: String::from("2"),
             bv: 500,
             availability: BTreeMap::new(),
         };
-        // TODO: fill in test availability
+
         let second_mech: Model = Model {
             name: String::from("b"),
             count: 1,
             variants: vec![second_mech_first_variant, second_mech_second_variant],
         };
 
-        let first_mech = ModelForce {
+        let first_force = ModelForce {
             models: SortedVec::from_unsorted(vec![first_mech, second_mech]),
         };
 
         let mut ret = HashSet::new();
-        ret.insert(first_mech);
+        ret.insert(first_force);
         ret
     }
 

@@ -1,11 +1,12 @@
 use std::cmp::Ordering;
 use std::collections::BTreeMap;
 use std::fmt::{Display, Formatter};
+use std::str::FromStr;
 
 use serde::Deserialize;
 use sorted_vec::SortedVec;
 
-#[derive(Copy, Clone, Deserialize, PartialEq, Eq, Hash, PartialOrd, Ord)]
+#[derive(Copy, Clone, Deserialize, PartialEq, Eq, Hash, PartialOrd, Ord, Debug)]
 pub enum Era {
     AgeOfWar,
     StarLeague,
@@ -21,7 +22,29 @@ pub enum Era {
     IlClan,
 }
 
-#[derive(Copy, Clone, Deserialize, PartialEq, Eq, Hash, PartialOrd, Ord)]
+impl FromStr for Era {
+    type Err = String;
+
+    fn from_str(s: &str) -> Result<Self, Self::Err> {
+        match s {
+            "AgeOfWar" => Ok(Era::AgeOfWar),
+            "StarLeague" => Ok(Era::StarLeague),
+            "EarlySuccessionWar" => Ok(Era::EarlySuccessionWar),
+            "LateSuccessionWarLosTech" => Ok(Era::LateSuccessionWarLosTech),
+            "LateSuccessionWarRenaissance" => Ok(Era::LateSuccessionWarRenaissance),
+            "ClanInvasion" => Ok(Era::ClanInvasion),
+            "CivilWar" => Ok(Era::CivilWar),
+            "Jihad" => Ok(Era::Jihad),
+            "EarlyRepublic" => Ok(Era::EarlyRepublic),
+            "LateRepublic" => Ok(Era::LateRepublic),
+            "DarkAge" => Ok(Era::DarkAge),
+            "IlClan" => Ok(Era::IlClan),
+            _ => Err(String::from(s))
+        }
+    }
+}
+
+#[derive(Copy, Clone, Deserialize, PartialEq, Eq, Hash, PartialOrd, Ord, Debug)]
 pub enum Faction {
     CapellanConfederation,
     ComStar,
@@ -31,8 +54,9 @@ pub enum Faction {
     FreeRasalhagueRepublic,
     FreeWorldsLeague,
     FreeWorldsLeagueDuchyOfAndurien,
-    FreeWorldsLeaugeDuchyOfTamarindAbbey,
-    FreeWorldsLeageNonAlignedWorlds,
+    FreeWorldsLeagueDuchyOfTamarindAbbey,
+    FreeWorldsLeagueMarikStewartCommonwealth,
+    FreeWorldsLeagueNonAlignedWorlds,
     FreeWorldsLeagueOrienteProtectorate,
     FreeWorldsLeagueRegulanFiefs,
     FreeWorldsLeagueRimCommonality,
@@ -99,6 +123,91 @@ pub enum Faction {
     WolfsDragoons,
 }
 
+impl FromStr for Faction {
+    type Err = String;
+
+    fn from_str(s: &str) -> Result<Self, Self::Err> {
+        match s {
+            "CapellanConfederation" => Ok(Faction::CapellanConfederation),
+            "ComStar" => Ok(Faction::ComStar),
+            "DraconisCombine" => Ok(Faction::DraconisCombine),
+            "FederatedCommonwealth" => Ok(Faction::FederatedCommonwealth),
+            "FederatedSuns" => Ok(Faction::FederatedSuns),
+            "FreeRasalhagueRepublic" => Ok(Faction::FreeRasalhagueRepublic),
+            "FreeWorldsLeague" => Ok(Faction::FreeWorldsLeague),
+            "FreeWorldsLeagueDuchyOfAndurien" => Ok(Faction::FreeWorldsLeagueDuchyOfAndurien),
+            "FreeWorldsLeagueDuchyOfTamarindAbbey" => Ok(Faction::FreeWorldsLeagueDuchyOfTamarindAbbey),
+            "FreeWorldsLeagueMarikStewartCommonwealth" => Ok(Faction::FreeWorldsLeagueMarikStewartCommonwealth),
+            "FreeWorldsLeagueNonAlignedWorlds" => Ok(Faction::FreeWorldsLeagueNonAlignedWorlds),
+            "FreeWorldsLeagueOrienteProtectorate" => Ok(Faction::FreeWorldsLeagueOrienteProtectorate),
+            "FreeWorldsLeagueRegulanFiefs" => Ok(Faction::FreeWorldsLeagueRegulanFiefs),
+            "FreeWorldsLeagueRimCommonality" => Ok(Faction::FreeWorldsLeagueRimCommonality),
+            "InnerSphereGeneral" => Ok(Faction::InnerSphereGeneral),
+            "LyranAlliance" => Ok(Faction::LyranAlliance),
+            "LyranCommonwealth" => Ok(Faction::LyranCommonwealth),
+            "RepublicOfTheSphere" => Ok(Faction::RepublicOfTheSphere),
+            "StIvesCompact" => Ok(Faction::StIvesCompact),
+            "TamarPact" => Ok(Faction::TamarPact),
+            "TerranHegemony" => Ok(Faction::TerranHegemony),
+            "VesperMarches" => Ok(Faction::VesperMarches),
+            "WordOfBlake" => Ok(Faction::WordOfBlake),
+            "AlyinaMercantileLeague" => Ok(Faction::AlyinaMercantileLeague),
+            "ClanDiamondShark" => Ok(Faction::ClanDiamondShark),
+            "ClanGhostBear" => Ok(Faction::ClanGhostBear),
+            "ClanHellsHorses" => Ok(Faction::ClanHellsHorses),
+            "ClanJadeFalcon" => Ok(Faction::ClanJadeFalcon),
+            "ClanNovaCat" => Ok(Faction::ClanNovaCat),
+            "ClanProtectorate" => Ok(Faction::ClanProtectorate),
+            "ClanSeaFox" => Ok(Faction::ClanSeaFox),
+            "ClanSmokeJaguar" => Ok(Faction::ClanSmokeJaguar),
+            "ClanSnowRaven" => Ok(Faction::ClanSnowRaven),
+            "ClanWolf" => Ok(Faction::ClanWolf),
+            "ClanWolfInExile" => Ok(Faction::ClanWolfInExile),
+            "ISClanGeneral" => Ok(Faction::ISClanGeneral),
+            "RasalhagueDominion" => Ok(Faction::RasalhagueDominion),
+            "RavenAlliance" => Ok(Faction::RavenAlliance),
+            "StarLeagueClanJadeFalcon" => Ok(Faction::StarLeagueClanJadeFalcon),
+            "StarLeagueClanSmokeJaguar" => Ok(Faction::StarLeagueClanSmokeJaguar),
+            "StarLeagueClanWolf" => Ok(Faction::StarLeagueClanWolf),
+            "WolfEmpire" => Ok(Faction::WolfEmpire),
+            "ClanBloodSpirit" => Ok(Faction::ClanBloodSpirit),
+            "ClanBurrock" => Ok(Faction::ClanBurrock),
+            "ClanCloudCobra" => Ok(Faction::ClanCloudCobra),
+            "ClanCoyote" => Ok(Faction::ClanCoyote),
+            "ClanFireMandrill" => Ok(Faction::ClanFireMandrill),
+            "ClanGoliathScorpion" => Ok(Faction::ClanGoliathScorpion),
+            "ClanIceHellion" => Ok(Faction::ClanIceHellion),
+            "ClanMongoose" => Ok(Faction::ClanMongoose),
+            "ClanStarAdder" => Ok(Faction::ClanStarAdder),
+            "ClanSteelViper" => Ok(Faction::ClanSteelViper),
+            "ClanStoneLion" => Ok(Faction::ClanStoneLion),
+            "ClanWidowmaker" => Ok(Faction::ClanWidowmaker),
+            "ClanWolverine" => Ok(Faction::ClanWolverine),
+            "HWClanGeneral" => Ok(Faction::HWClanGeneral),
+            "Society" => Ok(Faction::Society),
+            "StarLeagueInExile" => Ok(Faction::StarLeagueInExile),
+            "CalderonProtectorate" => Ok(Faction::CalderonProtectorate),
+            "CircinusFederation" => Ok(Faction::CircinusFederation),
+            "EscorpionImperio" => Ok(Faction::EscorpionImperio),
+            "FiltveltCoalition" => Ok(Faction::FiltveltCoalition),
+            "FroncReaches" => Ok(Faction::FroncReaches),
+            "MagistracyOfCanopus" => Ok(Faction::MagistracyOfCanopus),
+            "MarianHegemony" => Ok(Faction::MarianHegemony),
+            "OutworldsAlliance" => Ok(Faction::OutworldsAlliance),
+            "PeripheryGeneral" => Ok(Faction::PeripheryGeneral),
+            "Pirates" => Ok(Faction::Pirates),
+            "RimWorldsRepublicHomeGuard" => Ok(Faction::RimWorldsRepublicHomeGuard),
+            "RimWorldsRepublicTerranCorps" => Ok(Faction::RimWorldsRepublicTerranCorps),
+            "ScorpionEmpire" => Ok(Faction::ScorpionEmpire),
+            "TaurianConcordat" => Ok(Faction::TaurianConcordat),
+            "KellHounds" => Ok(Faction::KellHounds),
+            "Mercenary" => Ok(Faction::Mercenary),
+            "WolfsDragoons" => Ok(Faction::WolfsDragoons),
+            _ => Err(String::from(s))
+        }
+    }
+}
+
 impl Faction {
     // TODO: this needs to take in era as well, since some Clans swap from HW to IS during CI
     pub fn get_general(&self) -> Faction {
@@ -111,8 +220,9 @@ impl Faction {
             Faction::FreeRasalhagueRepublic => Faction::InnerSphereGeneral,
             Faction::FreeWorldsLeague => Faction::InnerSphereGeneral,
             Faction::FreeWorldsLeagueDuchyOfAndurien => Faction::InnerSphereGeneral,
-            Faction::FreeWorldsLeaugeDuchyOfTamarindAbbey => Faction::InnerSphereGeneral,
-            Faction::FreeWorldsLeageNonAlignedWorlds => Faction::InnerSphereGeneral,
+            Faction::FreeWorldsLeagueDuchyOfTamarindAbbey => Faction::InnerSphereGeneral,
+            Faction::FreeWorldsLeagueMarikStewartCommonwealth => Faction::InnerSphereGeneral,
+            Faction::FreeWorldsLeagueNonAlignedWorlds => Faction::InnerSphereGeneral,
             Faction::FreeWorldsLeagueOrienteProtectorate => Faction::InnerSphereGeneral,
             Faction::FreeWorldsLeagueRegulanFiefs => Faction::InnerSphereGeneral,
             Faction::FreeWorldsLeagueRimCommonality => Faction::InnerSphereGeneral,
@@ -174,14 +284,14 @@ impl Faction {
             Faction::RimWorldsRepublicTerranCorps => Faction::PeripheryGeneral,
             Faction::ScorpionEmpire => Faction::PeripheryGeneral,
             Faction::TaurianConcordat => Faction::PeripheryGeneral,
-            Faction::KellHounds => Faction::Mercenary,
+            Faction::KellHounds => Faction::KellHounds,
             Faction::Mercenary => Faction::Mercenary,
-            Faction::WolfsDragoons => Faction::Mercenary,
+            Faction::WolfsDragoons => Faction::WolfsDragoons,
         }
     }
 }
 
-#[derive(Clone, Deserialize, PartialEq, Eq, Hash)]
+#[derive(Clone, Deserialize, PartialEq, Eq, Hash, Debug)]
 pub struct Mech {
     #[serde(skip)]
     pub name: String,
@@ -224,7 +334,7 @@ impl Display for ModelValidationError {
     }
 }
 
-#[derive(Clone, Deserialize, PartialEq, Eq, Hash)]
+#[derive(Clone, Deserialize, PartialEq, Eq, Hash, Debug)]
 #[serde(try_from = "ModelShadow")]
 pub struct Model {
     pub name: String,
@@ -368,17 +478,52 @@ pub struct Params {
     pub force_size: usize,
     pub num_forces: usize,
     pub skill: u8,
+    pub era: Era,
+    pub faction: Faction,
 }
 
-impl From<Params> for (u32, u32, usize, usize, u8) {
-    fn from(p: Params) -> (u32, u32, usize, usize, u8) {
+impl From<Params> for (u32, u32, usize, usize, u8, Era, Faction) {
+    fn from(p: Params) -> (u32, u32, usize, usize, u8, Era, Faction) {
         let Params {
             min_bv,
             max_bv,
             force_size,
             num_forces,
             skill,
+            era,
+            faction
         } = p;
-        (min_bv, max_bv, force_size, num_forces, skill)
+        (min_bv, max_bv, force_size, num_forces, skill, era, faction)
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    use rstest::{fixture, rstest};
+
+    #[fixture]
+    fn model() -> Model {
+        let mut model = Model{ name: String::from("Model"), count: 1, variants: Vec::new() };
+        let mut variant1 = Mech{ name: String::from("Model"), variant: String::from("Variant1"), bv: 1, availability: BTreeMap::new() };
+        variant1.availability.insert(Era::ClanInvasion, vec![Faction::PeripheryGeneral]);
+        let mut variant2 = Mech{ name: String::from("Model"), variant: String::from("Variant2"), bv: 2, availability: BTreeMap::new() };
+        variant2.availability.insert(Era::IlClan, vec![Faction::MagistracyOfCanopus]);
+
+        model.variants.push(variant1);
+        model.variants.push(variant2);
+
+        model
+    }
+
+    #[rstest]
+    #[case::era_not_found(Era::AgeOfWar, Faction::InnerSphereGeneral, 0)]
+    #[case::faction_not_found(Era::ClanInvasion, Faction::InnerSphereGeneral, 0)]
+    #[case::faction_exact_match(Era::IlClan, Faction::MagistracyOfCanopus, 1)]
+    #[case::faction_general(Era::ClanInvasion, Faction::MagistracyOfCanopus, 1)]
+    fn validate_trim(mut model: Model, #[case] era: Era, #[case] faction: Faction, #[case] count: usize) {
+        model.trim_availability(era, faction);
+        assert_eq!(model.variants.len(), count);
     }
 }
