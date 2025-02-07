@@ -39,11 +39,12 @@ impl FromStr for Era {
             "LateRepublic" => Ok(Era::LateRepublic),
             "DarkAge" => Ok(Era::DarkAge),
             "IlClan" => Ok(Era::IlClan),
-            _ => Err(String::from(s))
+            _ => Err(String::from(s)),
         }
     }
 }
 
+// TODO: add Star League factions
 #[derive(Copy, Clone, Deserialize, PartialEq, Eq, Hash, PartialOrd, Ord, Debug)]
 pub enum Faction {
     CapellanConfederation,
@@ -136,10 +137,16 @@ impl FromStr for Faction {
             "FreeRasalhagueRepublic" => Ok(Faction::FreeRasalhagueRepublic),
             "FreeWorldsLeague" => Ok(Faction::FreeWorldsLeague),
             "FreeWorldsLeagueDuchyOfAndurien" => Ok(Faction::FreeWorldsLeagueDuchyOfAndurien),
-            "FreeWorldsLeagueDuchyOfTamarindAbbey" => Ok(Faction::FreeWorldsLeagueDuchyOfTamarindAbbey),
-            "FreeWorldsLeagueMarikStewartCommonwealth" => Ok(Faction::FreeWorldsLeagueMarikStewartCommonwealth),
+            "FreeWorldsLeagueDuchyOfTamarindAbbey" => {
+                Ok(Faction::FreeWorldsLeagueDuchyOfTamarindAbbey)
+            }
+            "FreeWorldsLeagueMarikStewartCommonwealth" => {
+                Ok(Faction::FreeWorldsLeagueMarikStewartCommonwealth)
+            }
             "FreeWorldsLeagueNonAlignedWorlds" => Ok(Faction::FreeWorldsLeagueNonAlignedWorlds),
-            "FreeWorldsLeagueOrienteProtectorate" => Ok(Faction::FreeWorldsLeagueOrienteProtectorate),
+            "FreeWorldsLeagueOrienteProtectorate" => {
+                Ok(Faction::FreeWorldsLeagueOrienteProtectorate)
+            }
             "FreeWorldsLeagueRegulanFiefs" => Ok(Faction::FreeWorldsLeagueRegulanFiefs),
             "FreeWorldsLeagueRimCommonality" => Ok(Faction::FreeWorldsLeagueRimCommonality),
             "InnerSphereGeneral" => Ok(Faction::InnerSphereGeneral),
@@ -203,14 +210,13 @@ impl FromStr for Faction {
             "KellHounds" => Ok(Faction::KellHounds),
             "Mercenary" => Ok(Faction::Mercenary),
             "WolfsDragoons" => Ok(Faction::WolfsDragoons),
-            _ => Err(String::from(s))
+            _ => Err(String::from(s)),
         }
     }
 }
 
 impl Faction {
-    // TODO: this needs to take in era as well, since some Clans swap from HW to IS during CI
-    pub fn get_general(&self) -> Faction {
+    pub fn get_general(&self, era: Era) -> Faction {
         match self {
             Faction::CapellanConfederation => Faction::InnerSphereGeneral,
             Faction::ComStar => Faction::InnerSphereGeneral,
@@ -236,16 +242,133 @@ impl Faction {
             Faction::VesperMarches => Faction::InnerSphereGeneral,
             Faction::WordOfBlake => Faction::InnerSphereGeneral,
             Faction::AlyinaMercantileLeague => Faction::ISClanGeneral,
-            Faction::ClanDiamondShark => Faction::ISClanGeneral,
-            Faction::ClanGhostBear => Faction::ISClanGeneral,
-            Faction::ClanHellsHorses => Faction::ISClanGeneral,
-            Faction::ClanJadeFalcon => Faction::ISClanGeneral,
-            Faction::ClanNovaCat => Faction::ISClanGeneral,
+            Faction::ClanDiamondShark => match era {
+                Era::AgeOfWar => Faction::HWClanGeneral,
+                Era::StarLeague => Faction::HWClanGeneral,
+                Era::EarlySuccessionWar => Faction::HWClanGeneral,
+                Era::LateSuccessionWarLosTech => Faction::HWClanGeneral,
+                Era::LateSuccessionWarRenaissance => Faction::HWClanGeneral,
+                Era::ClanInvasion => Faction::ISClanGeneral,
+                Era::CivilWar => Faction::ISClanGeneral,
+                Era::Jihad => Faction::ISClanGeneral,
+                Era::EarlyRepublic => Faction::ISClanGeneral,
+                Era::LateRepublic => Faction::ISClanGeneral,
+                Era::DarkAge => Faction::ISClanGeneral,
+                Era::IlClan => Faction::ISClanGeneral,
+            },
+            Faction::ClanGhostBear => match era {
+                Era::AgeOfWar => Faction::HWClanGeneral,
+                Era::StarLeague => Faction::HWClanGeneral,
+                Era::EarlySuccessionWar => Faction::HWClanGeneral,
+                Era::LateSuccessionWarLosTech => Faction::HWClanGeneral,
+                Era::LateSuccessionWarRenaissance => Faction::HWClanGeneral,
+                Era::ClanInvasion => Faction::ISClanGeneral,
+                Era::CivilWar => Faction::ISClanGeneral,
+                Era::Jihad => Faction::ISClanGeneral,
+                Era::EarlyRepublic => Faction::ISClanGeneral,
+                Era::LateRepublic => Faction::ISClanGeneral,
+                Era::DarkAge => Faction::ISClanGeneral,
+                Era::IlClan => Faction::ISClanGeneral,
+            },
+            Faction::ClanHellsHorses => match era {
+                Era::AgeOfWar => Faction::HWClanGeneral,
+                Era::StarLeague => Faction::HWClanGeneral,
+                Era::EarlySuccessionWar => Faction::HWClanGeneral,
+                Era::LateSuccessionWarLosTech => Faction::HWClanGeneral,
+                Era::LateSuccessionWarRenaissance => Faction::HWClanGeneral,
+                Era::ClanInvasion => Faction::HWClanGeneral,
+                Era::CivilWar => Faction::ISClanGeneral,
+                Era::Jihad => Faction::ISClanGeneral,
+                Era::EarlyRepublic => Faction::ISClanGeneral,
+                Era::LateRepublic => Faction::ISClanGeneral,
+                Era::DarkAge => Faction::ISClanGeneral,
+                Era::IlClan => Faction::ISClanGeneral,
+            },
+            Faction::ClanJadeFalcon => match era {
+                Era::AgeOfWar => Faction::HWClanGeneral,
+                Era::StarLeague => Faction::HWClanGeneral,
+                Era::EarlySuccessionWar => Faction::HWClanGeneral,
+                Era::LateSuccessionWarLosTech => Faction::HWClanGeneral,
+                Era::LateSuccessionWarRenaissance => Faction::HWClanGeneral,
+                Era::ClanInvasion => Faction::ISClanGeneral,
+                Era::CivilWar => Faction::ISClanGeneral,
+                Era::Jihad => Faction::ISClanGeneral,
+                Era::EarlyRepublic => Faction::ISClanGeneral,
+                Era::LateRepublic => Faction::ISClanGeneral,
+                Era::DarkAge => Faction::ISClanGeneral,
+                Era::IlClan => Faction::ISClanGeneral,
+            },
+            Faction::ClanNovaCat => match era {
+                Era::AgeOfWar => Faction::HWClanGeneral,
+                Era::StarLeague => Faction::HWClanGeneral,
+                Era::EarlySuccessionWar => Faction::HWClanGeneral,
+                Era::LateSuccessionWarLosTech => Faction::HWClanGeneral,
+                Era::LateSuccessionWarRenaissance => Faction::HWClanGeneral,
+                Era::ClanInvasion => Faction::ISClanGeneral,
+                Era::CivilWar => Faction::ISClanGeneral,
+                Era::Jihad => Faction::ISClanGeneral,
+                Era::EarlyRepublic => Faction::ISClanGeneral,
+                Era::LateRepublic => Faction::ISClanGeneral,
+                Era::DarkAge => Faction::ISClanGeneral,
+                Era::IlClan => Faction::ISClanGeneral,
+            },
             Faction::ClanProtectorate => Faction::ISClanGeneral,
-            Faction::ClanSeaFox => Faction::ISClanGeneral,
-            Faction::ClanSmokeJaguar => Faction::ISClanGeneral,
-            Faction::ClanSnowRaven => Faction::ISClanGeneral,
-            Faction::ClanWolf => Faction::ISClanGeneral,
+            Faction::ClanSeaFox => match era {
+                Era::AgeOfWar => Faction::HWClanGeneral,
+                Era::StarLeague => Faction::HWClanGeneral,
+                Era::EarlySuccessionWar => Faction::HWClanGeneral,
+                Era::LateSuccessionWarLosTech => Faction::HWClanGeneral,
+                Era::LateSuccessionWarRenaissance => Faction::HWClanGeneral,
+                Era::ClanInvasion => Faction::ISClanGeneral,
+                Era::CivilWar => Faction::ISClanGeneral,
+                Era::Jihad => Faction::ISClanGeneral,
+                Era::EarlyRepublic => Faction::ISClanGeneral,
+                Era::LateRepublic => Faction::ISClanGeneral,
+                Era::DarkAge => Faction::ISClanGeneral,
+                Era::IlClan => Faction::ISClanGeneral,
+            },
+            Faction::ClanSmokeJaguar => match era {
+                Era::AgeOfWar => Faction::HWClanGeneral,
+                Era::StarLeague => Faction::HWClanGeneral,
+                Era::EarlySuccessionWar => Faction::HWClanGeneral,
+                Era::LateSuccessionWarLosTech => Faction::HWClanGeneral,
+                Era::LateSuccessionWarRenaissance => Faction::HWClanGeneral,
+                Era::ClanInvasion => Faction::ISClanGeneral,
+                Era::CivilWar => Faction::ISClanGeneral,
+                Era::Jihad => Faction::ISClanGeneral,
+                Era::EarlyRepublic => Faction::ISClanGeneral,
+                Era::LateRepublic => Faction::ISClanGeneral,
+                Era::DarkAge => Faction::ISClanGeneral,
+                Era::IlClan => Faction::ISClanGeneral,
+            },
+            Faction::ClanSnowRaven => match era {
+                Era::AgeOfWar => Faction::HWClanGeneral,
+                Era::StarLeague => Faction::HWClanGeneral,
+                Era::EarlySuccessionWar => Faction::HWClanGeneral,
+                Era::LateSuccessionWarLosTech => Faction::HWClanGeneral,
+                Era::LateSuccessionWarRenaissance => Faction::HWClanGeneral,
+                Era::ClanInvasion => Faction::HWClanGeneral,
+                Era::CivilWar => Faction::HWClanGeneral,
+                Era::Jihad => Faction::ISClanGeneral,
+                Era::EarlyRepublic => Faction::ISClanGeneral,
+                Era::LateRepublic => Faction::ISClanGeneral,
+                Era::DarkAge => Faction::ISClanGeneral,
+                Era::IlClan => Faction::ISClanGeneral,
+            },
+            Faction::ClanWolf => match era {
+                Era::AgeOfWar => Faction::HWClanGeneral,
+                Era::StarLeague => Faction::HWClanGeneral,
+                Era::EarlySuccessionWar => Faction::HWClanGeneral,
+                Era::LateSuccessionWarLosTech => Faction::HWClanGeneral,
+                Era::LateSuccessionWarRenaissance => Faction::HWClanGeneral,
+                Era::ClanInvasion => Faction::ISClanGeneral,
+                Era::CivilWar => Faction::ISClanGeneral,
+                Era::Jihad => Faction::ISClanGeneral,
+                Era::EarlyRepublic => Faction::ISClanGeneral,
+                Era::LateRepublic => Faction::ISClanGeneral,
+                Era::DarkAge => Faction::ISClanGeneral,
+                Era::IlClan => Faction::ISClanGeneral,
+            },
             Faction::ClanWolfInExile => Faction::ISClanGeneral,
             Faction::ISClanGeneral => Faction::ISClanGeneral,
             Faction::RasalhagueDominion => Faction::ISClanGeneral,
@@ -263,7 +386,20 @@ impl Faction {
             Faction::ClanIceHellion => Faction::HWClanGeneral,
             Faction::ClanMongoose => Faction::HWClanGeneral,
             Faction::ClanStarAdder => Faction::HWClanGeneral,
-            Faction::ClanSteelViper => Faction::HWClanGeneral,
+            Faction::ClanSteelViper => match era {
+                Era::AgeOfWar => Faction::HWClanGeneral,
+                Era::StarLeague => Faction::HWClanGeneral,
+                Era::EarlySuccessionWar => Faction::HWClanGeneral,
+                Era::LateSuccessionWarLosTech => Faction::HWClanGeneral,
+                Era::LateSuccessionWarRenaissance => Faction::HWClanGeneral,
+                Era::ClanInvasion => Faction::ISClanGeneral,
+                Era::CivilWar => Faction::HWClanGeneral,
+                Era::Jihad => Faction::HWClanGeneral,
+                Era::EarlyRepublic => Faction::HWClanGeneral,
+                Era::LateRepublic => Faction::HWClanGeneral,
+                Era::DarkAge => Faction::HWClanGeneral,
+                Era::IlClan => Faction::HWClanGeneral,
+            },
             Faction::ClanStoneLion => Faction::HWClanGeneral,
             Faction::ClanWidowmaker => Faction::HWClanGeneral,
             Faction::ClanWolverine => Faction::HWClanGeneral,
@@ -407,7 +543,7 @@ impl Model {
                 if f.contains(&faction) {
                     true
                 } else {
-                    f.contains(&faction.get_general())
+                    f.contains(&faction.get_general(era))
                 }
             }
             None => false,
@@ -491,7 +627,7 @@ impl From<Params> for (u32, u32, usize, usize, u8, Era, Faction) {
             num_forces,
             skill,
             era,
-            faction
+            faction,
         } = p;
         (min_bv, max_bv, force_size, num_forces, skill, era, faction)
     }
@@ -505,11 +641,29 @@ mod tests {
 
     #[fixture]
     fn model() -> Model {
-        let mut model = Model{ name: String::from("Model"), count: 1, variants: Vec::new() };
-        let mut variant1 = Mech{ name: String::from("Model"), variant: String::from("Variant1"), bv: 1, availability: BTreeMap::new() };
-        variant1.availability.insert(Era::ClanInvasion, vec![Faction::PeripheryGeneral]);
-        let mut variant2 = Mech{ name: String::from("Model"), variant: String::from("Variant2"), bv: 2, availability: BTreeMap::new() };
-        variant2.availability.insert(Era::IlClan, vec![Faction::MagistracyOfCanopus]);
+        let mut model = Model {
+            name: String::from("Model"),
+            count: 1,
+            variants: Vec::new(),
+        };
+        let mut variant1 = Mech {
+            name: String::from("Model"),
+            variant: String::from("Variant1"),
+            bv: 1,
+            availability: BTreeMap::new(),
+        };
+        variant1
+            .availability
+            .insert(Era::ClanInvasion, vec![Faction::PeripheryGeneral]);
+        let mut variant2 = Mech {
+            name: String::from("Model"),
+            variant: String::from("Variant2"),
+            bv: 2,
+            availability: BTreeMap::new(),
+        };
+        variant2
+            .availability
+            .insert(Era::IlClan, vec![Faction::MagistracyOfCanopus]);
 
         model.variants.push(variant1);
         model.variants.push(variant2);
@@ -522,7 +676,12 @@ mod tests {
     #[case::faction_not_found(Era::ClanInvasion, Faction::InnerSphereGeneral, 0)]
     #[case::faction_exact_match(Era::IlClan, Faction::MagistracyOfCanopus, 1)]
     #[case::faction_general(Era::ClanInvasion, Faction::MagistracyOfCanopus, 1)]
-    fn validate_trim(mut model: Model, #[case] era: Era, #[case] faction: Faction, #[case] count: usize) {
+    fn validate_trim(
+        mut model: Model,
+        #[case] era: Era,
+        #[case] faction: Faction,
+        #[case] count: usize,
+    ) {
         model.trim_availability(era, faction);
         assert_eq!(model.variants.len(), count);
     }

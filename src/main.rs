@@ -41,10 +41,11 @@ fn main() {
         return terminate(program, &opts, 0);
     }
 
-    let (min_bv, max_bv, force_size, num_forces, skill, era, faction) = match validate_opts(&matches) {
-        Ok(value) => value.into(),
-        Err(_) => return terminate(program, &opts, 1),
-    };
+    let (min_bv, max_bv, force_size, num_forces, skill, era, faction) =
+        match validate_opts(&matches) {
+            Ok(value) => value.into(),
+            Err(_) => return terminate(program, &opts, 1),
+        };
 
     let required_mech = matches.opt_str("r");
 
@@ -311,7 +312,7 @@ fn validate_opts(matches: &getopts::Matches) -> Result<Params, ()> {
         num_forces,
         skill,
         era,
-        faction
+        faction,
     })
 }
 
@@ -434,7 +435,12 @@ fn get_opts() -> Options {
         "",
     );
     opts.optopt("e", "era", "Era to pull from (default: IlClan)", "");
-    opts.optopt("a", "faction", "Faction to restrict to (default: Inner Sphere General", "");
+    opts.optopt(
+        "a",
+        "faction",
+        "Faction to restrict to (default: Inner Sphere General",
+        "",
+    );
     opts
 }
 
