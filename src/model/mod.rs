@@ -237,9 +237,9 @@ impl Faction {
             Faction::LyranCommonwealth => Faction::InnerSphereGeneral,
             Faction::RepublicOfTheSphere => Faction::InnerSphereGeneral,
             Faction::StIvesCompact => Faction::InnerSphereGeneral,
-            Faction::TamarPact => Faction::InnerSphereGeneral,
+            Faction::TamarPact => Faction::TamarPact,
             Faction::TerranHegemony => Faction::InnerSphereGeneral,
-            Faction::VesperMarches => Faction::InnerSphereGeneral,
+            Faction::VesperMarches => Faction::VesperMarches,
             Faction::WordOfBlake => Faction::InnerSphereGeneral,
             Faction::AlyinaMercantileLeague => Faction::ISClanGeneral,
             Faction::ClanDiamondShark => match era {
