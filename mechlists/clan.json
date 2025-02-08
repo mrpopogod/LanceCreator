@@ -5,31 +5,1030 @@
         "variants": [
             {
                 "bv": 2083,
-                "variant": "Prime"
+                "variant": "Prime",
+                "availability": {
+                    "LateSuccessionWarLosTech": [
+                        "ClanCloudCobra",
+                        "ClanDiamondShark",
+                        "ClanStarAdder"
+                    ],
+                    "LateSuccessionWarRenaissance": [
+                        "HWClanGeneral"
+                    ],
+                    "ClanInvasion": [
+                        "HWClanGeneral",
+                        "ISClanGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "CivilWar": [
+                        "HWClanGeneral",
+                        "InnerSphereGeneral",
+                        "ISClanGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "WolfsDragoons"
+                    ],
+                    "Jihad": [
+                        "EscorpionImperio",
+                        "HWClanGeneral",
+                        "InnerSphereGeneral",
+                        "ISClanGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "Society",
+                        "WolfsDragoons"
+                    ],
+                    "EarlyRepublic": [
+                        "ClanDiamondShark",
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanWolf",
+                        "ClanWolfInExile",
+                        "EscorpionImperio",
+                        "KellHounds",
+                        "Mercenary",
+                        "RasalhagueDominion",
+                        "RavenAlliance",
+                        "RepublicOfTheSphere",
+                        "WolfsDragoons"
+                    ],
+                    "LateRepublic": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanSeaFox",
+                        "ClanWolf",
+                        "ClanWolfInExile",
+                        "EscorpionImperio",
+                        "KellHounds",
+                        "Mercenary",
+                        "RasalhagueDominion",
+                        "RavenAlliance",
+                        "RepublicOfTheSphere",
+                        "WolfsDragoons"
+                    ],
+                    "DarkAge": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanSeaFox",
+                        "ClanWolf",
+                        "ClanWolfInExile",
+                        "EscorpionImperio",
+                        "FederatedSuns",
+                        "KellHounds",
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "RasalhagueDominion",
+                        "RavenAlliance",
+                        "RepublicOfTheSphere",
+                        "ScorpionEmpire",
+                        "WolfsDragoons"
+                    ],
+                    "IlClan": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanSeaFox",
+                        "FederatedSuns",
+                        "KellHounds",
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "RasalhagueDominion",
+                        "RavenAlliance",
+                        "ScorpionEmpire",
+                        "StarLeagueClanSmokeJaguar",
+                        "StarLeagueClanWolf",
+                        "VesperMarches",
+                        "WolfEmpire",
+                        "WolfsDragoons"
+                    ]
+                }
             },
             {
                 "bv": 1437,
-                "variant": "A"
+                "variant": "A",
+                "availability": {
+                    "LateSuccessionWarLosTech": [
+                        "ClanCloudCobra",
+                        "ClanDiamondShark",
+                        "ClanStarAdder"
+                    ],
+                    "LateSuccessionWarRenaissance": [
+                        "HWClanGeneral"
+                    ],
+                    "ClanInvasion": [
+                        "HWClanGeneral",
+                        "ISClanGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "CivilWar": [
+                        "HWClanGeneral",
+                        "InnerSphereGeneral",
+                        "ISClanGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "WolfsDragoons"
+                    ],
+                    "Jihad": [
+                        "EscorpionImperio",
+                        "HWClanGeneral",
+                        "InnerSphereGeneral",
+                        "ISClanGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "Society",
+                        "WolfsDragoons"
+                    ],
+                    "EarlyRepublic": [
+                        "ClanDiamondShark",
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanWolf",
+                        "ClanWolfInExile",
+                        "EscorpionImperio",
+                        "KellHounds",
+                        "Mercenary",
+                        "RasalhagueDominion",
+                        "RavenAlliance",
+                        "RepublicOfTheSphere",
+                        "WolfsDragoons"
+                    ],
+                    "LateRepublic": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanSeaFox",
+                        "ClanWolf",
+                        "ClanWolfInExile",
+                        "EscorpionImperio",
+                        "KellHounds",
+                        "Mercenary",
+                        "RasalhagueDominion",
+                        "RavenAlliance",
+                        "RepublicOfTheSphere",
+                        "WolfsDragoons"
+                    ],
+                    "DarkAge": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanSeaFox",
+                        "ClanWolf",
+                        "ClanWolfInExile",
+                        "EscorpionImperio",
+                        "FederatedSuns",
+                        "KellHounds",
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "RasalhagueDominion",
+                        "RavenAlliance",
+                        "RepublicOfTheSphere",
+                        "ScorpionEmpire",
+                        "WolfsDragoons"
+                    ],
+                    "IlClan": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanSeaFox",
+                        "FederatedSuns",
+                        "KellHounds",
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "RasalhagueDominion",
+                        "RavenAlliance",
+                        "ScorpionEmpire",
+                        "StarLeagueClanSmokeJaguar",
+                        "StarLeagueClanWolf",
+                        "VesperMarches",
+                        "WolfEmpire",
+                        "WolfsDragoons"
+                    ]
+                }
             },
             {
                 "bv": 1422,
-                "variant": "B"
+                "variant": "B",
+                "availability": {
+                    "LateSuccessionWarLosTech": [
+                        "ClanCloudCobra",
+                        "ClanDiamondShark",
+                        "ClanStarAdder"
+                    ],
+                    "LateSuccessionWarRenaissance": [
+                        "HWClanGeneral"
+                    ],
+                    "ClanInvasion": [
+                        "HWClanGeneral",
+                        "ISClanGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "CivilWar": [
+                        "HWClanGeneral",
+                        "InnerSphereGeneral",
+                        "ISClanGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "WolfsDragoons"
+                    ],
+                    "Jihad": [
+                        "EscorpionImperio",
+                        "HWClanGeneral",
+                        "InnerSphereGeneral",
+                        "ISClanGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "Society",
+                        "WolfsDragoons"
+                    ],
+                    "EarlyRepublic": [
+                        "ClanDiamondShark",
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanWolf",
+                        "ClanWolfInExile",
+                        "EscorpionImperio",
+                        "KellHounds",
+                        "Mercenary",
+                        "RasalhagueDominion",
+                        "RavenAlliance",
+                        "RepublicOfTheSphere",
+                        "WolfsDragoons"
+                    ],
+                    "LateRepublic": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanSeaFox",
+                        "ClanWolf",
+                        "ClanWolfInExile",
+                        "EscorpionImperio",
+                        "KellHounds",
+                        "Mercenary",
+                        "RasalhagueDominion",
+                        "RavenAlliance",
+                        "RepublicOfTheSphere",
+                        "WolfsDragoons"
+                    ],
+                    "DarkAge": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanSeaFox",
+                        "ClanWolf",
+                        "ClanWolfInExile",
+                        "EscorpionImperio",
+                        "FederatedSuns",
+                        "KellHounds",
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "RasalhagueDominion",
+                        "RavenAlliance",
+                        "RepublicOfTheSphere",
+                        "ScorpionEmpire",
+                        "WolfsDragoons"
+                    ],
+                    "IlClan": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanSeaFox",
+                        "FederatedSuns",
+                        "KellHounds",
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "RasalhagueDominion",
+                        "RavenAlliance",
+                        "ScorpionEmpire",
+                        "StarLeagueClanSmokeJaguar",
+                        "StarLeagueClanWolf",
+                        "VesperMarches",
+                        "WolfEmpire",
+                        "WolfsDragoons"
+                    ]
+                }
             },
             {
                 "bv": 1372,
-                "variant": "C"
+                "variant": "C",
+                "availability": {
+                    "LateSuccessionWarLosTech": [
+                        "ClanCloudCobra",
+                        "ClanDiamondShark",
+                        "ClanStarAdder"
+                    ],
+                    "LateSuccessionWarRenaissance": [
+                        "HWClanGeneral"
+                    ],
+                    "ClanInvasion": [
+                        "HWClanGeneral",
+                        "ISClanGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "CivilWar": [
+                        "HWClanGeneral",
+                        "InnerSphereGeneral",
+                        "ISClanGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "WolfsDragoons"
+                    ],
+                    "Jihad": [
+                        "EscorpionImperio",
+                        "HWClanGeneral",
+                        "InnerSphereGeneral",
+                        "ISClanGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "Society",
+                        "WolfsDragoons"
+                    ],
+                    "EarlyRepublic": [
+                        "ClanDiamondShark",
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanWolf",
+                        "ClanWolfInExile",
+                        "EscorpionImperio",
+                        "KellHounds",
+                        "Mercenary",
+                        "RasalhagueDominion",
+                        "RavenAlliance",
+                        "RepublicOfTheSphere",
+                        "WolfsDragoons"
+                    ],
+                    "LateRepublic": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanSeaFox",
+                        "ClanWolf",
+                        "ClanWolfInExile",
+                        "EscorpionImperio",
+                        "KellHounds",
+                        "Mercenary",
+                        "RasalhagueDominion",
+                        "RavenAlliance",
+                        "RepublicOfTheSphere",
+                        "WolfsDragoons"
+                    ],
+                    "DarkAge": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanSeaFox",
+                        "ClanWolf",
+                        "ClanWolfInExile",
+                        "EscorpionImperio",
+                        "FederatedSuns",
+                        "KellHounds",
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "RasalhagueDominion",
+                        "RavenAlliance",
+                        "RepublicOfTheSphere",
+                        "ScorpionEmpire",
+                        "WolfsDragoons"
+                    ],
+                    "IlClan": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanSeaFox",
+                        "FederatedSuns",
+                        "KellHounds",
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "RasalhagueDominion",
+                        "RavenAlliance",
+                        "ScorpionEmpire",
+                        "StarLeagueClanSmokeJaguar",
+                        "StarLeagueClanWolf",
+                        "VesperMarches",
+                        "WolfEmpire",
+                        "WolfsDragoons"
+                    ]
+                }
             },
             {
                 "bv": 1255,
-                "variant": "D"
+                "variant": "D",
+                "availability": {
+                    "LateSuccessionWarLosTech": [
+                        "ClanCloudCobra",
+                        "ClanDiamondShark",
+                        "ClanStarAdder"
+                    ],
+                    "LateSuccessionWarRenaissance": [
+                        "HWClanGeneral"
+                    ],
+                    "ClanInvasion": [
+                        "HWClanGeneral",
+                        "ISClanGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "CivilWar": [
+                        "HWClanGeneral",
+                        "InnerSphereGeneral",
+                        "ISClanGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "WolfsDragoons"
+                    ],
+                    "Jihad": [
+                        "EscorpionImperio",
+                        "HWClanGeneral",
+                        "InnerSphereGeneral",
+                        "ISClanGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "Society",
+                        "WolfsDragoons"
+                    ],
+                    "EarlyRepublic": [
+                        "ClanDiamondShark",
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanWolf",
+                        "ClanWolfInExile",
+                        "EscorpionImperio",
+                        "KellHounds",
+                        "Mercenary",
+                        "RasalhagueDominion",
+                        "RavenAlliance",
+                        "RepublicOfTheSphere",
+                        "WolfsDragoons"
+                    ],
+                    "LateRepublic": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanSeaFox",
+                        "ClanWolf",
+                        "ClanWolfInExile",
+                        "EscorpionImperio",
+                        "KellHounds",
+                        "Mercenary",
+                        "RasalhagueDominion",
+                        "RavenAlliance",
+                        "RepublicOfTheSphere",
+                        "WolfsDragoons"
+                    ],
+                    "DarkAge": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanSeaFox",
+                        "ClanWolf",
+                        "ClanWolfInExile",
+                        "EscorpionImperio",
+                        "FederatedSuns",
+                        "KellHounds",
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "RasalhagueDominion",
+                        "RavenAlliance",
+                        "RepublicOfTheSphere",
+                        "ScorpionEmpire",
+                        "WolfsDragoons"
+                    ],
+                    "IlClan": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanSeaFox",
+                        "FederatedSuns",
+                        "KellHounds",
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "RasalhagueDominion",
+                        "RavenAlliance",
+                        "ScorpionEmpire",
+                        "StarLeagueClanSmokeJaguar",
+                        "StarLeagueClanWolf",
+                        "VesperMarches",
+                        "WolfEmpire",
+                        "WolfsDragoons"
+                    ]
+                }
+            },
+            {
+                "bv": 1272,
+                "variant": "E",
+                "availability": {
+                    "ClanInvasion": [
+                        "HWClanGeneral",
+                        "ISClanGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "CivilWar": [
+                        "HWClanGeneral",
+                        "InnerSphereGeneral",
+                        "ISClanGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "WolfsDragoons"
+                    ],
+                    "Jihad": [
+                        "EscorpionImperio",
+                        "HWClanGeneral",
+                        "InnerSphereGeneral",
+                        "ISClanGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "Society",
+                        "WolfsDragoons"
+                    ],
+                    "EarlyRepublic": [
+                        "ClanDiamondShark",
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanWolf",
+                        "ClanWolfInExile",
+                        "EscorpionImperio",
+                        "KellHounds",
+                        "Mercenary",
+                        "RasalhagueDominion",
+                        "RavenAlliance",
+                        "RepublicOfTheSphere",
+                        "WolfsDragoons"
+                    ],
+                    "LateRepublic": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanSeaFox",
+                        "ClanWolf",
+                        "ClanWolfInExile",
+                        "EscorpionImperio",
+                        "KellHounds",
+                        "Mercenary",
+                        "RasalhagueDominion",
+                        "RavenAlliance",
+                        "RepublicOfTheSphere",
+                        "WolfsDragoons"
+                    ],
+                    "DarkAge": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanSeaFox",
+                        "ClanWolf",
+                        "ClanWolfInExile",
+                        "EscorpionImperio",
+                        "FederatedSuns",
+                        "KellHounds",
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "RasalhagueDominion",
+                        "RavenAlliance",
+                        "RepublicOfTheSphere",
+                        "ScorpionEmpire",
+                        "WolfsDragoons"
+                    ],
+                    "IlClan": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanSeaFox",
+                        "FederatedSuns",
+                        "KellHounds",
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "RasalhagueDominion",
+                        "RavenAlliance",
+                        "ScorpionEmpire",
+                        "StarLeagueClanSmokeJaguar",
+                        "StarLeagueClanWolf",
+                        "VesperMarches",
+                        "WolfEmpire",
+                        "WolfsDragoons"
+                    ]
+                }
+            },
+            {
+                "bv": 1453,
+                "variant": "H",
+                "availability": {
+                    "ClanInvasion": [
+                        "ClanBloodSpirit",
+                        "ClanCloudCobra",
+                        "ClanCoyote",
+                        "ClanFireMandrill",
+                        "ClanGoliathScorpion",
+                        "ClanIceHellion",
+                        "ClanSnowRaven",
+                        "ClanStarAdder",
+                        "ISClanGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "CivilWar": [
+                        "HWClanGeneral",
+                        "InnerSphereGeneral",
+                        "ISClanGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "WolfsDragoons"
+                    ],
+                    "Jihad": [
+                        "EscorpionImperio",
+                        "HWClanGeneral",
+                        "InnerSphereGeneral",
+                        "ISClanGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "Society",
+                        "WolfsDragoons"
+                    ],
+                    "EarlyRepublic": [
+                        "ClanDiamondShark",
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanWolf",
+                        "ClanWolfInExile",
+                        "EscorpionImperio",
+                        "KellHounds",
+                        "Mercenary",
+                        "RasalhagueDominion",
+                        "RavenAlliance",
+                        "RepublicOfTheSphere",
+                        "WolfsDragoons"
+                    ],
+                    "LateRepublic": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanSeaFox",
+                        "ClanWolf",
+                        "ClanWolfInExile",
+                        "EscorpionImperio",
+                        "KellHounds",
+                        "Mercenary",
+                        "RasalhagueDominion",
+                        "RavenAlliance",
+                        "RepublicOfTheSphere",
+                        "WolfsDragoons"
+                    ],
+                    "DarkAge": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanSeaFox",
+                        "ClanWolf",
+                        "ClanWolfInExile",
+                        "EscorpionImperio",
+                        "FederatedSuns",
+                        "KellHounds",
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "RasalhagueDominion",
+                        "RavenAlliance",
+                        "RepublicOfTheSphere",
+                        "ScorpionEmpire",
+                        "WolfsDragoons"
+                    ],
+                    "IlClan": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanSeaFox",
+                        "FederatedSuns",
+                        "KellHounds",
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "RasalhagueDominion",
+                        "RavenAlliance",
+                        "ScorpionEmpire",
+                        "StarLeagueClanSmokeJaguar",
+                        "StarLeagueClanWolf",
+                        "VesperMarches",
+                        "WolfEmpire",
+                        "WolfsDragoons"
+                    ]
+                }
+            },
+            {
+                "bv": 1575,
+                "variant": "I",
+                "availability": {
+                    "LateRepublic": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanSeaFox",
+                        "ClanWolf",
+                        "ClanWolfInExile",
+                        "EscorpionImperio",
+                        "KellHounds",
+                        "Mercenary",
+                        "RasalhagueDominion",
+                        "RavenAlliance",
+                        "RepublicOfTheSphere",
+                        "WolfsDragoons"
+                    ],
+                    "DarkAge": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanSeaFox",
+                        "ClanWolf",
+                        "ClanWolfInExile",
+                        "EscorpionImperio",
+                        "FederatedSuns",
+                        "KellHounds",
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "RasalhagueDominion",
+                        "RavenAlliance",
+                        "RepublicOfTheSphere",
+                        "ScorpionEmpire",
+                        "WolfsDragoons"
+                    ],
+                    "IlClan": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanSeaFox",
+                        "FederatedSuns",
+                        "KellHounds",
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "RasalhagueDominion",
+                        "RavenAlliance",
+                        "ScorpionEmpire",
+                        "StarLeagueClanSmokeJaguar",
+                        "StarLeagueClanWolf",
+                        "VesperMarches",
+                        "WolfEmpire",
+                        "WolfsDragoons"
+                    ]
+                }
+            },
+            {
+                "bv": 1222,
+                "variant": "J",
+                "availability": {
+                    "Jihad": [
+                        "EscorpionImperio",
+                        "HWClanGeneral",
+                        "InnerSphereGeneral",
+                        "ISClanGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "Society",
+                        "WolfsDragoons"
+                    ],
+                    "EarlyRepublic": [
+                        "ClanDiamondShark",
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanWolf",
+                        "ClanWolfInExile",
+                        "EscorpionImperio",
+                        "KellHounds",
+                        "Mercenary",
+                        "RasalhagueDominion",
+                        "RavenAlliance",
+                        "RepublicOfTheSphere",
+                        "WolfsDragoons"
+                    ],
+                    "LateRepublic": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanSeaFox",
+                        "ClanWolf",
+                        "ClanWolfInExile",
+                        "EscorpionImperio",
+                        "KellHounds",
+                        "Mercenary",
+                        "RasalhagueDominion",
+                        "RavenAlliance",
+                        "RepublicOfTheSphere",
+                        "WolfsDragoons"
+                    ],
+                    "DarkAge": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanSeaFox",
+                        "ClanWolf",
+                        "ClanWolfInExile",
+                        "EscorpionImperio",
+                        "FederatedSuns",
+                        "KellHounds",
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "RasalhagueDominion",
+                        "RavenAlliance",
+                        "RepublicOfTheSphere",
+                        "ScorpionEmpire",
+                        "WolfsDragoons"
+                    ],
+                    "IlClan": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanSeaFox",
+                        "FederatedSuns",
+                        "KellHounds",
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "RasalhagueDominion",
+                        "RavenAlliance",
+                        "ScorpionEmpire",
+                        "StarLeagueClanSmokeJaguar",
+                        "StarLeagueClanWolf",
+                        "VesperMarches",
+                        "WolfEmpire",
+                        "WolfsDragoons"
+                    ]
+                }
+            },
+            {
+                "bv": 1281,
+                "variant": "K",
+                "availability": {
+                    "DarkAge": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanSeaFox",
+                        "ClanWolf",
+                        "ClanWolfInExile",
+                        "EscorpionImperio",
+                        "FederatedSuns",
+                        "KellHounds",
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "RasalhagueDominion",
+                        "RavenAlliance",
+                        "RepublicOfTheSphere",
+                        "ScorpionEmpire",
+                        "WolfsDragoons"
+                    ],
+                    "IlClan": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanSeaFox",
+                        "FederatedSuns",
+                        "KellHounds",
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "RasalhagueDominion",
+                        "RavenAlliance",
+                        "ScorpionEmpire",
+                        "StarLeagueClanSmokeJaguar",
+                        "StarLeagueClanWolf",
+                        "VesperMarches",
+                        "WolfEmpire",
+                        "WolfsDragoons"
+                    ]
+                }
+            },
+            {
+                "bv": 1738,
+                "variant": "L",
+                "availability": {
+                    "DarkAge": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanSeaFox",
+                        "ClanWolf",
+                        "ClanWolfInExile",
+                        "EscorpionImperio",
+                        "FederatedSuns",
+                        "KellHounds",
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "RasalhagueDominion",
+                        "RavenAlliance",
+                        "RepublicOfTheSphere",
+                        "ScorpionEmpire",
+                        "WolfsDragoons"
+                    ],
+                    "IlClan": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanSeaFox",
+                        "FederatedSuns",
+                        "KellHounds",
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "RasalhagueDominion",
+                        "RavenAlliance",
+                        "ScorpionEmpire",
+                        "StarLeagueClanSmokeJaguar",
+                        "StarLeagueClanWolf",
+                        "VesperMarches",
+                        "WolfEmpire",
+                        "WolfsDragoons"
+                    ]
+                }
             },
             {
                 "bv": 1427,
-                "variant": "S"
+                "variant": "S",
+                "availability": {
+                    "ClanInvasion": [
+                        "HWClanGeneral",
+                        "ISClanGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "CivilWar": [
+                        "HWClanGeneral",
+                        "InnerSphereGeneral",
+                        "ISClanGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "WolfsDragoons"
+                    ],
+                    "Jihad": [
+                        "EscorpionImperio",
+                        "HWClanGeneral",
+                        "InnerSphereGeneral",
+                        "ISClanGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "Society",
+                        "WolfsDragoons"
+                    ],
+                    "EarlyRepublic": [
+                        "ClanDiamondShark",
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanWolf",
+                        "ClanWolfInExile",
+                        "EscorpionImperio",
+                        "KellHounds",
+                        "Mercenary",
+                        "RasalhagueDominion",
+                        "RavenAlliance",
+                        "RepublicOfTheSphere",
+                        "WolfsDragoons"
+                    ],
+                    "LateRepublic": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanSeaFox",
+                        "ClanWolf",
+                        "ClanWolfInExile",
+                        "EscorpionImperio",
+                        "KellHounds",
+                        "Mercenary",
+                        "RasalhagueDominion",
+                        "RavenAlliance",
+                        "RepublicOfTheSphere",
+                        "WolfsDragoons"
+                    ],
+                    "DarkAge": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanSeaFox",
+                        "ClanWolf",
+                        "ClanWolfInExile",
+                        "EscorpionImperio",
+                        "FederatedSuns",
+                        "KellHounds",
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "RasalhagueDominion",
+                        "RavenAlliance",
+                        "RepublicOfTheSphere",
+                        "ScorpionEmpire",
+                        "WolfsDragoons"
+                    ],
+                    "IlClan": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanSeaFox",
+                        "FederatedSuns",
+                        "KellHounds",
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "RasalhagueDominion",
+                        "RavenAlliance",
+                        "ScorpionEmpire",
+                        "StarLeagueClanSmokeJaguar",
+                        "StarLeagueClanWolf",
+                        "VesperMarches",
+                        "WolfEmpire",
+                        "WolfsDragoons"
+                    ]
+                }
             },
             {
-                "bv": 1247,
-                "variant": "TC"
+                "bv": 2182,
+                "variant": "T",
+                "availability": {
+                    "DarkAge": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanSeaFox",
+                        "ClanWolf",
+                        "ClanWolfInExile",
+                        "EscorpionImperio",
+                        "FederatedSuns",
+                        "KellHounds",
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "RasalhagueDominion",
+                        "RavenAlliance",
+                        "RepublicOfTheSphere",
+                        "ScorpionEmpire",
+                        "WolfsDragoons"
+                    ],
+                    "IlClan": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanSeaFox",
+                        "FederatedSuns",
+                        "KellHounds",
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "RasalhagueDominion",
+                        "RavenAlliance",
+                        "ScorpionEmpire",
+                        "StarLeagueClanSmokeJaguar",
+                        "StarLeagueClanWolf",
+                        "VesperMarches",
+                        "WolfEmpire",
+                        "WolfsDragoons"
+                    ]
+                }
             }
         ]
     },
@@ -39,19 +1038,567 @@
         "variants": [
             {
                 "bv": 1334,
-                "variant": "Prime"
+                "variant": "Prime",
+                "availability": {
+                    "LateSuccessionWarRenaissance": [
+                        "ClanDiamondShark",
+                        "ClanIceHellion",
+                        "ClanNovaCat",
+                        "ClanSmokeJaguar",
+                        "ClanSteelViper"
+                    ],
+                    "ClanInvasion": [
+                        "HWClanGeneral",
+                        "ISClanGeneral"
+                    ],
+                    "CivilWar": [
+                        "HWClanGeneral",
+                        "InnerSphereGeneral",
+                        "ISClanGeneral",
+                        "KellHounds",
+                        "Mercenary"
+                    ],
+                    "Jihad": [
+                        "HWClanGeneral",
+                        "InnerSphereGeneral",
+                        "ISClanGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "Society"
+                    ],
+                    "EarlyRepublic": [
+                        "ClanDiamondShark",
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanNovaCat",
+                        "DraconisCombine",
+                        "RasalhagueDominion",
+                        "RepublicOfTheSphere"
+                    ],
+                    "LateRepublic": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanNovaCat",
+                        "ClanSeaFox",
+                        "DraconisCombine",
+                        "RasalhagueDominion",
+                        "RepublicOfTheSphere"
+                    ],
+                    "DarkAge": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanNovaCat",
+                        "ClanSeaFox",
+                        "DraconisCombine",
+                        "RasalhagueDominion",
+                        "RepublicOfTheSphere"
+                    ],
+                    "IlClan": [
+                        "ClanHellsHorses",
+                        "ClanSeaFox",
+                        "DraconisCombine",
+                        "RasalhagueDominion",
+                        "StarLeagueClanSmokeJaguar"
+                    ]
+                }
             },
             {
                 "bv": 1117,
-                "variant": "A"
+                "variant": "A",
+                "availability": {
+                    "LateSuccessionWarRenaissance": [
+                        "ClanDiamondShark",
+                        "ClanIceHellion",
+                        "ClanNovaCat",
+                        "ClanSmokeJaguar",
+                        "ClanSteelViper"
+                    ],
+                    "ClanInvasion": [
+                        "HWClanGeneral",
+                        "ISClanGeneral"
+                    ],
+                    "CivilWar": [
+                        "HWClanGeneral",
+                        "InnerSphereGeneral",
+                        "ISClanGeneral",
+                        "KellHounds",
+                        "Mercenary"
+                    ],
+                    "Jihad": [
+                        "HWClanGeneral",
+                        "InnerSphereGeneral",
+                        "ISClanGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "Society"
+                    ],
+                    "EarlyRepublic": [
+                        "ClanDiamondShark",
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanNovaCat",
+                        "DraconisCombine",
+                        "RasalhagueDominion",
+                        "RepublicOfTheSphere"
+                    ],
+                    "LateRepublic": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanNovaCat",
+                        "ClanSeaFox",
+                        "DraconisCombine",
+                        "RasalhagueDominion",
+                        "RepublicOfTheSphere"
+                    ],
+                    "DarkAge": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanNovaCat",
+                        "ClanSeaFox",
+                        "DraconisCombine",
+                        "RasalhagueDominion",
+                        "RepublicOfTheSphere"
+                    ],
+                    "IlClan": [
+                        "ClanHellsHorses",
+                        "ClanSeaFox",
+                        "DraconisCombine",
+                        "RasalhagueDominion",
+                        "StarLeagueClanSmokeJaguar"
+                    ]
+                }
             },
             {
                 "bv": 1076,
-                "variant": "B"
+                "variant": "B",
+                "availability": {
+                    "LateSuccessionWarRenaissance": [
+                        "ClanDiamondShark",
+                        "ClanIceHellion",
+                        "ClanNovaCat",
+                        "ClanSmokeJaguar",
+                        "ClanSteelViper"
+                    ],
+                    "ClanInvasion": [
+                        "HWClanGeneral",
+                        "ISClanGeneral"
+                    ],
+                    "CivilWar": [
+                        "HWClanGeneral",
+                        "InnerSphereGeneral",
+                        "ISClanGeneral",
+                        "KellHounds",
+                        "Mercenary"
+                    ],
+                    "Jihad": [
+                        "HWClanGeneral",
+                        "InnerSphereGeneral",
+                        "ISClanGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "Society"
+                    ],
+                    "EarlyRepublic": [
+                        "ClanDiamondShark",
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanNovaCat",
+                        "DraconisCombine",
+                        "RasalhagueDominion",
+                        "RepublicOfTheSphere"
+                    ],
+                    "LateRepublic": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanNovaCat",
+                        "ClanSeaFox",
+                        "DraconisCombine",
+                        "RasalhagueDominion",
+                        "RepublicOfTheSphere"
+                    ],
+                    "DarkAge": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanNovaCat",
+                        "ClanSeaFox",
+                        "DraconisCombine",
+                        "RasalhagueDominion",
+                        "RepublicOfTheSphere"
+                    ],
+                    "IlClan": [
+                        "ClanHellsHorses",
+                        "ClanSeaFox",
+                        "DraconisCombine",
+                        "RasalhagueDominion",
+                        "StarLeagueClanSmokeJaguar"
+                    ]
+                }
+            },
+            {
+                "bv": 1840,
+                "variant": "C",
+                "availability": {
+                    "LateSuccessionWarRenaissance": [
+                        "ClanDiamondShark",
+                        "ClanIceHellion",
+                        "ClanNovaCat",
+                        "ClanSmokeJaguar",
+                        "ClanSteelViper"
+                    ],
+                    "ClanInvasion": [
+                        "HWClanGeneral",
+                        "ISClanGeneral"
+                    ],
+                    "CivilWar": [
+                        "HWClanGeneral",
+                        "InnerSphereGeneral",
+                        "ISClanGeneral",
+                        "KellHounds",
+                        "Mercenary"
+                    ],
+                    "Jihad": [
+                        "HWClanGeneral",
+                        "InnerSphereGeneral",
+                        "ISClanGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "Society"
+                    ],
+                    "EarlyRepublic": [
+                        "ClanDiamondShark",
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanNovaCat",
+                        "DraconisCombine",
+                        "RasalhagueDominion",
+                        "RepublicOfTheSphere"
+                    ],
+                    "LateRepublic": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanNovaCat",
+                        "ClanSeaFox",
+                        "DraconisCombine",
+                        "RasalhagueDominion",
+                        "RepublicOfTheSphere"
+                    ],
+                    "DarkAge": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanNovaCat",
+                        "ClanSeaFox",
+                        "DraconisCombine",
+                        "RasalhagueDominion",
+                        "RepublicOfTheSphere"
+                    ],
+                    "IlClan": [
+                        "ClanHellsHorses",
+                        "ClanSeaFox",
+                        "DraconisCombine",
+                        "RasalhagueDominion",
+                        "StarLeagueClanSmokeJaguar"
+                    ]
+                }
             },
             {
                 "bv": 1080,
-                "variant": "D"
+                "variant": "D",
+                "availability": {
+                    "LateSuccessionWarRenaissance": [
+                        "ClanDiamondShark",
+                        "ClanIceHellion",
+                        "ClanNovaCat",
+                        "ClanSmokeJaguar",
+                        "ClanSteelViper"
+                    ],
+                    "ClanInvasion": [
+                        "HWClanGeneral",
+                        "ISClanGeneral"
+                    ],
+                    "CivilWar": [
+                        "HWClanGeneral",
+                        "InnerSphereGeneral",
+                        "ISClanGeneral",
+                        "KellHounds",
+                        "Mercenary"
+                    ],
+                    "Jihad": [
+                        "HWClanGeneral",
+                        "InnerSphereGeneral",
+                        "ISClanGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "Society"
+                    ],
+                    "EarlyRepublic": [
+                        "ClanDiamondShark",
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanNovaCat",
+                        "DraconisCombine",
+                        "RasalhagueDominion",
+                        "RepublicOfTheSphere"
+                    ],
+                    "LateRepublic": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanNovaCat",
+                        "ClanSeaFox",
+                        "DraconisCombine",
+                        "RasalhagueDominion",
+                        "RepublicOfTheSphere"
+                    ],
+                    "DarkAge": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanNovaCat",
+                        "ClanSeaFox",
+                        "DraconisCombine",
+                        "RasalhagueDominion",
+                        "RepublicOfTheSphere"
+                    ],
+                    "IlClan": [
+                        "ClanHellsHorses",
+                        "ClanSeaFox",
+                        "DraconisCombine",
+                        "RasalhagueDominion",
+                        "StarLeagueClanSmokeJaguar"
+                    ]
+                }
+            },
+            {
+                "bv": 1094,
+                "variant": "E",
+                "availability": {
+                    "Jihad": [
+                        "HWClanGeneral",
+                        "InnerSphereGeneral",
+                        "ISClanGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "Society"
+                    ],
+                    "EarlyRepublic": [
+                        "ClanDiamondShark",
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanNovaCat",
+                        "DraconisCombine",
+                        "RasalhagueDominion",
+                        "RepublicOfTheSphere"
+                    ],
+                    "LateRepublic": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanNovaCat",
+                        "ClanSeaFox",
+                        "DraconisCombine",
+                        "RasalhagueDominion",
+                        "RepublicOfTheSphere"
+                    ],
+                    "DarkAge": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanNovaCat",
+                        "ClanSeaFox",
+                        "DraconisCombine",
+                        "RasalhagueDominion",
+                        "RepublicOfTheSphere"
+                    ],
+                    "IlClan": [
+                        "ClanHellsHorses",
+                        "ClanSeaFox",
+                        "DraconisCombine",
+                        "RasalhagueDominion",
+                        "StarLeagueClanSmokeJaguar"
+                    ]
+                }
+            },
+            {
+                "bv": 1394,
+                "variant": "F",
+                "availability": {
+                    "EarlyRepublic": [
+                        "ClanDiamondShark",
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanNovaCat",
+                        "DraconisCombine",
+                        "RasalhagueDominion",
+                        "RepublicOfTheSphere"
+                    ],
+                    "LateRepublic": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanNovaCat",
+                        "ClanSeaFox",
+                        "DraconisCombine",
+                        "RasalhagueDominion",
+                        "RepublicOfTheSphere"
+                    ],
+                    "DarkAge": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanNovaCat",
+                        "ClanSeaFox",
+                        "DraconisCombine",
+                        "RasalhagueDominion",
+                        "RepublicOfTheSphere"
+                    ],
+                    "IlClan": [
+                        "ClanHellsHorses",
+                        "ClanSeaFox",
+                        "DraconisCombine",
+                        "RasalhagueDominion",
+                        "StarLeagueClanSmokeJaguar"
+                    ]
+                }
+            },
+            {
+                "bv": 1264,
+                "variant": "H",
+                "availability": {
+                    "CivilWar": [
+                        "ClanCloudCobra",
+                        "ClanCoyote",
+                        "ClanFireMandrill",
+                        "ClanGoliathScorpion",
+                        "ClanIceHellion",
+                        "ClanSnowRaven",
+                        "ClanStarAdder",
+                        "ClanSteelViper",
+                        "InnerSphereGeneral",
+                        "ISClanGeneral",
+                        "KellHounds",
+                        "Mercenary"
+                    ],
+                    "Jihad": [
+                        "HWClanGeneral",
+                        "InnerSphereGeneral",
+                        "ISClanGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "Society"
+                    ],
+                    "EarlyRepublic": [
+                        "ClanDiamondShark",
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanNovaCat",
+                        "DraconisCombine",
+                        "RasalhagueDominion",
+                        "RepublicOfTheSphere"
+                    ],
+                    "LateRepublic": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanNovaCat",
+                        "ClanSeaFox",
+                        "DraconisCombine",
+                        "RasalhagueDominion",
+                        "RepublicOfTheSphere"
+                    ],
+                    "DarkAge": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanNovaCat",
+                        "ClanSeaFox",
+                        "DraconisCombine",
+                        "RasalhagueDominion",
+                        "RepublicOfTheSphere"
+                    ],
+                    "IlClan": [
+                        "ClanHellsHorses",
+                        "ClanSeaFox",
+                        "DraconisCombine",
+                        "RasalhagueDominion",
+                        "StarLeagueClanSmokeJaguar"
+                    ]
+                }
+            },
+            {
+                "bv": 1299,
+                "variant": "I",
+                "availability": {
+                    "EarlyRepublic": [
+                        "ClanDiamondShark",
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanNovaCat",
+                        "DraconisCombine",
+                        "RasalhagueDominion",
+                        "RepublicOfTheSphere"
+                    ],
+                    "LateRepublic": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanNovaCat",
+                        "ClanSeaFox",
+                        "DraconisCombine",
+                        "RasalhagueDominion",
+                        "RepublicOfTheSphere"
+                    ],
+                    "DarkAge": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanNovaCat",
+                        "ClanSeaFox",
+                        "DraconisCombine",
+                        "RasalhagueDominion",
+                        "RepublicOfTheSphere"
+                    ],
+                    "IlClan": [
+                        "ClanHellsHorses",
+                        "ClanSeaFox",
+                        "DraconisCombine",
+                        "RasalhagueDominion",
+                        "StarLeagueClanSmokeJaguar"
+                    ]
+                }
+            },
+            {
+                "bv": 1179,
+                "variant": "J",
+                "availability": {
+                    "DarkAge": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanNovaCat",
+                        "ClanSeaFox",
+                        "DraconisCombine",
+                        "RasalhagueDominion",
+                        "RepublicOfTheSphere"
+                    ],
+                    "IlClan": [
+                        "ClanHellsHorses",
+                        "ClanSeaFox",
+                        "DraconisCombine",
+                        "RasalhagueDominion",
+                        "StarLeagueClanSmokeJaguar"
+                    ]
+                }
+            },
+            {
+                "bv": 1429,
+                "variant": "T",
+                "availability": {
+                    "DarkAge": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanNovaCat",
+                        "ClanSeaFox",
+                        "DraconisCombine",
+                        "RasalhagueDominion",
+                        "RepublicOfTheSphere"
+                    ],
+                    "IlClan": [
+                        "ClanHellsHorses",
+                        "ClanSeaFox",
+                        "DraconisCombine",
+                        "RasalhagueDominion",
+                        "StarLeagueClanSmokeJaguar"
+                    ]
+                }
             }
         ]
     },
@@ -61,31 +1608,204 @@
         "variants": [
             {
                 "bv": 1950,
-                "variant": "1"
+                "variant": "1",
+                "availability": {
+                    "EarlySuccesionWar": [
+                        "ClanJadeFalcon",
+                        "ClanSeaFox",
+                        "ClanSnowRaven",
+                        "ClanWolf"
+                    ],
+                    "LateSuccessionWarLosTech": [
+                        "HWClanGeneral"
+                    ],
+                    "LateSuccessionWarRenaissance": [
+                        "HWClanGeneral"
+                    ],
+                    "ClanInvasion": [
+                        "HWClanGeneral",
+                        "ISClanGeneral"
+                    ],
+                    "CivilWar": [
+                        "HWClanGeneral",
+                        "ISClanGeneral"
+                    ],
+                    "Jihad": [
+                        "HWClanGeneral",
+                        "ISClanGeneral",
+                        "Society"
+                    ],
+                    "EarlyRepublic": [
+                        "ClanJadeFalcon",
+                        "RavenAlliance"
+                    ],
+                    "LateRepublic": [
+                        "ClanJadeFalcon",
+                        "RavenAlliance"
+                    ],
+                    "DarkAge": [
+                        "ClanJadeFalcon",
+                        "RavenAlliance"
+                    ],
+                    "IlClan": [
+                        "AlyinaMercantileLeague",
+                        "ClanJadeFalcon",
+                        "RavenAlliance"
+                    ]
+                }
             },
             {
                 "bv": 2502,
-                "variant": "2"
+                "variant": "2",
+                "availability": {
+                    "ClanInvasion": [
+                        "ClanJadeFalcon"
+                    ],
+                    "CivilWar": [
+                        "ClanJadeFalcon",
+                        "ClanSteelViper"
+                    ],
+                    "Jihad": [
+                        "EscorpionImperio",
+                        "HWClanGeneral",
+                        "ISClanGeneral",
+                        "Society"
+                    ],
+                    "EarlyRepublic": [
+                        "EscorpionImperio",
+                        "RavenAlliance"
+                    ],
+                    "LateRepublic": [
+                        "EscorpionImperio",
+                        "RavenAlliance"
+                    ],
+                    "DarkAge": [
+                        "EscorpionImperio",
+                        "RavenAlliance",
+                        "ScorpionEmpire"
+                    ],
+                    "IlClan": [
+                        "RavenAlliance",
+                        "ScorpionEmpire"
+                    ]
+                }
             },
             {
                 "bv": 2941,
-                "variant": "3"
+                "variant": "3",
+                "availability": {
+                    "ClanInvasion": [
+                        "ClanJadeFalcon"
+                    ],
+                    "CivilWar": [
+                        "ClanJadeFalcon",
+                        "ClanSteelViper"
+                    ],
+                    "Jihad": [
+                        "HWClanGeneral",
+                        "ISClanGeneral",
+                        "Society"
+                    ],
+                    "EarlyRepublic": [
+                        "ClanJadeFalcon"
+                    ],
+                    "LateRepublic": [
+                        "ClanJadeFalcon"
+                    ],
+                    "DarkAge": [
+                        "ClanJadeFalcon"
+                    ],
+                    "IlClan": [
+                        "ClanJadeFalcon"
+                    ]
+                }
             },
             {
                 "bv": 2709,
-                "variant": "4"
+                "variant": "4",
+                "availability": {
+                    "CivilWar": [
+                        "ClanJadeFalcon"
+                    ],
+                    "Jihad": [
+                        "ClanJadeFalcon"
+                    ],
+                    "EarlyRepublic": [
+                        "ClanJadeFalcon",
+                        "RepublicOfTheSphere"
+                    ],
+                    "LateRepublic": [
+                        "ClanJadeFalcon",
+                        "RepublicOfTheSphere"
+                    ],
+                    "DarkAge": [
+                        "ClanJadeFalcon",
+                        "RepublicOfTheSphere"
+                    ],
+                    "IlClan": [
+                        "ClanJadeFalcon"
+                    ]
+                }
             },
             {
                 "bv": 2554,
-                "variant": "5"
+                "variant": "5",
+                "availability": {
+                    "LateRepublic": [
+                        "ClanJadeFalcon"
+                    ],
+                    "DarkAge": [
+                        "ClanJadeFalcon"
+                    ],
+                    "IlClan": [
+                        "ClanJadeFalcon"
+                    ]
+                }
             },
             {
                 "bv": 2339,
-                "variant": "6"
+                "variant": "6",
+                "availability": {
+                    "LateRepublic": [
+                        "ClanJadeFalcon",
+                        "ClanSeaFox"
+                    ],
+                    "DarkAge": [
+                        "ClanJadeFalcon",
+                        "ClanSeaFox"
+                    ],
+                    "IlClan": [
+                        "AlyinaMercantileLeague",
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanSeaFox",
+                        "VesperMarches"
+                    ]
+                }
             },
             {
                 "bv": 3740,
-                "variant": "7"
+                "variant": "7",
+                "availability": {
+                    "LateRepublic": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanSeaFox"
+                    ],
+                    "DarkAge": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanSeaFox"
+                    ],
+                    "IlClan": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanSeaFox",
+                        "Mercenary",
+                        "RasalhagueDominion",
+                        "StarLeagueClanJadeFalcon"
+                    ]
+                }
             }
         ]
     },
