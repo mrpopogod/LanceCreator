@@ -404,7 +404,7 @@ impl Faction {
             Faction::ClanWidowmaker => Faction::HWClanGeneral,
             Faction::ClanWolverine => Faction::HWClanGeneral,
             Faction::HWClanGeneral => Faction::HWClanGeneral,
-            Faction::Society => Faction::HWClanGeneral,
+            Faction::Society => Faction::Society,
             Faction::StarLeagueInExile => Faction::HWClanGeneral,
             Faction::CalderonProtectorate => Faction::PeripheryGeneral,
             Faction::CircinusFederation => Faction::PeripheryGeneral,
