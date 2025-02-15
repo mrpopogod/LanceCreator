@@ -392,7 +392,7 @@ impl Faction {
                 Era::EarlySuccessionWar => Faction::HWClanGeneral,
                 Era::LateSuccessionWarLosTech => Faction::HWClanGeneral,
                 Era::LateSuccessionWarRenaissance => Faction::HWClanGeneral,
-                Era::ClanInvasion => Faction::ISClanGeneral,
+                Era::ClanInvasion => Faction::ISClanGeneral, // Steel Viper is an invader during the Invasion, then gets kicked back before Civil War
                 Era::CivilWar => Faction::HWClanGeneral,
                 Era::Jihad => Faction::HWClanGeneral,
                 Era::EarlyRepublic => Faction::HWClanGeneral,

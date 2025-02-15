@@ -351,6 +351,32 @@
         "name": "Elemental III",
         "variants": [
             {
+                "bv": 477,
+                "variant": "Standard",
+                "availability": {
+                    "EarlyRepublic": [
+                        "ClanHellsHorses"
+                    ],
+                    "LateRepublic": [
+                        "ClanHellsHorses"
+                    ],
+                    "DarkAge": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon"
+                    ],
+                    "IlClan": [
+                        "ClanHellsHorses",
+                        "StarLeagueClanJadeFalcon"
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Elemental III",
+        "variants": [
+            {
                 "bv": 532,
                 "variant": "AP Gauss",
                 "availability": {

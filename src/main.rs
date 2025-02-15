@@ -13,7 +13,7 @@ use rand::Rng;
 use sorted_vec::SortedVec;
 use spinners::{Spinner, Spinners};
 
-const MAX_ATTEMPTS: u16 = 50000;
+const MAX_ATTEMPTS: u16 = 5000;
 
 fn main() {
     let args: Vec<String> = args().collect();
@@ -84,6 +84,7 @@ fn main() {
         faction,
     };
 
+    let now = Instant::now();
     let model_forces: HashSet<ModelForce> = match generate_model_forces(
         num_forces,
         loaded_models,
@@ -111,7 +112,6 @@ fn main() {
         Err(e) => panic!("Couldn't create {}: {}", path.display(), e),
     };
 
-    let now = Instant::now();
     let mut spinner = Spinner::new(Spinners::Line, "Generating force variants".into());
     generate_variants_and_write_out(&mut output_file, model_forces, &requirements);
 
@@ -209,32 +209,30 @@ fn generate_model_forces(
             }
 
             // only insert a random mech that matches the requirements
-            // TODO: better range def
-            for _ in 0..100 {
-                let n = rng.random_range(0..copied_models.len());
-                let model = copied_models.get_mut(n).unwrap();
-                model.trim_availability(force_requirements.era, force_requirements.faction);
-                if model.variants.is_empty() {
-                    continue;
-                }
+            let n = rng.random_range(0..copied_models.len());
+            let model = copied_models.get_mut(n).unwrap();
+            model.trim_availability(force_requirements.era, force_requirements.faction);
+            if model.variants.is_empty() {
+                break;
+            }
 
-                if model.count > 1 {
-                    let mut cloned_model = model.clone();
-                    cloned_model.adjust_bv(skill_mul);
-                    force.models.insert(cloned_model);
-                    model.count -= 1;
-                } else {
-                    let mut model = copied_models.swap_remove(n);
-                    model.adjust_bv(skill_mul);
-                    force.models.insert(model);
-                }
-
-                break; // if this model has variants then we grabbed it and don't need to retry
+            if model.count > 1 {
+                let mut cloned_model = model.clone();
+                cloned_model.adjust_bv(skill_mul);
+                force.models.insert(cloned_model);
+                model.count -= 1;
+            } else {
+                let mut model = copied_models.swap_remove(n);
+                model.adjust_bv(skill_mul);
+                force.models.insert(model);
             }
         }
 
-        if force.max_bv() < force_requirements.min_bv || force.min_bv() > force_requirements.max_bv
-        {
+        if force.models.len() < force_requirements.force_size {
+            continue;
+        }
+
+        if force.max_bv() < force_requirements.min_bv || force.min_bv() > force_requirements.max_bv {
             continue;
         }
 
