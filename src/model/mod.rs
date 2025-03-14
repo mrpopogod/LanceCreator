@@ -122,6 +122,9 @@ pub enum Faction {
     KellHounds,
     Mercenary,
     WolfsDragoons,
+    StarLeagueGeneral,
+    StarLeagueRegular,
+    StarLeagueRoyal
 }
 
 impl FromStr for Faction {
@@ -210,6 +213,9 @@ impl FromStr for Faction {
             "KellHounds" => Ok(Faction::KellHounds),
             "Mercenary" => Ok(Faction::Mercenary),
             "WolfsDragoons" => Ok(Faction::WolfsDragoons),
+            "StarLeagueGeneral" => Ok(Faction::StarLeagueGeneral),
+            "StarLeagueRegular" => Ok(Faction::StarLeagueRegular),
+            "StarLeagueRoyal" => Ok(Faction::StarLeagueRoyal),
             _ => Err(String::from(s)),
         }
     }
@@ -237,9 +243,9 @@ impl Faction {
             Faction::LyranCommonwealth => Faction::InnerSphereGeneral,
             Faction::RepublicOfTheSphere => Faction::InnerSphereGeneral,
             Faction::StIvesCompact => Faction::InnerSphereGeneral,
-            Faction::TamarPact => Faction::TamarPact,
-            Faction::TerranHegemony => Faction::InnerSphereGeneral,
-            Faction::VesperMarches => Faction::VesperMarches,
+            Faction::TamarPact => Faction::InnerSphereGeneral,
+            Faction::TerranHegemony => Faction::StarLeagueGeneral,
+            Faction::VesperMarches => Faction::InnerSphereGeneral,
             Faction::WordOfBlake => Faction::InnerSphereGeneral,
             Faction::AlyinaMercantileLeague => Faction::ISClanGeneral,
             Faction::ClanDiamondShark => match era {
@@ -405,7 +411,7 @@ impl Faction {
             Faction::ClanWolverine => Faction::HWClanGeneral,
             Faction::HWClanGeneral => Faction::HWClanGeneral,
             Faction::Society => Faction::Society,
-            Faction::StarLeagueInExile => Faction::HWClanGeneral,
+            Faction::StarLeagueInExile => Faction::StarLeagueInExile,
             Faction::CalderonProtectorate => Faction::PeripheryGeneral,
             Faction::CircinusFederation => Faction::PeripheryGeneral,
             Faction::EscorpionImperio => Faction::EscorpionImperio,
@@ -423,6 +429,9 @@ impl Faction {
             Faction::KellHounds => Faction::KellHounds,
             Faction::Mercenary => Faction::Mercenary,
             Faction::WolfsDragoons => Faction::WolfsDragoons,
+            Faction::StarLeagueGeneral => Faction::StarLeagueGeneral,
+            Faction::StarLeagueRegular => Faction::StarLeagueGeneral,
+            Faction::StarLeagueRoyal => Faction::StarLeagueGeneral,
         }
     }
 }

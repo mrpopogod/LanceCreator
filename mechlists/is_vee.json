@@ -640,7 +640,8 @@
                     "StarLeague": [
                         "InnerSphereGeneral",
                         "Mercenary",
-                        "PeripheryGeneral"
+                        "PeripheryGeneral",
+                        "StarLeagueGeneral"
                     ],
                     "EarlySuccessionWar": [
                         "ComStar",
@@ -889,7 +890,8 @@
                     "StarLeague": [
                         "InnerSphereGeneral",
                         "Mercenary",
-                        "PeripheryGeneral"
+                        "PeripheryGeneral",
+                        "StarLeagueGeneral"
                     ],
                     "EarlySuccessionWar": [
                         "ComStar",
@@ -1920,7 +1922,8 @@
                     "StarLeague": [
                         "InnerSphereGeneral",
                         "Mercenary",
-                        "PeripheryGeneral"
+                        "PeripheryGeneral",
+                        "StarLeagueGeneral"
                     ],
                     "EarlySuccessionWar": [
                         "ClanGoliathScorpion",
@@ -2954,7 +2957,8 @@
                     "StarLeague": [
                         "InnerSphereGeneral",
                         "Mercenary",
-                        "PeripheryGeneral"
+                        "PeripheryGeneral",
+                        "StarLeagueGeneral"
                     ],
                     "EarlySuccessionWar": [
                         "ComStar",
@@ -3378,7 +3382,8 @@
                     "StarLeague": [
                         "InnerSphereGeneral",
                         "Mercenary",
-                        "PeripheryGeneral"
+                        "PeripheryGeneral",
+                        "StarLeagueGeneral"
                     ],
                     "EarlySuccessionWar": [
                         "ComStar",
@@ -3660,7 +3665,8 @@
                     "StarLeague": [
                         "InnerSphereGeneral",
                         "Mercenary",
-                        "PeripheryGeneral"
+                        "PeripheryGeneral",
+                        "StarLeagueGeneral"
                     ],
                     "EarlySuccessionWar": [
                         "ClanBurrock",
@@ -4030,7 +4036,8 @@
                     "StarLeague": [
                         "InnerSphereGeneral",
                         "Mercenary",
-                        "PeripheryGeneral"
+                        "PeripheryGeneral",
+                        "StarLeagueGeneral"
                     ],
                     "EarlySuccessionWar": [
                         "ComStar",
@@ -6657,7 +6664,8 @@
                 "availability": {
                     "StarLeague": [
                         "DraconisCombine",
-                        "RimWorldsRepublicTerranCorps"
+                        "RimWorldsRepublicTerranCorps",
+                        "StarLeagueGeneral"
                     ],
                     "EarlySuccessionWar": [
                         "InnerSphereGeneral"
@@ -7009,7 +7017,8 @@
                     "StarLeague": [
                         "InnerSphereGeneral",
                         "Mercenary",
-                        "PeripheryGeneral"
+                        "PeripheryGeneral",
+                        "StarLeagueGeneral"
                     ],
                     "EarlySuccessionWar": [
                         "ComStar",
@@ -7975,7 +7984,8 @@
                     "StarLeague": [
                         "InnerSphereGeneral",
                         "Mercenary",
-                        "PeripheryGeneral"
+                        "PeripheryGeneral",
+                        "StarLeagueGeneral"
                     ],
                     "EarlySuccessionWar": [
                         "ComStar",
@@ -8238,7 +8248,8 @@
                     "StarLeague": [
                         "InnerSphereGeneral",
                         "Mercenary",
-                        "PeripheryGeneral"
+                        "PeripheryGeneral",
+                        "StarLeagueGeneral"
                     ],
                     "EarlySuccessionWar": [
                         "HWClanGeneral",
@@ -8254,7 +8265,9 @@
                 "variant": "Royal",
                 "availability": {
                     "StarLeague": [
-                        "RimWorldsRepublicTerranCorps"
+                        "RimWorldsRepublicTerranCorps",
+                        "StarLeagueRegular",
+                        "StarLeagueRoyal"
                     ],
                     "EarlySuccessionWar": [
                         "HWClanGeneral",
