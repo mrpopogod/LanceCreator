@@ -122,6 +122,7 @@ pub enum Faction {
     KellHounds,
     Mercenary,
     WolfsDragoons,
+    StarLeagueSecond,
     StarLeagueGeneral,
     StarLeagueRegular,
     StarLeagueRoyal
@@ -213,6 +214,7 @@ impl FromStr for Faction {
             "KellHounds" => Ok(Faction::KellHounds),
             "Mercenary" => Ok(Faction::Mercenary),
             "WolfsDragoons" => Ok(Faction::WolfsDragoons),
+            "StarLeagueSecond" => Ok(Faction::StarLeagueSecond),
             "StarLeagueGeneral" => Ok(Faction::StarLeagueGeneral),
             "StarLeagueRegular" => Ok(Faction::StarLeagueRegular),
             "StarLeagueRoyal" => Ok(Faction::StarLeagueRoyal),
@@ -225,7 +227,20 @@ impl Faction {
     pub fn get_general(&self, era: Era) -> Faction {
         match self {
             Faction::CapellanConfederation => Faction::InnerSphereGeneral,
-            Faction::ComStar => Faction::InnerSphereGeneral,
+            Faction::ComStar => match era {
+                Era::AgeOfWar => Faction::InnerSphereGeneral,
+                Era::StarLeague => Faction::InnerSphereGeneral,
+                Era::EarlySuccessionWar => Faction::InnerSphereGeneral,
+                Era::LateSuccessionWarLosTech => Faction::ComStar, // ComStar dips in and out of being its own faction
+                Era::LateSuccessionWarRenaissance => Faction::ComStar,
+                Era::ClanInvasion => Faction::ISClanGeneral,
+                Era::CivilWar => Faction::ISClanGeneral,
+                Era::Jihad => Faction::ISClanGeneral,
+                Era::EarlyRepublic => Faction::ISClanGeneral,
+                Era::LateRepublic => Faction::ComStar,
+                Era::DarkAge => Faction::ComStar,
+                Era::IlClan => Faction::ComStar,
+            },
             Faction::DraconisCombine => Faction::InnerSphereGeneral,
             Faction::FederatedCommonwealth => Faction::InnerSphereGeneral,
             Faction::FederatedSuns => Faction::InnerSphereGeneral,
@@ -429,6 +444,7 @@ impl Faction {
             Faction::KellHounds => Faction::KellHounds,
             Faction::Mercenary => Faction::Mercenary,
             Faction::WolfsDragoons => Faction::WolfsDragoons,
+            Faction::StarLeagueSecond => Faction::InnerSphereGeneral,
             Faction::StarLeagueGeneral => Faction::StarLeagueGeneral,
             Faction::StarLeagueRegular => Faction::StarLeagueGeneral,
             Faction::StarLeagueRoyal => Faction::StarLeagueGeneral,
