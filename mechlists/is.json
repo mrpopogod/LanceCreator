@@ -13221,6 +13221,223 @@
     },
     {
         "count": 1,
+        "name": "Firefly",
+        "variants": [
+            {
+                "bv": 797,
+                "variant": "FFL-3A",
+                "availability": {
+                    "StarLeague": [
+                        "CapellanConfederation",
+                        "FederatedSuns",
+                        "RimWorldsRepublicTerranCorps",
+                        "StarLeagueRegular",
+                        "StarLeagueRoyal"
+                    ],
+                    "EarlySuccessionWar": [
+                        "CapellanConfederation",
+                        "ClanFireMandrill",
+                        "ClanHellsHorses",
+                        "ClanSnowRaven",
+                        "FederatedSuns",
+                        "StarLeagueInExile"
+                    ]
+                }
+            },
+            {
+                "bv": 888,
+                "variant": "FFL-3PP",
+                "availability": {
+                    "EarlySuccessionWar": [
+                        "StarLeagueInExile"
+                    ]
+                }
+            },
+            {
+                "bv": 873,
+                "variant": "FFL-3PP2",
+                "availability": {
+                    "EarlySuccessionWar": [
+                        "StarLeagueInExile"
+                    ]
+                }
+            },
+            {
+                "bv": 808,
+                "variant": "FFL-3PP3",
+                "availability": {
+                    "EarlySuccessionWar": [
+                        "StarLeagueInExile"
+                    ]
+                }
+            },
+            {
+                "bv": 876,
+                "variant": "FFL-3SLE",
+                "availability": {
+                    "EarlySuccessionWar": [
+                        "HWClanGeneral",
+                        "StarLeagueInExile"
+                    ],
+                    "LateSuccessionWarLosTech": [
+                        "ClanBloodSpirit",
+                        "ClanBurrock",
+                        "ClanCloudCobra",
+                        "ClanSeaFox"
+                    ]
+                }
+            },
+            {
+                "bv": 831,
+                "variant": "FFL-4A",
+                "availability": {
+                    "EarlySuccessionWar": [
+                        "StarLeagueInExile"
+                    ],
+                    "LateSuccessionWarLosTech": [
+                        "WolfsDragoons"
+                    ],
+                    "LateSuccessionWarRenaissance": [
+                        "WolfsDragoons"
+                    ],
+                    "ClanInvasion": [
+                        "WolfsDragoons"
+                    ]
+                }
+            },
+            {
+                "bv": 870,
+                "variant": "FFL-4B",
+                "availability": {
+                    "LateSuccessionWarRenaissance": [
+                        "WolfsDragoons"
+                    ],
+                    "ClanInvasion": [
+                        "Mercenary",
+                        "WolfsDragoons"
+                    ],
+                    "CivilWar": [
+                        "Mercenary",
+                        "WolfsDragoons"
+                    ],
+                    "Jihad": [
+                        "Mercenary"
+                    ]
+                }
+            },
+            {
+                "bv": 806,
+                "variant": "FFL-4C",
+                "availability": {
+                    "LateSuccessionWarRenaissance": [
+                        "ComStar"
+                    ],
+                    "ClanInvasion": [
+                        "ComStar",
+                        "WordOfBlake"
+                    ],
+                    "CivilWar": [
+                        "ComStar",
+                        "WordOfBlake"
+                    ],
+                    "Jihad": [
+                        "ComStar",
+                        "WordOfBlake"
+                    ]
+                }
+            },
+            {
+                "bv": 897,
+                "variant": "FFL-4D",
+                "availability": {
+                    "CivilWar": [
+                        "WolfsDragoons"
+                    ],
+                    "Jihad": [
+                        "WolfsDragoons"
+                    ]
+                }
+            },
+            {
+                "bv": 921,
+                "variant": "FFL-4DA",
+                "availability": {
+                    "CivilWar": [
+                        "WolfsDragoons"
+                    ],
+                    "Jihad": [
+                        "WolfsDragoons"
+                    ]
+                }
+            },
+            {
+                "bv": 996,
+                "variant": "FFL-5A",
+                "availability": {
+                    "DarkAge": [
+                        "MagistracyOfCanopus",
+                        "WolfsDragoons"
+                    ],
+                    "IlClan": [
+                        "MagistracyOfCanopus",
+                        "Mercenary",
+                        "WolfsDragoons"
+                    ]
+                }
+            },
+            {
+                "bv": 1290,
+                "variant": "C",
+                "availability": {
+                    "EarlySuccessionWar": [
+                        "ClanSmokeJaguar"
+                    ],
+                    "LateSuccessionWarLosTech": [
+                        "ClanDiamondShark",
+                        "ClanJadeFalcon",
+                        "ClanNovaCat",
+                        "ClanSmokeJaguar",
+                        "ClanWolf"
+                    ],
+                    "LateSuccessionWarRenaissance": [
+                        "HWClanGeneral"
+                    ],
+                    "ClanInvasion": [
+                        "HWClanGeneral",
+                        "ISClanGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "CivilWar": [
+                        "HWClanGeneral",
+                        "ISClanGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "Jihad": [
+                        "EscorpionImperio",
+                        "HWClanGeneral",
+                        "ISClanGeneral",
+                        "Society",
+                        "WolfsDragoons"
+                    ],
+                    "EarlyRepublic": [
+                        "EscorpionImperio"
+                    ],
+                    "LateRepublic": [
+                        "EscorpionImperio"
+                    ],
+                    "DarkAge": [
+                        "EscorpionImperio",
+                        "ScorpionEmpire"
+                    ],
+                    "IlClan": [
+                        "ScorpionEmpire"
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "count": 1,
         "name": "Firestarter",
         "variants": [
             {
