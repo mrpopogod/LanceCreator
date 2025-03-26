@@ -31225,23 +31225,104 @@
         "variants": [
             {
                 "bv": 2088,
-                "variant": "SGT-8R"
+                "variant": "SGT-8R",
+                "availability": {
+                    "CivilWar": [
+                        "FederatedCommonwealth",
+                        "FederatedSuns"
+                    ],
+                    "Jihad": [
+                        "FederatedSuns",
+                        "FiltveltCoalition"
+                    ],
+                    "EarlyRepublic": [
+                        "FederatedSuns",
+                        "FiltveltCoalition"
+                    ],
+                    "LateRepublic": [
+                        "FederatedSuns",
+                        "FiltveltCoalition"
+                    ],
+                    "DarkAge": [
+                        "FederatedSuns",
+                        "FiltveltCoalition"
+                    ],
+                    "IlClan": [
+                        "FiltveltCoalition"
+                    ]
+                }
             },
             {
                 "bv": 2064,
-                "variant": "SGT-9D"
+                "variant": "SGT-9D",
+                "availability": {
+                    "Jihad": [
+                        "FederatedSuns"
+                    ],
+                    "EarlyRepublic": [
+                        "FederatedSuns"
+                    ],
+                    "LateRepublic": [
+                        "FederatedSuns"
+                    ],
+                    "DarkAge": [
+                        "FederatedSuns"
+                    ],
+                    "IlClan": [
+                        "FederatedSuns"
+                    ]
+                }
             },
             {
                 "bv": 1794,
-                "variant": "SGT-10X"
+                "variant": "SGT-10X",
+                "availability": {
+                    "EarlyRepublic": [
+                        "FederatedSuns",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "LateRepublic": [
+                        "FederatedSuns",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "DarkAge": [
+                        "FederatedSuns",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "IlClan": [
+                        "FederatedSuns",
+                        "Mercenary"
+                    ]
+                }
             },
             {
-                "bv": 1875,
-                "variant": "SGT-14D"
+                "bv": 1960,
+                "variant": "SGT-14D",
+                "availability": {
+                    "DarkAge": [
+                        "DraconisCombine",
+                        "FederatedSuns"
+                    ],
+                    "IlClan": [
+                        "DraconisCombine",
+                        "FederatedSuns"
+                    ]
+                }
             },
             {
                 "bv": 2626,
-                "variant": "SGT-14R"
+                "variant": "SGT-14R",
+                "availability": {
+                    "DarkAge": [
+                        "FederatedSuns"
+                    ],
+                    "IlClan": [
+                        "FederatedSuns"
+                    ]
+                }
             }
         ]
     },
@@ -31251,43 +31332,354 @@
         "variants": [
             {
                 "bv": 1473,
-                "variant": "SCP-1BR"
+                "variant": "SCP-1BR",
+                "availability": {
+                    "DarkAge": [
+                        "InnerSphereGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "WolfsDragoons"
+                    ],
+                    "IlClan": [
+                        "InnerSphereGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "Pirates"
+                    ]
+                }
             },
             {
                 "bv": 1019,
-                "variant": "SCP-1N"
+                "variant": "SCP-1N",
+                "availability": {
+                    "StarLeague": [
+                        "CapellanConfederation",
+                        "DraconisCombine",
+                        "FreeWorldsLeague",
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "RimWorldsRepublicTerranCorps",
+                        "StarLeagueRegular",
+                        "TerranHegemony"
+                    ],
+                    "EarlySuccessionWar": [
+                        "CapellanConfederation",
+                        "ClanGoliathScorpion",
+                        "ComStar",
+                        "DraconisCombine",
+                        "FreeWorldsLeague",
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "StarLeagueInExile"
+                    ],
+                    "LateSuccessionWarLosTech": [
+                        "ComStar",
+                        "InnerSphereGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "LateSuccessionWarRenaissance": [
+                        "ComStar",
+                        "InnerSphereGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "ClanInvasion": [
+                        "InnerSphereGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "CivilWar": [
+                        "FreeRasalhagueRepublic",
+                        "KellHounds",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "Jihad": [
+                        "FreeRasalhagueRepublic",
+                        "KellHounds",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "EarlyRepublic": [
+                        "Mercenary",
+                        "PeripheryGeneral"
+                    ],
+                    "LateRepublic": [
+                        "PeripheryGeneral"
+                    ]
+                }
             },
             {
                 "bv": 1098,
-                "variant": "SCP-1O"
+                "variant": "SCP-1O",
+                "availability": {
+                    "ClanInvasion": [
+                        "InnerSphereGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "WolfsDragoons"
+                    ],
+                    "CivilWar": [
+                        "CapellanConfederation",
+                        "ComStar",
+                        "DraconisCombine",
+                        "FreeRasalhagueRepublic",
+                        "FreeWorldsLeague",
+                        "KellHounds",
+                        "Mercenary",
+                        "WolfsDragoons",
+                        "WordOfBlake"
+                    ],
+                    "Jihad": [
+                        "CapellanConfederation",
+                        "ComStar",
+                        "DraconisCombine",
+                        "FreeRasalhagueRepublic",
+                        "FreeWorldsLeague",
+                        "KellHounds",
+                        "Mercenary",
+                        "WolfsDragoons",
+                        "WordOfBlake"
+                    ],
+                    "EarlyRepublic": [
+                        "CapellanConfederation",
+                        "DraconisCombine",
+                        "FreeWorldsLeagueNonAlignedWorlds",
+                        "FreeWorldsLeagueRegulanFiefs",
+                        "FreeWorldsLeagueRimCommonality",
+                        "Mercenary",
+                        "PeripheryGeneral"
+                    ],
+                    "LateRepublic": [
+                        "FreeWorldsLeagueNonAlignedWorlds",
+                        "FreeWorldsLeagueRegulanFiefs",
+                        "FreeWorldsLeagueRimCommonality",
+                        "Mercenary",
+                        "PeripheryGeneral"
+                    ]
+                }
             },
             {
                 "bv": 1185,
-                "variant": "SCP-1TB"
+                "variant": "SCP-1TB",
+                "availability": {
+                    "Jihad": [
+                        "KellHounds",
+                        "Mercenary",
+                        "WolfsDragoons"
+                    ],
+                    "EarlyRepublic": [
+                        "KellHounds",
+                        "Mercenary",
+                        "RepublicOfTheSphere",
+                        "WolfsDragoons"
+                    ],
+                    "LateRepublic": [
+                        "KellHounds",
+                        "Mercenary",
+                        "RepublicOfTheSphere",
+                        "WolfsDragoons"
+                    ],
+                    "DarkAge": [
+                        "KellHounds",
+                        "Mercenary",
+                        "RepublicOfTheSphere",
+                        "WolfsDragoons"
+                    ],
+                    "IlClan": [
+                        "KellHounds",
+                        "Mercenary"
+                    ]
+                }
             },
             {
                 "bv": 1562,
-                "variant": "SCP-2N"
+                "variant": "SCP-2N",
+                "availability": {
+                    "DarkAge": [
+                        "FreeWorldsLeague",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FreeWorldsLeagueDuchyOfTamarindAbbey",
+                        "FreeWorldsLeagueMarikStewartCommonwealth",
+                        "FreeWorldsLeagueNonAlignedWorlds",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "FreeWorldsLeagueRegulanFiefs",
+                        "FreeWorldsLeagueRimCommonality",
+                        "Mercenary",
+                        "Pirates",
+                        "RepublicOfTheSphere"
+                    ],
+                    "IlClan": [
+                        "FederatedSuns",
+                        "FreeWorldsLeague",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "Mercenary",
+                        "Pirates"
+                    ]
+                }
             },
             {
                 "bv": 1458,
-                "variant": "SCP-10M"
+                "variant": "SCP-10M",
+                "availability": {
+                    "Jihad": [
+                        "CapellanConfederation",
+                        "ComStar",
+                        "DraconisCombine",
+                        "FreeRasalhagueRepublic",
+                        "FreeWorldsLeague",
+                        "KellHounds",
+                        "Mercenary",
+                        "WolfsDragoons"
+                    ],
+                    "EarlyRepublic": [
+                        "CapellanConfederation",
+                        "DraconisCombine",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FreeWorldsLeagueDuchyOfTamarindAbbey",
+                        "FreeWorldsLeagueMarikStewartCommonwealth",
+                        "FreeWorldsLeagueNonAlignedWorlds",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "FreeWorldsLeagueRegulanFiefs",
+                        "FreeWorldsLeagueRimCommonality",
+                        "MagistracyOfCanopus",
+                        "MarianHegemony",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "LateRepublic": [
+                        "CapellanConfederation",
+                        "DraconisCombine",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FreeWorldsLeagueDuchyOfTamarindAbbey",
+                        "FreeWorldsLeagueMarikStewartCommonwealth",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "FreeWorldsLeagueRegulanFiefs",
+                        "FreeWorldsLeagueRimCommonality",
+                        "MagistracyOfCanopus",
+                        "MarianHegemony",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "DarkAge": [
+                        "CapellanConfederation",
+                        "DraconisCombine",
+                        "FreeWorldsLeague",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FreeWorldsLeagueDuchyOfTamarindAbbey",
+                        "FreeWorldsLeagueMarikStewartCommonwealth",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "FreeWorldsLeagueRegulanFiefs",
+                        "FreeWorldsLeagueRimCommonality",
+                        "MagistracyOfCanopus",
+                        "MarianHegemony",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "IlClan": [
+                        "CapellanConfederation",
+                        "DraconisCombine",
+                        "FreeWorldsLeague",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "MagistracyOfCanopus",
+                        "MarianHegemony",
+                        "Mercenary"
+                    ]
+                }
             },
             {
                 "bv": 1259,
-                "variant": "SCP-12C"
+                "variant": "SCP-12C",
+                "availability": {
+                    "CivilWar": [
+                        "WordOfBlake"
+                    ],
+                    "Jihad": [
+                        "WordOfBlake"
+                    ]
+                }
             },
             {
                 "bv": 1260,
-                "variant": "SCP-12K"
+                "variant": "SCP-12K",
+                "availability": {
+                    "Jihad": [
+                        "DraconisCombine"
+                    ],
+                    "EarlyRepublic": [
+                        "DraconisCombine"
+                    ],
+                    "LateRepublic": [
+                        "DraconisCombine"
+                    ],
+                    "DarkAge": [
+                        "DraconisCombine"
+                    ],
+                    "IlClan": [
+                        "DraconisCombine"
+                    ]
+                }
             },
             {
                 "bv": 1109,
-                "variant": "SCP-12S"
+                "variant": "SCP-12S",
+                "availability": {
+                    "CivilWar": [
+                        "KellHounds",
+                        "LyranAlliance",
+                        "Mercenary"
+                    ],
+                    "Jihad": [
+                        "KellHounds",
+                        "LyranAlliance",
+                        "Mercenary"
+                    ],
+                    "EarlyRepublic": [
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "LateRepublic": [
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "DarkAge": [
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "IlClan": [
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "VesperMarches"
+                    ]
+                }
             },
             {
                 "bv": 2331,
-                "variant": "C"
+                "variant": "C",
+                "availability": {
+                    "DarkAge": [
+                        "ClanWolf"
+                    ],
+                    "IlClan": [
+                        "WolfEmpire",
+                        "StarLeagueClanWolf",
+                        "WolfsDragoons"
+                    ]
+                }
             }
         ]
     },
@@ -31297,43 +31689,313 @@
         "variants": [
             {
                 "bv": 632,
-                "variant": "STN-1S"
+                "variant": "STN-1S",
+                "availability": {
+                    "StarLeague": [
+                        "FederatedSuns",
+                        "FreeWorldsLeague",
+                        "LyranCommonwealth",
+                        "RimWorldsRepublicTerranCorps",
+                        "StarLeagueRegular",
+                        "TerranHegemony"
+                    ],
+                    "EarlySuccessionWar": [
+                        "FederatedSuns",
+                        "FreeWorldsLeague",
+                        "LyranCommonwealth"
+                    ]
+                }
             },
             {
                 "bv": 652,
-                "variant": "STN-3K"
+                "variant": "STN-3K",
+                "availability": {
+                    "EarlySuccessionWar": [
+                        "FederatedSuns",
+                        "FreeWorldsLeague",
+                        "LyranCommonwealth"
+                    ],
+                    "LateSuccessionWarLosTech": [
+                        "LyranCommonwealth"
+                    ]
+                }
             },
             {
                 "bv": 847,
-                "variant": "STN-3KA"
+                "variant": "STN-3KA",
+                "availability": {
+                    "EarlySuccessionWar": [
+                        "LyranCommonwealth"
+                    ],
+                    "LateSuccessionWarLosTech": [
+                        "LyranCommonwealth"
+                    ]
+                }
             },
             {
                 "bv": 823,
-                "variant": "STN-3KB"
+                "variant": "STN-3KB",
+                "availability": {
+                    "EarlySuccessionWar": [
+                        "LyranCommonwealth"
+                    ],
+                    "LateSuccessionWarLosTech": [
+                        "LyranCommonwealth"
+                    ]
+                }
             },
             {
                 "bv": 717,
-                "variant": "STN-3L"
+                "variant": "STN-3L",
+                "availability": {
+                    "StarLeague": [
+                        "FederatedSuns",
+                        "FreeWorldsLeague",
+                        "LyranCommonwealth",
+                        "RimWorldsRepublicTerranCorps",
+                        "StarLeagueRegular",
+                        "TerranHegemony"
+                    ],
+                    "EarlySuccessionWar": [
+                        "FederatedSuns",
+                        "FreeWorldsLeague",
+                        "HWClanGeneral",
+                        "LyranCommonwealth",
+                        "StarLeagueInExile"
+                    ],
+                    "LateSuccessionWarLosTech": [
+                        "ComStar",
+                        "HWClanGeneral"
+                    ],
+                    "LateSuccessionWarRenaissance": [
+                        "ComStar",
+                        "HWClanGeneral"
+                    ],
+                    "ClanInvasion": [
+                        "ComStar",
+                        "DraconisCombine",
+                        "FederatedCommonwealth",
+                        "FederatedSuns",
+                        "HWClanGeneral",
+                        "ISClanGeneral",
+                        "LyranAlliance",
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "WordOfBlake"
+                    ],
+                    "CivilWar": [
+                        "ComStar",
+                        "DraconisCombine",
+                        "FederatedCommonwealth",
+                        "FederatedSuns",
+                        "HWClanGeneral",
+                        "ISClanGeneral",
+                        "LyranAlliance",
+                        "Mercenary",
+                        "WordOfBlake"
+                    ],
+                    "Jihad": [
+                        "ComStar",
+                        "DraconisCombine",
+                        "EscorpionImperio",
+                        "FederatedSuns",
+                        "FiltveltCoalition",
+                        "HWClanGeneral",
+                        "ISClanGeneral",
+                        "LyranAlliance",
+                        "Mercenary",
+                        "Society",
+                        "WordOfBlake"
+                    ],
+                    "EarlyRepublic": [
+                        "EscorpionImperio",
+                        "FiltveltCoalition",
+                        "ISClanGeneral",
+                        "LyranCommonwealth",
+                        "Mercenary"
+                    ],
+                    "LateRepublic": [
+                        "EscorpionImperio",
+                        "FiltveltCoalition",
+                        "LyranCommonwealth",
+                        "Mercenary"
+                    ],
+                    "DarkAge": [
+                        "FiltveltCoalition",
+                        "Mercenary"
+                    ],
+                    "IlClan": [
+                        "FiltveltCoalition",
+                        "Mercenary"
+                    ]
+                }
             },
             {
                 "bv": 1260,
-                "variant": "STN-3Lb"
+                "variant": "STN-3Lb",
+                "availability": {
+                    "StarLeague": [
+                        "DraconisCombine",
+                        "StarLeagueRoyal"
+                    ],
+                    "EarlySuccessionWar": [
+                        "ClanBloodSpirit",
+                        "ClanCloudCobra",
+                        "ClanFireMandrill",
+                        "ClanGhostBear",
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanSeaFox",
+                        "ClanSnowRaven",
+                        "StarLeagueInExile"
+                    ],
+                    "LateSuccessionWarLosTech": [
+                        "ClanBloodSpirit",
+                        "ClanCloudCobra",
+                        "ClanDiamondShark",
+                        "ClanFireMandrill",
+                        "ClanGhostBear",
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanSeaFox",
+                        "ClanSnowRaven"
+                    ],
+                    "LateSuccessionWarRenaissance": [
+                        "ClanBloodSpirit",
+                        "ClanCloudCobra",
+                        "ClanDiamondShark",
+                        "ClanFireMandrill",
+                        "ClanGoliathScorpion",
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanSnowRaven"
+                    ],
+                    "ClanInvasion": [
+                        "ClanBloodSpirit",
+                        "ClanCloudCobra",
+                        "ClanDiamondShark",
+                        "ClanFireMandrill",
+                        "ClanGhostBear",
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanSnowRaven"
+                    ],
+                    "CivilWar": [
+                        "ClanBloodSpirit",
+                        "ClanCloudCobra",
+                        "ClanDiamondShark",
+                        "ClanFireMandrill",
+                        "ClanGhostBear",
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanSnowRaven"
+                    ],
+                    "Jihad": [
+                        "ClanBloodSpirit",
+                        "ClanCloudCobra",
+                        "ClanDiamondShark",
+                        "ClanFireMandrill",
+                        "ClanGhostBear",
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon",
+                        "ClanSnowRaven"
+                    ],
+                    "EarlyRepublic": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon"
+                    ],
+                    "LateRepublic": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon"
+                    ],
+                    "DarkAge": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon"
+                    ],
+                    "IlClan": [
+                        "ClanHellsHorses"
+                    ]
+                }
             },
             {
                 "bv": 758,
-                "variant": "STN-3M"
+                "variant": "STN-3M",
+                "availability": {
+                    "LateSuccessionWarRenaissance": [
+                        "DraconisCombine"
+                    ],
+                    "ClanInvasion": [
+                        "DraconisCombine"
+                    ],
+                    "CivilWar": [
+                        "DraconisCombine"
+                    ],
+                    "Jihad": [
+                        "DraconisCombine"
+                    ]
+                }
             },
             {
                 "bv": 1179,
-                "variant": "STN-4D"
+                "variant": "STN-4D",
+                "availability": {
+                    "CivilWar": [
+                        "FederatedCommonwealth",
+                        "FederatedSuns"
+                    ],
+                    "Jihad": [
+                        "FederatedSuns"
+                    ],
+                    "EarlyRepublic": [
+                        "FederatedSuns"
+                    ],
+                    "LateRepublic": [
+                        "FederatedSuns"
+                    ]
+                }
             },
             {
                 "bv": 999,
-                "variant": "STN-5WB"
+                "variant": "STN-5WB",
+                "availability": {
+                    "Jihad": [
+                        "WordOfBlake"
+                    ]
+                }
             },
             {
                 "bv": 1089,
-                "variant": "STN-6S"
+                "variant": "STN-6S",
+                "availability": {
+                    "DarkAge": [
+                        "KellHounds",
+                        "LyranCommonwealth"
+                    ],
+                    "IlClan": [
+                        "KellHounds",
+                        "LyranCommonwealth",
+                        "TamarPact",
+                        "VesperMarches"
+                    ]
+                }
+            },
+            {
+                "bv": 689,
+                "variant": "STN-C",
+                "availability": {
+                    "CivilWar": [
+                        "DraconisCombine"
+                    ],
+                    "Jihad": [
+                        "DraconisCombine"
+                    ],
+                    "EarlyRepublic": [
+                        "DraconisCombine"
+                    ],
+                    "LateRepublic": [
+                        "DraconisCombine"
+                    ]
+                }
             }
         ]
     },
@@ -31343,71 +32005,968 @@
         "variants": [
             {
                 "bv": 899,
-                "variant": "SHD-2D"
+                "variant": "SHD-2D",
+                "availability": {
+                    "EarlySuccessionWar": [
+                        "FederatedSuns"
+                    ],
+                    "LateSuccessionWarLosTech": [
+                        "FederatedSuns"
+                    ],
+                    "LateSuccessionWarRenaissance": [
+                        "FederatedSuns"
+                    ],
+                    "ClanInvasion": [
+                        "FederatedCommonwealth",
+                        "FederatedSuns"
+                    ],
+                    "CivilWar": [
+                        "FederatedCommonwealth",
+                        "FederatedSuns"
+                    ],
+                    "Jihad": [
+                        "FederatedSuns",
+                        "FiltveltCoalition"
+                    ],
+                    "EarlyRepublic": [
+                        "FiltveltCoalition"
+                    ],
+                    "LateRepublic": [
+                        "FiltveltCoalition"
+                    ]
+                }
             },
             {
                 "bv": 1049,
-                "variant": "SHD-2D2"
+                "variant": "SHD-2D2",
+                "availability": {
+                    "ClanInvasion": [
+                        "FederatedCommonwealth",
+                        "FederatedSuns",
+                        "LyranAlliance",
+                        "LyranCommonwealth"
+                    ],
+                    "CivilWar": [
+                        "FederatedCommonwealth",
+                        "FederatedSuns",
+                        "LyranAlliance"
+                    ],
+                    "Jihad": [
+                        "FederatedSuns",
+                        "FiltveltCoalition",
+                        "LyranAlliance"
+                    ],
+                    "EarlyRepublic": [
+                        "FiltveltCoalition"
+                    ],
+                    "LateRepublic": [
+                        "FiltveltCoalition"
+                    ]
+                }
             },
             {
                 "bv": 1064,
-                "variant": "SHD-2H"
+                "variant": "SHD-2H",
+                "availability": {
+                    "StarLeague": [
+                        "InnerSphereGeneral",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "StarLeagueGeneral"
+                    ],
+                    "EarlySuccessionWar": [
+                        "InnerSphereGeneral",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "StarLeagueInExile"
+                    ],
+                    "LateSuccessionWarLosTech": [
+                        "ComStar",
+                        "InnerSphereGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "LateSuccessionWarRenaissance": [
+                        "ComStar",
+                        "InnerSphereGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "ClanInvasion": [
+                        "InnerSphereGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "CivilWar": [
+                        "InnerSphereGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "Jihad": [
+                        "EscorpionImperio",
+                        "InnerSphereGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "EarlyRepublic": [
+                        "CapellanConfederation",
+                        "EscorpionImperio",
+                        "FederatedSuns",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FreeWorldsLeagueDuchyOfTamarindAbbey",
+                        "FreeWorldsLeagueMarikStewartCommonwealth",
+                        "FreeWorldsLeagueNonAlignedWorlds",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "FreeWorldsLeagueRegulanFiefs",
+                        "FreeWorldsLeagueRimCommonality",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "RavenAlliance",
+                        "RepublicOfTheSphere"
+                    ],
+                    "LateRepublic": [
+                        "EscorpionImperio",
+                        "FreeWorldsLeagueDuchyOfTamarindAbbey",
+                        "FreeWorldsLeagueNonAlignedWorlds",
+                        "FreeWorldsLeagueRegulanFiefs",
+                        "FreeWorldsLeagueRimCommonality",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "RavenAlliance"
+                    ],
+                    "DarkAge": [
+                        "Mercenary",
+                        "PeripheryGeneral"
+                    ],
+                    "IlClan": [
+                        "Mercenary",
+                        "PeripheryGeneral"
+                    ]
+                }
             },
             {
                 "bv": 1354,
-                "variant": "SHD-2Hb"
+                "variant": "SHD-2Hb",
+                "availability": {
+                    "StarLeague": [
+                        "RimWorldsRepublicTerranCorps",
+                        "StarLeagueRegular",
+                        "StarLeagueRoyal"
+                    ],
+                    "EarlySuccessionWar": [
+                        "ComStar",
+                        "FederatedSuns",
+                        "HWClanGeneral",
+                        "StarLeagueInExile"
+                    ],
+                    "LateSuccessionWarLosTech": [
+                        "ComStar",
+                        "HWClanGeneral"
+                    ],
+                    "LateSuccessionWarRenaissance": [
+                        "ComStar",
+                        "HWClanGeneral"
+                    ],
+                    "ClanInvasion": [
+                        "HWClanGeneral",
+                        "ISClanGeneral"
+                    ],
+                    "CivilWar": [
+                        "HWClanGeneral",
+                        "ISClanGeneral"
+                    ],
+                    "Jihad": [
+                        "CapellanConfederation",
+                        "ComStar",
+                        "FreeWorldsLeague",
+                        "FroncReaches",
+                        "HWClanGeneral",
+                        "MagistracyOfCanopus",
+                        "Mercenary",
+                        "Society"
+                    ],
+                    "EarlyRepublic": [
+                        "CapellanConfederation",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FreeWorldsLeagueMarikStewartCommonwealth",
+                        "FroncReaches",
+                        "MagistracyOfCanopus",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "LateRepublic": [
+                        "CapellanConfederation",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FroncReaches",
+                        "MagistracyOfCanopus",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "DarkAge": [
+                        "CapellanConfederation",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FroncReaches",
+                        "MagistracyOfCanopus",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "IlClan": [
+                        "CapellanConfederation",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FroncReaches",
+                        "MagistracyOfCanopus",
+                        "Mercenary"
+                    ]
+                }
             },
             {
                 "bv": 1453,
-                "variant": "SHD-2Ht"
+                "variant": "SHD-2Ht",
+                "availability": {
+                    "ClanInvasion": [
+                        "ComStar",
+                        "WordOfBlake"
+                    ],
+                    "CivilWar": [
+                        "ComStar",
+                        "WordOfBlake"
+                    ],
+                    "Jihad": [
+                        "ComStar",
+                        "WordOfBlake"
+                    ],
+                    "EarlyRepublic": [
+                        "RepublicOfTheSphere"
+                    ],
+                    "LateRepublic": [
+                        "RepublicOfTheSphere"
+                    ],
+                    "DarkAge": [
+                        "RepublicOfTheSphere"
+                    ]
+                }
             },
             {
                 "bv": 1147,
-                "variant": "SHD-2K"
+                "variant": "SHD-2K",
+                "availability": {
+                    "EarlySuccessionWar": [
+                        "DraconisCombine"
+                    ],
+                    "LateSuccessionWarLosTech": [
+                        "DraconisCombine"
+                    ],
+                    "LateSuccessionWarRenaissance": [
+                        "DraconisCombine",
+                        "FreeWorldsLeague"
+                    ],
+                    "ClanInvasion": [
+                        "DraconisCombine",
+                        "FreeRasalhagueRepublic",
+                        "KellHounds",
+                        "Mercenary",
+                        "WolfsDragoons"
+                    ],
+                    "CivilWar": [
+                        "DraconisCombine",
+                        "FreeRasalhagueRepublic",
+                        "KellHounds",
+                        "Mercenary",
+                        "WolfsDragoons"
+                    ],
+                    "Jihad": [
+                        "DraconisCombine",
+                        "FreeRasalhagueRepublic",
+                        "KellHounds",
+                        "Mercenary",
+                        "WolfsDragoons"
+                    ],
+                    "EarlyRepublic": [
+                        "DraconisCombine",
+                        "Mercenary"
+                    ],
+                    "LateRepublic": [
+                        "DraconisCombine"
+                    ]
+                }
+            },
+            {
+                "bv": 1043,
+                "variant": "SHD-3H",
+                "availability": {
+                    "StarLeague": [
+                        "InnerSphereGeneral",
+                        "Mercenary",
+                        "RimWorldsRepublicTerranCorps",
+                        "StarLeagueGeneral"
+                    ],
+                    "EarlySuccessionWar": [
+                        "InnerSphereGeneral",
+                        "Mercenary"
+                    ],
+                    "LateSuccessionWarLosTech": [
+                        "Mercenary",
+                        "PeripheryGeneral"
+                    ],
+                    "LateSuccessionWarRenaissance": [
+                        "Mercenary",
+                        "PeripheryGeneral"
+                    ],
+                    "ClanInvasion": [
+                        "Mercenary",
+                        "PeripheryGeneral"
+                    ],
+                    "CivilWar": [
+                        "Mercenary",
+                        "PeripheryGeneral"
+                    ],
+                    "Jihad": [
+                        "Mercenary",
+                        "PeripheryGeneral"
+                    ],
+                    "EarlyRepublic": [
+                        "Mercenary",
+                        "PeripheryGeneral"
+                    ],
+                    "LateRepublic": [
+                        "Mercenary",
+                        "PeripheryGeneral"
+                    ],
+                    "DarkAge": [
+                        "FiltveltCoalition",
+                        "FroncReaches",
+                        "Pirates"
+                    ],
+                    "IlClan": [
+                        "FiltveltCoalition",
+                        "FroncReaches",
+                        "Pirates"
+                    ]
+                }
+            },
+            {
+                "bv": 1112,
+                "variant": "SHD-3H2",
+                "availability": {
+                    "StarLeague": [
+                        "RimWorldsRepublicTerranCorps",
+                        "TerranHegemony"
+                    ],
+                    "EarlySuccessionWar": [
+                        "ComStar",
+                        "FederatedSuns"
+                    ],
+                    "LateSuccessionWarLosTech": [
+                        "ComStar"
+                    ],
+                    "LateSuccessionWarRenaissance": [
+                        "ComStar"
+                    ],
+                    "ClanInvasion": [
+                        "ComStar",
+                        "WordOfBlake"
+                    ],
+                    "CivilWar": [
+                        "ComStar",
+                        "WordOfBlake"
+                    ],
+                    "Jihad": [
+                        "ComStar",
+                        "WordOfBlake"
+                    ]
+                }
+            },
+            {
+                "bv": 1591,
+                "variant": "SHD-3K",
+                "availability": {
+                    "Jihad": [
+                        "DraconisCombine",
+                        "FreeRasalhagueRepublic"
+                    ],
+                    "EarlyRepublic": [
+                        "DraconisCombine",
+                        "RasalhagueDominion",
+                        "RepublicOfTheSphere"
+                    ],
+                    "LateRepublic": [
+                        "DraconisCombine",
+                        "RasalhagueDominion",
+                        "RepublicOfTheSphere"
+                    ],
+                    "DarkAge": [
+                        "DraconisCombine",
+                        "RasalhagueDominion",
+                        "RepublicOfTheSphere"
+                    ],
+                    "IlClan": [
+                        "DraconisCombine",
+                        "RasalhagueDominion"
+                    ]
+                }
             },
             {
                 "bv": 1569,
-                "variant": "SHD-4H"
+                "variant": "SHD-4H",
+                "availability": {
+                    "EarlyRepublic": [
+                        "FreeWorldsLeagueRimCommonality",
+                        "MagistracyOfCanopus"
+                    ],
+                    "LateRepublic": [
+                        "DraconisCombine",
+                        "FreeWorldsLeagueRimCommonality",
+                        "FroncReaches",
+                        "MagistracyOfCanopus"
+                    ],
+                    "DarkAge": [
+                        "DraconisCombine",
+                        "FreeWorldsLeague",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FreeWorldsLeagueRimCommonality",
+                        "FroncReaches",
+                        "MagistracyOfCanopus"
+                    ],
+                    "IlClan": [
+                        "DraconisCombine",
+                        "FreeWorldsLeague",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FroncReaches",
+                        "MagistracyOfCanopus"
+                    ]
+                }
             },
             {
                 "bv": 1684,
-                "variant": "SHD-5D"
+                "variant": "SHD-5D",
+                "availability": {
+                    "CivilWar": [
+                        "FederatedCommonwealth",
+                        "FederatedSuns",
+                        "KellHounds",
+                        "LyranAlliance",
+                        "Mercenary",
+                        "WolfsDragoons"
+                    ],
+                    "Jihad": [
+                        "FederatedSuns",
+                        "KellHounds",
+                        "LyranAlliance",
+                        "Mercenary",
+                        "WolfsDragoons",
+                        "WordOfBlake"
+                    ],
+                    "EarlyRepublic": [
+                        "FederatedSuns",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "LateRepublic": [
+                        "FederatedSuns",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "DarkAge": [
+                        "CapellanConfederation",
+                        "FederatedSuns",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "IlClan": [
+                        "CapellanConfederation",
+                        "FederatedSuns",
+                        "Mercenary"
+                    ]
+                }
             },
             {
                 "bv": 1430,
-                "variant": "SHD-5M"
+                "variant": "SHD-5M",
+                "availability": {
+                    "LateSuccessionWarRenaissance": [
+                        "FreeRasalhagueRepublic"
+                    ],
+                    "ClanInvasion": [
+                        "InnerSphereGeneral",
+                        "Mercenary"
+                    ],
+                    "CivilWar": [
+                        "CircinusFederation",
+                        "InnerSphereGeneral",
+                        "MagistracyOfCanopus",
+                        "MarianHegemony",
+                        "Mercenary"
+                    ],
+                    "Jihad": [
+                        "CircinusFederation",
+                        "InnerSphereGeneral",
+                        "MagistracyOfCanopus",
+                        "MarianHegemony",
+                        "Mercenary"
+                    ],
+                    "EarlyRepublic": [
+                        "CapellanConfederation",
+                        "DraconisCombine",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FreeWorldsLeagueDuchyOfTamarindAbbey",
+                        "FreeWorldsLeagueMarikStewartCommonwealth",
+                        "FreeWorldsLeagueNonAlignedWorlds",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "FreeWorldsLeagueRegulanFiefs",
+                        "FreeWorldsLeagueRimCommonality",
+                        "Mercenary",
+                        "PeripheryGeneral"
+                    ],
+                    "LateRepublic": [
+                        "CapellanConfederation",
+                        "DraconisCombine",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FreeWorldsLeagueDuchyOfTamarindAbbey",
+                        "FreeWorldsLeagueMarikStewartCommonwealth",
+                        "FreeWorldsLeagueNonAlignedWorlds",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "FreeWorldsLeagueRegulanFiefs",
+                        "FreeWorldsLeagueRimCommonality",
+                        "Mercenary",
+                        "PeripheryGeneral"
+                    ],
+                    "DarkAge": [
+                        "FreeWorldsLeague",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FreeWorldsLeagueDuchyOfTamarindAbbey",
+                        "FreeWorldsLeagueMarikStewartCommonwealth",
+                        "FreeWorldsLeagueNonAlignedWorlds",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "FreeWorldsLeagueRegulanFiefs",
+                        "FreeWorldsLeagueRimCommonality",
+                        "Mercenary",
+                        "PeripheryGeneral"
+                    ],
+                    "IlClan": [
+                        "FreeWorldsLeague",
+                        "Mercenary",
+                        "PeripheryGeneral"
+                    ]
+                }
             },
             {
                 "bv": 1296,
-                "variant": "SHD-5R"
+                "variant": "SHD-5R",
+                "availability": {
+                    "EarlyRepublic": [
+                        "InnerSphereGeneral",
+                        "Mercenary"
+                    ],
+                    "LateRepublic": [
+                        "InnerSphereGeneral",
+                        "Mercenary",
+                        "PeripheryGeneral"
+                    ],
+                    "DarkAge": [
+                        "InnerSphereGeneral",
+                        "Mercenary",
+                        "PeripheryGeneral"
+                    ],
+                    "IlClan": [
+                        "InnerSphereGeneral",
+                        "Mercenary",
+                        "PeripheryGeneral"
+                    ]
+                }
             },
             {
                 "bv": 1590,
-                "variant": "SHD-5S"
+                "variant": "SHD-5S",
+                "availability": {
+                    "ClanInvasion": [
+                        "LyranAlliance"
+                    ],
+                    "CivilWar": [
+                        "FederatedCommonwealth",
+                        "FreeRasalhagueRepublic",
+                        "FreeWorldsLeague",
+                        "KellHounds",
+                        "LyranAlliance",
+                        "Mercenary"
+                    ],
+                    "Jihad": [
+                        "FreeRasalhagueRepublic",
+                        "FreeWorldsLeague",
+                        "KellHounds",
+                        "LyranAlliance",
+                        "Mercenary"
+                    ],
+                    "EarlyRepublic": [
+                        "FreeWorldsLeagueDuchyOfTamarindAbbey",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "FreeWorldsLeagueRegulanFiefs",
+                        "LyranCommonwealth",
+                        "Mercenary"
+                    ],
+                    "LateRepublic": [
+                        "FreeWorldsLeagueDuchyOfTamarindAbbey",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "FreeWorldsLeagueRegulanFiefs",
+                        "LyranCommonwealth",
+                        "Mercenary"
+                    ],
+                    "DarkAge": [
+                        "FreeWorldsLeague",
+                        "FreeWorldsLeagueDuchyOfTamarindAbbey",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "FreeWorldsLeagueRegulanFiefs",
+                        "LyranCommonwealth",
+                        "Mercenary"
+                    ],
+                    "IlClan": [
+                        "FreeWorldsLeague",
+                        "LyranCommonwealth",
+                        "Mercenary"
+                    ]
+                }
             },
             {
-                "bv": 1296,
-                "variant": "SHD-6D"
+                "bv": 1371,
+                "variant": "SHD-6D",
+                "availability": {
+                    "DarkAge": [
+                        "FederatedSuns"
+                    ],
+                    "IlClan": [
+                        "FederatedSuns",
+                        "FiltveltCoalition"
+                    ]
+                }
+            },
+            {
+                "bv": 1496,
+                "variant": "SHD-7CS",
+                "availability": {
+                    "CivilWar": [
+                        "ComStar",
+                        "WordOfBlake"
+                    ],
+                    "Jihad": [
+                        "ComStar",
+                        "WordOfBlake"
+                    ]
+                }
             },
             {
                 "bv": 1394,
-                "variant": "SHD-7H"
+                "variant": "SHD-7H",
+                "availability": {
+                    "LateRepublic": [
+                        "InnerSphereGeneral",
+                        "Mercenary",
+                        "PeripheryGeneral"
+                    ],
+                    "DarkAge": [
+                        "InnerSphereGeneral",
+                        "Mercenary",
+                        "PeripheryGeneral"
+                    ],
+                    "IlClan": [
+                        "InnerSphereGeneral",
+                        "Mercenary",
+                        "PeripheryGeneral"
+                    ]
+                }
             },
             {
                 "bv": 1447,
-                "variant": "SHD-7M"
+                "variant": "SHD-7M",
+                "availability": {
+                    "CivilWar": [
+                        "CapellanConfederation",
+                        "FreeWorldsLeague",
+                        "MagistracyOfCanopus",
+                        "TaurianConcordat"
+                    ],
+                    "Jihad": [
+                        "CapellanConfederation",
+                        "FreeRasalhagueRepublic",
+                        "MagistracyOfCanopus",
+                        "TaurianConcordat"
+                    ],
+                    "EarlyRepublic": [
+                        "CalderonProtectorate",
+                        "CapellanConfederation",
+                        "FiltveltCoalition",
+                        "FreeWorldsLeagueDuchyOfTamarindAbbey",
+                        "FreeWorldsLeagueMarikStewartCommonwealth",
+                        "FreeWorldsLeagueNonAlignedWorlds",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "FreeWorldsLeagueRimCommonality",
+                        "MagistracyOfCanopus",
+                        "Mercenary",
+                        "RepublicOfTheSphere",
+                        "TaurianConcordat"
+                    ],
+                    "LateRepublic": [
+                        "CalderonProtectorate",
+                        "CapellanConfederation",
+                        "FiltveltCoalition",
+                        "FreeWorldsLeagueDuchyOfTamarindAbbey",
+                        "FreeWorldsLeagueMarikStewartCommonwealth",
+                        "FreeWorldsLeagueNonAlignedWorlds",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "FreeWorldsLeagueRimCommonality",
+                        "MagistracyOfCanopus",
+                        "Mercenary",
+                        "RepublicOfTheSphere",
+                        "TaurianConcordat"
+                    ],
+                    "DarkAge": [
+                        "CalderonProtectorate",
+                        "CapellanConfederation",
+                        "FiltveltCoalition",
+                        "FreeWorldsLeague",
+                        "FreeWorldsLeagueDuchyOfTamarindAbbey",
+                        "FreeWorldsLeagueMarikStewartCommonwealth",
+                        "FreeWorldsLeagueNonAlignedWorlds",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "FreeWorldsLeagueRimCommonality",
+                        "MagistracyOfCanopus",
+                        "Mercenary",
+                        "RepublicOfTheSphere",
+                        "TaurianConcordat"
+                    ],
+                    "IlClan": [
+                        "CalderonProtectorate",
+                        "CapellanConfederation",
+                        "FiltveltCoalition",
+                        "FreeWorldsLeague",
+                        "MagistracyOfCanopus",
+                        "Mercenary",
+                        "TaurianConcordat"
+                    ]
+                }
             },
             {
                 "bv": 1536,
-                "variant": "SHD-8L"
+                "variant": "SHD-8L",
+                "availability": {
+                    "Jihad": [
+                        "CapellanConfederation"
+                    ],
+                    "EarlyRepublic": [
+                        "CapellanConfederation"
+                    ],
+                    "LateRepublic": [
+                        "CapellanConfederation",
+                        "MagistracyOfCanopus"
+                    ],
+                    "DarkAge": [
+                        "CapellanConfederation",
+                        "MagistracyOfCanopus"
+                    ],
+                    "IlClan": [
+                        "CapellanConfederation",
+                        "MagistracyOfCanopus"
+                    ]
+                }
+            },
+            {
+                "bv": 1313,
+                "variant": "SHD-9D",
+                "availability": {
+                    "Jihad": [
+                        "FederatedSuns",
+                        "WordOfBlake"
+                    ],
+                    "EarlyRepublic": [
+                        "FederatedSuns"
+                    ],
+                    "LateRepublic": [
+                        "FederatedSuns"
+                    ],
+                    "DarkAge": [
+                        "FederatedSuns"
+                    ],
+                    "IlClan": [
+                        "FederatedSuns"
+                    ]
+                }
+            },
+            {
+                "bv": 1700,
+                "variant": "SHD-11CS",
+                "availability": {
+                    "Jihad": [
+                        "ComStar",
+                        "WordOfBlake"
+                    ],
+                    "LateRepublic": [
+                        "ComStar"
+                    ],
+                    "DarkAge": [
+                        "ComStar"
+                    ]
+                }
+            },
+            {
+                "bv": 1779,
+                "variant": "SHD-11CS2",
+                "availability": {
+                    "Jihad": [
+                        "DraconisCombine",
+                        "FederatedSuns",
+                        "FreeWorldsLeague",
+                        "LyranAlliance"
+                    ],
+                    "EarlyRepublic": [
+                        "DraconisCombine",
+                        "FederatedSuns",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FreeWorldsLeagueDuchyOfTamarindAbbey",
+                        "FreeWorldsLeagueMarikStewartCommonwealth",
+                        "FreeWorldsLeagueNonAlignedWorlds",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "FreeWorldsLeagueRegulanFiefs",
+                        "FreeWorldsLeagueRimCommonality",
+                        "LyranCommonwealth",
+                        "RepublicOfTheSphere"
+                    ],
+                    "LateRepublic": [
+                        "DraconisCombine",
+                        "FederatedSuns",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FreeWorldsLeagueDuchyOfTamarindAbbey",
+                        "FreeWorldsLeagueMarikStewartCommonwealth",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "FreeWorldsLeagueRegulanFiefs",
+                        "FreeWorldsLeagueRimCommonality",
+                        "LyranCommonwealth",
+                        "RepublicOfTheSphere"
+                    ],
+                    "DarkAge": [
+                        "InnerSphereGeneral"
+                    ],
+                    "IlClan": [
+                        "InnerSphereGeneral"
+                    ]
+                }
             },
             {
                 "bv": 1574,
-                "variant": "SHD-12C"
+                "variant": "SHD-12C",
+                "availability": {
+                    "Jihad": [
+                        "FreeRasalhagueRepublic"
+                    ],
+                    "EarlyRepublic": [
+                        "ClanWolf",
+                        "DraconisCombine",
+                        "RasalhagueDominion",
+                        "RepublicOfTheSphere"
+                    ],
+                    "LateRepublic": [
+                        "ClanWolf",
+                        "DraconisCombine",
+                        "RasalhagueDominion",
+                        "RepublicOfTheSphere"
+                    ],
+                    "DarkAge": [
+                        "ClanWolf",
+                        "DraconisCombine",
+                        "RasalhagueDominion",
+                        "RepublicOfTheSphere"
+                    ],
+                    "IlClan": [
+                        "DraconisCombine",
+                        "RasalhagueDominion"
+                    ]
+                }
             },
             {
-                "bv": 1348,
-                "variant": "C"
+                "bv": 1309,
+                "variant": "C",
+                "availability": {
+                    "EarlySuccessionWar": [
+                        "HWClanGeneral"
+                    ],
+                    "LateSuccessionWarLosTech": [
+                        "HWClanGeneral"
+                    ],
+                    "LateSuccessionWarRenaissance": [
+                        "ClanBloodSpirit",
+                        "ClanCloudCobra",
+                        "ClanCoyote",
+                        "ClanFireMandrill",
+                        "ClanGhostBear",
+                        "ClanGoliathScorpion",
+                        "ClanJadeFalcon",
+                        "ClanStarAdder"
+                    ],
+                    "ClanInvasion": [
+                        "ClanCloudCobra",
+                        "ClanFireMandrill",
+                        "ClanGoliathScorpion",
+                        "ClanStarAdder",
+                        "DraconisCombine",
+                        "FederatedCommonwealth",
+                        "FederatedSuns",
+                        "ISClanGeneral",
+                        "LyranAlliance",
+                        "LyranCommonwealth"
+                    ],
+                    "CivilWar": [
+                        "ClanCloudCobra",
+                        "ClanFireMandrill",
+                        "ClanGoliathScorpion",
+                        "ClanStarAdder",
+                        "DraconisCombine",
+                        "FederatedCommonwealth",
+                        "FederatedSuns",
+                        "ISClanGeneral",
+                        "LyranAlliance"
+                    ],
+                    "Jihad": [
+                        "ClanBurrock",
+                        "ClanCloudCobra",
+                        "ClanFireMandrill",
+                        "ClanGoliathScorpion",
+                        "ClanStarAdder",
+                        "DraconisCombine",
+                        "EscorpionImperio",
+                        "FederatedSuns",
+                        "ISClanGeneral",
+                        "LyranAlliance"
+                    ],
+                    "EarlyRepublic": [
+                        "ClanJadeFalcon",
+                        "ClanWolf",
+                        "EscorpionImperio",
+                        "RavenAlliance"
+                    ],
+                    "LateRepublic": [
+                        "ClanJadeFalcon",
+                        "ClanWolf",
+                        "EscorpionImperio",
+                        "RavenAlliance"
+                    ],
+                    "DarkAge": [
+                        "ClanWolf",
+                        "EscorpionImperio",
+                        "RavenAlliance",
+                        "ScorpionEmpire"
+                    ],
+                    "IlClan": [
+                        "RavenAlliance",
+                        "ScorpionEmpire"
+                    ]
+                }
             }
         ]
     },
@@ -31417,31 +32976,178 @@
         "variants": [
             {
                 "bv": 1823,
-                "variant": "SHG-2E"
+                "variant": "SHG-2E",
+                "availability": {
+                    "LateSuccessionWarLosTech": [
+                        "WolfsDragoons"
+                    ],
+                    "LateSuccessionWarRenaissance": [
+                        "WolfsDragoons"
+                    ],
+                    "ClanInvasion": [
+                        "WolfsDragoons"
+                    ],
+                    "CivilWar": [
+                        "WolfsDragoons"
+                    ]
+                }
             },
             {
                 "bv": 1804,
-                "variant": "SHG-2F"
+                "variant": "SHG-2F",
+                "availability": {
+                    "LateSuccessionWarRenaissance": [
+                        "WolfsDragoons"
+                    ],
+                    "ClanInvasion": [
+                        "WolfsDragoons"
+                    ],
+                    "CivilWar": [
+                        "WolfsDragoons"
+                    ]
+                }
             },
             {
                 "bv": 2087,
-                "variant": "SHG-2H"
+                "variant": "SHG-2H",
+                "availability": {
+                    "StarLeague": [
+                        "StarLeagueRegular",
+                        "StarLeagueRoyal"
+                    ],
+                    "EarlySuccessionWar": [
+                        "ClanBloodSpirit",
+                        "ClanBurrock",
+                        "ClanCloudCobra",
+                        "ClanCoyote",
+                        "ClanStarAdder",
+                        "FreeWorldsLeague",
+                        "StarLeagueInExile"
+                    ],
+                    "Jihad": [
+                        "ClanBurrock",
+                        "Society"
+                    ]
+                }
             },
             {
                 "bv": 1998,
-                "variant": "SHG-3E"
+                "variant": "SHG-3E",
+                "availability": {
+                    "EarlyRepublic": [
+                        "Mercenary"
+                    ],
+                    "LateRepublic": [
+                        "Mercenary"
+                    ],
+                    "DarkAge": [
+                        "Mercenary"
+                    ],
+                    "IlClan": [
+                        "Mercenary"
+                    ]
+                }
             },
             {
                 "bv": 3032,
-                "variant": "C"
+                "variant": "C",
+                "availability": {
+                    "EarlySuccessionWar": [
+                        "ClanBloodSpirit",
+                        "ClanBurrock",
+                        "ClanCloudCobra",
+                        "ClanCoyote",
+                        "ClanStarAdder"
+                    ],
+                    "LateSuccessionWarLosTech": [
+                        "ClanBloodSpirit",
+                        "ClanBurrock",
+                        "ClanCloudCobra",
+                        "ClanCoyote",
+                        "ClanStarAdder"
+                    ],
+                    "LateSuccessionWarRenaissance": [
+                        "ClanBloodSpirit",
+                        "ClanBurrock",
+                        "ClanCloudCobra",
+                        "ClanCoyote",
+                        "ClanStarAdder"
+                    ],
+                    "ClanInvasion": [
+                        "ClanBloodSpirit",
+                        "ClanBurrock",
+                        "ClanCloudCobra",
+                        "ClanCoyote",
+                        "ClanIceHellion",
+                        "ClanStarAdder",
+                        "WolfsDragoons"
+                    ],
+                    "CivilWar": [
+                        "ClanBloodSpirit",
+                        "ClanCloudCobra",
+                        "ClanCoyote",
+                        "ClanIceHellion",
+                        "ClanStarAdder",
+                        "WolfsDragoons"
+                    ],
+                    "Jihad": [
+                        "ClanBloodSpirit",
+                        "ClanBurrock",
+                        "ClanCloudCobra",
+                        "ClanCoyote",
+                        "ClanIceHellion",
+                        "ClanStarAdder",
+                        "WolfsDragoons"
+                    ],
+                    "EarlyRepublic": [
+                        "ClanDiamondShark",
+                        "WolfsDragoons"
+                    ],
+                    "LateRepublic": [
+                        "ClanSeaFox",
+                        "WolfsDragoons"
+                    ],
+                    "DarkAge": [
+                        "ClanSeaFox",
+                        "WolfsDragoons"
+                    ],
+                    "IlClan": [
+                        "ClanSeaFox",
+                        "WolfsDragoons"
+                    ]
+                }
             },
             {
                 "bv": 2914,
-                "variant": "C 2"
+                "variant": "C 2",
+                "availability": {
+                    "DarkAge": [
+                        "ClanSeaFox",
+                        "Mercenary",
+                        "WolfsDragoons"
+                    ],
+                    "IlClan": [
+                        "ClanProtectorate",
+                        "ClanSeaFox",
+                        "Mercenary",
+                        "WolfsDragoons"
+                    ]
+                }
             },
             {
                 "bv": 2935,
-                "variant": "C 3"
+                "variant": "C 3",
+                "availability": {
+                    "DarkAge": [
+                        "RasalhagueDominion",
+                        "RavenAlliance"
+                    ],
+                    "IlClan": [
+                        "ClanSeaFox",
+                        "RasalhagueDominion",
+                        "RavenAlliance"
+                    ]
+                }
             }
         ]
     },
@@ -31451,27 +33157,125 @@
         "variants": [
             {
                 "bv": 1498,
-                "variants": "SPT-N1"
+                "variants": "SPT-N1",
+                "availability": {
+                    "StarLeague": [
+                        "StarLeagueGeneral"
+                    ],
+                    "EarlySuccessionWar": [
+                        "InnerSphereGeneral"
+                    ]
+                }
             },
             {
                 "bv": 1605,
-                "variants": "SPT-N2"
+                "variants": "SPT-N2",
+                "availability": {
+                    "StarLeague": [
+                        "StarLeagueGeneral"
+                    ],
+                    "EarlySuccessionWar": [
+                        "ClanFireMandrill",
+                        "ComStar",
+                        "StarLeagueInExile"
+                    ],
+                    "LateSuccessionWarLosTech": [
+                        "ComStar"
+                    ],
+                    "LateSuccessionWarRenaissance": [
+                        "ComStar"
+                    ],
+                    "ClanInvasion": [
+                        "ComStar",
+                        "Mercenary",
+                        "WordOfBlake"
+                    ],
+                    "CivilWar": [
+                        "ComStar",
+                        "Mercenary",
+                        "WordOfBlake"
+                    ],
+                    "Jihad": [
+                        "ComStar",
+                        "EscorpionImperio",
+                        "Mercenary",
+                        "WordOfBlake"
+                    ],
+                    "EarlyRepublic": [
+                        "EscorpionImperio"
+                    ],
+                    "LateRepublic": [
+                        "EscorpionImperio"
+                    ]
+                }
             },
             {
                 "bv": 1631,
-                "variants": "SPT-N3"
+                "variants": "SPT-N3",
+                "availability": {
+                    "CivilWar": [
+                        "ComStar",
+                        "WordOfBlake"
+                    ],
+                    "Jihad": [
+                        "ComStar",
+                        "WordOfBlake"
+                    ]
+                }
             },
             {
                 "bv": 2108,
-                "variants": "SPT-N4"
+                "variants": "SPT-N4",
+                "availability": {
+                    "DarkAge": [
+                        "CapellanConfederation"
+                    ],
+                    "IlClan": [
+                        "CapellanConfederation"
+                    ]
+                }
             },
             {
                 "bv": 1605,
-                "variants": "SPT-NF"
+                "variants": "SPT-NF",
+                "availability": {
+                    "StarLeague": [
+                        "StarLeagueRoyal"
+                    ]
+                }
             },
             {
                 "bv": 2514,
-                "variants": "C"
+                "variants": "C",
+                "availability": {
+                    "EarlySuccessionWar": [
+                        "ClanCoyote",
+                        "ClanFireMandrill",
+                        "ClanHellsHorses"
+                    ],
+                    "LateSuccessionWarLosTech": [
+                        "ClanCoyote",
+                        "ClanFireMandrill",
+                        "ClanHellsHorses"
+                    ],
+                    "LateSuccessionWarRenaissance": [
+                        "ClanCoyote",
+                        "ClanFireMandrill"
+                    ],
+                    "ClanInvasion": [
+                        "ClanFireMandrill"
+                    ],
+                    "CivilWar": [
+                        "ClanFireMandrill"
+                    ],
+                    "DarkAge": [
+                        "EscorpionImperio",
+                        "ScorpionEmpire"
+                    ],
+                    "IlClan": [
+                        "ScorpionEmpire"
+                    ]
+                }
             }
         ]
     },
@@ -31481,23 +33285,185 @@
         "variants": [
             {
                 "bv": 1224,
-                "variant": "SPR-4F"
+                "variant": "SPR-4F",
+                "availability": {
+                    "StarLeague": [
+                        "StarLeagueRoyal"
+                    ],
+                    "EarlySuccessionWar": [
+                        "ClanIceHellion",
+                        "ClanMongoose",
+                        "StarLeagueInExile"
+                    ]
+                }
             },
             {
                 "bv": 1183,
-                "variant": "SPR-5F"
+                "variant": "SPR-5F",
+                "availability": {
+                    "ClanInvasion": [
+                        "CircinusFederation",
+                        "ComStar",
+                        "FederatedCommonwealth",
+                        "FederatedSuns",
+                        "KellHounds",
+                        "LyranAlliance",
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "StIvesCompact",
+                        "WolfsDragoons"
+                    ],
+                    "CivilWar": [
+                        "CircinusFederation",
+                        "ComStar",
+                        "FederatedCommonwealth",
+                        "FederatedSuns",
+                        "KellHounds",
+                        "LyranAlliance",
+                        "Mercenary",
+                        "StIvesCompact",
+                        "WolfsDragoons"
+                    ],
+                    "Jihad": [
+                        "CircinusFederation",
+                        "ComStar",
+                        "FederatedSuns",
+                        "KellHounds",
+                        "LyranAlliance",
+                        "Mercenary",
+                        "WolfsDragoons"
+                    ],
+                    "EarlyRepublic": [
+                        "FederatedSuns",
+                        "FreeWorldsLeagueRegulanFiefs",
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "LateRepublic": [
+                        "FederatedSuns",
+                        "FreeWorldsLeagueRegulanFiefs",
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "DarkAge": [
+                        "FederatedSuns",
+                        "FreeWorldsLeague",
+                        "FreeWorldsLeagueRegulanFiefs",
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "IlClan": [
+                        "FederatedSuns",
+                        "FreeWorldsLeague",
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "TamarPact"
+                    ]
+                }
             },
             {
-                "bv": 1166,
-                "variant": "SPR-5S"
+                "bv": 1165,
+                "variant": "SPR-5S",
+                "availability": {
+                    "CivilWar": [
+                        "CapellanConfederation"
+                    ],
+                    "Jihad": [
+                        "CapellanConfederation",
+                        "ComStar",
+                        "FederatedSuns",
+                        "LyranAlliance"
+                    ],
+                    "EarlyRepublic": [
+                        "CapellanConfederation",
+                        "FederatedSuns",
+                        "LyranCommonwealth",
+                        "RepublicOfTheSphere"
+                    ],
+                    "LateRepublic": [
+                        "CapellanConfederation",
+                        "FederatedSuns",
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "DarkAge": [
+                        "CapellanConfederation",
+                        "FederatedSuns",
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "IlClan": [
+                        "CapellanConfederation",
+                        "FederatedSuns",
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "TamarPact",
+                        "VesperMarches"
+                    ]
+                }
             },
             {
                 "bv": 1476,
-                "variant": "SPR-6F"
+                "variant": "SPR-6F",
+                "availability": {
+                    "LateRepublic": [
+                        "ClanSeaFox",
+                        "KellHounds",
+                        "LyranCommonwealth"
+                    ],
+                    "DarkAge": [
+                        "ClanSeaFox",
+                        "KellHounds",
+                        "LyranCommonwealth"
+                    ],
+                    "IlClan": [
+                        "ClanSeaFox",
+                        "KellHounds",
+                        "LyranCommonwealth"
+                    ]
+                }
             },
             {
-                "bv": 1522,
-                "variant": "SPR-ST"
+                "bv": 1438,
+                "variant": "SPR-ST",
+                "availability": {
+                    "Jihad": [
+                        "CapellanConfederation",
+                        "ComStar",
+                        "FederatedSuns",
+                        "LyranAlliance"
+                    ],
+                    "EarlyRepublic": [
+                        "CapellanConfederation",
+                        "FederatedSuns",
+                        "LyranCommonwealth",
+                        "RepublicOfTheSphere"
+                    ],
+                    "LateRepublic": [
+                        "CapellanConfederation",
+                        "FederatedSuns",
+                        "LyranCommonwealth",
+                        "RepublicOfTheSphere"
+                    ],
+                    "DarkAge": [
+                        "CapellanConfederation",
+                        "FederatedSuns",
+                        "LyranCommonwealth",
+                        "RepublicOfTheSphere"
+                    ],
+                    "IlClan": [
+                        "CapellanConfederation",
+                        "FederatedSuns",
+                        "LyranCommonwealth",
+                        "TamarPact",
+                        "VesperMarches"
+                    ]
+                }
             }
         ]
     },
@@ -31507,55 +33473,597 @@
         "variants": [
             {
                 "bv": 524,
-                "variant": "SDR-5D"
+                "variant": "SDR-5D",
+                "availability": {
+                    "EarlySuccessionWar": [
+                        "FederatedSuns"
+                    ],
+                    "LateSuccessionWarLosTech": [
+                        "FederatedSuns"
+                    ],
+                    "LateSuccessionWarRenaissance": [
+                        "FederatedSuns"
+                    ],
+                    "ClanInvasion": [
+                        "FederatedCommonwealth",
+                        "FederatedSuns"
+                    ],
+                    "CivilWar": [
+                        "FederatedCommonwealth",
+                        "FederatedSuns"
+                    ],
+                    "Jihad": [
+                        "FederatedSuns",
+                        "FiltveltCoalition"
+                    ],
+                    "EarlyRepublic": [
+                        "FiltveltCoalition"
+                    ],
+                    "LateRepublic": [
+                        "FiltveltCoalition"
+                    ],
+                    "DarkAge": [
+                        "FiltveltCoalition"
+                    ]
+                }
             },
             {
                 "bv": 503,
-                "variant": "SDR-5K"
+                "variant": "SDR-5K",
+                "availability": {
+                    "EarlySuccessionWar": [
+                        "DraconisCombine"
+                    ],
+                    "LateSuccessionWarLosTech": [
+                        "DraconisCombine"
+                    ],
+                    "LateSuccessionWarRenaissance": [
+                        "DraconisCombine",
+                        "FreeRasalhagueRepublic"
+                    ],
+                    "ClanInvasion": [
+                        "DraconisCombine",
+                        "FreeRasalhagueRepublic"
+                    ],
+                    "CivilWar": [
+                        "DraconisCombine",
+                        "FreeRasalhagueRepublic"
+                    ],
+                    "Jihad": [
+                        "DraconisCombine",
+                        "FreeRasalhagueRepublic"
+                    ],
+                    "EarlyRepublic": [
+                        "DraconisCombine"
+                    ],
+                    "LateRepublic": [
+                        "DraconisCombine"
+                    ]
+                }
             },
             {
                 "bv": 622,
-                "variant": "SDR-5V"
+                "variant": "SDR-5V",
+                "availability": {
+                    "StarLeague": [
+                        "CapellanConfederation",
+                        "DraconisCombine",
+                        "FreeWorldsLeague",
+                        "RimWorldsRepublicHomeGuard",
+                        "RimWorldsRepublicTerranCorps",
+                        "StarLeagueGeneral",
+                        "TaurianConcordat"
+                    ],
+                    "EarlySuccessionWar": [
+                        "ClanWidowmaker",
+                        "InnerSphereGeneral",
+                        "Mercenary",
+                        "OutworldsAlliance",
+                        "StarLeagueInExile",
+                        "TaurianConcordat"
+                    ],
+                    "LateSuccessionWarLosTech": [
+                        "ComStar",
+                        "InnerSphereGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "LateSuccessionWarRenaissance": [
+                        "ComStar",
+                        "InnerSphereGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "ClanInvasion": [
+                        "InnerSphereGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "CivilWar": [
+                        "InnerSphereGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "Jihad": [
+                        "InnerSphereGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "EarlyRepublic": [
+                        "CapellanConfederation",
+                        "DraconisCombine",
+                        "FreeWorldsLeagueNonAlignedWorlds",
+                        "FreeWorldsLeagueRegulanFiefs",
+                        "FreeWorldsLeagueRimCommonality",
+                        "Mercenary",
+                        "PeripheryGeneral"
+                    ],
+                    "LateRepublic": [
+                        "DraconisCombine",
+                        "FreeWorldsLeagueNonAlignedWorlds",
+                        "FreeWorldsLeagueRegulanFiefs",
+                        "FreeWorldsLeagueRimCommonality",
+                        "Mercenary",
+                        "PeripheryGeneral"
+                    ],
+                    "DarkAge": [
+                        "Mercenary",
+                        "PeripheryGeneral"
+                    ],
+                    "IlClan": [
+                        "Mercenary",
+                        "PeripheryGeneral"
+                    ]
+                }
             },
             {
-                "bv": 688,
-                "variant": "SDR-7K"
+                "bv": 752,
+                "variant": "SDR-7K",
+                "availability": {
+                    "CivilWar": [
+                        "DraconisCombine"
+                    ],
+                    "Jihad": [
+                        "DraconisCombine"
+                    ],
+                    "EarlyRepublic": [
+                        "DraconisCombine",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "LateRepublic": [
+                        "DraconisCombine",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "DarkAge": [
+                        "DraconisCombine",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "IlClan": [
+                        "DraconisCombine",
+                        "Mercenary"
+                    ]
+                }
             },
             {
                 "bv": 884,
-                "variant": "SDR-7K2"
+                "variant": "SDR-7K2",
+                "availability": {
+                    "Jihad": [
+                        "DraconisCombine"
+                    ],
+                    "EarlyRepublic": [
+                        "DraconisCombine",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "LateRepublic": [
+                        "DraconisCombine",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "DarkAge": [
+                        "DraconisCombine",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "IlClan": [
+                        "DraconisCombine",
+                        "Mercenary"
+                    ]
+                }
+            },
+            {
+                "bv": 732,
+                "variant": "SDR-7KC",
+                "availability": {
+                    "Jihad": [
+                        "DraconisCombine"
+                    ],
+                    "EarlyRepublic": [
+                        "DraconisCombine",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "LateRepublic": [
+                        "DraconisCombine",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "DarkAge": [
+                        "DraconisCombine",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "IlClan": [
+                        "DraconisCombine",
+                        "Mercenary"
+                    ]
+                }
+            },
+            {
+                "bv": 775,
+                "variant": "SDR-7Kr",
+                "availability": {
+                    "Jihad": [
+                        "DraconisCombine"
+                    ],
+                    "EarlyRepublic": [
+                        "DraconisCombine",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "LateRepublic": [
+                        "DraconisCombine",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "DarkAge": [
+                        "DraconisCombine",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "IlClan": [
+                        "DraconisCombine",
+                        "Mercenary"
+                    ]
+                }
             },
             {
                 "bv": 621,
-                "variant": "SDR-7M"
+                "variant": "SDR-7M",
+                "availability": {
+                    "ClanInvasion": [
+                        "CapellanConfederation",
+                        "DraconisCombine",
+                        "FederatedCommonwealth",
+                        "FederatedSuns",
+                        "FreeWorldsLeague",
+                        "MagistracyOfCanopus",
+                        "MarianHegemony",
+                        "Mercenary",
+                        "StIvesCompact"
+                    ],
+                    "CivilWar": [
+                        "CapellanConfederation",
+                        "DraconisCombine",
+                        "FederatedCommonwealth",
+                        "FederatedSuns",
+                        "FreeWorldsLeague",
+                        "MagistracyOfCanopus",
+                        "MarianHegemony",
+                        "Mercenary",
+                        "StIvesCompact"
+                    ],
+                    "Jihad": [
+                        "CapellanConfederation",
+                        "DraconisCombine",
+                        "FederatedSuns",
+                        "FreeWorldsLeague",
+                        "MagistracyOfCanopus",
+                        "MarianHegemony",
+                        "Mercenary"
+                    ],
+                    "EarlyRepublic": [
+                        "CapellanConfederation",
+                        "DraconisCombine",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FreeWorldsLeagueMarikStewartCommonwealth",
+                        "FreeWorldsLeagueNonAlignedWorlds",
+                        "FreeWorldsLeagueRimCommonality",
+                        "MagistracyOfCanopus",
+                        "MarianHegemony",
+                        "Mercenary"
+                    ],
+                    "LateRepublic": [
+                        "DraconisCombine",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FreeWorldsLeagueMarikStewartCommonwealth",
+                        "FreeWorldsLeagueNonAlignedWorlds",
+                        "FreeWorldsLeagueRimCommonality",
+                        "MagistracyOfCanopus",
+                        "MarianHegemony",
+                        "Mercenary"
+                    ]
+                }
             },
             {
                 "bv": 1007,
-                "variant": "SDR-8K"
+                "variant": "SDR-8K",
+                "availability": {
+                    "EarlyRepublic": [
+                        "DraconisCombine",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "LateRepublic": [
+                        "DraconisCombine",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "DarkAge": [
+                        "DraconisCombine",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "IlClan": [
+                        "DraconisCombine",
+                        "Mercenary"
+                    ]
+                }
             },
             {
-                "bv": 688,
-                "variant": "SDR-8M"
+                "bv": 621,
+                "variant": "SDR-8M",
+                "availability": {
+                    "ClanInvasion": [
+                        "FreeWorldsLeague",
+                        "Mercenary"
+                    ],
+                    "CivilWar": [
+                        "FreeWorldsLeague",
+                        "Mercenary"
+                    ],
+                    "Jihad": [
+                        "FreeWorldsLeague",
+                        "Mercenary"
+                    ],
+                    "EarlyRepublic": [
+                        "CapellanConfederation",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FreeWorldsLeagueDuchyOfTamarindAbbey",
+                        "FreeWorldsLeagueMarikStewartCommonwealth",
+                        "FreeWorldsLeagueNonAlignedWorlds",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "FreeWorldsLeagueRegulanFiefs",
+                        "FreeWorldsLeagueRimCommonality",
+                        "MagistracyOfCanopus",
+                        "MarianHegemony",
+                        "Mercenary"
+                    ],
+                    "LateRepublic": [
+                        "CapellanConfederation",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FreeWorldsLeagueDuchyOfTamarindAbbey",
+                        "FreeWorldsLeagueMarikStewartCommonwealth",
+                        "FreeWorldsLeagueNonAlignedWorlds",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "FreeWorldsLeagueRegulanFiefs",
+                        "FreeWorldsLeagueRimCommonality",
+                        "MagistracyOfCanopus",
+                        "MarianHegemony",
+                        "Mercenary"
+                    ],
+                    "DarkAge": [
+                        "InnerSphereGeneral",
+                        "Mercenary",
+                        "PeripheryGeneral"
+                    ],
+                    "IlClan": [
+                        "InnerSphereGeneral",
+                        "Mercenary",
+                        "PeripheryGeneral"
+                    ]
+                }
             },
             {
                 "bv": 694,
-                "variant": "SDR-8R"
+                "variant": "SDR-8R",
+                "availability": {
+                    "EarlyRepublic": [
+                        "FreeWorldsLeagueDuchyOfTamarindAbbey",
+                        "Mercenary",
+                        "RasalhagueDominion",
+                        "RepublicOfTheSphere"
+                    ],
+                    "LateRepublic": [
+                        "FreeWorldsLeagueDuchyOfTamarindAbbey",
+                        "Mercenary",
+                        "RasalhagueDominion",
+                        "RepublicOfTheSphere"
+                    ],
+                    "DarkAge": [
+                        "FreeWorldsLeague",
+                        "FreeWorldsLeagueDuchyOfTamarindAbbey",
+                        "Mercenary",
+                        "RasalhagueDominion",
+                        "RepublicOfTheSphere"
+                    ],
+                    "IlClan": [
+                        "ClanSeaFox",
+                        "DraconisCombine",
+                        "FreeWorldsLeague",
+                        "Mercenary",
+                        "RasalhagueDominion"
+                    ]
+                }
             },
             {
                 "bv": 765,
-                "variant": "SDR-8X"
+                "variant": "SDR-8X",
+                "availability": {
+                    "Jihad": [
+                        "DraconisCombine",
+                        "Mercenary"
+                    ],
+                    "EarlyRepublic": [
+                        "DraconisCombine",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "LateRepublic": [
+                        "DraconisCombine",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "DarkAge": [
+                        "DraconisCombine",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "IlClan": [
+                        "ClanSeaFox",
+                        "DraconisCombine",
+                        "FreeWorldsLeague",
+                        "Mercenary"
+                    ]
+                }
             },
             {
                 "bv": 754,
-                "variant": "SDR-8Xr"
+                "variant": "SDR-8Xr",
+                "availability": {
+                    "LateRepublic": [
+                        "DraconisCombine",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "DarkAge": [
+                        "DraconisCombine",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "IlClan": [
+                        "DraconisCombine",
+                        "Mercenary"
+                    ]
+                }
             },
             {
                 "bv": 687,
-                "variant": "SDR-9M"
+                "variant": "SDR-9M",
+                "availability": {
+                    "EarlyRepublic": [
+                        "DraconisCombine",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FreeWorldsLeagueDuchyOfTamarindAbbey",
+                        "FreeWorldsLeagueMarikStewartCommonwealth",
+                        "FreeWorldsLeagueNonAlignedWorlds",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "FreeWorldsLeagueRegulanFiefs",
+                        "FreeWorldsLeagueRimCommonality",
+                        "Mercenary"
+                    ],
+                    "LateRepublic": [
+                        "DraconisCombine",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FreeWorldsLeagueDuchyOfTamarindAbbey",
+                        "FreeWorldsLeagueMarikStewartCommonwealth",
+                        "FreeWorldsLeagueNonAlignedWorlds",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "FreeWorldsLeagueRegulanFiefs",
+                        "FreeWorldsLeagueRimCommonality",
+                        "Mercenary"
+                    ],
+                    "DarkAge": [
+                        "DraconisCombine",
+                        "FreeWorldsLeague",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FreeWorldsLeagueDuchyOfTamarindAbbey",
+                        "FreeWorldsLeagueMarikStewartCommonwealth",
+                        "FreeWorldsLeagueNonAlignedWorlds",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "FreeWorldsLeagueRegulanFiefs",
+                        "FreeWorldsLeagueRimCommonality",
+                        "FroncReaches",
+                        "MagistracyOfCanopus",
+                        "MarianHegemony",
+                        "Mercenary"
+                    ],
+                    "IlClan": [
+                        "ClanProtectorate",
+                        "DraconisCombine",
+                        "FreeWorldsLeague",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FroncReaches",
+                        "MagistracyOfCanopus",
+                        "MarianHegemony",
+                        "Mercenary"
+                    ]
+                }
             },
             {
-                "bv": 770,
-                "variant": "SDR-10K"
+                "bv": 824,
+                "variant": "SDR-10K",
+                "availability": {
+                    "DarkAge": [
+                        "DraconisCombine"
+                    ],
+                    "IlClan": [
+                        "DraconisCombine"
+                    ]
+                }
+            },
+            {
+                "bv": 616,
+                "variant": "SDR-C",
+                "availability": {
+                    "ClanInvasion": [
+                        "DraconisCombine"
+                    ],
+                    "CivilWar": [
+                        "CapellanConfederation",
+                        "DraconisCombine",
+                        "FederatedCommonwealth",
+                        "FederatedSuns",
+                        "FreeWorldsLeague",
+                        "Mercenary"
+                    ],
+                    "Jihad": [
+                        "CapellanConfederation",
+                        "DraconisCombine",
+                        "FederatedSuns",
+                        "FreeWorldsLeague",
+                        "Mercenary"
+                    ],
+                    "EarlyRepublic": [
+                        "CapellanConfederation",
+                        "DraconisCombine",
+                        "FreeWorldsLeagueDuchyOfTamarindAbbey",
+                        "FreeWorldsLeagueNonAlignedWorlds",
+                        "FreeWorldsLeagueRimCommonality",
+                        "Mercenary"
+                    ],
+                    "LateRepublic": [
+                        "DraconisCombine",
+                        "FreeWorldsLeagueDuchyOfTamarindAbbey",
+                        "FreeWorldsLeagueNonAlignedWorlds",
+                        "FreeWorldsLeagueRimCommonality",
+                        "Mercenary"
+                    ]
+                }
             }
         ]
     },
@@ -31565,43 +34073,627 @@
         "variants": [
             {
                 "bv": 1559,
-                "variant": "STK-3F"
+                "variant": "STK-3F",
+                "availability": {
+                    "StarLeague": [
+                        "InnerSphereGeneral",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "StarLeagueGeneral"
+                    ],
+                    "EarlySuccessionWar": [
+                        "InnerSphereGeneral",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "StarLeagueInExile"
+                    ],
+                    "LateSuccessionWarLosTech": [
+                        "ComStar",
+                        "InnerSphereGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "LateSuccessionWarRenaissance": [
+                        "ComStar",
+                        "InnerSphereGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "ClanInvasion": [
+                        "InnerSphereGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "CivilWar": [
+                        "InnerSphereGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "Jihad": [
+                        "EscorpionImperio",
+                        "InnerSphereGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "EarlyRepublic": [
+                        "EscorpionImperio",
+                        "InnerSphereGeneral",
+                        "Mercenary",
+                        "PeripheryGeneral"
+                    ],
+                    "LateRepublic": [
+                        "EscorpionImperio",
+                        "InnerSphereGeneral",
+                        "Mercenary",
+                        "PeripheryGeneral"
+                    ],
+                    "DarkAge": [
+                        "EscorpionImperio",
+                        "FederatedSuns",
+                        "FreeWorldsLeague",
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "ScorpionEmpire"
+                    ],
+                    "IlClan": [
+                        "FreeWorldsLeague",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "ScorpionEmpire"
+                    ]
+                }
             },
             {
                 "bv": 2029,
-                "variant": "STK-3Fb"
+                "variant": "STK-3Fb",
+                "availability": {
+                    "StarLeague": [
+                        "InnerSphereGeneral",
+                        "PeripheryGeneral",
+                        "StarLeagueRegular",
+                        "StarLeagueRoyal"
+                    ],
+                    "EarlySuccessionWar": [
+                        "HWClanGeneral",
+                        "InnerSphereGeneral",
+                        "PeripheryGeneral",
+                        "StarLeagueInExile"
+                    ],
+                    "LateSuccessionWarLosTech": [
+                        "HWClanGeneral"
+                    ],
+                    "LateSuccessionWarRenaissance": [
+                        "HWClanGeneral"
+                    ],
+                    "ClanInvasion": [
+                        "HWClanGeneral",
+                        "ISClanGeneral"
+                    ],
+                    "CivilWar": [
+                        "HWClanGeneral",
+                        "ISClanGeneral"
+                    ],
+                    "Jihad": [
+                        "FreeWorldsLeague",
+                        "HWClanGeneral",
+                        "Mercenary",
+                        "Society"
+                    ],
+                    "EarlyRepublic": [
+                        "CapellanConfederation",
+                        "ClanDiamondShark",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "FreeWorldsLeagueRegulanFiefs",
+                        "FreeWorldsLeagueRimCommonality",
+                        "MagistracyOfCanopus",
+                        "Mercenary"
+                    ],
+                    "LateRepublic": [
+                        "CapellanConfederation",
+                        "ClanSeaFox",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "FreeWorldsLeagueRegulanFiefs",
+                        "FreeWorldsLeagueRimCommonality",
+                        "MagistracyOfCanopus",
+                        "Mercenary"
+                    ],
+                    "DarkAge": [
+                        "CapellanConfederation",
+                        "ClanSeaFox",
+                        "FreeWorldsLeague",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "FreeWorldsLeagueRegulanFiefs",
+                        "FreeWorldsLeagueRimCommonality",
+                        "MagistracyOfCanopus",
+                        "Mercenary"
+                    ],
+                    "IlClan": [
+                        "CapellanConfederation",
+                        "ClanSeaFox",
+                        "FreeWorldsLeague",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "MagistracyOfCanopus",
+                        "Mercenary"
+                    ]
+                }
             },
             {
                 "bv": 1624,
-                "variant": "STK-3H"
+                "variant": "STK-3H",
+                "availability": {
+                    "StarLeague": [
+                        "RimWorldsRepublicTerranCorps",
+                        "StarLeagueGeneral"
+                    ],
+                    "EarlySuccessionWar": [
+                        "InnerSphereGeneral",
+                        "MagistracyOfCanopus",
+                        "Mercenary",
+                        "OutworldsAlliance",
+                        "TaurianConcordat"
+                    ],
+                    "LateSuccessionWarLosTech": [
+                        "ComStar",
+                        "InnerSphereGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "LateSuccessionWarRenaissance": [
+                        "ComStar",
+                        "InnerSphereGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "ClanInvasion": [
+                        "InnerSphereGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "CivilWar": [
+                        "InnerSphereGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "Jihad": [
+                        "InnerSphereGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "EarlyRepublic": [
+                        "InnerSphereGeneral",
+                        "Mercenary",
+                        "PeripheryGeneral"
+                    ],
+                    "LateRepublic": [
+                        "Mercenary",
+                        "PeripheryGeneral"
+                    ]
+                }
             },
             {
                 "bv": 1558,
-                "variant": "STK-4N"
+                "variant": "STK-4N",
+                "availability": {
+                    "EarlySuccessionWar": [
+                        "InnerSphereGeneral",
+                        "MagistracyOfCanopus",
+                        "Mercenary",
+                        "OutworldsAlliance",
+                        "TaurianConcordat"
+                    ],
+                    "LateSuccessionWarLosTech": [
+                        "InnerSphereGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "LateSuccessionWarRenaissance": [
+                        "InnerSphereGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "ClanInvasion": [
+                        "InnerSphereGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "CivilWar": [
+                        "InnerSphereGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "Jihad": [
+                        "InnerSphereGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "EarlyRepublic": [
+                        "InnerSphereGeneral",
+                        "Mercenary",
+                        "PeripheryGeneral"
+                    ],
+                    "LateRepublic": [
+                        "Mercenary",
+                        "TaurianConcordat"
+                    ],
+                    "DarkAge": [
+                        "Mercenary",
+                        "TaurianConcordat"
+                    ]
+                }
+            },
+            {
+                "bv": 1461,
+                "variant": "STK-4P",
+                "availability": {
+                    "LateSuccessionWarLosTech": [
+                        "InnerSphereGeneral",
+                        "Mercenary",
+                        "PeripheryGeneral"
+                    ],
+                    "LateSuccessionWarRenaissance": [
+                        "InnerSphereGeneral",
+                        "Mercenary",
+                        "PeripheryGeneral"
+                    ],
+                    "ClanInvasion": [
+                        "InnerSphereGeneral",
+                        "Mercenary",
+                        "PeripheryGeneral"
+                    ],
+                    "CivilWar": [
+                        "InnerSphereGeneral",
+                        "Mercenary",
+                        "PeripheryGeneral"
+                    ],
+                    "Jihad": [
+                        "InnerSphereGeneral",
+                        "Mercenary",
+                        "PeripheryGeneral"
+                    ],
+                    "EarlyRepublic": [
+                        "Mercenary",
+                        "PeripheryGeneral"
+                    ],
+                    "LateRepublic": [
+                        "MarianHegemony"
+                    ],
+                    "DarkAge": [
+                        "MarianHegemony"
+                    ],
+                    "IlClan": [
+                        "MarianHegemony"
+                    ]
+                }
             },
             {
                 "bv": 1655,
-                "variant": "STK-5M"
+                "variant": "STK-5M",
+                "availability": {
+                    "ClanInvasion": [
+                        "InnerSphereGeneral",
+                        "KellHounds",
+                        "MagistracyOfCanopus",
+                        "Mercenary",
+                        "TaurianConcordat",
+                        "WolfsDragoons"
+                    ],
+                    "CivilWar": [
+                        "CircinusFederation",
+                        "InnerSphereGeneral",
+                        "KellHounds",
+                        "MagistracyOfCanopus",
+                        "Mercenary",
+                        "TaurianConcordat",
+                        "WolfsDragoons"
+                    ],
+                    "Jihad": [
+                        "CircinusFederation",
+                        "InnerSphereGeneral",
+                        "KellHounds",
+                        "MagistracyOfCanopus",
+                        "Mercenary",
+                        "TaurianConcordat",
+                        "WolfsDragoons"
+                    ],
+                    "EarlyRepublic": [
+                        "InnerSphereGeneral",
+                        "MagistracyOfCanopus",
+                        "MarianHegemony",
+                        "Mercenary"
+                    ],
+                    "LateRepublic": [
+                        "FroncReaches",
+                        "InnerSphereGeneral",
+                        "MagistracyOfCanopus",
+                        "MarianHegemony",
+                        "Mercenary",
+                        "TaurianConcordat"
+                    ],
+                    "DarkAge": [
+                        "CapellanConfederation",
+                        "FreeWorldsLeague",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FreeWorldsLeagueDuchyOfTamarindAbbey",
+                        "FreeWorldsLeagueMarikStewartCommonwealth",
+                        "FreeWorldsLeagueNonAlignedWorlds",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "FreeWorldsLeagueRegulanFiefs",
+                        "FreeWorldsLeagueRimCommonality",
+                        "FroncReaches",
+                        "LyranCommonwealth",
+                        "MagistracyOfCanopus",
+                        "MarianHegemony",
+                        "Mercenary",
+                        "TaurianConcordat"
+                    ],
+                    "IlClan": [
+                        "FreeWorldsLeague",
+                        "FroncReaches",
+                        "MagistracyOfCanopus",
+                        "MarianHegemony",
+                        "Mercenary",
+                        "Pirates",
+                        "TaurianConcordat"
+                    ]
+                }
             },
             {
                 "bv": 1423,
-                "variant": "STK-5S"
+                "variant": "STK-5S",
+                "availability": {
+                    "ClanInvasion": [
+                        "ClanSteelViper",
+                        "FederatedCommonwealth",
+                        "FederatedSuns",
+                        "KellHounds",
+                        "LyranAlliance",
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "StIvesCompact",
+                        "TaurianConcordat",
+                        "WolfsDragoons"
+                    ],
+                    "CivilWar": [
+                        "ClanDiamondShark",
+                        "ClanJadeFalcon",
+                        "FederatedCommonwealth",
+                        "FederatedSuns",
+                        "KellHounds",
+                        "LyranAlliance",
+                        "Mercenary",
+                        "StIvesCompact",
+                        "TaurianConcordat",
+                        "WolfsDragoons"
+                    ],
+                    "Jihad": [
+                        "ClanDiamondShark",
+                        "ClanJadeFalcon",
+                        "FederatedSuns",
+                        "FiltveltCoalition",
+                        "KellHounds",
+                        "LyranAlliance",
+                        "Mercenary",
+                        "TaurianConcordat",
+                        "WolfsDragoons"
+                    ],
+                    "EarlyRepublic": [
+                        "ClanJadeFalcon",
+                        "FederatedSuns",
+                        "FiltveltCoalition",
+                        "LyranCommonwealth",
+                        "Mercenary"
+                    ],
+                    "LateRepublic": [
+                        "ClanJadeFalcon",
+                        "LyranCommonwealth",
+                        "Mercenary"
+                    ],
+                    "DarkAge": [
+                        "Mercenary"
+                    ],
+                    "IlClan": [
+                        "Mercenary"
+                    ]
+                }
             },
             {
                 "bv": 2029,
-                "variant": "STK-6M"
+                "variant": "STK-6M",
+                "availability": {
+                    "CivilWar": [
+                        "FreeWorldsLeague",
+                        "Mercenary",
+                        "WordOfBlake"
+                    ],
+                    "Jihad": [
+                        "FreeWorldsLeague",
+                        "Mercenary",
+                        "WordOfBlake"
+                    ],
+                    "EarlyRepublic": [
+                        "CapellanConfederation",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "FreeWorldsLeagueRegulanFiefs",
+                        "FreeWorldsLeagueRimCommonality",
+                        "MagistracyOfCanopus",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "LateRepublic": [
+                        "CapellanConfederation",
+                        "ComStar",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "FreeWorldsLeagueRegulanFiefs",
+                        "FreeWorldsLeagueRimCommonality",
+                        "MagistracyOfCanopus",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "DarkAge": [
+                        "CapellanConfederation",
+                        "ComStar",
+                        "FreeWorldsLeague",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "FreeWorldsLeagueRegulanFiefs",
+                        "FreeWorldsLeagueRimCommonality",
+                        "MagistracyOfCanopus",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "IlClan": [
+                        "CapellanConfederation",
+                        "ClanProtectorate",
+                        "FreeWorldsLeague",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "MagistracyOfCanopus",
+                        "Mercenary"
+                    ]
+                }
             },
             {
-                "bv": 1901,
-                "variant": "STK-7D"
+                "bv": 1712,
+                "variant": "STK-7C3BS",
+                "availability": {
+                    "Jihad": [
+                        "FederatedSuns"
+                    ],
+                    "EarlyRepublic": [
+                        "FederatedSuns"
+                    ],
+                    "LateRepublic": [
+                        "FederatedSuns"
+                    ],
+                    "DarkAge": [
+                        "FederatedSuns"
+                    ],
+                    "IlClan": [
+                        "FederatedSuns"
+                    ]
+                }
+            },
+            {
+                "bv": 1872,
+                "variant": "STK-7D",
+                "availability": {
+                    "ClanInvasion": [
+                        "FederatedCommonwealth",
+                        "FederatedSuns"
+                    ],
+                    "Jihad": [
+                        "FederatedSuns"
+                    ],
+                    "EarlyRepublic": [
+                        "FederatedSuns",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "LateRepublic": [
+                        "FederatedSuns",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "DarkAge": [
+                        "FederatedSuns",
+                        "Mercenary",
+                        "RavenAlliance",
+                        "RepublicOfTheSphere"
+                    ],
+                    "IlClan": [
+                        "FederatedSuns",
+                        "Mercenary",
+                        "RavenAlliance"
+                    ]
+                }
             },
             {
                 "bv": 2020,
-                "variant": "STK-8S"
+                "variant": "STK-8S",
+                "availability": {
+                    "CivilWar": [
+                        "LyranAlliance"
+                    ],
+                    "Jihad": [
+                        "LyranAlliance"
+                    ],
+                    "EarlyRepublic": [
+                        "LyranCommonwealth",
+                        "RepublicOfTheSphere"
+                    ],
+                    "LateRepublic": [
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "DarkAge": [
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "IlClan": [
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "VesperMarches"
+                    ]
+                }
             },
             {
                 "bv": 2469,
-                "variant": "STK-9F"
+                "variant": "STK-9F",
+                "availability": {
+                    "DarkAge": [
+                        "CapellanConfederation",
+                        "ClanSeaFox",
+                        "FreeWorldsLeague",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "MagistracyOfCanopus",
+                        "WolfsDragoons"
+                    ],
+                    "IlClan": [
+                        "CapellanConfederation",
+                        "ClanSeaFox",
+                        "FreeWorldsLeague",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "MagistracyOfCanopus",
+                        "WolfEmpire"
+                    ]
+                }
             }
         ]
     },
@@ -31611,23 +34703,238 @@
         "variants": [
             {
                 "bv": 1365,
-                "variant": "STY-2C"
+                "variant": "STY-2C",
+                "availability": {
+                    "StarLeague": [
+                        "LyranCommonwealth",
+                        "StarLeagueRegular",
+                        "StarLeagueRoyal"
+                    ],
+                    "EarlySuccessionWar": [
+                        "LyranCommonwealth"
+                    ]
+                }
             },
             {
                 "bv": 1508,
-                "variant": "STY-3C"
+                "variant": "STY-3C",
+                "availability": {
+                    "ClanInvasion": [
+                        "CapellanConfederation",
+                        "FederatedCommonwealth",
+                        "FederatedSuns",
+                        "FreeRasalhagueRepublic",
+                        "KellHounds",
+                        "LyranAlliance",
+                        "LyranCommonwealth",
+                        "MagistracyOfCanopus",
+                        "Mercenary",
+                        "WolfsDragoons"
+                    ],
+                    "CivilWar": [
+                        "CapellanConfederation",
+                        "FederatedCommonwealth",
+                        "FederatedSuns",
+                        "FreeRasalhagueRepublic",
+                        "KellHounds",
+                        "LyranAlliance",
+                        "MagistracyOfCanopus",
+                        "Mercenary",
+                        "StIvesCompact",
+                        "WolfsDragoons"
+                    ],
+                    "Jihad": [
+                        "CapellanConfederation",
+                        "FederatedSuns",
+                        "FreeRasalhagueRepublic",
+                        "FroncReaches",
+                        "KellHounds",
+                        "LyranAlliance",
+                        "MagistracyOfCanopus",
+                        "Mercenary",
+                        "WolfsDragoons"
+                    ],
+                    "EarlyRepublic": [
+                        "CapellanConfederation",
+                        "FederatedSuns",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "FreeWorldsLeagueRegulanFiefs",
+                        "FroncReaches",
+                        "LyranCommonwealth",
+                        "MagistracyOfCanopus",
+                        "Mercenary",
+                        "RepublicOfTheSphere",
+                        "TaurianConcordat"
+                    ],
+                    "LateRepublic": [
+                        "CapellanConfederation",
+                        "FederatedSuns",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "FreeWorldsLeagueRegulanFiefs",
+                        "FroncReaches",
+                        "LyranCommonwealth",
+                        "MagistracyOfCanopus",
+                        "Mercenary",
+                        "RepublicOfTheSphere",
+                        "TaurianConcordat"
+                    ],
+                    "DarkAge": [
+                        "CapellanConfederation",
+                        "FederatedSuns",
+                        "FreeWorldsLeague",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "FreeWorldsLeagueRegulanFiefs",
+                        "FroncReaches",
+                        "LyranCommonwealth",
+                        "MagistracyOfCanopus",
+                        "Mercenary",
+                        "RepublicOfTheSphere",
+                        "TaurianConcordat"
+                    ],
+                    "IlClan": [
+                        "CapellanConfederation",
+                        "FederatedSuns",
+                        "FreeWorldsLeague",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FroncReaches",
+                        "LyranCommonwealth",
+                        "MagistracyOfCanopus",
+                        "Mercenary",
+                        "TamarPact",
+                        "TaurianConcordat"
+                    ]
+                }
             },
             {
                 "bv": 1593,
-                "variant": "STY-3D"
+                "variant": "STY-3D",
+                "availability": {
+                    "ClanInvasion": [
+                        "FederatedCommonwealth",
+                        "KellHounds",
+                        "LyranAlliance",
+                        "LyranCommonwealth",
+                        "MagistracyOfCanopus",
+                        "Mercenary",
+                        "WolfsDragoons"
+                    ],
+                    "CivilWar": [
+                        "KellHounds",
+                        "LyranAlliance",
+                        "MagistracyOfCanopus",
+                        "Mercenary",
+                        "WolfsDragoons"
+                    ],
+                    "Jihad": [
+                        "KellHounds",
+                        "LyranAlliance",
+                        "MagistracyOfCanopus",
+                        "Mercenary",
+                        "WolfsDragoons"
+                    ],
+                    "EarlyRepublic": [
+                        "CapellanConfederation",
+                        "FederatedSuns",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "LyranCommonwealth",
+                        "MagistracyOfCanopus",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "LateRepublic": [
+                        "CapellanConfederation",
+                        "FederatedSuns",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "LyranCommonwealth",
+                        "MagistracyOfCanopus",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "DarkAge": [
+                        "CapellanConfederation",
+                        "FederatedSuns",
+                        "FreeWorldsLeague",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "LyranCommonwealth",
+                        "MagistracyOfCanopus",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "IlClan": [
+                        "CapellanConfederation",
+                        "FederatedSuns",
+                        "FreeWorldsLeague",
+                        "LyranCommonwealth",
+                        "MagistracyOfCanopus",
+                        "Mercenary",
+                        "TamarPact"
+                    ]
+                }
             },
             {
                 "bv": 1781,
-                "variant": "STY-3Dr"
+                "variant": "STY-3Dr",
+                "availability": {
+                    "Jihad": [
+                        "LyranAlliance",
+                        "Mercenary"
+                    ],
+                    "EarlyRepublic": [
+                        "CapellanConfederation",
+                        "FreeWorldsLeagueRegulanFiefs",
+                        "LyranCommonwealth",
+                        "MagistracyOfCanopus",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "LateRepublic": [
+                        "CapellanConfederation",
+                        "FreeWorldsLeagueRegulanFiefs",
+                        "LyranCommonwealth",
+                        "MagistracyOfCanopus",
+                        "Mercenary",
+                        "RepublicOfTheSphere",
+                        "TaurianConcordat"
+                    ],
+                    "DarkAge": [
+                        "CapellanConfederation",
+                        "FreeWorldsLeague",
+                        "FreeWorldsLeagueRegulanFiefs",
+                        "LyranCommonwealth",
+                        "MagistracyOfCanopus",
+                        "Mercenary",
+                        "RepublicOfTheSphere",
+                        "TaurianConcordat"
+                    ],
+                    "IlClan": [
+                        "CapellanConfederation",
+                        "FreeWorldsLeague",
+                        "LyranCommonwealth",
+                        "MagistracyOfCanopus",
+                        "Mercenary",
+                        "TamarPact",
+                        "TaurianConcordat"
+                    ]
+                }
             },
             {
                 "bv": 2218,
-                "variant": "STY-42C"
+                "variant": "STY-4C",
+                "availability": {
+                    "DarkAge": [
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "WolfsDragoons"
+                    ],
+                    "IlClan": [
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "WolfsDragoons"
+                    ]
+                }
             }
         ]
     },
@@ -31637,63 +34944,873 @@
         "variants": [
             {
                 "bv": 497,
-                "variant": "STG-3G"
+                "variant": "STG-3G",
+                "availability": {
+                    "StarLeague": [
+                        "CapellanConfederation",
+                        "DraconisCombine",
+                        "FreeWorldsLeague",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "StarLeagueGeneral"
+                    ],
+                    "EarlySuccessionWar": [
+                        "InnerSphereGeneral",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "StarLeagueInExile"
+                    ],
+                    "LateSuccessionWarLosTech": [
+                        "ComStar",
+                        "InnerSphereGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "LateSuccessionWarRenaissance": [
+                        "ComStar",
+                        "InnerSphereGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "ClanInvasion": [
+                        "InnerSphereGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "CivilWar": [
+                        "InnerSphereGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "Jihad": [
+                        "EscorpionImperio",
+                        "InnerSphereGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "EarlyRepublic": [
+                        "EscorpionImperio",
+                        "InnerSphereGeneral",
+                        "Mercenary",
+                        "PeripheryGeneral"
+                    ],
+                    "LateRepublic": [
+                        "CapellanConfederation",
+                        "DraconisCombine",
+                        "EscorpionImperio",
+                        "FederatedSuns",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "PeripheryGeneral"
+                    ],
+                    "DarkAge": [
+                        "EscorpionImperio",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "ScorpionEmpire"
+                    ],
+                    "IlClan": [
+                        "Mercenary",
+                        "PeripheryGeneral"
+                    ]
+                }
             },
             {
                 "bv": 674,
-                "variant": "STG-3Gb"
+                "variant": "STG-3Gb",
+                "availability": {
+                    "StarLeague": [
+                        "InnerSphereGeneral",
+                        "PeripheryGeneral",
+                        "StarLeagueRegular",
+                        "StarLeagueRoyal"
+                    ],
+                    "EarlySuccessionWar": [
+                        "HWClanGeneral",
+                        "InnerSphereGeneral",
+                        "PeripheryGeneral",
+                        "StarLeagueInExile"
+                    ],
+                    "LateSuccessionWarLosTech": [
+                        "HWClanGeneral"
+                    ],
+                    "LateSuccessionWarRenaissance": [
+                        "HWClanGeneral"
+                    ],
+                    "ClanInvasion": [
+                        "HWClanGeneral",
+                        "ISClanGeneral"
+                    ],
+                    "CivilWar": [
+                        "HWClanGeneral",
+                        "ISClanGeneral"
+                    ],
+                    "Jihad": [
+                        "FreeWorldsLeague",
+                        "HWClanGeneral",
+                        "Society",
+                        "WordOfBlake"
+                    ],
+                    "EarlyRepublic": [
+                        "CapellanConfederation",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FreeWorldsLeagueMarikStewartCommonwealth",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "FreeWorldsLeagueRimCommonality",
+                        "Mercenary"
+                    ],
+                    "LateRepublic": [
+                        "CapellanConfederation",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FreeWorldsLeagueDuchyOfTamarindAbbey",
+                        "FreeWorldsLeagueMarikStewartCommonwealth",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "FreeWorldsLeagueRegulanFiefs",
+                        "FreeWorldsLeagueRimCommonality",
+                        "Mercenary"
+                    ],
+                    "DarkAge": [
+                        "CapellanConfederation",
+                        "ClanWolf",
+                        "FreeWorldsLeague",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FreeWorldsLeagueDuchyOfTamarindAbbey",
+                        "FreeWorldsLeagueMarikStewartCommonwealth",
+                        "FreeWorldsLeagueNonAlignedWorlds",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "FreeWorldsLeagueRegulanFiefs",
+                        "FreeWorldsLeagueRimCommonality",
+                        "Mercenary"
+                    ],
+                    "IlClan": [
+                        "CapellanConfederation",
+                        "FreeWorldsLeague",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "Mercenary",
+                        "WolfEmpire"
+                    ]
+                }
             },
             {
                 "bv": 489,
-                "variant": "STG-3P"
+                "variant": "STG-3P",
+                "availability": {
+                    "Jihad": [
+                        "InnerSphereGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "EarlyRepublic": [
+                        "InnerSphereGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "RasalhagueDominion",
+                        "RavenAlliance",
+                        "WolfsDragoons"
+                    ],
+                    "LateRepublic": [
+                        "InnerSphereGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "RasalhagueDominion",
+                        "RavenAlliance",
+                        "WolfsDragoons"
+                    ],
+                    "DarkAge": [
+                        "InnerSphereGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "RasalhagueDominion",
+                        "RavenAlliance",
+                        "WolfsDragoons"
+                    ],
+                    "IlClan": [
+                        "InnerSphereGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "RasalhagueDominion",
+                        "RavenAlliance"
+                    ]
+                }
             },
             {
                 "bv": 359,
-                "variant": "STG-3R"
+                "variant": "STG-3R",
+                "availability": {
+                    "StarLeague": [
+                        "InnerSphereGeneral",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "StarLeagueGeneral"
+                    ],
+                    "EarlySuccessionWar": [
+                        "InnerSphereGeneral",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "StarLeagueInExile"
+                    ],
+                    "LateSuccessionWarLosTech": [
+                        "ComStar",
+                        "InnerSphereGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "LateSuccessionWarRenaissance": [
+                        "ComStar",
+                        "InnerSphereGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "ClanInvasion": [
+                        "InnerSphereGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "CivilWar": [
+                        "InnerSphereGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "Jihad": [
+                        "InnerSphereGeneral",
+                        "KellHounds",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "EarlyRepublic": [
+                        "InnerSphereGeneral",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "RavenAlliance"
+                    ],
+                    "LateRepublic": [
+                        "InnerSphereGeneral",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "RavenAlliance"
+                    ],
+                    "DarkAge": [
+                        "InnerSphereGeneral",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "RavenAlliance"
+                    ],
+                    "IlClan": [
+                        "InnerSphereGeneral",
+                        "Mercenary",
+                        "PeripheryGeneral",
+                        "RavenAlliance"
+                    ]
+                }
             },
             {
                 "bv": 541,
-                "variant": "STG-4G"
+                "variant": "STG-4G",
+                "availability": {
+                    "Jihad": [
+                        "CapellanConfederation",
+                        "Mercenary"
+                    ],
+                    "EarlyRepublic": [
+                        "CapellanConfederation",
+                        "Mercenary"
+                    ],
+                    "LateRepublic": [
+                        "CapellanConfederation",
+                        "Mercenary"
+                    ],
+                    "DarkAge": [
+                        "CapellanConfederation",
+                        "Mercenary"
+                    ],
+                    "IlClan": [
+                        "CapellanConfederation",
+                        "Mercenary"
+                    ]
+                }
             },
             {
                 "bv": 614,
-                "variant": "STG-5G"
+                "variant": "STG-5G",
+                "availability": {
+                    "Jihad": [
+                        "CapellanConfederation",
+                        "FreeWorldsLeague",
+                        "FroncReaches",
+                        "Mercenary",
+                        "TaurianConcordat"
+                    ],
+                    "EarlyRepublic": [
+                        "CalderonProtectorate",
+                        "CapellanConfederation",
+                        "FederatedSuns",
+                        "FiltveltCoalition",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FreeWorldsLeagueNonAlignedWorlds",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "FreeWorldsLeagueRimCommonality",
+                        "FroncReaches",
+                        "MarianHegemony",
+                        "RepublicOfTheSphere",
+                        "TaurianConcordat"
+                    ],
+                    "LateRepublic": [
+                        "CalderonProtectorate",
+                        "CapellanConfederation",
+                        "FederatedSuns",
+                        "FiltveltCoalition",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FreeWorldsLeagueNonAlignedWorlds",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "FreeWorldsLeagueRimCommonality",
+                        "FroncReaches",
+                        "MarianHegemony",
+                        "RepublicOfTheSphere",
+                        "TaurianConcordat"
+                    ],
+                    "DarkAge": [
+                        "CalderonProtectorate",
+                        "CapellanConfederation",
+                        "FederatedSuns",
+                        "FiltveltCoalition",
+                        "FreeWorldsLeague",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FreeWorldsLeagueNonAlignedWorlds",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "FreeWorldsLeagueRimCommonality",
+                        "FroncReaches",
+                        "MarianHegemony",
+                        "RepublicOfTheSphere",
+                        "TaurianConcordat"
+                    ],
+                    "IlClan": [
+                        "CalderonProtectorate",
+                        "CapellanConfederation",
+                        "FederatedSuns",
+                        "FiltveltCoalition",
+                        "FreeWorldsLeague",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FroncReaches",
+                        "MarianHegemony",
+                        "TaurianConcordat"
+                    ]
+                }
             },
             {
                 "bv": 432,
-                "variant": "STG-5M"
+                "variant": "STG-5M",
+                "availability": {
+                    "ClanInvasion": [
+                        "InnerSphereGeneral",
+                        "MagistracyOfCanopus",
+                        "Mercenary",
+                        "TaurianConcordat"
+                    ],
+                    "CivilWar": [
+                        "InnerSphereGeneral",
+                        "MagistracyOfCanopus",
+                        "Mercenary",
+                        "TaurianConcordat"
+                    ],
+                    "Jihad": [
+                        "CalderonProtectorate",
+                        "InnerSphereGeneral",
+                        "MagistracyOfCanopus",
+                        "Mercenary",
+                        "TaurianConcordat"
+                    ],
+                    "EarlyRepublic": [
+                        "CalderonProtectorate",
+                        "CapellanConfederation",
+                        "DraconisCombine",
+                        "FederatedSuns",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FreeWorldsLeagueDuchyOfTamarindAbbey",
+                        "FreeWorldsLeagueMarikStewartCommonwealth",
+                        "FreeWorldsLeagueNonAlignedWorlds",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "FreeWorldsLeagueRegulanFiefs",
+                        "FreeWorldsLeagueRimCommonality",
+                        "MagistracyOfCanopus",
+                        "Mercenary"
+                    ],
+                    "LateRepublic": [
+                        "CapellanConfederation",
+                        "DraconisCombine",
+                        "FederatedSuns",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FreeWorldsLeagueDuchyOfTamarindAbbey",
+                        "FreeWorldsLeagueNonAlignedWorlds",
+                        "FreeWorldsLeagueRegulanFiefs",
+                        "FreeWorldsLeagueRimCommonality",
+                        "MagistracyOfCanopus",
+                        "Mercenary"
+                    ],
+                    "DarkAge": [
+                        "CapellanConfederation",
+                        "FreeWorldsLeague",
+                        "FreeWorldsLeagueDuchyOfTamarindAbbey",
+                        "FreeWorldsLeagueNonAlignedWorlds",
+                        "FreeWorldsLeagueRegulanFiefs",
+                        "FreeWorldsLeagueRimCommonality",
+                        "MagistracyOfCanopus",
+                        "Mercenary",
+                        "Pirates"
+                    ],
+                    "IlClan": [
+                        "FreeWorldsLeague",
+                        "MagistracyOfCanopus",
+                        "Mercenary",
+                        "Pirates"
+                    ]
+                }
             },
             {
                 "bv": 492,
-                "variant": "STG-5R"
+                "variant": "STG-5R",
+                "availability": {
+                    "CivilWar": [
+                        "CapellanConfederation",
+                        "CircinusFederation",
+                        "MagistracyOfCanopus",
+                        "TaurianConcordat",
+                        "WordOfBlake"
+                    ],
+                    "Jihad": [
+                        "CalderonProtectorate",
+                        "CapellanConfederation",
+                        "CircinusFederation",
+                        "FroncReaches",
+                        "MagistracyOfCanopus",
+                        "Pirates",
+                        "TaurianConcordat",
+                        "WordOfBlake"
+                    ],
+                    "EarlyRepublic": [
+                        "CapellanConfederation",
+                        "Mercenary",
+                        "PeripheryGeneral"
+                    ],
+                    "LateRepublic": [
+                        "CapellanConfederation",
+                        "Mercenary",
+                        "PeripheryGeneral"
+                    ],
+                    "DarkAge": [
+                        "CapellanConfederation",
+                        "Mercenary",
+                        "PeripheryGeneral"
+                    ],
+                    "IlClan": [
+                        "CapellanConfederation",
+                        "Mercenary",
+                        "PeripheryGeneral"
+                    ]
+                }
             },
             {
                 "bv": 341,
-                "variant": "STG-5T"
+                "variant": "STG-5T",
+                "availability": {
+                    "Jihad": [
+                        "CapellanConfederation",
+                        "FroncReaches",
+                        "MagistracyOfCanopus",
+                        "TaurianConcordat"
+                    ],
+                    "EarlyRepublic": [
+                        "CapellanConfederation",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "Mercenary",
+                        "PeripheryGeneral"
+                    ],
+                    "LateRepublic": [
+                        "CapellanConfederation",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "Mercenary",
+                        "PeripheryGeneral"
+                    ],
+                    "DarkAge": [
+                        "CapellanConfederation",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "Mercenary",
+                        "PeripheryGeneral"
+                    ],
+                    "IlClan": [
+                        "CapellanConfederation",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "Mercenary",
+                        "PeripheryGeneral"
+                    ]
+                }
             },
             {
                 "bv": 503,
-                "variant": "STG-6G"
+                "variant": "STG-6G",
+                "availability": {
+                    "LateRepublic": [
+                        "CapellanConfederation",
+                        "DraconisCombine",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "Mercenary",
+                        "PeripheryGeneral"
+                    ],
+                    "DarkAge": [
+                        "CapellanConfederation",
+                        "DraconisCombine",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "Mercenary",
+                        "PeripheryGeneral"
+                    ],
+                    "IlClan": [
+                        "CapellanConfederation",
+                        "DraconisCombine",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "Mercenary",
+                        "PeripheryGeneral"
+                    ]
+                }
             },
             {
                 "bv": 680,
-                "variant": "STG-6L"
+                "variant": "STG-6L",
+                "availability": {
+                    "CivilWar": [
+                        "CapellanConfederation",
+                        "MagistracyOfCanopus"
+                    ],
+                    "Jihad": [
+                        "CapellanConfederation",
+                        "FroncReaches",
+                        "MagistracyOfCanopus"
+                    ],
+                    "EarlyRepublic": [
+                        "CapellanConfederation",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FroncReaches",
+                        "MagistracyOfCanopus"
+                    ],
+                    "LateRepublic": [
+                        "CapellanConfederation",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FroncReaches",
+                        "MagistracyOfCanopus"
+                    ],
+                    "DarkAge": [
+                        "CapellanConfederation",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FroncReaches",
+                        "MagistracyOfCanopus"
+                    ],
+                    "IlClan": [
+                        "CapellanConfederation",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FroncReaches",
+                        "MagistracyOfCanopus"
+                    ]
+                }
             },
             {
                 "bv": 503,
-                "variant": "STG-6M"
+                "variant": "STG-6M",
+                "availability": {
+                    "EarlyRepublic": [
+                        "FreeWorldsLeagueMarikStewartCommonwealth",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "FreeWorldsLeagueRimCommonality"
+                    ],
+                    "LateRepublic": [
+                        "CapellanConfederation",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FreeWorldsLeagueDuchyOfTamarindAbbey",
+                        "FreeWorldsLeagueMarikStewartCommonwealth",
+                        "FreeWorldsLeagueNonAlignedWorlds",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "FreeWorldsLeagueRimCommonality",
+                        "LyranCommonwealth",
+                        "Mercenary"
+                    ],
+                    "DarkAge": [
+                        "CapellanConfederation",
+                        "FreeWorldsLeague",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FreeWorldsLeagueDuchyOfTamarindAbbey",
+                        "FreeWorldsLeagueMarikStewartCommonwealth",
+                        "FreeWorldsLeagueNonAlignedWorlds",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "FreeWorldsLeagueRimCommonality",
+                        "LyranCommonwealth",
+                        "Mercenary"
+                    ],
+                    "IlClan": [
+                        "CapellanConfederation",
+                        "ClanProtectorate",
+                        "FreeWorldsLeague",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "LyranCommonwealth",
+                        "Mercenary"
+                    ]
+                }
             },
             {
                 "bv": 454,
-                "variant": "STG-6R"
+                "variant": "STG-6R",
+                "availability": {
+                    "LateRepublic": [
+                        "FederatedSuns",
+                        "FreeWorldsLeagueDuchyOfTamarindAbbey",
+                        "FreeWorldsLeagueMarikStewartCommonwealth",
+                        "FreeWorldsLeagueNonAlignedWorlds",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "FreeWorldsLeagueRegulanFiefs",
+                        "FreeWorldsLeagueRimCommonality",
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "DarkAge": [
+                        "FederatedSuns",
+                        "FreeWorldsLeague",
+                        "FreeWorldsLeagueDuchyOfTamarindAbbey",
+                        "FreeWorldsLeagueMarikStewartCommonwealth",
+                        "FreeWorldsLeagueNonAlignedWorlds",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "FreeWorldsLeagueRegulanFiefs",
+                        "FreeWorldsLeagueRimCommonality",
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "IlClan": [
+                        "FederatedSuns",
+                        "FreeWorldsLeague",
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "TamarPact",
+                        "VesperMarches"
+                    ]
+                }
             },
             {
                 "bv": 478,
-                "variant": "STG-6S"
+                "variant": "STG-6S",
+                "availability": {
+                    "Jihad": [
+                        "LyranAlliance",
+                        "Mercenary"
+                    ],
+                    "EarlyRepublic": [
+                        "FederatedSuns",
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "LateRepublic": [
+                        "FederatedSuns",
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "DarkAge": [
+                        "FederatedSuns",
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "IlClan": [
+                        "FederatedSuns",
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "TamarPact",
+                        "VesperMarches"
+                    ]
+                }
             },
             {
                 "bv": 382,
-                "variant": "STG-7S"
+                "variant": "STG-7S",
+                "availability": {
+                    "Jihad": [
+                        "LyranAlliance",
+                        "Mercenary"
+                    ],
+                    "EarlyRepublic": [
+                        "FederatedSuns",
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "LateRepublic": [
+                        "FederatedSuns",
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "DarkAge": [
+                        "FederatedSuns",
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "IlClan": [
+                        "FederatedSuns",
+                        "LyranCommonwealth",
+                        "Mercenary",
+                        "TamarPact",
+                        "VesperMarches"
+                    ]
+                }
+            },
+            {
+                "bv": 592,
+                "variant": "C",
+                "availability": {
+                    "EarlySuccessionWar": [
+                        "ClanCloudCobra",
+                        "ClanHellsHorses",
+                        "ClanIceHellion",
+                        "ClanSteelViper",
+                        "ClanWolf"
+                    ],
+                    "LateSuccessionWarLosTech": [
+                        "ClanCloudCobra",
+                        "ClanHellsHorses",
+                        "ClanIceHellion",
+                        "ClanSteelViper",
+                        "ClanWolf"
+                    ],
+                    "LateSuccessionWarRenaissance": [
+                        "ClanCloudCobra",
+                        "ClanHellsHorses",
+                        "ClanIceHellion",
+                        "ClanSteelViper",
+                        "ClanWolf"
+                    ],
+                    "ClanInvasion": [
+                        "ClanCloudCobra",
+                        "ClanHellsHorses",
+                        "ClanIceHellion",
+                        "ClanSteelViper",
+                        "ClanWolf"
+                    ],
+                    "CivilWar": [
+                        "ClanCloudCobra",
+                        "ClanHellsHorses",
+                        "ClanIceHellion",
+                        "ClanWolf"
+                    ],
+                    "Jihad": [
+                        "ClanCloudCobra",
+                        "ClanHellsHorses",
+                        "ClanIceHellion",
+                        "ClanWolf"
+                    ],
+                    "EarlyRepublic": [
+                        "ClanHellsHorses",
+                        "ClanWolf"
+                    ],
+                    "LateRepublic": [
+                        "ClanHellsHorses",
+                        "ClanWolf"
+                    ],
+                    "DarkAge": [
+                        "ISClanGeneral",
+                        "ScorpionEmpire"
+                    ],
+                    "IlClan": [
+                        "ISClanGeneral",
+                        "ScorpionEmpire",
+                        "WolfsDragoons"
+                    ]
+                }
+            },
+            {
+                "bv": 754,
+                "variant": "C 2",
+                "availability": {
+                    "EarlySuccessionWar": [
+                        "ClanBloodSpirit",
+                        "ClanBurrock"
+                    ],
+                    "LateSuccessionWarLosTech": [
+                        "ClanBloodSpirit",
+                        "ClanBurrock",
+                        "ClanFireMandrill",
+                        "ClanSnowRaven",
+                        "ClanStarAdder"
+                    ],
+                    "LateSuccessionWarRenaissance": [
+                        "ClanBloodSpirit",
+                        "ClanBurrock",
+                        "ClanFireMandrill",
+                        "ClanSnowRaven",
+                        "ClanStarAdder",
+                        "ClanWolf"
+                    ],
+                    "ClanInvasion": [
+                        "ClanBloodSpirit",
+                        "ClanBurrock",
+                        "ClanFireMandrill",
+                        "ClanSnowRaven",
+                        "ClanStarAdder",
+                        "ClanWolf"
+                    ],
+                    "CivilWar": [
+                        "ClanBloodSpirit",
+                        "ClanFireMandrill",
+                        "ClanIceHellion",
+                        "ClanStarAdder",
+                        "ClanWolf"
+                    ],
+                    "Jihad": [
+                        "ClanBloodSpirit",
+                        "ClanBurrock",
+                        "ClanFireMandrill",
+                        "ClanIceHellion",
+                        "ClanStarAdder",
+                        "ClanWolf"
+                    ],
+                    "EarlyRepublic": [
+                        "ClanWolf"
+                    ],
+                    "LateRepublic": [
+                        "ClanWolf"
+                    ],
+                    "DarkAge": [
+                        "ISClanGeneral"
+                    ],
+                    "IlClan": [
+                        "ISClanGeneral",
+                        "WolfsDragoons"
+                    ]
+                }
             }
         ]
     },
