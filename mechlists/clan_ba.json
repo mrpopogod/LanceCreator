@@ -4,32 +4,371 @@
         "name": "Elemental",
         "variants": [
             {
-                "bv": 447,
-                "variant": "Laser"
-            },
-            {
                 "bv": 577,
-                "variant": "AP Gauss"
+                "variant": "AP Gauss",
+                "availability": {
+                    "Jihad": [
+                        "EscorpionImperio",
+                        "HWClanGeneral",
+                        "ISClanGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "EarlyRepublic": [
+                        "EscorpionImperio",
+                        "ISClanGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "LateRepublic": [
+                        "EscorpionImperio",
+                        "ISClanGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "DarkAge": [
+                        "EscorpionImperio",
+                        "ISClanGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "IlClan": [
+                        "ISClanGeneral",
+                        "ScorpionEmpire",
+                        "WolfsDragoons"
+                    ]
+                }
             },
             {
                 "bv": 426,
-                "variant": "ER Micro Laser"
+                "variant": "ER Micro Laser",
+                "availability": {
+                    "ClanInvasion": [
+                        "ClanBloodSpirit",
+                        "ClanCloudCobra",
+                        "ClanCoyote",
+                        "ClanFireMandrill",
+                        "ClanGoliathScorpion",
+                        "ClanIceHellion",
+                        "ClanSnowRaven",
+                        "ClanStarAdder",
+                        "ClanSteelViper",
+                        "ISClanGeneral"
+                    ],
+                    "CivilWar": [
+                        "HWClanGeneral",
+                        "ISClanGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "Jihad": [
+                        "EscorpionImperio",
+                        "HWClanGeneral",
+                        "ISClanGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "EarlyRepublic": [
+                        "EscorpionImperio",
+                        "ISClanGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "LateRepublic": [
+                        "EscorpionImperio",
+                        "ISClanGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "DarkAge": [
+                        "EscorpionImperio",
+                        "ISClanGeneral",
+                        "ScorpionEmpire",
+                        "WolfsDragoons"
+                    ],
+                    "IlClan": [
+                        "ISClanGeneral",
+                        "ScorpionEmpire",
+                        "WolfsDragoons"
+                    ]
+                }
             },
             {
                 "bv": 404,
-                "variant": "Flamer"
+                "variant": "Flamer",
+                "availability": {
+                    "EarlySuccessionWar": [
+                        "ClanHellsHorses",
+                        "ClanWolf"
+                    ],
+                    "LateSuccessionWarLosTech": [
+                        "HWClanGeneral"
+                    ],
+                    "LateSuccessionWarRenaissance": [
+                        "HWClanGeneral"
+                    ],
+                    "ClanInvasion": [
+                        "HWClanGeneral",
+                        "ISClanGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "CivilWar": [
+                        "HWClanGeneral",
+                        "ISClanGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "Jihad": [
+                        "EscorpionImperio",
+                        "HWClanGeneral",
+                        "ISClanGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "EarlyRepublic": [
+                        "EscorpionImperio",
+                        "ISClanGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "LateRepublic": [
+                        "EscorpionImperio",
+                        "ISClanGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "DarkAge": [
+                        "EscorpionImperio",
+                        "ISClanGeneral",
+                        "ScorpionEmpire",
+                        "WolfsDragoons"
+                    ],
+                    "IlClan": [
+                        "ISClanGeneral",
+                        "ScorpionEmpire",
+                        "WolfsDragoons"
+                    ]
+                }
             },
             {
                 "bv": 415,
-                "variant": "Heavy Machine Gun"
+                "variant": "Heavy Machine Gun",
+                "availability": {
+                    "ClanInvasion": [
+                        "ClanBloodSpirit",
+                        "ClanCloudCobra",
+                        "ClanCoyote",
+                        "ClanFireMandrill",
+                        "ClanGoliathScorpion",
+                        "ClanIceHellion",
+                        "ClanSnowRaven",
+                        "ClanStarAdder",
+                        "ClanSteelViper",
+                        "ISClanGeneral"
+                    ],
+                    "CivilWar": [
+                        "HWClanGeneral",
+                        "ISClanGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "Jihad": [
+                        "EscorpionImperio",
+                        "HWClanGeneral",
+                        "ISClanGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "EarlyRepublic": [
+                        "EscorpionImperio",
+                        "ISClanGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "LateRepublic": [
+                        "EscorpionImperio",
+                        "ISClanGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "DarkAge": [
+                        "EscorpionImperio",
+                        "ISClanGeneral",
+                        "ScorpionEmpire",
+                        "WolfsDragoons"
+                    ],
+                    "IlClan": [
+                        "ISClanGeneral",
+                        "ScorpionEmpire",
+                        "WolfsDragoons"
+                    ]
+                }
+            },
+            {
+                "bv": 447,
+                "variant": "Laser",
+                "availability": {
+                    "EarlySuccessionWar": [
+                        "ClanHellsHorses",
+                        "ClanWolf"
+                    ],
+                    "LateSuccessionWarLosTech": [
+                        "HWClanGeneral"
+                    ],
+                    "LateSuccessionWarRenaissance": [
+                        "HWClanGeneral"
+                    ],
+                    "ClanInvasion": [
+                        "HWClanGeneral",
+                        "ISClanGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "CivilWar": [
+                        "HWClanGeneral",
+                        "ISClanGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "Jihad": [
+                        "EscorpionImperio",
+                        "HWClanGeneral",
+                        "ISClanGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "EarlyRepublic": [
+                        "EscorpionImperio",
+                        "ISClanGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "LateRepublic": [
+                        "EscorpionImperio",
+                        "ISClanGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "DarkAge": [
+                        "EscorpionImperio",
+                        "ISClanGeneral",
+                        "ScorpionEmpire",
+                        "WolfsDragoons"
+                    ],
+                    "IlClan": [
+                        "ISClanGeneral",
+                        "ScorpionEmpire",
+                        "WolfsDragoons"
+                    ]
+                }
             },
             {
                 "bv": 404,
-                "variant": "Machine Gun"
+                "variant": "Machine Gun",
+                "availability": {
+                    "EarlySuccessionWar": [
+                        "ClanHellsHorses",
+                        "ClanWolf"
+                    ],
+                    "LateSuccessionWarLosTech": [
+                        "HWClanGeneral"
+                    ],
+                    "LateSuccessionWarRenaissance": [
+                        "HWClanGeneral"
+                    ],
+                    "ClanInvasion": [
+                        "HWClanGeneral",
+                        "ISClanGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "CivilWar": [
+                        "HWClanGeneral",
+                        "ISClanGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "Jihad": [
+                        "EscorpionImperio",
+                        "HWClanGeneral",
+                        "ISClanGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "EarlyRepublic": [
+                        "EscorpionImperio",
+                        "ISClanGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "LateRepublic": [
+                        "EscorpionImperio",
+                        "ISClanGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "DarkAge": [
+                        "EscorpionImperio",
+                        "ISClanGeneral",
+                        "ScorpionEmpire",
+                        "WolfsDragoons"
+                    ],
+                    "IlClan": [
+                        "ISClanGeneral",
+                        "ScorpionEmpire",
+                        "WolfsDragoons"
+                    ]
+                }
             },
             {
                 "bv": 480,
-                "variant": "Micro Pulse Laser"
+                "variant": "Micro Pulse Laser",
+                "availability": {
+                    "ClanInvasion": [
+                        "ClanBloodSpirit",
+                        "ClanCloudCobra",
+                        "ClanCoyote",
+                        "ClanFireMandrill",
+                        "ClanGoliathScorpion",
+                        "ClanIceHellion",
+                        "ClanSnowRaven",
+                        "ClanStarAdder",
+                        "ClanSteelViper",
+                        "ISClanGeneral"
+                    ],
+                    "CivilWar": [
+                        "HWClanGeneral",
+                        "ISClanGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "Jihad": [
+                        "EscorpionImperio",
+                        "HWClanGeneral",
+                        "ISClanGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "EarlyRepublic": [
+                        "EscorpionImperio",
+                        "ISClanGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "LateRepublic": [
+                        "EscorpionImperio",
+                        "ISClanGeneral",
+                        "WolfsDragoons"
+                    ],
+                    "DarkAge": [
+                        "EscorpionImperio",
+                        "ISClanGeneral",
+                        "ScorpionEmpire",
+                        "WolfsDragoons"
+                    ],
+                    "IlClan": [
+                        "ISClanGeneral",
+                        "ScorpionEmpire",
+                        "WolfsDragoons"
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Elemental II",
+        "variants": [
+            {
+                "bv": 477,
+                "variant": "Standard",
+                "availability": {
+                    "EarlyRepublic": [
+                        "ClanHellsHorses"
+                    ],
+                    "LateRepublic": [
+                        "ClanHellsHorses"
+                    ],
+                    "DarkAge": [
+                        "ClanHellsHorses",
+                        "ClanJadeFalcon"
+                    ],
+                    "IlClan": [
+                        "ClanHellsHorses",
+                        "StarLeagueClanJadeFalcon"
+                    ]
+                }
             }
         ]
     },
@@ -39,15 +378,33 @@
         "variants": [
             {
                 "bv": 532,
-                "variant": "AP Gauss"
+                "variant": "AP Gauss",
+                "availability": {
+                    "EarlyRepublic": [ "ClanHellsHorses" ],
+                    "LateRepublic": [ "ISClanGeneral" ],
+                    "DarkAge": [ "ISClanGeneral" ],
+                    "IlClan": [ "ISClanGeneral" ]
+                }
             },
             {
                 "bv": 357,
-                "variant": "Flamer"
+                "variant": "Flamer",
+                "availability": {
+                    "EarlyRepublic": [ "ClanHellsHorses" ],
+                    "LateRepublic": [ "ISClanGeneral" ],
+                    "DarkAge": [ "ISClanGeneral" ],
+                    "IlClan": [ "ISClanGeneral" ]
+                }
             },
             {
                 "bv": 434,
-                "variant": "Micro Pulse Laser"
+                "variant": "Micro Pulse Laser",
+                "availability": {
+                    "EarlyRepublic": [ "ClanHellsHorses" ],
+                    "LateRepublic": [ "ISClanGeneral" ],
+                    "DarkAge": [ "ISClanGeneral" ],
+                    "IlClan": [ "ISClanGeneral" ]
+                }
             }
         ]
     }
