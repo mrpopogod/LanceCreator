@@ -16868,15 +16868,8 @@
                 "bv": 2034,
                 "variant": "HTM-28Tr",
                 "availability": {
-                    "ClanInvasion": [
-                        "DraconisCombine"
-                    ],
-                    "CivilWar": [
-                        "DraconisCombine"
-                    ],
                     "Jihad": [
-                        "DraconisCombine",
-                        "WordOfBlake"
+                        "DraconisCombine"
                     ],
                     "EarlyRepublic": [
                         "DraconisCombine",
