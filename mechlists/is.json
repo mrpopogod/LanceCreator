@@ -19350,6 +19350,82 @@
     },
     {
         "count": 1,
+        "name": "Jade Hawk",
+        "variants": [
+            {
+                "bv": 2160,
+                "variant": "JHK-03",
+                "availability": {
+                    "DarkAge": [
+                        "Mercenary"
+                    ],
+                    "IlClan": [
+                        "Mercenary",
+                        "StarLeagueClanJadeFalcon"
+                    ]
+                }
+            },
+            {
+                "bv": 2102,
+                "variant": "JHK-04",
+                "availability": {
+                    "DarkAge": [
+                        "Mercenary"
+                    ],
+                    "IlClan": [
+                        "Mercenary"
+                    ]
+                }
+            },
+            {
+                "bv": 2523,
+                "variant": "1",
+                "availability": {
+                    "DarkAge": [
+                        "ClanJadeFalcon",
+                        "ClanSeaFox",
+                        "LyranCommonwealth"
+                    ],
+                    "IlClan": [
+                        "ClanJadeFalcon",
+                        "ClanSeaFox",
+                        "LyranCommonwealth",
+                        "StarLeagueClanJadeFalcon"
+                    ]
+                }
+            },
+            {
+                "bv": 2455,
+                "variant": "2",
+                "availability": {
+                    "DarkAge": [
+                        "ClanJadeFalcon"
+                    ],
+                    "IlClan": [
+                        "ClanJadeFalcon",
+                        "StarLeagueClanJadeFalcon"
+                    ]
+                }
+            },
+            {
+                "bv": 2498,
+                "variant": "3",
+                "availability": {
+                    "DarkAge": [
+                        "ClanJadeFalcon",
+                        "ClanSeaFox"
+                    ],
+                    "IlClan": [
+                        "ClanJadeFalcon",
+                        "ClanSeaFox",
+                        "StarLeagueClanJadeFalcon"
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "count": 1,
         "name": "JagerMech",
         "variants": [
             {
@@ -33076,6 +33152,166 @@
                     "IlClan": [
                         "RavenAlliance",
                         "ScorpionEmpire"
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "count": 1,
+        "name": "Shockwave",
+        "variants": [
+            {
+                "bv": 1453,
+                "variant": "SKW-2F",
+                "availability": {
+                    "EarlyRepublic": [
+                        "CapellanConfederation",
+                        "DraconisCombine",
+                        "FederatedSuns",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FreeWorldsLeagueDuchyOfTamarindAbbey",
+                        "FreeWorldsLeagueMarikStewartCommonwealth",
+                        "FreeWorldsLeagueNonAlignedWorlds",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "FreeWorldsLeagueRegulanFiefs",
+                        "FreeWorldsLeagueRimCommonality",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "LateRepublic": [
+                        "CapellanConfederation",
+                        "DraconisCombine",
+                        "FederatedSuns",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FreeWorldsLeagueDuchyOfTamarindAbbey",
+                        "FreeWorldsLeagueMarikStewartCommonwealth",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "FreeWorldsLeagueRegulanFiefs",
+                        "FreeWorldsLeagueRimCommonality",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "DarkAge": [
+                        "CapellanConfederation",
+                        "DraconisCombine",
+                        "FederatedSuns",
+                        "FreeWorldsLeague",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FreeWorldsLeagueDuchyOfTamarindAbbey",
+                        "FreeWorldsLeagueMarikStewartCommonwealth",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "FreeWorldsLeagueRegulanFiefs",
+                        "FreeWorldsLeagueRimCommonality",
+                        "Mercenary",
+                        "RepublicOfTheSphere"
+                    ],
+                    "IlClan": [
+                        "CapellanConfederation",
+                        "DraconisCombine",
+                        "FederatedSuns",
+                        "FreeWorldsLeague",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "Mercenary"
+                    ]
+                }
+            },
+            {
+                "bv": 1449,
+                "variant": "SKW-4G",
+                "availability": {
+                    "EarlyRepublic": [
+                        "CapellanConfederation",
+                        "DraconisCombine",
+                        "FederatedSuns",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FreeWorldsLeagueDuchyOfTamarindAbbey",
+                        "FreeWorldsLeagueMarikStewartCommonwealth",
+                        "FreeWorldsLeagueNonAlignedWorlds",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "FreeWorldsLeagueRegulanFiefs",
+                        "FreeWorldsLeagueRimCommonality",
+                        "RepublicOfTheSphere"
+                    ],
+                    "LateRepublic": [
+                        "CapellanConfederation",
+                        "DraconisCombine",
+                        "FederatedSuns",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FreeWorldsLeagueDuchyOfTamarindAbbey",
+                        "FreeWorldsLeagueMarikStewartCommonwealth",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "FreeWorldsLeagueRegulanFiefs",
+                        "FreeWorldsLeagueRimCommonality",
+                        "RepublicOfTheSphere"
+                    ],
+                    "DarkAge": [
+                        "CapellanConfederation",
+                        "DraconisCombine",
+                        "FederatedSuns",
+                        "FreeWorldsLeague",
+                        "FreeWorldsLeagueDuchyOfAndurien",
+                        "FreeWorldsLeagueDuchyOfTamarindAbbey",
+                        "FreeWorldsLeagueMarikStewartCommonwealth",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "FreeWorldsLeagueRegulanFiefs",
+                        "FreeWorldsLeagueRimCommonality",
+                        "RepublicOfTheSphere"
+                    ],
+                    "IlClan": [
+                        "CapellanConfederation",
+                        "DraconisCombine",
+                        "FederatedSuns",
+                        "FreeWorldsLeague",
+                        "FreeWorldsLeagueDuchyOfAndurien"
+                    ]
+                }
+            },
+            {
+                "bv": 1364,
+                "variant": "SKW-6H",
+                "availability": {
+                    "LateRepublic": [
+                        "CapellanConfederation",
+                        "DraconisCombine",
+                        "FederatedSuns",
+                        "FreeWorldsLeagueDuchyOfTamarindAbbey",
+                        "FreeWorldsLeagueMarikStewartCommonwealth",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "FreeWorldsLeagueRimCommonality",
+                        "RepublicOfTheSphere"
+                    ],
+                    "DarkAge": [
+                        "CapellanConfederation",
+                        "ClanWolf",
+                        "DraconisCombine",
+                        "FederatedSuns",
+                        "FreeWorldsLeague",
+                        "FreeWorldsLeagueDuchyOfTamarindAbbey",
+                        "FreeWorldsLeagueMarikStewartCommonwealth",
+                        "FreeWorldsLeagueOrienteProtectorate",
+                        "FreeWorldsLeagueRimCommonality",
+                        "RepublicOfTheSphere"
+                    ],
+                    "IlClan": [
+                        "CapellanConfederation",
+                        "DraconisCombine",
+                        "FederatedSuns",
+                        "FreeWorldsLeague",
+                        "WolfEmpire"
+                    ]
+                }
+            },
+            {
+                "bv": 1065,
+                "variant": "SKW-8X",
+                "availability": {
+                    "DarkAge": [
+                        "FreeWorldsLeague",
+                        "FreeWorldsLeagueMarikStewartCommonwealth"
+                    ],
+                    "IlClan": [
+                        "FreeWorldsLeague"
                     ]
                 }
             }
